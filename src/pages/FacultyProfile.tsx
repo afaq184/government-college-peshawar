@@ -26,19 +26,20 @@ export default function FacultyProfile() {
   const department = DEPARTMENTS.find((d) => d.id === member.deptId);
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50">
+    <div className="flex flex-col min-h-screen bg-slate-50 overflow-x-hidden">
 
       {/* Main Profile Layout */}
-      <section className="py-16">
+      <section className="py-8 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             
             {/* Left Column: Photo & Contact Info Card (4 Columns) */}
-            <div className="lg:col-span-4 space-y-8 sticky top-28">
+            {/* On mobile: normal flow. On desktop: sticky */}
+            <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
               
               {/* Photo & Identity Card */}
-              <div className="bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm text-center">
-                <div className="aspect-square rounded-3xl overflow-hidden mb-6 bg-slate-100 shadow-inner max-w-[260px] mx-auto relative border border-slate-100">
+              <div className="bg-white border border-slate-100 rounded-3xl p-6 md:p-8 shadow-sm text-center">
+                <div className="aspect-square rounded-2xl overflow-hidden mb-5 bg-slate-100 shadow-inner max-w-[200px] md:max-w-[260px] mx-auto relative border border-slate-100">
                   <img
                     src={member.photo}
                     alt={member.name}
@@ -46,10 +47,10 @@ export default function FacultyProfile() {
                   />
                 </div>
                 
-                <h1 className="text-3xl font-bold text-academy-green leading-snug mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold text-academy-green leading-snug mb-2">
                   {member.name}
                 </h1>
-                <p className="text-sm font-bold text-academy-gold uppercase tracking-wider mb-6">
+                <p className="text-sm font-bold text-academy-gold uppercase tracking-wider mb-4">
                   {member.designation}
                 </p>
                 {department && (
@@ -63,7 +64,7 @@ export default function FacultyProfile() {
               </div>
 
               {/* Contact details & External links card */}
-              <div className="bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm space-y-6">
+              <div className="bg-white border border-slate-100 rounded-3xl p-6 md:p-8 shadow-sm space-y-5">
                 <h3 className="text-lg font-bold text-academy-green border-b border-slate-100 pb-3 flex items-center gap-2">
                   <GraduationCap size={20} className="text-academy-gold" />
                   Contact Information
@@ -71,26 +72,26 @@ export default function FacultyProfile() {
 
                 <div className="space-y-4 text-sm">
                   {/* Email */}
-                  <div className="flex gap-4 items-start">
+                  <div className="flex gap-3 items-start">
                     <div className="bg-academy-green/10 p-2.5 rounded-xl text-academy-green shrink-0">
                       <Mail size={16} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 block">Email Address</span>
-                      <a href={`mailto:${member.email}`} className="text-slate-700 hover:text-academy-green font-semibold break-all">
+                      <a href={`mailto:${member.email}`} className="text-slate-700 hover:text-academy-green font-semibold break-all text-xs md:text-sm">
                         {member.email}
                       </a>
                     </div>
                   </div>
 
                   {/* Office / Location */}
-                  <div className="flex gap-4 items-start">
+                  <div className="flex gap-3 items-start">
                     <div className="bg-academy-green/10 p-2.5 rounded-xl text-academy-green shrink-0">
                       <MapPin size={16} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 block">Office Location</span>
-                      <p className="text-slate-700 font-semibold">{member.contactInfo}</p>
+                      <p className="text-slate-700 font-semibold text-xs md:text-sm">{member.contactInfo}</p>
                     </div>
                   </div>
                 </div>
@@ -138,30 +139,30 @@ export default function FacultyProfile() {
             </div>
 
             {/* Right Column: Detailed Sections (8 Columns) */}
-            <div className="lg:col-span-8 space-y-8">
+            <div className="lg:col-span-8 space-y-6 md:space-y-8">
               
               {/* Profile details block */}
-              <div className="bg-white border border-slate-100 rounded-[2.5rem] p-10 md:p-12 shadow-sm space-y-10">
+              <div className="bg-white border border-slate-100 rounded-3xl p-6 md:p-10 lg:p-12 shadow-sm space-y-8 md:space-y-10">
                 
                 {/* Biography & Intro */}
                 <div>
-                  <h2 className="text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-4 flex items-center gap-3">
-                    <BookOpen size={24} className="text-academy-gold" />
+                  <h2 className="text-xl md:text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-4 flex items-center gap-3">
+                    <BookOpen size={22} className="text-academy-gold shrink-0" />
                     Biography
                   </h2>
-                  <p className="text-slate-600 leading-relaxed text-justify text-base">
+                  <p className="text-slate-600 leading-relaxed text-sm md:text-base">
                     {member.biography}
                   </p>
                 </div>
 
                 {/* Academic Qualification */}
                 <div>
-                  <h2 className="text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-4 flex items-center gap-3">
-                    <GraduationCap size={24} className="text-academy-gold" />
+                  <h2 className="text-xl md:text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-4 flex items-center gap-3">
+                    <GraduationCap size={22} className="text-academy-gold shrink-0" />
                     Qualifications
                   </h2>
-                  <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                    <p className="text-slate-700 font-semibold text-base leading-relaxed">
+                  <div className="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p className="text-slate-700 font-semibold text-sm md:text-base leading-relaxed">
                       {member.qualification}
                     </p>
                   </div>
@@ -169,15 +170,15 @@ export default function FacultyProfile() {
 
                 {/* Research Interests */}
                 <div>
-                  <h2 className="text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-5 flex items-center gap-3">
-                    <Bookmark size={24} className="text-academy-gold" />
+                  <h2 className="text-xl md:text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-5 flex items-center gap-3">
+                    <Bookmark size={22} className="text-academy-gold shrink-0" />
                     Research Interests
                   </h2>
-                  <div className="flex flex-wrap gap-2.5">
+                  <div className="flex flex-wrap gap-2 md:gap-2.5">
                     {member.researchInterests.map((interest, index) => (
                       <span
                         key={index}
-                        className="bg-academy-green/5 border border-academy-green/10 text-academy-green text-sm font-semibold px-4 py-2 rounded-xl"
+                        className="bg-academy-green/5 border border-academy-green/10 text-academy-green text-xs md:text-sm font-semibold px-3 md:px-4 py-2 rounded-xl"
                       >
                         {interest}
                       </span>
@@ -187,21 +188,21 @@ export default function FacultyProfile() {
 
                 {/* Publications */}
                 <div>
-                  <h2 className="text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-5 flex items-center gap-3">
-                    <BookOpen size={24} className="text-academy-gold" />
+                  <h2 className="text-xl md:text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-5 flex items-center gap-3">
+                    <BookOpen size={22} className="text-academy-gold shrink-0" />
                     Representative Publications
                   </h2>
                   {member.publications.length > 0 ? (
-                    <ul className="space-y-4">
+                    <ul className="space-y-3 md:space-y-4">
                       {member.publications.map((pub, index) => (
                         <li
                           key={index}
-                          className="flex gap-4 p-5 bg-slate-50 border border-slate-100 rounded-2xl items-start hover:bg-academy-cream transition-colors duration-300"
+                          className="flex gap-3 md:gap-4 p-4 md:p-5 bg-slate-50 border border-slate-100 rounded-2xl items-start hover:bg-academy-cream transition-colors duration-300"
                         >
                           <div className="bg-academy-green text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 shadow-sm">
                             {index + 1}
                           </div>
-                          <p className="text-slate-700 font-medium text-sm leading-relaxed">
+                          <p className="text-slate-700 font-medium text-xs md:text-sm leading-relaxed">
                             {pub}
                           </p>
                         </li>
@@ -224,3 +225,4 @@ export default function FacultyProfile() {
     </div>
   );
 }
+

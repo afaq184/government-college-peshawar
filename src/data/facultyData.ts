@@ -141,19 +141,19 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Room 102, Science Block A, GC Peshawar'
   },
   {
-    id: 'dr-sara-ali',
+    id: 'dr-kamran-ali',
     deptId: 'computer-science',
-    name: 'Dr. Sara Ali',
+    name: 'Dr. Kamran Ali',
     designation: 'Associate Professor',
     specialization: 'Software Engineering & Cloud Computing',
-    email: 'sara.ali@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female1.png`,
+    email: 'kamran.ali@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male2.png`,
     qualification: 'Ph.D. in Software Engineering, NUST Islamabad',
-    biography: 'Dr. Sara Ali joined GC Peshawar in 2018. Her work focuses on cloud resource optimization and agile software methodologies. She coordinates the final year project defenses and industry internship programs for BS Computer Science.',
+    biography: 'Dr. Kamran Ali joined GC Peshawar in 2018. His work focuses on cloud resource optimization and agile software methodologies. He coordinates the final year project defenses and industry internship programs for BS Computer Science.',
     researchInterests: ['Agile Methodologies', 'Cloud Architecture Optimization', 'IoT Systems Security'],
     publications: [
-      'Ali, S. "A Framework for Microservice Migration in Cloud Environments," Journal of Systems and Software, 2023.',
-      'Ali, S. "Securing Edge Devices in IoT Smart Campus Architectures," IEEE Internet of Things Journal, 2021.'
+      'Ali, K. "A Framework for Microservice Migration in Cloud Environments," Journal of Systems and Software, 2023.',
+      'Ali, K. "Securing Edge Devices in IoT Smart Campus Architectures," IEEE Internet of Things Journal, 2021.'
     ],
     googleScholar: 'https://scholar.google.com/',
     linkedin: 'https://linkedin.com/',
@@ -196,15 +196,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Room 201, Science Block B, GC Peshawar'
   },
   {
-    id: 'dr-ayesha-rehman',
+    id: 'dr-asad-rehman',
     deptId: 'mathematics',
-    name: 'Dr. Ayesha Rehman',
+    name: 'Dr. Asad Rehman',
     designation: 'Assistant Professor',
     specialization: 'Applied Mathematics & Fluid Dynamics',
-    email: 'ayesha.rehman@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female2.png`,
+    email: 'asad.rehman@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male1.png`,
     qualification: 'Ph.D. in Applied Mathematics, QAU Islamabad',
-    biography: 'Dr. Ayesha Rehman researches mathematical modeling of fluid flows. She coordinates semester system schedules and exam evaluations for the Mathematics department.',
+    biography: 'Dr. Asad Rehman researches mathematical modeling of fluid flows. He coordinates semester system schedules and exam evaluations for the Mathematics department.',
     researchInterests: ['Computational Fluid Dynamics', 'Differential Equations', 'Numerical Methods'],
     publications: [
       'Rehman, A. "Numerical Study of Boundary Layer Flows over Stretching Sheets," Physics of Fluids, 2023.'
@@ -232,18 +232,18 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Physics Lab Director Office, Ground Floor, GC Peshawar'
   },
   {
-    id: 'prof-nida-yasmin',
+    id: 'prof-naeem-yousaf',
     deptId: 'physics',
-    name: 'Prof. Nida Yasmin',
+    name: 'Prof. Naeem Yousaf',
     designation: 'Assistant Professor',
     specialization: 'Solid State Physics',
-    email: 'nida.yasmin@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female1.png`,
+    email: 'naeem.yousaf@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.Phil. in Physics, Peshawar University',
-    biography: 'Prof. Nida Yasmin manages the physics equipment repository and coordinates practical board exams for intermediate students.',
+    biography: 'Prof. Naeem Yousaf manages the physics equipment repository and coordinates practical board exams for intermediate students.',
     researchInterests: ['Semiconductor Nanostructures', 'Thin Film Materials'],
     publications: [
-      'Yasmin, N. "Structural Characterization of ZnO Thin Films," Materials Letters, 2021.'
+      'Yousaf, N. "Structural Characterization of ZnO Thin Films," Materials Letters, 2021.'
     ],
     contactInfo: 'Main Physics Lab, GC Peshawar'
   },
@@ -266,15 +266,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Chemistry Wing A, GC Peshawar'
   },
   {
-    id: 'prof-sadia-farooq',
+    id: 'prof-saeed-farooq',
     deptId: 'chemistry',
-    name: 'Prof. Sadia Farooq',
+    name: 'Prof. Saeed Farooq',
     designation: 'Assistant Professor',
     specialization: 'Physical Chemistry',
-    email: 'sadia.farooq@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female2.png`,
+    email: 'saeed.farooq@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male1.png`,
     qualification: 'M.Phil. in Chemistry, University of Peshawar',
-    biography: 'Prof. Sadia Farooq supervises chemical laboratory safety protocols and teaches chemical thermodynamics to BS students.',
+    biography: 'Prof. Saeed Farooq supervises chemical laboratory safety protocols and teaches chemical thermodynamics to BS students.',
     researchInterests: ['Chemical Kinetics', 'Photochemistry', 'Adsorption Processes'],
     publications: [
       'Farooq, S. "Adsorption Kinetics of Heavy Metals on Clay Minerals," Journal of Hazardous Materials, 2020.'
@@ -300,15 +300,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Botany Dept Office, Block C, GC Peshawar'
   },
   {
-    id: 'prof-lubna-jamil',
+    id: 'prof-luqman-jamil',
     deptId: 'botany',
-    name: 'Prof. Lubna Jamil',
+    name: 'Prof. Luqman Jamil',
     designation: 'Assistant Professor',
     specialization: 'Plant Physiology',
-    email: 'lubna.jamil@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female1.png`,
+    email: 'luqman.jamil@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.Phil. in Botany, University of Peshawar',
-    biography: 'Prof. Lubna Jamil oversees botany laboratory courses and advises the student botany society.',
+    biography: 'Prof. Luqman Jamil oversees botany laboratory courses and advises the student botany society.',
     researchInterests: ['Salt Stress in Crops', 'Phytohormones'],
     publications: [],
     contactInfo: 'Botany Lab 1, GC Peshawar'
@@ -332,15 +332,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Zoology Block, GC Peshawar'
   },
   {
-    id: 'prof-zainab-bibi',
+    id: 'prof-zubair-baig',
     deptId: 'zoology',
-    name: 'Prof. Zainab Bibi',
+    name: 'Prof. Zubair Baig',
     designation: 'Assistant Professor',
     specialization: 'Molecular Biology',
-    email: 'zainab.zoology@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female2.png`,
+    email: 'zubair.zoology@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male1.png`,
     qualification: 'M.Phil. in Zoology, Hazara University',
-    biography: 'Prof. Zainab Bibi teaches molecular genetics and coordinates student practicals in the zoology labs.',
+    biography: 'Prof. Zubair Baig teaches molecular genetics and coordinates student practicals in the zoology labs.',
     researchInterests: ['Genetics', 'Cell Biology'],
     publications: [],
     contactInfo: 'Zoology Lab A, GC Peshawar'
@@ -361,15 +361,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'English Department Wing, Admin Block, GC Peshawar'
   },
   {
-    id: 'dr-maria-shafiq',
+    id: 'dr-mansoor-shafiq',
     deptId: 'english',
-    name: 'Dr. Maria Shafiq',
+    name: 'Dr. Mansoor Shafiq',
     designation: 'Assistant Professor',
     specialization: 'Linguistics & Discourse Analysis',
-    email: 'maria.shafiq@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female1.png`,
+    email: 'mansoor.shafiq@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male2.png`,
     qualification: 'Ph.D. in Linguistics, BZU Multan',
-    biography: 'Dr. Maria Shafiq joined the department in 2020. She coordinates communication skills courses across all BS majors and coordinates language laboratory sessions.',
+    biography: 'Dr. Mansoor Shafiq joined the department in 2020. He coordinates communication skills courses across all BS majors and coordinates language laboratory sessions.',
     researchInterests: ['Sociolinguistics', 'Bilingualism in KP', 'Critical Discourse Analysis'],
     publications: [
       'Shafiq, M. "Code-switching patterns among university students in Peshawar," World Englishes, 2023.'
@@ -397,15 +397,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Room 301, Humanities Block, GC Peshawar'
   },
   {
-    id: 'prof-farzana-begum',
+    id: 'prof-farhan-baig',
     deptId: 'political-science',
-    name: 'Prof. Farzana Begum',
+    name: 'Prof. Farhan Baig',
     designation: 'Assistant Professor',
     specialization: 'International Relations',
-    email: 'farzana.ps@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female2.png`,
+    email: 'farhan.ps@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male1.png`,
     qualification: 'M.Phil. in International Relations, Quaid-i-Azam University',
-    biography: 'Prof. Farzana Begum conducts courses on foreign policy and international organizations. She advises the college debating society.',
+    biography: 'Prof. Farhan Baig conducts courses on foreign policy and international organizations. He advises the college debating society.',
     researchInterests: ['CPEC and Regional Security', 'Foreign Policy of Pakistan'],
     publications: [],
     contactInfo: 'Room 303, Humanities Block, GC Peshawar'
@@ -428,15 +428,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Urdu Office, Humanities Block, GC Peshawar'
   },
   {
-    id: 'prof-amna-malik',
+    id: 'prof-arman-malik',
     deptId: 'urdu',
-    name: 'Prof. Amna Malik',
+    name: 'Prof. Arman Malik',
     designation: 'Assistant Professor',
     specialization: 'Urdu Poetry',
-    email: 'amna.urdu@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female1.png`,
+    email: 'arman.urdu@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.Phil. in Urdu literature, Peshawar University',
-    biography: 'Prof. Amna Malik teaches classical ghazal history and coordinates drama productions for the student arts society.',
+    biography: 'Prof. Arman Malik teaches classical ghazal history and coordinates drama productions for the student arts society.',
     researchInterests: ['Classical Urdu Ghazal', 'Modern Progressive Poetry'],
     publications: [],
     contactInfo: 'Urdu Dept Room 12, GC Peshawar'
@@ -475,15 +475,15 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   },
   // Geography
   {
-    id: 'dr-yasmin-shah',
+    id: 'dr-yasir-shah',
     deptId: 'geography',
-    name: 'Dr. Yasmin Shah',
+    name: 'Dr. Yasir Shah',
     designation: 'Assistant Professor & Head',
     specialization: 'GIS & Remote Sensing',
-    email: 'yasmin.geog@gcpeshawar.edu.pk',
-    photo: `${baseUrl}faculty/female2.png`,
+    email: 'yasir.geog@gcpeshawar.edu.pk',
+    photo: `${baseUrl}faculty/male1.png`,
     qualification: 'Ph.D. in Geography, University of Peshawar',
-    biography: 'Dr. Yasmin Shah teaches physical geography and guides mapping practicums using GIS platforms. She coordinates academic environmental surveys.',
+    biography: 'Dr. Yasir Shah teaches physical geography and guides mapping practicums using GIS platforms. He coordinates academic environmental surveys.',
     researchInterests: ['GIS applications in Urban Planning', 'Glacier Dynamics in Northern Pakistan'],
     publications: [
       'Shah, Y. "Urban Expansion Analysis of Peshawar Valley using RS Data," Pakistan Geographical Review, 2022.'

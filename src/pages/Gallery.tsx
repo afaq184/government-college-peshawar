@@ -48,7 +48,7 @@ const galleryItems = Array.from({ length: 28 }, (_, i) => {
     category: categories[i % categories.length],
     image: `${base}gallery/p${id}.jpeg`,
     title: titles[i] || `Campus Highlight ${id}`,
-    imgClass: 'object-cover object-center',
+    imgClass: id === 3 ? 'object-contain bg-slate-950 p-2' : 'object-cover object-center',
   };
 }).filter((item) => !excludedImages.includes(item.id));
 

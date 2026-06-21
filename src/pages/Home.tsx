@@ -152,7 +152,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 relative group overflow-hidden rounded-2xl shadow-lg bg-black aspect-video min-h-[260px] max-h-[min(70vh,520px)]">
+            <div className="lg:col-span-2 relative group overflow-hidden rounded-2xl shadow-lg bg-black aspect-video w-full sm:min-h-[260px] max-h-[min(70vh,520px)]">
               <video
                 className="absolute inset-0 z-0 h-full w-full object-cover"
                 controls

@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-academy-green: #2563EB;
+  --color-academy-green-dark: #1E3A8A;
+  --color-academy-gold: #F59E0B;
+  --color-academy-gold-light: #06B6D4;
+  --color-academy-cream: #F8FAFC;
+  --color-navbar-bg: #172554;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-slate-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.btn-primary {
+  @apply bg-academy-green text-white px-6 py-3 rounded-xl font-bold transition-all hover:bg-academy-green-dark active:scale-95 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply bg-academy-gold text-white px-6 py-3 rounded-xl font-bold transition-all hover:bg-academy-gold/90 active:scale-95 shadow-lg hover:shadow-xl;
+}
+
+.nav-link {
+  @apply text-sm font-medium text-white/80 hover:text-white transition-colors relative py-1;
+}
+
+.nav-link.active {
+  @apply text-white;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-white;
+}
+
+/* Advanced Hover Effects */
+.hover-lift {
+  @apply transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl;
+}
+
+.hover-glow {
+  @apply transition-all duration-500 hover:shadow-[0_0_30px_rgba(217,119,6,0.3)] hover:border-academy-gold/50;
+}
+
+.hover-scale {
+  @apply transition-transform duration-500 ease-out hover:scale-105 active:scale-95;
+}
+
+.hover-reveal-container {
+  @apply relative overflow-hidden;
+}
+
+.hover-reveal-overlay {
+  @apply absolute inset-0 bg-academy-green/80 opacity-0 transition-opacity duration-500 flex items-center justify-center;
+}
+
+.hover-reveal-container:hover .hover-reveal-overlay {
+  @apply opacity-100;
+}
+
+.magnetic-button {
+  @apply relative overflow-hidden transition-all duration-300;
+}
+
+.magnetic-button::before {
+  content: '';
+  @apply absolute inset-0 bg-white/20 scale-x-0 origin-left transition-transform duration-500 ease-out;
+}
+
+.magnetic-button:hover::before {
+  @apply scale-x-100;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-academy-green to-academy-gold;
+}
+
+.logo-green .logo-accent {
+  stroke: #fbbf24;
+}

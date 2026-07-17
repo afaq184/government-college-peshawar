@@ -16,16 +16,11 @@ import News from './pages/News';
 import Apply from './pages/Apply';
 import FacultyList from './pages/FacultyList';
 import FacultyProfile from './pages/FacultyProfile';
-import Portal from './pages/Portal';
 import StudentProfile from './pages/StudentProfile';
 
 const router = createHashRouter([
   {
     path: '/',
-    element: <Portal />,
-  },
-  {
-    path: '/student-profile',
     element: <StudentProfile />,
   },
   {

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, School, GraduationCap, Calendar, Clock, User, ShieldCheck, Mail, Phone, MapPin, Hash, Sparkles } from 'lucide-react';
+import { School, GraduationCap, Calendar, Clock, User, ShieldCheck, Phone, MapPin, Hash } from 'lucide-react';
 import Logo from '../components/Logo';
 import { SITE } from '../site';
 
@@ -56,22 +56,13 @@ export default function StudentProfile() {
             </div>
           </div>
           
-          <div className="flex gap-3">
-            <Link 
-              to="/" 
-              className="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all hover-scale"
-            >
-              <ArrowLeft size={16} />
-              Back to Portal
-            </Link>
-            <Link 
-              to="/home" 
-              className="flex items-center gap-2 bg-academy-green hover:bg-academy-green-dark text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all hover-scale shadow-lg hover:shadow-academy-green/20"
-            >
-              <School size={16} />
-              College Website
-            </Link>
-          </div>
+          <Link 
+            to="/home" 
+            className="flex items-center gap-2 bg-academy-green hover:bg-academy-green-dark text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all hover-scale shadow-lg hover:shadow-academy-green/20"
+          >
+            <School size={16} />
+            College Website
+          </Link>
         </motion.div>
 
         {/* Dashboard Grid */}
@@ -243,9 +234,19 @@ export default function StudentProfile() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="w-full max-w-5xl flex justify-center text-[10px] font-semibold text-slate-500 mt-8 border-t border-white/5 pt-6 z-10"
+        className="w-full max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 mt-8 border-t border-white/5 pt-6 z-10 px-2"
       >
-        <span>Government College Peshawar &bull; Academic Portal System v1.2</span>
+        <span className="flex items-center gap-2 text-center sm:text-left">
+          <ShieldCheck size={14} className="text-slate-500 shrink-0" />
+          Higher Education Department, Government of Khyber Pakhtunkhwa
+        </span>
+        <span className="flex items-center gap-2 text-center">
+          <GraduationCap size={14} className="text-slate-500 shrink-0" />
+          Affiliated with the University of Peshawar &amp; BISE Peshawar
+        </span>
+        <span className="text-center sm:text-right">
+          &copy; 2026 GC Peshawar. All Rights Reserved.
+        </span>
       </motion.div>
     </div>
   );

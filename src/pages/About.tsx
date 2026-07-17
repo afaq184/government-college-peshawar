@@ -73,11 +73,14 @@ export default function About() {
 
       <section className="py-14 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-academy-green text-center mb-20">Milestones</h2>
+          <h2 className="text-4xl font-bold text-academy-green text-center mb-12 md:mb-20">Milestones</h2>
           <div className="relative">
+            {/* Desktop center line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-100 hidden md:block" />
+            {/* Mobile left rail */}
+            <div className="absolute left-[15px] top-2 bottom-2 w-0.5 bg-slate-100 md:hidden" />
 
-            <div className="space-y-24">
+            <div className="space-y-12 md:space-y-24">
               {[
                 {
                   year: String(SITE.established),
@@ -98,38 +101,54 @@ export default function About() {
                   side: 'left' as const,
                 },
               ].map((item, idx) => (
-                <div key={idx} className="flex flex-col md:flex-row items-center group/timeline">
-                  <div className="flex-1 w-full md:w-1/2 px-8 text-center md:text-right">
-                    {item.side === 'left' ? (
-                      <div className="md:pr-12 transform transition-all duration-500 group-hover/timeline:-translate-x-2">
-                        <div className="text-4xl font-serif font-bold text-academy-gold mb-2 group-hover/timeline:scale-110 origin-right transition-transform">
-                          {item.year}
-                        </div>
-                        <h3 className="text-xl font-bold text-academy-green mb-4 group-hover/timeline:text-academy-gold transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
-                      </div>
-                    ) : null}
+                <div key={idx} className="group/timeline">
+                  {/* Mobile: left-rail timeline (dot + content side by side) */}
+                  <div className="flex gap-4 md:hidden">
+                    <div className="relative flex shrink-0 items-center justify-center w-8 h-8">
+                      <div className="w-4 h-4 bg-academy-gold rounded-full z-10" />
+                      <div className="absolute inset-0 bg-academy-gold/20 rounded-full animate-ping" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-3xl font-serif font-bold text-academy-gold mb-1">{item.year}</div>
+                      <h3 className="text-lg font-bold text-academy-green mb-2">{item.title}</h3>
+                      <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
                   </div>
 
-                  <div className="relative flex items-center justify-center w-12 h-12 my-8 md:my-0">
-                    <div className="w-4 h-4 bg-academy-gold rounded-full z-10 group-hover/timeline:scale-150 transition-transform duration-500" />
-                    <div className="absolute w-8 h-8 bg-academy-gold/20 rounded-full animate-ping group-hover/timeline:bg-academy-gold/40" />
-                  </div>
-
-                  <div className="flex-1 w-full md:w-1/2 px-8 text-center md:text-left">
-                    {item.side === 'right' ? (
-                      <div className="md:pl-12 transform transition-all duration-500 group-hover/timeline:translate-x-2">
-                        <div className="text-4xl font-serif font-bold text-academy-gold mb-2 group-hover/timeline:scale-110 origin-left transition-transform">
-                          {item.year}
+                  {/* Desktop: alternating left/right layout (unchanged) */}
+                  <div className="hidden md:flex md:flex-row items-center">
+                    <div className="flex-1 w-1/2 px-8 text-right">
+                      {item.side === 'left' ? (
+                        <div className="pr-12 transform transition-all duration-500 group-hover/timeline:-translate-x-2">
+                          <div className="text-4xl font-serif font-bold text-academy-gold mb-2 group-hover/timeline:scale-110 origin-right transition-transform">
+                            {item.year}
+                          </div>
+                          <h3 className="text-xl font-bold text-academy-green mb-4 group-hover/timeline:text-academy-gold transition-colors">
+                            {item.title}
+                          </h3>
+                          <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
                         </div>
-                        <h3 className="text-xl font-bold text-academy-green mb-4 group-hover/timeline:text-academy-gold transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
-                      </div>
-                    ) : null}
+                      ) : null}
+                    </div>
+
+                    <div className="relative flex items-center justify-center w-12 h-12">
+                      <div className="w-4 h-4 bg-academy-gold rounded-full z-10 group-hover/timeline:scale-150 transition-transform duration-500" />
+                      <div className="absolute w-8 h-8 bg-academy-gold/20 rounded-full animate-ping group-hover/timeline:bg-academy-gold/40" />
+                    </div>
+
+                    <div className="flex-1 w-1/2 px-8 text-left">
+                      {item.side === 'right' ? (
+                        <div className="pl-12 transform transition-all duration-500 group-hover/timeline:translate-x-2">
+                          <div className="text-4xl font-serif font-bold text-academy-gold mb-2 group-hover/timeline:scale-110 origin-left transition-transform">
+                            {item.year}
+                          </div>
+                          <h3 className="text-xl font-bold text-academy-green mb-4 group-hover/timeline:text-academy-gold transition-colors">
+                            {item.title}
+                          </h3>
+                          <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
                 </div>
               ))}

@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { School, GraduationCap, Calendar, Clock, User, ShieldCheck, Phone, MapPin, Hash } from 'lucide-react';
+import { School, GraduationCap, Calendar, User, ShieldCheck, Phone, MapPin, Hash } from 'lucide-react';
 import Logo from '../components/Logo';
 import { SITE } from '../site';
 import { getStudentByToken, studentPhotoUrl } from '../data/studentsData';
@@ -190,10 +190,7 @@ export default function StudentProfile() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="text-xs text-slate-400">Enrollment Type</span>
-                    <span className="text-white font-medium flex items-center gap-1.5">
-                      <Clock size={14} className="text-slate-400" />
-                      {student.enrollmentType}
-                    </span>
+                    <span className="text-white font-medium">{student.enrollmentType}</span>
                   </div>
                 </div>
               </div>

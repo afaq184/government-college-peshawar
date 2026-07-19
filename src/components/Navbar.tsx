@@ -5,7 +5,7 @@ import Logo from './Logo';
 import { SITE } from '../site';
 
 const navLinks = [
-  { name: 'Home', path: '/home' },
+  { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Academics', path: '/academics' },
   { name: 'Departments', path: '/faculty' },
@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center gap-3">
-            <Link to="/home" className="flex items-center gap-3 group">
+            <Link to="/" className="flex items-center gap-3 group">
               <div className="bg-white p-1 rounded-xl shadow-sm group-hover:shadow-md transition-all duration-300">
                 <Logo size={40} className="rounded-lg" />
               </div>

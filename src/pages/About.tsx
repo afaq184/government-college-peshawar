@@ -1,7 +1,7 @@
 import { Eye, Target, Award, BookOpen, Landmark, ExternalLink } from 'lucide-react';
 import { SITE } from '../site';
 
-const principalImage = `${import.meta.env.BASE_URL}principal.jpg`;
+const chiefProctorImage = `${import.meta.env.BASE_URL}dr-usman-shah-katlang.png`;
 const aboutCampusImage = `${import.meta.env.BASE_URL}about-campus.jpg`;
 
 export default function About() {
@@ -162,15 +162,15 @@ export default function About() {
           <div className="bg-white rounded-[3rem] overflow-hidden shadow-xl flex flex-col lg:flex-row">
             <div className="lg:w-1/3 aspect-square lg:aspect-auto min-h-[260px] relative bg-slate-200">
               <img
-                src={principalImage}
-                alt={`${SITE.principal}, Principal`}
-                className="absolute inset-0 h-full w-full object-cover object-[center_15%]"
+                src={chiefProctorImage}
+                alt={`${SITE.chiefProctor}, Chief Proctor`}
+                className="absolute inset-0 h-full w-full object-cover object-top"
                 loading="lazy"
                 decoding="async"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 pt-20">
-                <span className="text-academy-gold-light text-xs font-bold uppercase tracking-widest">Principal</span>
-                <p className="text-white font-bold text-sm sm:text-base leading-snug mt-2">{SITE.principal}</p>
+                <span className="text-academy-gold-light text-xs font-bold uppercase tracking-widest">Chief Proctor</span>
+                <p className="text-white font-bold text-sm sm:text-base leading-snug mt-2">{SITE.chiefProctor}</p>
                 <a
                   href={SITE.facebookUrl}
                   target="_blank"
@@ -187,15 +187,15 @@ export default function About() {
                   <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C20.1216 16 21.017 16.8954 21.017 18V21C21.017 22.1046 20.1216 23 19.017 23H16.017C14.9124 23 14.017 22.1046 14.017 21Z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-academy-green mb-8">From the desk of the Principal</h3>
+              <h3 className="text-2xl font-bold text-academy-green mb-8">From the desk of the Chief Proctor</h3>
               <p className="text-2xl font-serif italic text-slate-600 leading-relaxed mb-12">
                 “{SITE.vision}”
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-0.5 bg-academy-gold" />
                 <div>
-                  <p className="font-bold text-academy-green">{SITE.principal}</p>
-                  <p className="text-slate-500 text-sm">Principal, {SITE.fullName}</p>
+                  <p className="font-bold text-academy-green">{SITE.chiefProctor}</p>
+                  <p className="text-slate-500 text-sm">Chief Proctor, {SITE.fullName}</p>
                 </div>
               </div>
             </div>

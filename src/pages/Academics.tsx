@@ -55,7 +55,7 @@ export default function Academics() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-academy-green text-center mb-16">Programme overview</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-white p-12 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col hover-lift hover-glow group cursor-default">
+            <div className="bg-white p-12 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col self-start hover-lift hover-glow group cursor-default">
               <div className="flex justify-between items-start mb-8">
                 <div className="bg-academy-green/10 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-academy-green group-hover:text-white transition-all duration-500 group-hover:rotate-6">
                   <FlaskConical className="text-academy-green group-hover:text-white" size={32} />
@@ -63,11 +63,11 @@ export default function Academics() {
                 <span className="text-academy-gold font-bold text-xs uppercase tracking-widest">Two years</span>
               </div>
               <h3 className="text-3xl font-bold text-academy-green mb-6 group-hover:text-academy-gold transition-colors">Intermediate</h3>
-              <p className="text-slate-600 mb-10 leading-relaxed">
+              <p className="text-slate-600 mb-6 leading-relaxed">
                 Board-recognised higher secondary programmes that prepare students for medical, engineering, IT, general science, or
                 humanities tracks.
               </p>
-              <ul className="space-y-3 mt-auto">
+              <ul className="space-y-3">
                 {PROGRAMS.intermediate.map((sub) => (
                   <li
                     key={sub}
@@ -90,11 +90,11 @@ export default function Academics() {
               <h3 className="text-3xl font-bold text-academy-green mb-6 group-hover:text-academy-gold transition-colors">
                 Degree & BS programmes
               </h3>
-              <p className="text-slate-600 mb-8 leading-relaxed">
+              <p className="text-slate-600 mb-6 leading-relaxed">
                 Two-year BA/BSc routes and four-year BS degrees across science and social science disciplines, governed by
                 University of Peshawar regulations.
               </p>
-              <div className="space-y-6 mt-auto">
+              <div className="space-y-6">
                 <div>
                   <p className="text-xs font-bold text-academy-green uppercase tracking-widest mb-3">Two-year degrees</p>
                   <ul className="space-y-2">

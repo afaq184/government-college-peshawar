@@ -143,13 +143,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'dr-kamran-ali',
     deptId: 'computer-science',
-    name: 'Dr. Kamran Ali',
+    name: 'Kamran Ali',
     designation: 'Associate Professor',
     specialization: 'Software Engineering & Cloud Computing',
     email: 'kamran.ali@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male2.png`,
     qualification: 'Ph.D. in Software Engineering, NUST Islamabad',
-    biography: 'Dr. Kamran Ali joined GC Peshawar in 2018. His work focuses on cloud resource optimization and agile software methodologies. He coordinates the final year project defenses and industry internship programs for BS Computer Science.',
+    biography: 'Kamran Ali joined GC Peshawar in 2018. His work focuses on cloud resource optimization and agile software methodologies. He coordinates the final year project defenses and industry internship programs for BS Computer Science.',
     researchInterests: ['Agile Methodologies', 'Cloud Architecture Optimization', 'IoT Systems Security'],
     publications: [
       'Ali, K. "A Framework for Microservice Migration in Cloud Environments," Journal of Systems and Software, 2023.',
@@ -162,13 +162,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-usman-shah',
     deptId: 'computer-science',
-    name: 'Prof. Usman Shah',
+    name: 'Usman Shah',
     designation: 'Assistant Professor',
     specialization: 'Data Science & Databases',
     email: 'usman.shah@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.S. in Computer Science, FAST-NUCES Peshawar',
-    biography: 'Prof. Usman Shah has been teaching database design and data structures at GC Peshawar since 2015. He represents the department in the college sports board and coordinates computing lab upgrades.',
+    biography: 'Usman Shah has been teaching database design and data structures at GC Peshawar since 2015. He represents the department in the college sports board and coordinates computing lab upgrades.',
     researchInterests: ['Big Data Analytics', 'Distributed Systems', 'Relational Database Performance'],
     publications: [
       'Shah, U. "Optimizing Query Execution in Distributed NoSQL Systems," Journal of Big Data, 2022.'
@@ -198,13 +198,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'dr-asad-rehman',
     deptId: 'mathematics',
-    name: 'Dr. Asad Rehman',
+    name: 'Asad Rehman',
     designation: 'Assistant Professor',
     specialization: 'Applied Mathematics & Fluid Dynamics',
     email: 'asad.rehman@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male1.png`,
     qualification: 'Ph.D. in Applied Mathematics, QAU Islamabad',
-    biography: 'Dr. Asad Rehman researches mathematical modeling of fluid flows. He coordinates semester system schedules and exam evaluations for the Mathematics department.',
+    biography: 'Asad Rehman researches mathematical modeling of fluid flows. He coordinates semester system schedules and exam evaluations for the Mathematics department.',
     researchInterests: ['Computational Fluid Dynamics', 'Differential Equations', 'Numerical Methods'],
     publications: [
       'Rehman, A. "Numerical Study of Boundary Layer Flows over Stretching Sheets," Physics of Fluids, 2023.'
@@ -234,13 +234,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-naeem-yousaf',
     deptId: 'physics',
-    name: 'Prof. Naeem Yousaf',
+    name: 'Naeem Yousaf',
     designation: 'Assistant Professor',
     specialization: 'Solid State Physics',
     email: 'naeem.yousaf@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.Phil. in Physics, Peshawar University',
-    biography: 'Prof. Naeem Yousaf manages the physics equipment repository and coordinates practical board exams for intermediate students.',
+    biography: 'Naeem Yousaf manages the physics equipment repository and coordinates practical board exams for intermediate students.',
     researchInterests: ['Semiconductor Nanostructures', 'Thin Film Materials'],
     publications: [
       'Yousaf, N. "Structural Characterization of ZnO Thin Films," Materials Letters, 2021.'
@@ -268,13 +268,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-saeed-farooq',
     deptId: 'chemistry',
-    name: 'Prof. Saeed Farooq',
+    name: 'Saeed Farooq',
     designation: 'Assistant Professor',
     specialization: 'Physical Chemistry',
     email: 'saeed.farooq@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male1.png`,
     qualification: 'M.Phil. in Chemistry, University of Peshawar',
-    biography: 'Prof. Saeed Farooq supervises chemical laboratory safety protocols and teaches chemical thermodynamics to BS students.',
+    biography: 'Saeed Farooq supervises chemical laboratory safety protocols and teaches chemical thermodynamics to BS students.',
     researchInterests: ['Chemical Kinetics', 'Photochemistry', 'Adsorption Processes'],
     publications: [
       'Farooq, S. "Adsorption Kinetics of Heavy Metals on Clay Minerals," Journal of Hazardous Materials, 2020.'
@@ -302,13 +302,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-luqman-jamil',
     deptId: 'botany',
-    name: 'Prof. Luqman Jamil',
+    name: 'Luqman Jamil',
     designation: 'Assistant Professor',
     specialization: 'Plant Physiology',
     email: 'luqman.jamil@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.Phil. in Botany, University of Peshawar',
-    biography: 'Prof. Luqman Jamil oversees botany laboratory courses and advises the student botany society.',
+    biography: 'Luqman Jamil oversees botany laboratory courses and advises the student botany society.',
     researchInterests: ['Salt Stress in Crops', 'Phytohormones'],
     publications: [],
     contactInfo: 'Botany Lab 1, GC Peshawar'
@@ -334,13 +334,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-zubair-baig',
     deptId: 'zoology',
-    name: 'Prof. Zubair Baig',
+    name: 'Zubair Baig',
     designation: 'Assistant Professor',
     specialization: 'Molecular Biology',
     email: 'zubair.zoology@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male1.png`,
     qualification: 'M.Phil. in Zoology, Hazara University',
-    biography: 'Prof. Zubair Baig teaches molecular genetics and coordinates student practicals in the zoology labs.',
+    biography: 'Zubair Baig teaches molecular genetics and coordinates student practicals in the zoology labs.',
     researchInterests: ['Genetics', 'Cell Biology'],
     publications: [],
     contactInfo: 'Zoology Lab A, GC Peshawar'
@@ -363,13 +363,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'dr-mansoor-shafiq',
     deptId: 'english',
-    name: 'Dr. Mansoor Shafiq',
+    name: 'Mansoor Shafiq',
     designation: 'Assistant Professor',
     specialization: 'Linguistics & Discourse Analysis',
     email: 'mansoor.shafiq@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male2.png`,
     qualification: 'Ph.D. in Linguistics, BZU Multan',
-    biography: 'Dr. Mansoor Shafiq joined the department in 2020. He coordinates communication skills courses across all BS majors and coordinates language laboratory sessions.',
+    biography: 'Mansoor Shafiq joined the department in 2020. He coordinates communication skills courses across all BS majors and coordinates language laboratory sessions.',
     researchInterests: ['Sociolinguistics', 'Bilingualism in KP', 'Critical Discourse Analysis'],
     publications: [
       'Shafiq, M. "Code-switching patterns among university students in Peshawar," World Englishes, 2023.'
@@ -399,13 +399,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-farhan-baig',
     deptId: 'political-science',
-    name: 'Prof. Farhan Baig',
+    name: 'Farhan Baig',
     designation: 'Assistant Professor',
     specialization: 'International Relations',
     email: 'farhan.ps@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male1.png`,
     qualification: 'M.Phil. in International Relations, Quaid-i-Azam University',
-    biography: 'Prof. Farhan Baig conducts courses on foreign policy and international organizations. He advises the college debating society.',
+    biography: 'Farhan Baig conducts courses on foreign policy and international organizations. He advises the college debating society.',
     researchInterests: ['CPEC and Regional Security', 'Foreign Policy of Pakistan'],
     publications: [],
     contactInfo: 'Room 303, Humanities Block, GC Peshawar'
@@ -430,13 +430,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-arman-malik',
     deptId: 'urdu',
-    name: 'Prof. Arman Malik',
+    name: 'Arman Malik',
     designation: 'Assistant Professor',
     specialization: 'Urdu Poetry',
     email: 'arman.urdu@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.Phil. in Urdu literature, Peshawar University',
-    biography: 'Prof. Arman Malik teaches classical ghazal history and coordinates drama productions for the student arts society.',
+    biography: 'Arman Malik teaches classical ghazal history and coordinates drama productions for the student arts society.',
     researchInterests: ['Classical Urdu Ghazal', 'Modern Progressive Poetry'],
     publications: [],
     contactInfo: 'Urdu Dept Room 12, GC Peshawar'
@@ -462,13 +462,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-shahid-khan',
     deptId: 'history',
-    name: 'Prof. Shahid Khan',
+    name: 'Shahid Khan',
     designation: 'Associate Professor & Head',
     specialization: 'South Asian History',
     email: 'shahid.history@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male2.png`,
     qualification: 'M.Phil. in History, University of Peshawar',
-    biography: 'Prof. Shahid Khan specializes in the regional history of the Khyber Pass and the Gandhara civilization. He organizes historical trips for students.',
+    biography: 'Shahid Khan specializes in the regional history of the Khyber Pass and the Gandhara civilization. He organizes historical trips for students.',
     researchInterests: ['Ancient Gandhara History', 'KP Political History'],
     publications: [],
     contactInfo: 'History Dept, Humanities Block, GC Peshawar'
@@ -477,13 +477,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'dr-yasir-shah',
     deptId: 'geography',
-    name: 'Dr. Yasir Shah',
+    name: 'Yasir Shah',
     designation: 'Assistant Professor & Head',
     specialization: 'GIS & Remote Sensing',
     email: 'yasir.geog@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male1.png`,
     qualification: 'Ph.D. in Geography, University of Peshawar',
-    biography: 'Dr. Yasir Shah teaches physical geography and guides mapping practicums using GIS platforms. He coordinates academic environmental surveys.',
+    biography: 'Yasir Shah teaches physical geography and guides mapping practicums using GIS platforms. He coordinates academic environmental surveys.',
     researchInterests: ['GIS applications in Urban Planning', 'Glacier Dynamics in Northern Pakistan'],
     publications: [
       'Shah, Y. "Urban Expansion Analysis of Peshawar Valley using RS Data," Pakistan Geographical Review, 2022.'
@@ -494,13 +494,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
   {
     id: 'prof-waheed-ullah',
     deptId: 'economics',
-    name: 'Prof. Waheed Ullah',
+    name: 'Waheed Ullah',
     designation: 'Associate Professor & Head',
     specialization: 'Development Economics & Public Finance',
     email: 'waheed.econ@gcpeshawar.edu.pk',
     photo: `${baseUrl}faculty/male1.png`,
     qualification: 'M.Phil. in Economics, University of Peshawar',
-    biography: 'Prof. Waheed Ullah has taught economics to intermediate and degree classes for over 15 years. He oversees budgeting seminars and acts as student advisor.',
+    biography: 'Waheed Ullah has taught economics to intermediate and degree classes for over 15 years. He oversees budgeting seminars and acts as student advisor.',
     researchInterests: ['Public Debt in Pakistan', 'KP Local Economy Dynamics'],
     publications: [],
     contactInfo: 'Economics Wing, Admin Block, GC Peshawar'

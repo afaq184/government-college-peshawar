@@ -1,31 +1,33 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { School, GraduationCap, Calendar, Clock, User, ShieldCheck, Phone, MapPin, Hash } from 'lucide-react';
 import Logo from '../components/Logo';
 import { SITE } from '../site';
+import { getStudentByToken, studentPhotoUrl } from '../data/studentsData';
 
 export default function StudentProfile() {
-  const student = {
-    name: 'Muhammad Ali Khan',
-    fatherName: 'Khan Muhammad',
-    class: 'BS Computer Science',
-    rollNo: 'GCP-2024-CS-042',
-    shift: 'Morning Shift',
-    section: 'A',
-    session: '2024–2028',
-    admissionNo: 'GCP-2024-8742',
-    regNo: 'UOP-2024-REG-9812',
-    dob: '15 March 2005',
-    bloodGroup: 'B+',
-    cnic: '17301-3829103-5',
-    email: 'm.alikhan@student.gcpeshawar.edu.pk',
-    phone: '+92 333 9876543',
-    address: 'Zaryab Colony, Faqirabad, Peshawar, KP',
-    status: 'Regular',
-    gpa: '3.82',
-    attendance: '94%',
-    photo: `${import.meta.env.BASE_URL}student/student.png`,
-  };
+  const { token } = useParams<{ token: string }>();
+  const student = getStudentByToken(token);
+
+  if (!student) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-[#0b1329] via-[#0f1b3a] to-[#122247] flex flex-col items-center justify-center px-4">
+        <h2 className="text-2xl font-serif font-bold text-white mb-3">Student Not Found</h2>
+        <p className="text-slate-400 text-sm mb-6 text-center max-w-md">
+          No student profile matches this URL. Enter a valid student link to view a profile.
+        </p>
+        <Link
+          to="/"
+          className="flex items-center gap-2 bg-academy-green hover:bg-academy-green-dark text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all"
+        >
+          <School size={16} />
+          College Website
+        </Link>
+      </div>
+    );
+  }
+
+  const photo = studentPhotoUrl(student.photoFile);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0b1329] via-[#0f1b3a] to-[#122247] flex flex-col justify-between items-center relative overflow-hidden px-4 py-8">
@@ -57,7 +59,7 @@ export default function StudentProfile() {
           </div>
           
           <Link 
-            to="/home" 
+            to="/" 
             className="flex items-center gap-2 bg-academy-green hover:bg-academy-green-dark text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all hover-scale shadow-lg hover:shadow-academy-green/20"
           >
             <School size={16} />
@@ -103,23 +105,23 @@ export default function StudentProfile() {
 
               {/* Photo & Primary ID details */}
               <div className="flex flex-col items-center text-center">
-                <div className="w-[150px] h-[150px] rounded-2xl overflow-hidden border-2 border-academy-gold/40 shadow-inner bg-slate-800 relative mb-4 p-1">
+                <div className="w-[200px] sm:w-[220px] aspect-[3/4] rounded-2xl overflow-hidden border-2 border-academy-gold/50 shadow-inner relative mb-5">
                   <img 
-                    src={student.photo} 
+                    src={photo} 
                     alt={student.name} 
-                    className="w-full h-full object-cover rounded-xl"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 <h2 className="text-xl font-serif font-bold text-white tracking-wide mb-1 leading-snug">
                   {student.name}
                 </h2>
-                <p className="text-xs font-sans text-academy-gold font-medium tracking-wide mb-4">
+                <p className="text-xs font-sans text-academy-gold font-medium tracking-wide mb-2">
                   S/O: {student.fatherName}
                 </p>
+                <p className="text-xs font-mono text-slate-300 tracking-wide">
+                  Roll No: {student.rollNo}
+                </p>
               </div>
-
-
-
 
             </div>
           </motion.div>
@@ -155,10 +157,12 @@ export default function StudentProfile() {
                     <span className="text-xs text-slate-400">Admission Number</span>
                     <span className="text-white font-medium font-mono">{student.admissionNo}</span>
                   </div>
-                  <div className="flex flex-col gap-1">
-                    <span className="text-xs text-slate-400">University Reg. Number</span>
-                    <span className="text-white font-medium font-mono">{student.regNo}</span>
-                  </div>
+                  {student.regNo && (
+                    <div className="flex flex-col gap-1">
+                      <span className="text-xs text-slate-400">University Reg. Number</span>
+                      <span className="text-white font-medium font-mono">{student.regNo}</span>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -185,10 +189,10 @@ export default function StudentProfile() {
                     <span className="text-white font-medium font-mono">{student.cnic}</span>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-xs text-slate-400">Enrollment Shift Type</span>
+                    <span className="text-xs text-slate-400">Enrollment Type</span>
                     <span className="text-white font-medium flex items-center gap-1.5">
                       <Clock size={14} className="text-slate-400" />
-                      {student.shift} (Morning Shift)
+                      {student.enrollmentType}
                     </span>
                   </div>
                 </div>

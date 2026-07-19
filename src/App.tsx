@@ -21,12 +21,9 @@ import StudentProfile from './pages/StudentProfile';
 const router = createHashRouter([
   {
     path: '/',
-    element: <StudentProfile />,
-  },
-  {
-    path: '/',
     element: <Layout />,
     children: [
+      { index: true, element: <Home /> },
       { path: 'home', element: <Home /> },
       { path: 'about', element: <About /> },
       { path: 'academics', element: <Academics /> },
@@ -41,6 +38,10 @@ const router = createHashRouter([
     ],
   },
   {
+    path: '/student/:token',
+    element: <StudentProfile />,
+  },
+  {
     path: '*',
     element: <Navigate to="/" replace />,
   },
@@ -49,4 +50,3 @@ const router = createHashRouter([
 export default function App() {
   return <RouterProvider router={router} />;
 }
-

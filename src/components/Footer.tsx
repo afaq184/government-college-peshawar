@@ -1,9 +1,10 @@
 import { Facebook, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
-import { SITE } from '../site';
+import { useSite } from '../context/SiteContext';
 
 export default function Footer() {
+  const SITE = useSite();
   return (
     <footer className="bg-slate-50 pt-16 pb-8 border-t border-slate-200 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

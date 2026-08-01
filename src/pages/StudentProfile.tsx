@@ -1,15 +1,76 @@
 import { Link, useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import { School, GraduationCap, Calendar, User, ShieldCheck, Phone, MapPin, Hash } from 'lucide-react';
+import {
+  School,
+  GraduationCap,
+  Calendar,
+  User,
+  ShieldCheck,
+  Phone,
+  MapPin,
+  Hash,
+  Loader2,
+  Ban,
+} from 'lucide-react';
 import Logo from '../components/Logo';
 import { SITE } from '../site';
-import { getStudentByToken, studentPhotoUrl } from '../data/studentsData';
+import {
+  resolveStudentByToken,
+  studentPhotoUrl,
+  type Student,
+  type StudentResolveResult,
+} from '../data/studentsData';
 
 export default function StudentProfile() {
   const { token } = useParams<{ token: string }>();
-  const student = getStudentByToken(token);
+  const [result, setResult] = useState<StudentResolveResult | null>(null);
 
-  if (!student) {
+  useEffect(() => {
+    let cancelled = false;
+    setResult(null);
+    (async () => {
+      const resolved = await resolveStudentByToken(token);
+      if (!cancelled) setResult(resolved);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [token]);
+
+  if (!result) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-[#0b1329] via-[#0f1b3a] to-[#122247] flex items-center justify-center">
+        <Loader2 className="animate-spin text-white/60" size={36} />
+      </div>
+    );
+  }
+
+  if (result.status === 'deleted') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-[#0b1329] via-[#0f1b3a] to-[#122247] flex flex-col items-center justify-center px-4">
+        <div className="max-w-md w-full text-center bg-white/5 border border-white/10 rounded-[2rem] p-10 shadow-2xl backdrop-blur-xl">
+          <div className="mx-auto mb-6 w-16 h-16 rounded-2xl bg-red-500/15 border border-red-400/30 flex items-center justify-center">
+            <Ban className="text-red-400" size={32} />
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-white mb-3">Profile removed</h2>
+          <p className="text-slate-300 text-sm leading-relaxed mb-8">
+            This student profile has been deleted by the college administration and is no longer available.
+            If you believe this is a mistake, please contact the college office.
+          </p>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 bg-academy-green hover:bg-academy-green-dark text-white px-5 py-2.5 rounded-xl text-xs font-bold transition-all"
+          >
+            <School size={16} />
+            College Website
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  if (result.status === 'not_found') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-[#0b1329] via-[#0f1b3a] to-[#122247] flex flex-col items-center justify-center px-4">
         <h2 className="text-2xl font-serif font-bold text-white mb-3">Student Not Found</h2>
@@ -27,7 +88,8 @@ export default function StudentProfile() {
     );
   }
 
-  const photo = studentPhotoUrl(student.photoFile);
+  const student: Student = result.student;
+  const photo = studentPhotoUrl(student);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0b1329] via-[#0f1b3a] to-[#122247] flex flex-col justify-between items-center relative overflow-hidden px-4 py-8">
@@ -105,12 +167,18 @@ export default function StudentProfile() {
 
               {/* Photo & Primary ID details */}
               <div className="flex flex-col items-center text-center">
-                <div className="w-[200px] sm:w-[220px] aspect-[3/4] rounded-2xl overflow-hidden border-2 border-academy-gold/50 shadow-inner relative mb-5">
-                  <img 
-                    src={photo} 
-                    alt={student.name} 
-                    className="w-full h-full object-cover object-top"
-                  />
+                <div className="w-[200px] sm:w-[220px] aspect-[3/4] rounded-2xl overflow-hidden border-2 border-academy-gold/50 shadow-inner relative mb-5 bg-white/5">
+                  {photo ? (
+                    <img 
+                      src={photo} 
+                      alt={student.name} 
+                      className="w-full h-full object-cover object-top"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-white/40 text-xs font-bold uppercase tracking-widest">
+                      No photo
+                    </div>
+                  )}
                 </div>
                 <h2 className="text-xl font-serif font-bold text-white tracking-wide mb-1 leading-snug">
                   {student.name}

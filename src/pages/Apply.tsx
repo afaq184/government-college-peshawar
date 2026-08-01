@@ -1,9 +1,10 @@
 import { motion } from 'motion/react';
 import { ExternalLink, CheckCircle2, MapPin, Phone, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { SITE } from '../site';
+import { useSite } from '../context/SiteContext';
 
 export default function Apply() {
+  const SITE = useSite();
   const navigate = useNavigate();
 
   return (

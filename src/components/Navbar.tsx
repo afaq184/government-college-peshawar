@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import Logo from './Logo';
-import { SITE } from '../site';
+import { useSite } from '../context/SiteContext';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -16,6 +16,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const SITE = useSite();
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 

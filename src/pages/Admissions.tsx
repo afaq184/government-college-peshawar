@@ -1,9 +1,10 @@
 import { Search, FileText, UserCheck, CreditCard, CheckCircle2, HelpCircle, ChevronDown, ExternalLink, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { SITE } from '../site';
+import { useSite } from '../context/SiteContext';
 
 export default function Admissions() {
+  const SITE = useSite();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const faqs = [

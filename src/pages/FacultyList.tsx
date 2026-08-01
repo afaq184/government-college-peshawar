@@ -87,18 +87,17 @@ export default function FacultyList() {
                 >
                   <div className="p-8">
                     {/* Faculty Photo Container */}
-                    <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-slate-100 relative shadow-inner group">
+                    <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 bg-slate-200 relative shadow-inner group">
                       <img
                         src={member.photo}
                         alt={member.name}
-                        className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                        className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                         onError={(e) => {
-                          // Fallback to styled SVG representation if image fails to load
                           (e.target as HTMLElement).style.display = 'none';
                         }}
                       />
                       {/* Overlay indicator */}
-                      <div className="absolute top-4 right-4 bg-academy-green text-white p-2 rounded-xl shadow-md">
+                      <div className="absolute top-4 right-4 z-10 bg-academy-green text-white p-2 rounded-xl shadow-md">
                         <GraduationCap size={18} />
                       </div>
                     </div>

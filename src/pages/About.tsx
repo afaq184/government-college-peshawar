@@ -1,10 +1,11 @@
 import { Eye, Target, Award, BookOpen, Landmark, ExternalLink } from 'lucide-react';
-import { SITE } from '../site';
-
-const chiefProctorImage = `${import.meta.env.BASE_URL}dr-usman-shah-katlang.png`;
-const aboutCampusImage = `${import.meta.env.BASE_URL}about-campus.jpg`;
+import { useSite } from '../context/SiteContext';
 
 export default function About() {
+  const SITE = useSite();
+  const aboutCampusImage = SITE.aboutImage || `${import.meta.env.BASE_URL}about-campus.jpg`;
+  const chiefProctorImage = SITE.chiefProctorImage || `${import.meta.env.BASE_URL}dr-usman-shah-katlang.png`;
+
   return (
     <div className="flex flex-col">
       <section className="pt-1 pb-14 md:pt-2 md:pb-16 bg-white overflow-hidden">

@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { BookOpen, Microscope, Leaf, Users, Landmark, FlaskConical, Globe2, ArrowRight } from 'lucide-react';
-import { SITE } from '../site';
+import { useSite } from '../context/SiteContext';
 import { DEPARTMENTS, Department } from '../data/facultyData';
 
 type Category = 'Physical Sciences' | 'Biological Sciences' | 'Social Sciences & Humanities' | 'Support Services';
 
 export default function Faculty() {
+  const SITE = useSite();
   const [activeCategory, setActiveCategory] = useState<Category>('Physical Sciences');
 
   const categories: { id: Category; label: string; icon: React.ReactNode }[] = [
@@ -169,67 +170,131 @@ export default function Faculty() {
                 </motion.div>
               ))
             ) : (
-              // Support Services listing
-              supportServices.map((service) => (
-                <motion.div
-                  layout
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.3 }}
-                  key={service.id}
-                  className="bg-white border border-slate-100 rounded-[2.5rem] p-10 md:p-12 shadow-sm hover-lift hover-glow flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="flex justify-between items-start mb-6">
-                      <div className="bg-academy-green/10 w-14 h-14 rounded-2xl flex items-center justify-center text-academy-green">
-                        {service.icon}
+              <>
+                {/* Higher Education Department + other Support Services depts */}
+                {filteredDepts.map((dept) => (
+                  <motion.div
+                    layout
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.3 }}
+                    key={dept.id}
+                    className="bg-white border border-slate-100 rounded-[2.5rem] p-10 md:p-12 shadow-sm hover-lift hover-glow flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex justify-between items-start mb-6">
+                        <div className="bg-academy-green/10 w-14 h-14 rounded-2xl flex items-center justify-center text-academy-green">
+                          <Landmark size={28} />
+                        </div>
+                        <span className="text-xs font-bold uppercase tracking-widest text-academy-gold bg-academy-gold/10 px-3 py-1 rounded-full">
+                          Support & Services
+                        </span>
                       </div>
-                      <span className="text-xs font-bold uppercase tracking-widest text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
-                        Support Service
+
+                      <h3 className="text-2xl sm:text-3xl font-bold text-academy-green mb-4">
+                        {dept.name}
+                      </h3>
+
+                      <div className="mb-6">
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Overview</h4>
+                        <p className="text-slate-600 text-sm leading-relaxed text-justify">
+                          {dept.overview}
+                        </p>
+                      </div>
+
+                      <div className="mb-8">
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Key Functions</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {dept.programs.map((p, index) => (
+                            <span
+                              key={index}
+                              className="bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-xl cursor-default"
+                            >
+                              {p}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="pt-6 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-xs font-bold text-slate-400 flex items-center gap-1.5">
+                        <Users size={16} /> Verified Academic Roster
                       </span>
+                      <Link
+                        to={`/departments/${dept.id}/faculty`}
+                        className="btn-primary flex items-center gap-2 text-sm py-3 px-6 hover-scale hover-glow"
+                      >
+                        Faculty Members
+                        <ArrowRight size={16} />
+                      </Link>
                     </div>
+                  </motion.div>
+                ))}
 
-                    <h3 className="text-2xl sm:text-3xl font-bold text-academy-green mb-4">
-                      {service.name}
-                    </h3>
-                    
-                    <div className="mb-6">
-                      <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Overview</h4>
-                      <p className="text-slate-600 text-sm leading-relaxed text-justify">
-                        {service.overview}
-                      </p>
-                    </div>
+                {/* Static support offices */}
+                {supportServices.map((service) => (
+                  <motion.div
+                    layout
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ duration: 0.3 }}
+                    key={service.id}
+                    className="bg-white border border-slate-100 rounded-[2.5rem] p-10 md:p-12 shadow-sm hover-lift hover-glow flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex justify-between items-start mb-6">
+                        <div className="bg-academy-green/10 w-14 h-14 rounded-2xl flex items-center justify-center text-academy-green">
+                          {service.icon}
+                        </div>
+                        <span className="text-xs font-bold uppercase tracking-widest text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+                          Support Service
+                        </span>
+                      </div>
 
-                    <div className="mb-8">
-                      <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Key Functions</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {service.programs.map((f, index) => (
-                          <span
-                            key={index}
-                            className="bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-xl cursor-default"
-                          >
-                            {f}
-                          </span>
-                        ))}
+                      <h3 className="text-2xl sm:text-3xl font-bold text-academy-green mb-4">
+                        {service.name}
+                      </h3>
+
+                      <div className="mb-6">
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Overview</h4>
+                        <p className="text-slate-600 text-sm leading-relaxed text-justify">
+                          {service.overview}
+                        </p>
+                      </div>
+
+                      <div className="mb-8">
+                        <h4 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Key Functions</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {service.programs.map((f, index) => (
+                            <span
+                              key={index}
+                              className="bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-xl cursor-default"
+                            >
+                              {f}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="pt-6 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-400">
-                      General Administration Wing
-                    </span>
-                    <Link
-                      to="/contact"
-                      className="bg-slate-100 hover:bg-slate-200 text-academy-green text-sm font-bold py-3 px-6 rounded-xl flex items-center gap-2 hover-scale"
-                    >
-                      Contact Department
-                      <ArrowRight size={16} />
-                    </Link>
-                  </div>
-                </motion.div>
-              ))
+                    <div className="pt-6 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-xs font-bold text-slate-400">
+                        General Administration Wing
+                      </span>
+                      <Link
+                        to="/contact"
+                        className="bg-slate-100 hover:bg-slate-200 text-academy-green text-sm font-bold py-3 px-6 rounded-xl flex items-center gap-2 hover-scale"
+                      >
+                        Contact Department
+                        <ArrowRight size={16} />
+                      </Link>
+                    </div>
+                  </motion.div>
+                ))}
+              </>
             )}
           </motion.div>
         </div>

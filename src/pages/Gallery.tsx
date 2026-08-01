@@ -1,58 +1,12 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
-import { Filter, ExternalLink } from 'lucide-react';
-import { SITE } from '../site';
-
-const base = import.meta.env.BASE_URL;
-
-/** College-submitted photography in `public/gallery/`. More albums: SITE.facebookPhotosUrl */
-const titles = [
-  'Annual Sports Day Inauguration',
-  'College Science Lab Session',
-  'Principal addressing the Students at Shahi Bagh Event',
-  'Faculty Meeting in Staff Room',
-  'Students attending Intermediate Physics Lecture',
-  'Inter-College Cricket Tournament',
-  'Tree Plantation Drive on Campus Lawns',
-  'Annual Prize Distribution Ceremony',
-  'Seminar on Modern Higher Education in KP',
-  'Board Examination in Main Hall',
-  'Language & Literature Society Discussion',
-  'Student Counseling and Career Workshop',
-  'Library Study & Reference Section',
-  'Independence Day Celebrations',
-  'KP HED Officials Visit to Campus',
-  'Chemistry Practical Session',
-  'Alumni Reunion Meet',
-  'College Main Building Entrance',
-  'Computer Science Lab Session',
-  'Faculty Group Photo',
-  'Parent-Teacher Association Meeting',
-  'Students Celebrating Exam Success',
-  'Inter-Class Debate Competition',
-  'Fine Arts Society Exhibition',
-  'Staff Seminar on Academic Excellence',
-  'Morning Assembly and National Anthem',
-  'Botanical Garden Tour',
-  'College Quiz Competition Winners'
-];
-
-const categories = ['Campus', 'Academics', 'Events'];
-
-const excludedImages = [11, 12, 26, 28];
-
-const galleryItems = Array.from({ length: 28 }, (_, i) => {
-  const id = i + 1;
-  return {
-    id,
-    category: categories[i % categories.length],
-    image: `${base}gallery/p${id}.jpeg`,
-    title: titles[i] || `Campus Highlight ${id}`,
-    imgClass: id === 3 ? 'object-contain bg-slate-950 p-2' : 'object-cover object-center',
-  };
-}).filter((item) => !excludedImages.includes(item.id));
+import { Filter, ExternalLink, Loader2 } from 'lucide-react';
+import { useSite } from '../context/SiteContext';
+import { useGallery } from '../hooks/useCms';
 
 export default function Gallery() {
+  const SITE = useSite();
+  const { items: galleryItems, loading } = useGallery();
   const [filter, setFilter] = useState('All');
   const categories = ['All', 'Campus', 'Academics', 'Events'];
 
@@ -119,13 +73,19 @@ export default function Gallery() {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className={`w-full h-full transition-all duration-700 group-hover:scale-110 ${item.imgClass}`}
+                  className={`w-full h-full transition-all duration-700 group-hover:scale-110 ${item.imgClass || 'object-cover object-center'}`}
                   loading="lazy"
                   decoding="async"
                 />
               </motion.div>
             ))}
           </div>
+
+          {loading && (
+            <div className="flex justify-center py-6 text-slate-400">
+              <Loader2 className="animate-spin" size={24} />
+            </div>
+          )}
 
           <div className="mt-20 text-center space-y-4">
             <a

@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Public website reads; admin CMS writes from the browser.
+    // Tighten with Firebase Auth before production if the admin password is shared widely.
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

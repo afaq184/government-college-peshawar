@@ -1,29 +1,16 @@
 import { decryptStudentToken } from '../utils/studentToken';
+import { fetchStudentBySlug, isStudentDeleted } from '../lib/studentService';
+import type { StudentRecord } from '../types/student';
+import { SELF_FINANCE_STUDENTS } from './selfFinanceStudents';
 
-export interface Student {
-  /** Internal id: name-roll (never used in public URLs) */
-  slug: string;
-  name: string;
-  fatherName: string;
-  class: string;
-  rollNo: string;
-  /** Enrollment type (e.g. BS Level, Morning Shift, Self Finance) */
-  enrollmentType: string;
-  session: string;
-  admissionNo: string;
-  /** Omit for students without a university registration number */
-  regNo?: string;
-  dob: string;
-  bloodGroup: string;
-  cnic: string;
-  phone: string;
-  address: string;
-  status: string;
-  /** Exact filename under public/student/ */
-  photoFile: string;
-}
+export type Student = StudentRecord;
 
-export const STUDENTS: Student[] = [
+export type StudentResolveResult =
+  | { status: 'ok'; student: Student }
+  | { status: 'deleted' }
+  | { status: 'not_found' };
+
+const DEMO_STUDENTS: Student[] = [
   {
     slug: 'muhammad-ali-khan-2181',
     name: 'Muhammad Ali Khan',
@@ -95,13 +82,25 @@ export const STUDENTS: Student[] = [
   },
 ];
 
+/** Demo samples + imported Self Finance cohort */
+export const STUDENTS: Student[] = [...DEMO_STUDENTS, ...SELF_FINANCE_STUDENTS];
+
 export function getStudentBySlug(slug: string | undefined): Student | undefined {
   if (!slug) return undefined;
   return STUDENTS.find((s) => s.slug === slug.toLowerCase());
 }
 
-export function studentPhotoUrl(photoFile: string): string {
-  return `${import.meta.env.BASE_URL}student/${encodeURIComponent(photoFile)}`;
+export function studentPhotoUrl(student: Pick<Student, 'photoUrl' | 'photoFile'>): string {
+  if (student.photoUrl) return student.photoUrl;
+  if (student.photoFile) {
+    // Encode each path segment so folders like self-finance/ stay as real slashes
+    const encoded = student.photoFile
+      .split('/')
+      .map((part) => encodeURIComponent(part))
+      .join('/');
+    return `${import.meta.env.BASE_URL}student/${encoded}`;
+  }
+  return '';
 }
 
 /** Resolve a student from an encrypted URL token only (plain name-roll URLs fail). */
@@ -109,6 +108,30 @@ export function getStudentByToken(token: string | undefined): Student | undefine
   const slug = decryptStudentToken(token);
   if (!slug) return undefined;
   return getStudentBySlug(slug);
+}
+
+/** Local first, then remote. Honours admin deletions. */
+export async function resolveStudentByToken(token: string | undefined): Promise<StudentResolveResult> {
+  const slug = decryptStudentToken(token);
+  if (!slug) return { status: 'not_found' };
+
+  try {
+    if (await isStudentDeleted(slug)) return { status: 'deleted' };
+  } catch {
+    /* continue lookup */
+  }
+
+  const local = getStudentBySlug(slug);
+  if (local) return { status: 'ok', student: local };
+
+  try {
+    const remote = await fetchStudentBySlug(slug);
+    if (remote) return { status: 'ok', student: remote };
+  } catch {
+    /* ignore */
+  }
+
+  return { status: 'not_found' };
 }
 
 export { encryptStudentSlug, decryptStudentToken } from '../utils/studentToken';

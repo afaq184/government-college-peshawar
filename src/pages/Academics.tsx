@@ -1,10 +1,12 @@
 import { Book, Globe, Star, Trophy, Microscope, ChevronRight, CheckCircle2, FlaskConical } from 'lucide-react';
-import { SITE, PROGRAMS } from '../site';
+import { PROGRAMS } from '../site';
+import { useSite } from '../context/SiteContext';
 
 const libraryBanner =
   'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80';
 
 export default function Academics() {
+  const SITE = useSite();
   return (
     <div className="flex flex-col">
       <section className="pt-1 pb-14 md:pt-2 md:pb-16 bg-white text-center">

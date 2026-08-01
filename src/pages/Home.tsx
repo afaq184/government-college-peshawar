@@ -2,13 +2,13 @@ import { ArrowRight, ExternalLink, Calendar, Award, Users, GraduationCap, Micros
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { INTRO_VIDEO_URL } from '../media';
-import { SITE } from '../site';
-
-/** Campus banner — file lives in `public/hero-campus.jpg` (Vite serves from site root). */
-const heroImage = `${import.meta.env.BASE_URL}hero-campus.jpg`;
-const principalImage = `${import.meta.env.BASE_URL}principal.jpg`;
+import { useSite } from '../context/SiteContext';
 
 export default function Home() {
+  const SITE = useSite();
+  const heroImage = SITE.heroImage || `${import.meta.env.BASE_URL}hero-campus.jpg`;
+  const principalImage = SITE.principalImage || `${import.meta.env.BASE_URL}principal.jpg`;
+
   return (
     <div className="flex flex-col">
       <section className="relative flex min-h-[min(72svh,720px)] max-h-[900px] items-start overflow-hidden pb-20 pt-1 md:min-h-[min(78svh,780px)] md:pb-24 md:pt-2">

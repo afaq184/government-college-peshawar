@@ -39,11 +39,11 @@ export default function FacultyProfile() {
               
               {/* Photo & Identity Card */}
               <div className="bg-white border border-slate-100 rounded-3xl p-6 md:p-8 shadow-sm text-center">
-                <div className="aspect-square rounded-2xl overflow-hidden mb-5 bg-slate-100 shadow-inner max-w-[200px] md:max-w-[260px] mx-auto relative border border-slate-100">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-5 bg-slate-200 shadow-inner max-w-[220px] md:max-w-[280px] w-full mx-auto relative border border-slate-100">
                   <img
                     src={member.photo}
                     alt={member.name}
-                    className="w-full h-full object-cover object-center"
+                    className="absolute inset-0 w-full h-full object-cover object-top"
                   />
                 </div>
                 
@@ -169,22 +169,24 @@ export default function FacultyProfile() {
                 </div>
 
                 {/* Research Interests */}
-                <div>
-                  <h2 className="text-xl md:text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-5 flex items-center gap-3">
-                    <Bookmark size={22} className="text-academy-gold shrink-0" />
-                    Research Interests
-                  </h2>
-                  <div className="flex flex-wrap gap-2 md:gap-2.5">
-                    {member.researchInterests.map((interest, index) => (
-                      <span
-                        key={index}
-                        className="bg-academy-green/5 border border-academy-green/10 text-academy-green text-xs md:text-sm font-semibold px-3 md:px-4 py-2 rounded-xl"
-                      >
-                        {interest}
-                      </span>
-                    ))}
+                {member.researchInterests.length > 0 && (
+                  <div>
+                    <h2 className="text-xl md:text-2xl font-bold text-academy-green border-b border-slate-100 pb-4 mb-5 flex items-center gap-3">
+                      <Bookmark size={22} className="text-academy-gold shrink-0" />
+                      Research Interests
+                    </h2>
+                    <div className="flex flex-wrap gap-2 md:gap-2.5">
+                      {member.researchInterests.map((interest, index) => (
+                        <span
+                          key={index}
+                          className="bg-academy-green/5 border border-academy-green/10 text-academy-green text-xs md:text-sm font-semibold px-3 md:px-4 py-2 rounded-xl"
+                        >
+                          {interest}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {/* Publications */}
                 <div>

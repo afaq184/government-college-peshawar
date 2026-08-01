@@ -209,13 +209,13 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     id: 'salman-ejaz',
     deptId: 'statistics',
     name: 'Salman Ejaz',
-    designation: 'Associate Professor / Principal',
+    designation: 'Associate Professor',
     specialization: 'Statistics, Artificial Intelligence & Emerging Technologies',
     email: 'salmanejaz5@gmail.com',
     photo: facultyPhoto('salman ejaz.jpg'),
     qualification: 'M.Phil Statistics',
     biography:
-      'My name is Salman Ejaz, and I am working as Associate Professor of Statistics and Principal of Government College Peshawar. I am passionate about education, leadership, and lifelong learning. I strive to make a positive impact by improving educational standards and supporting students and teachers in achieving their goals. I have a strong interest in research, statistics, artificial intelligence, and emerging technologies. I believe in integrity, hard work, and continuous self-improvement, and I enjoy finding practical solutions to both academic and technical challenges.',
+      'My name is Salman Ejaz, and I am working as Associate Professor of Statistics at Government College Peshawar. I am passionate about education, leadership, and lifelong learning. I strive to make a positive impact by improving educational standards and supporting students and teachers in achieving their goals. I have a strong interest in research, statistics, artificial intelligence, and emerging technologies. I believe in integrity, hard work, and continuous self-improvement, and I enjoy finding practical solutions to both academic and technical challenges.',
     researchInterests: ['Statistics', 'Artificial Intelligence', 'Emerging Technologies'],
     publications: [],
     contactInfo: 'Government College Peshawar'
@@ -319,22 +319,6 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     contactInfo: 'Government College Peshawar'
   },
 
-  {
-    id: 'tauseef-ali',
-    deptId: 'physics',
-    name: 'Tauseef Ali',
-    designation: 'Assistant Professor',
-    specialization: 'Nanomaterials, Sensors & Thin-Film Technology',
-    email: 'qazitauseef.ali@gmail.com',
-    photo: facultyPhoto('Tauseef Ali.jpg'),
-    qualification: 'PhD Physics',
-    biography:
-      'Tauseef Ali, an Assistant Professor of Physics at Government College Peshawar. I did my PhD in Physics and have several years of teaching and research experience. My research interests include nanomaterials, sensors, and thin-film technology. I am committed to excellence in teaching, research, and academic development.',
-    researchInterests: ['Nanomaterials', 'Thin Film Sensors'],
-    publications: [],
-    contactInfo: 'Government College Peshawar'
-  },
-
   // ── Higher Education Department (Support & Services) ───────────────
   {
     id: 'dr-mudassir-shah',
@@ -350,6 +334,21 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     researchInterests: ['Molecular Biology', 'Parasitology'],
     publications: ['19 research publications'],
     contactInfo: 'Department of Zoology, Govt College Peshawar'
+  },
+  {
+    id: 'tauseef-ali',
+    deptId: 'higher-education-department',
+    name: 'Tauseef Ali',
+    designation: 'Assistant Professor',
+    specialization: 'Nanomaterials, Thin film sensors',
+    email: 'qazitauseef.ali@gmail.com',
+    photo: facultyPhoto('Tauseef Ali.jpg'),
+    qualification: 'PhD',
+    biography:
+      'Tauseef Ali, an Assistant Professor of Physics at Government College Peshawar. I did my PhD in Physics and have several years of teaching and research experience. My research interests include nanomaterials, sensors, and thin-film technology. I am committed to excellence in teaching, research, and academic development.',
+    researchInterests: ['Nanomaterials', 'Thin Film Sensors'],
+    publications: [],
+    contactInfo: 'Government College Peshawar'
   },
 
   // ── BS Mathematics ─────────────────────────────────────────────────

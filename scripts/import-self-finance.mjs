@@ -105,7 +105,7 @@ for (const row of rows) {
   students.push(student);
 
   const token = encryptStudentSlug(slug);
-  const pathUrl = `#/student/${token}`;
+  const pathUrl = `/student/${token}`;
   urlRows.push({
     Name: name,
     'Father Name': student.fatherName,
@@ -163,7 +163,7 @@ fs.writeFileSync(
   urlsTxt,
   `Self Finance student profile links (open on the college site)\n` +
     `Total: ${urlRows.length}\n` +
-    `Format: RollNo \\t Name \\t #/student/<token>\n\n` +
+    `Format: RollNo \\t Name \\t /student/<token>\n\n` +
     txt +
     '\n',
   'utf8',

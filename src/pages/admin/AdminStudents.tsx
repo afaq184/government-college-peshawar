@@ -72,7 +72,7 @@ export default function AdminStudents() {
 
   const openProfile = (student: StudentRecord) => {
     const token = encryptStudentSlug(student.slug);
-    window.location.hash = `#/student/${token}`;
+    window.open(`/student/${token}`, '_blank', 'noopener,noreferrer');
   };
 
   const handleDelete = async (student: StudentRecord) => {

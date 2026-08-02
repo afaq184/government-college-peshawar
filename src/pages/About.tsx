@@ -1,5 +1,6 @@
 import { Eye, Target, Award, BookOpen, Landmark, ExternalLink } from 'lucide-react';
 import { useSite } from '../context/SiteContext';
+import StableImage from '../components/StableImage';
 
 export default function About() {
   const SITE = useSite();
@@ -29,7 +30,7 @@ export default function About() {
             </div>
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 transform-gpu">
-                <img
+                <StableImage
                   src={aboutCampusImage}
                   alt="Government College Peshawar - main campus building"
                   className="h-full w-full object-cover object-center"
@@ -162,11 +163,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-[3rem] overflow-hidden shadow-xl flex flex-col lg:flex-row">
             <div className="lg:w-1/3 aspect-square lg:aspect-auto min-h-[260px] relative bg-slate-200">
-              <img
+              <StableImage
                 src={chiefProctorImage}
                 alt={`${SITE.chiefProctor}, Chief Proctor`}
                 className="absolute inset-0 h-full w-full object-cover object-top"
-                loading="lazy"
+                loading="eager"
                 decoding="async"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 pt-20">

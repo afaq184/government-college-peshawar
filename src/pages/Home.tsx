@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { INTRO_VIDEO_URL } from '../media';
 import { useSite } from '../context/SiteContext';
+import StableImage from '../components/StableImage';
 
 export default function Home() {
   const SITE = useSite();
@@ -13,7 +14,7 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="relative flex min-h-[min(72svh,720px)] max-h-[900px] items-start overflow-hidden pb-20 pt-1 md:min-h-[min(78svh,780px)] md:pb-24 md:pt-2">
         <div className="absolute inset-0 z-0">
-          <img
+          <StableImage
             src={heroImage}
             alt={`${SITE.shortName} campus - main building with Pakistan flag`}
             className="absolute inset-0 h-full w-full min-h-full min-w-full object-cover object-center"
@@ -87,17 +88,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
               className="relative"
             >
               <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative bg-slate-200">
-                <img
+                <StableImage
                   src={principalImage}
                   alt={`${SITE.principal}, Principal`}
                   className="absolute inset-0 h-full w-full object-cover object-[center_15%]"
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-academy-green-dark via-academy-green-dark/75 to-transparent px-6 pb-6 pt-28">

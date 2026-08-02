@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Plus, Pencil, Trash2, Loader2, X, Upload } from 'lucide-react';
 import { fetchNews, addNewsItem, updateNewsItem, deleteNewsItem } from '../../services/cmsService';
 import { uploadToImgBB } from '../../lib/imgbb';
+import StableImage, { waitForImage } from '../../components/StableImage';
 import type { NewsItem } from '../../types/cms';
 import { SITE } from '../../site';
 
@@ -79,14 +80,21 @@ export default function AdminNews() {
 
   const handleImageUpload = async (file: File | null) => {
     if (!file) return;
+    const previous = form.image;
+    const localPreview = URL.createObjectURL(file);
+    setForm((f) => ({ ...f, image: localPreview }));
     setUploading(true);
     setError('');
     try {
       const result = await uploadToImgBB(file);
-      setForm((f) => ({ ...f, image: result.displayUrl || result.url }));
+      const remote = result.displayUrl || result.url;
+      await waitForImage(remote);
+      setForm((f) => ({ ...f, image: remote }));
     } catch (e) {
+      setForm((f) => ({ ...f, image: previous }));
       setError(e instanceof Error ? e.message : 'Image upload failed');
     } finally {
+      window.setTimeout(() => URL.revokeObjectURL(localPreview), 1000);
       setUploading(false);
     }
   };
@@ -239,11 +247,19 @@ export default function AdminNews() {
                   accept="image/*"
                   className="hidden"
                   disabled={uploading}
-                  onChange={(e) => void handleImageUpload(e.target.files?.[0] ?? null)}
+                  onChange={(e) => {
+                    const selected = e.target.files?.[0] ?? null;
+                    e.target.value = '';
+                    void handleImageUpload(selected);
+                  }}
                 />
               </label>
               {form.image && (
-                <img src={form.image} alt="Preview" className="mt-4 h-32 rounded-xl object-cover border border-slate-100" />
+                <StableImage
+                  src={form.image}
+                  alt="Preview"
+                  className="mt-4 h-32 w-auto max-w-full rounded-xl object-cover border border-slate-100 bg-slate-100"
+                />
               )}
             </div>
           </div>

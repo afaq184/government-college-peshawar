@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchGallery, fetchNews, fetchSiteSettings } from '../services/cmsService';
-import { getDefaultGallery, getDefaultNews, getDefaultSiteSettings } from '../data/cmsDefaults';
+import { getDefaultGallery, getDefaultNews, getDefaultSiteSettings, resolveSiteSettings } from '../data/cmsDefaults';
 import type { GalleryItem, NewsItem, SiteSettings } from '../types/cms';
 
 function withLocalIds<T extends { id?: string }>(items: Omit<T, 'id'>[], prefix: string): (T & { id: string })[] {
@@ -106,18 +106,7 @@ export function useSiteSettings() {
       try {
         const data = await fetchSiteSettings();
         if (cancelled) return;
-        if (data) {
-          const defaults = getDefaultSiteSettings();
-          const merged = { ...defaults, ...data };
-          // Prefer build defaults when Firebase still has the previous principal or deleted local photo
-          if (!data.principal || /shafi/i.test(data.principal)) {
-            merged.principal = defaults.principal;
-          }
-          if (!data.principalImage || /principal\.jpe?g/i.test(data.principalImage)) {
-            merged.principalImage = defaults.principalImage;
-          }
-          setSettings(merged);
-        }
+        if (data) setSettings(resolveSiteSettings(data));
       } catch {
         /* keep defaults */
       } finally {

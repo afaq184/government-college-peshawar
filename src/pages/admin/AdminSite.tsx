@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Loader2, Save, Upload } from 'lucide-react';
 import { fetchSiteSettings, saveSiteSettings } from '../../services/cmsService';
-import { getDefaultSiteSettings } from '../../data/cmsDefaults';
+import { getDefaultSiteSettings, resolveSiteSettings } from '../../data/cmsDefaults';
 import { uploadToImgBB } from '../../lib/imgbb';
+import StableImage, { waitForImage } from '../../components/StableImage';
 import type { SiteSettings } from '../../types/cms';
+
+type ImageKey = 'heroImage' | 'principalImage' | 'aboutImage' | 'chiefProctorImage';
 
 export default function AdminSite() {
   const [form, setForm] = useState<SiteSettings>(getDefaultSiteSettings());
@@ -17,7 +20,7 @@ export default function AdminSite() {
     (async () => {
       try {
         const data = await fetchSiteSettings();
-        if (data) setForm({ ...getDefaultSiteSettings(), ...data });
+        setForm(resolveSiteSettings(data));
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Failed to load settings');
       } finally {
@@ -30,19 +33,24 @@ export default function AdminSite() {
     setForm((f) => ({ ...f, [key]: value }));
   };
 
-  const uploadField = async (
-    field: 'heroImage' | 'principalImage' | 'aboutImage' | 'chiefProctorImage',
-    file: File | null,
-  ) => {
+  const uploadField = async (field: ImageKey, file: File | null) => {
     if (!file) return;
+    const previous = form[field];
+    const localPreview = URL.createObjectURL(file);
+    set(field, localPreview);
     setUploading(field);
     setError('');
     try {
       const result = await uploadToImgBB(file);
-      set(field, result.displayUrl || result.url);
+      const remote = result.displayUrl || result.url;
+      await waitForImage(remote);
+      set(field, remote);
     } catch (e) {
+      set(field, previous);
       setError(e instanceof Error ? e.message : 'Upload failed');
     } finally {
+      // Defer revoke so the <img> has already switched to the remote URL
+      window.setTimeout(() => URL.revokeObjectURL(localPreview), 1000);
       setUploading(null);
     }
   };
@@ -92,7 +100,7 @@ export default function AdminSite() {
     </div>
   );
 
-  const imageField = (label: string, key: 'heroImage' | 'principalImage' | 'aboutImage' | 'chiefProctorImage') => (
+  const imageField = (label: string, key: ImageKey) => (
     <div>
       <label className="block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">{label}</label>
       <label className="btn-secondary cursor-pointer inline-flex items-center gap-2 py-2.5 px-4">
@@ -103,10 +111,20 @@ export default function AdminSite() {
           accept="image/*"
           className="hidden"
           disabled={!!uploading}
-          onChange={(e) => void uploadField(key, e.target.files?.[0] ?? null)}
+          onChange={(e) => {
+            const selected = e.target.files?.[0] ?? null;
+            e.target.value = '';
+            void uploadField(key, selected);
+          }}
         />
       </label>
-      {form[key] && <img src={form[key]} alt={label} className="mt-3 h-28 rounded-xl object-cover border border-slate-100" />}
+      {form[key] && (
+        <StableImage
+          src={form[key]!}
+          alt={label}
+          className="mt-3 h-28 w-28 rounded-xl object-cover border border-slate-100 bg-slate-100"
+        />
+      )}
     </div>
   );
 

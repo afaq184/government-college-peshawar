@@ -224,3 +224,17 @@ export function getDefaultSiteSettings(): SiteSettings {
     chiefProctorImage: `${base}dr-usman-shah-katlang.png`,
   };
 }
+
+/** Merge Firebase site settings with build defaults (keeps new principal when CMS is stale). */
+export function resolveSiteSettings(data: Partial<SiteSettings> | null | undefined): SiteSettings {
+  const defaults = getDefaultSiteSettings();
+  if (!data) return defaults;
+  const merged = { ...defaults, ...data };
+  if (!data.principal || /shafi/i.test(data.principal)) {
+    merged.principal = defaults.principal;
+  }
+  if (!data.principalImage || /principal\.jpe?g/i.test(data.principalImage)) {
+    merged.principalImage = defaults.principalImage;
+  }
+  return merged;
+}

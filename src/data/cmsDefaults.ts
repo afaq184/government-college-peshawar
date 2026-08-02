@@ -219,7 +219,7 @@ export function getDefaultSiteSettings(): SiteSettings {
     mapQuery: SITE.mapQuery,
     vision: SITE.vision,
     heroImage: `${base}hero-campus.jpg`,
-    principalImage: `${base}principal.jpg`,
+    principalImage: `${base}principle.png`,
     aboutImage: `${base}about-campus.jpg`,
     chiefProctorImage: `${base}dr-usman-shah-katlang.png`,
   };

@@ -7,7 +7,7 @@ import { useSite } from '../context/SiteContext';
 export default function Home() {
   const SITE = useSite();
   const heroImage = SITE.heroImage || `${import.meta.env.BASE_URL}hero-campus.jpg`;
-  const principalImage = SITE.principalImage || `${import.meta.env.BASE_URL}principal.jpg`;
+  const principalImage = SITE.principalImage || `${import.meta.env.BASE_URL}principle.png`;
 
   return (
     <div className="flex flex-col">

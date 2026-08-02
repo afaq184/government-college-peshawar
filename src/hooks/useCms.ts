@@ -106,7 +106,18 @@ export function useSiteSettings() {
       try {
         const data = await fetchSiteSettings();
         if (cancelled) return;
-        if (data) setSettings({ ...getDefaultSiteSettings(), ...data });
+        if (data) {
+          const defaults = getDefaultSiteSettings();
+          const merged = { ...defaults, ...data };
+          // Prefer build defaults when Firebase still has the previous principal or deleted local photo
+          if (!data.principal || /shafi/i.test(data.principal)) {
+            merged.principal = defaults.principal;
+          }
+          if (!data.principalImage || /principal\.jpe?g/i.test(data.principalImage)) {
+            merged.principalImage = defaults.principalImage;
+          }
+          setSettings(merged);
+        }
       } catch {
         /* keep defaults */
       } finally {

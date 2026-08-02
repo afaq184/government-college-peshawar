@@ -7,7 +7,7 @@ export const SITE = {
     'A historic public sector college near Shahi Bagh, Peshawar, offering Intermediate, Degree, and BS programmes affiliated with the University of Peshawar and BISE Peshawar.',
   established: 1959,
   campusSince: 1959,
-  principal: 'Prof. Shafi Ullah Khattak',
+  principal: 'Prof. Muhammad Anwar Khan Khattak',
   chiefProctor: 'Dr. Usman Shah Katlang',
   addressLine: 'Zaryab Colony, Faqirabad',
   city: 'Peshawar, Khyber Pakhtunkhwa, Pakistan',

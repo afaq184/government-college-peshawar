@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Images, Newspaper, Settings, Database, Loader2, CheckCircle2, Users } from 'lucide-react';
+import { Images, Newspaper, Settings, Database, Loader2, CheckCircle2, Users, UserX } from 'lucide-react';
 import { saveSiteSettings, fetchSiteSettings } from '../../services/cmsService';
 import { getDefaultSiteSettings } from '../../data/cmsDefaults';
 import { adminPath } from '../../lib/adminGate';
@@ -31,6 +31,7 @@ export default function AdminDashboard() {
     { to: adminPath('gallery'), icon: Images, title: 'Gallery', desc: 'Add new campus photos. Originals stay on the site.' },
     { to: adminPath('news'), icon: Newspaper, title: 'News', desc: 'Add new notices. Existing notifications stay; new ones appear too.' },
     { to: adminPath('students'), icon: Users, title: 'Students', desc: 'View student profiles by category and remove access when needed.' },
+    { to: adminPath('deleted-students'), icon: UserX, title: 'Deleted Students', desc: 'Review soft-deleted profiles by category and restore when needed.' },
     { to: adminPath('site'), icon: Settings, title: 'Site settings', desc: 'Update college name, contact, and key images.' },
   ];
 

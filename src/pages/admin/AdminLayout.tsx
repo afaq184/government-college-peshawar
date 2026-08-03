@@ -8,6 +8,7 @@ import {
   LogOut,
   ExternalLink,
   Users,
+  UserX,
   Menu,
   X,
 } from 'lucide-react';
@@ -66,6 +67,9 @@ function AdminSidebar({
         </NavLink>
         <NavLink to={adminPath('students')} className={linkClass} onClick={onNavigate}>
           <Users size={18} /> Students
+        </NavLink>
+        <NavLink to={adminPath('deleted-students')} className={linkClass} onClick={onNavigate}>
+          <UserX size={18} /> Deleted Students
         </NavLink>
         <NavLink to={adminPath('site')} className={linkClass} onClick={onNavigate}>
           <Settings size={18} /> Site settings

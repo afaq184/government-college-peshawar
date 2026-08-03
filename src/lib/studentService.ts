@@ -15,6 +15,7 @@ import type { StudentRecord } from '../types/student';
 const STUDENTS = 'students';
 const DELETED = 'deletedStudents';
 const LOCAL_DELETED_KEY = 'gcp_deleted_students';
+const LOCAL_DELETED_RECORDS_KEY = 'gcp_deleted_student_records';
 
 function stripUndefined<T extends Record<string, unknown>>(obj: T): T {
   return Object.fromEntries(Object.entries(obj).filter(([, v]) => v !== undefined)) as T;
@@ -126,23 +127,62 @@ export async function isStudentDeleted(slug: string): Promise<boolean> {
   }
 }
 
-/** Soft-delete: hide profile everywhere; URL shows deleted message. */
-export async function markStudentDeleted(student: {
-  slug: string;
-  name?: string;
-  id?: string;
-}): Promise<void> {
+export type DeletedStudentRecord = StudentRecord & { deletedAt?: number };
+
+function archiveLocalDeletedRecord(student: DeletedStudentRecord) {
+  try {
+    const raw = localStorage.getItem(LOCAL_DELETED_RECORDS_KEY);
+    const parsed = raw ? (JSON.parse(raw) as unknown) : [];
+    const list = Array.isArray(parsed) ? (parsed as DeletedStudentRecord[]) : [];
+    const key = student.slug.toLowerCase();
+    const next = list.filter((s) => String(s.slug).toLowerCase() !== key);
+    next.push({ ...student, slug: key });
+    localStorage.setItem(LOCAL_DELETED_RECORDS_KEY, JSON.stringify(next));
+  } catch {
+    /* ignore */
+  }
+}
+
+function readLocalDeletedRecords(): DeletedStudentRecord[] {
+  try {
+    const raw = localStorage.getItem(LOCAL_DELETED_RECORDS_KEY);
+    const parsed = raw ? (JSON.parse(raw) as unknown) : [];
+    return Array.isArray(parsed) ? (parsed as DeletedStudentRecord[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+function removeLocalDeletedRecord(slug: string) {
+  try {
+    const key = slug.toLowerCase();
+    const next = readLocalDeletedRecords().filter((s) => String(s.slug).toLowerCase() !== key);
+    localStorage.setItem(LOCAL_DELETED_RECORDS_KEY, JSON.stringify(next));
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Soft-delete: archive full profile, hide everywhere; URL shows deleted message. */
+export async function markStudentDeleted(student: StudentRecord): Promise<void> {
   const key = student.slug.toLowerCase();
+  const { id: _omit, ...data } = student;
+  const archived: DeletedStudentRecord = {
+    ...data,
+    slug: key,
+    deletedAt: Date.now(),
+  };
+
   writeLocalDeleted([...readLocalDeleted(), key]);
+  archiveLocalDeletedRecord(archived);
 
   try {
-    await setDoc(doc(db, DELETED, key), {
-      slug: key,
-      name: student.name || '',
-      deletedAt: Date.now(),
-    });
+    await setDoc(
+      doc(db, DELETED, key),
+      stripUndefined({ ...archived } as Record<string, unknown>),
+    );
   } catch {
-    /* local list still applies on this browser */
+    /* local archive still applies on this browser */
   }
 
   const ids = new Set<string>([key]);
@@ -153,6 +193,54 @@ export async function markStudentDeleted(student: {
     } catch {
       /* ignore */
     }
+  }
+}
+
+/** Deleted students for one enrollment tab (archives + local fallback). */
+export async function fetchDeletedStudentsByEnrollment(
+  enrollmentType: string,
+): Promise<DeletedStudentRecord[]> {
+  const bySlug = new Map<string, DeletedStudentRecord>();
+
+  for (const s of readLocalDeletedRecords()) {
+    if (s.enrollmentType === enrollmentType) {
+      bySlug.set(s.slug.toLowerCase(), { ...s, slug: s.slug.toLowerCase() });
+    }
+  }
+
+  try {
+    const snap = await getDocs(collection(db, DELETED));
+    snap.docs.forEach((d) => {
+      const data = d.data() as Omit<DeletedStudentRecord, 'id'>;
+      const slug = (data.slug || d.id).toLowerCase();
+      const record: DeletedStudentRecord = { id: d.id, ...data, slug };
+      if (record.enrollmentType === enrollmentType) {
+        const prev = bySlug.get(slug);
+        bySlug.set(slug, { ...prev, ...record });
+      }
+    });
+  } catch {
+    /* keep local archives */
+  }
+
+  return [...bySlug.values()].sort((a, b) =>
+    String(a.rollNo || '').localeCompare(String(b.rollNo || ''), undefined, { numeric: true }),
+  );
+}
+
+/** Restore a soft-deleted student back to the active students list. */
+export async function restoreStudent(student: StudentRecord): Promise<void> {
+  const key = student.slug.toLowerCase();
+  const { deletedAt: _deletedAt, ...rest } = student as DeletedStudentRecord;
+  await upsertStudent({ ...rest, slug: key, id: student.id || key });
+
+  writeLocalDeleted(readLocalDeleted().filter((s) => s.toLowerCase() !== key));
+  removeLocalDeletedRecord(key);
+
+  try {
+    await deleteDoc(doc(db, DELETED, key));
+  } catch {
+    /* local lists already cleared */
   }
 }
 

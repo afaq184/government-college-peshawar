@@ -1,53 +1,75 @@
 import { useEffect, useState } from 'react';
-import { Loader2, Trash2, ExternalLink, Search } from 'lucide-react';
+import { Loader2, RotateCcw, Search } from 'lucide-react';
 import { ENROLLMENT_TYPES, type EnrollmentType, type StudentRecord } from '../../types/student';
-import { fetchStudentsByEnrollment, fetchDeletedSlugs, markStudentDeleted } from '../../lib/studentService';
-import { encryptStudentSlug } from '../../utils/studentToken';
+import {
+  fetchDeletedStudentsByEnrollment,
+  fetchDeletedSlugs,
+  restoreStudent,
+  type DeletedStudentRecord,
+} from '../../lib/studentService';
 import { STUDENTS, studentPhotoUrl } from '../../data/studentsData';
 
-export default function AdminStudents() {
+export default function AdminDeletedStudents() {
   const [activeType, setActiveType] = useState<EnrollmentType>('Self Finance');
-  const [students, setStudents] = useState<StudentRecord[]>([]);
+  const [students, setStudents] = useState<DeletedStudentRecord[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [search, setSearch] = useState('');
-  const [deletingSlug, setDeletingSlug] = useState<string | null>(null);
+  const [restoringSlug, setRestoringSlug] = useState<string | null>(null);
 
   const load = async (type: EnrollmentType = activeType) => {
     setLoading(true);
     setError('');
     try {
-      const deleted = await fetchDeletedSlugs();
-      const local = STUDENTS.filter(
-        (s) => s.enrollmentType === type && !deleted.has(s.slug.toLowerCase()),
-      );
-      let remote: StudentRecord[] = [];
+      const deletedSlugs = await fetchDeletedSlugs();
+      let archived: DeletedStudentRecord[] = [];
       try {
-        remote = (await fetchStudentsByEnrollment(type)).filter(
-          (s) => !deleted.has(s.slug.toLowerCase()),
-        );
+        archived = await fetchDeletedStudentsByEnrollment(type);
       } catch {
-        remote = [];
+        archived = [];
       }
 
-      const bySlug = new Map<string, StudentRecord>();
-      for (const s of local) bySlug.set(s.slug.toLowerCase(), s);
-      for (const s of remote) {
-        const prev = bySlug.get(s.slug.toLowerCase());
-        bySlug.set(s.slug.toLowerCase(), {
+      const bySlug = new Map<string, DeletedStudentRecord>();
+
+      // Hydrate legacy tombstones (slug-only) from local seed data
+      for (const s of STUDENTS) {
+        if (s.enrollmentType === type && deletedSlugs.has(s.slug.toLowerCase())) {
+          bySlug.set(s.slug.toLowerCase(), { ...s, slug: s.slug.toLowerCase() });
+        }
+      }
+
+      for (const s of archived) {
+        const key = s.slug.toLowerCase();
+        const prev = bySlug.get(key);
+        bySlug.set(key, {
           ...prev,
           ...s,
+          slug: key,
           photoFile: s.photoFile || prev?.photoFile,
           photoUrl: s.photoUrl || prev?.photoUrl,
+          name: s.name || prev?.name || key,
+          fatherName: s.fatherName || prev?.fatherName || '',
+          rollNo: s.rollNo || prev?.rollNo || '',
+          class: s.class || prev?.class || '',
+          enrollmentType: s.enrollmentType || prev?.enrollmentType || type,
+          session: s.session || prev?.session || '',
+          admissionNo: s.admissionNo || prev?.admissionNo || '',
+          dob: s.dob || prev?.dob || '',
+          bloodGroup: s.bloodGroup || prev?.bloodGroup || '',
+          cnic: s.cnic || prev?.cnic || '',
+          phone: s.phone || prev?.phone || '',
+          address: s.address || prev?.address || '',
+          status: s.status || prev?.status || 'Deleted',
         });
       }
+
       setStudents(
         [...bySlug.values()].sort((a, b) =>
-          String(a.rollNo).localeCompare(String(b.rollNo), undefined, { numeric: true }),
+          String(a.rollNo || '').localeCompare(String(b.rollNo || ''), undefined, { numeric: true }),
         ),
       );
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Failed to load students');
+      setError(e instanceof Error ? e.message : 'Failed to load deleted students');
       setStudents([]);
     } finally {
       setLoading(false);
@@ -63,44 +85,39 @@ export default function AdminStudents() {
     const q = search.trim().toLowerCase();
     if (!q) return true;
     return (
-      s.name.toLowerCase().includes(q) ||
-      s.rollNo.toLowerCase().includes(q) ||
-      s.fatherName.toLowerCase().includes(q) ||
-      s.admissionNo.toLowerCase().includes(q)
+      (s.name || '').toLowerCase().includes(q) ||
+      (s.rollNo || '').toLowerCase().includes(q) ||
+      (s.fatherName || '').toLowerCase().includes(q) ||
+      (s.admissionNo || '').toLowerCase().includes(q)
     );
   });
 
-  const openProfile = (student: StudentRecord) => {
-    const token = encryptStudentSlug(student.slug);
-    window.open(`/student/${token}`, '_blank', 'noopener,noreferrer');
-  };
-
-  const handleDelete = async (student: StudentRecord) => {
+  const handleRestore = async (student: StudentRecord) => {
     if (
       !confirm(
-        `Delete profile for ${student.name} (Roll ${student.rollNo})?\n\nTheir profile link will stop working. You can find them later under Deleted Students.`,
+        `Restore profile for ${student.name} (Roll ${student.rollNo})?\n\nThey will appear again under Students and their profile link will work.`,
       )
     ) {
       return;
     }
-    setDeletingSlug(student.slug);
+    setRestoringSlug(student.slug);
     setError('');
     try {
-      await markStudentDeleted(student);
+      await restoreStudent(student);
       setStudents((prev) => prev.filter((s) => s.slug !== student.slug));
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Could not delete student');
+      setError(e instanceof Error ? e.message : 'Could not restore student');
     } finally {
-      setDeletingSlug(null);
+      setRestoringSlug(null);
     }
   };
 
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-academy-green mb-1">Students</h1>
+        <h1 className="text-3xl font-bold text-academy-green mb-1">Deleted Students</h1>
         <p className="text-slate-500 text-sm">
-          View student profiles by category. Open a profile to review it, or delete to move it to Deleted Students.
+          Profiles removed from the public site. Review by category, or restore to make a profile link work again.
         </p>
       </div>
 
@@ -136,7 +153,7 @@ export default function AdminStudents() {
 
       <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
         <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between gap-3">
-          <h2 className="font-bold text-slate-800">{activeType} students</h2>
+          <h2 className="font-bold text-slate-800">Deleted {activeType} students</h2>
           <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
             {filtered.length} shown
           </span>
@@ -147,7 +164,7 @@ export default function AdminStudents() {
             <Loader2 className="animate-spin" size={28} />
           </div>
         ) : filtered.length === 0 ? (
-          <p className="text-center text-slate-500 py-16 text-sm">No students in this category.</p>
+          <p className="text-center text-slate-500 py-16 text-sm">No deleted students in this category.</p>
         ) : (
           <div className="divide-y divide-slate-50">
             {filtered.map((s) => (
@@ -155,13 +172,9 @@ export default function AdminStudents() {
                 key={s.id || s.slug}
                 className="flex flex-col sm:flex-row sm:items-center gap-4 px-6 py-4 hover:bg-slate-50/80 transition-colors"
               >
-                <button
-                  type="button"
-                  onClick={() => openProfile(s)}
-                  className="flex items-center gap-4 flex-1 min-w-0 text-left"
-                >
+                <div className="flex items-center gap-4 flex-1 min-w-0">
                   <div className="w-14 h-14 rounded-xl overflow-hidden bg-slate-100 shrink-0">
-                    {(s.photoUrl || s.photoFile) ? (
+                    {s.photoUrl || s.photoFile ? (
                       <img
                         src={studentPhotoUrl(s)}
                         alt={s.name}
@@ -170,35 +183,26 @@ export default function AdminStudents() {
                     ) : null}
                   </div>
                   <div className="min-w-0">
-                    <p className="font-bold text-slate-800 truncate group-hover:text-academy-green">
-                      {s.name}
-                    </p>
+                    <p className="font-bold text-slate-800 truncate">{s.name}</p>
                     <p className="text-xs text-slate-500">
                       Roll {s.rollNo} · S/O {s.fatherName} · {s.class}
                     </p>
                   </div>
-                </button>
+                </div>
 
                 <div className="flex flex-wrap gap-2 shrink-0">
                   <button
                     type="button"
-                    onClick={() => openProfile(s)}
-                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-academy-green/10 text-academy-green text-xs font-bold hover:bg-academy-green/15"
+                    disabled={restoringSlug === s.slug}
+                    onClick={() => void handleRestore(s)}
+                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-academy-green/10 text-academy-green text-xs font-bold hover:bg-academy-green/15 disabled:opacity-60"
                   >
-                    <ExternalLink size={14} /> Open profile
-                  </button>
-                  <button
-                    type="button"
-                    disabled={deletingSlug === s.slug}
-                    onClick={() => void handleDelete(s)}
-                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-red-50 text-red-600 text-xs font-bold hover:bg-red-100 disabled:opacity-60"
-                  >
-                    {deletingSlug === s.slug ? (
+                    {restoringSlug === s.slug ? (
                       <Loader2 size={14} className="animate-spin" />
                     ) : (
-                      <Trash2 size={14} />
+                      <RotateCcw size={14} />
                     )}
-                    Delete
+                    Restore
                   </button>
                 </div>
               </div>

@@ -25,6 +25,7 @@ import AdminGallery from './pages/admin/AdminGallery';
 import AdminNews from './pages/admin/AdminNews';
 import AdminSite from './pages/admin/AdminSite';
 import AdminStudents from './pages/admin/AdminStudents';
+import AdminDeletedStudents from './pages/admin/AdminDeletedStudents';
 import { ADMIN_BASE_PATH } from './lib/adminGate';
 
 function AdminRoot() {
@@ -73,6 +74,7 @@ const router = createBrowserRouter([
           { path: 'gallery', element: <AdminGallery /> },
           { path: 'news', element: <AdminNews /> },
           { path: 'students', element: <AdminStudents /> },
+          { path: 'deleted-students', element: <AdminDeletedStudents /> },
           { path: 'site', element: <AdminSite /> },
         ],
       },

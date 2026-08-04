@@ -80,7 +80,7 @@ export function getDefaultNews(): Omit<NewsItem, 'id'>[] {
       title: 'CNIC Found – Mr. Sana Ullah',
       desc: 'A National Identity Card (CNIC) belonging to Mr. Sana Ullah has been found and submitted to the Superintendent Office. He is requested to collect it at the earliest, bringing appropriate ID for verification.',
       link: 'Contact Office',
-      href: '#/contact',
+      href: '/contact',
       external: false,
       image: `${base}news/gn3.jpg`,
       order: 3,

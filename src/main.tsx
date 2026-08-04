@@ -1,18 +1,22 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
 import './index.css';
 
-// Convert legacy hash routes (#/student/..., #/x/.../enter) to path routes for Vercel.
-(() => {
+// Legacy QR / printed links use hash routes (#/student/...). Convert to path
+// routes before the router module loads so createBrowserRouter sees the right URL.
+async function bootstrap() {
   const { hash, pathname, search } = window.location;
   if (hash.startsWith('#/') && (pathname === '/' || pathname === '')) {
     window.history.replaceState(null, '', `${hash.slice(1)}${search}`);
   }
-})();
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+  const { default: App } = await import('./App.tsx');
+
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  );
+}
+
+void bootstrap();

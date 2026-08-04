@@ -8,6 +8,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Must run before the module bundle: legacy QR links use #/student/... while the app uses /student/... -->
+    <script>
+      (function () {
+        var hash = location.hash;
+        var path = location.pathname;
+        var search = location.search;
+        if (hash.indexOf('#/') === 0 && (path === '/' || path === '')) {
+          history.replaceState(null, '', hash.slice(1) + search);
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

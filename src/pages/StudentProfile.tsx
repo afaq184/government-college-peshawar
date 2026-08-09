@@ -186,9 +186,6 @@ export default function StudentProfile() {
                 <p className="text-xs font-sans text-academy-gold font-medium tracking-wide mb-2">
                   S/O: {student.fatherName}
                 </p>
-                <p className="text-xs font-mono text-slate-300 tracking-wide">
-                  Roll No: {student.rollNo}
-                </p>
               </div>
 
             </div>
@@ -214,8 +211,15 @@ export default function StudentProfile() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-sans">
                   <div className="flex flex-col gap-1">
-                    <span className="text-xs text-slate-400">Class/Degree Program</span>
+                    <span className="text-xs text-slate-400">Discipline</span>
                     <span className="text-white font-medium">{student.class}</span>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs text-slate-400">Class</span>
+                    <span className="text-white font-medium">
+                      1<sup className="text-[0.65em]">st</sup>{' '}
+                      {student.enrollmentType === 'BS Level' ? 'semester' : 'year'}
+                    </span>
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="text-xs text-slate-400">Academic Session</span>
@@ -225,12 +229,6 @@ export default function StudentProfile() {
                     <span className="text-xs text-slate-400">Admission Number</span>
                     <span className="text-white font-medium font-mono">{student.admissionNo}</span>
                   </div>
-                  {student.regNo && (
-                    <div className="flex flex-col gap-1">
-                      <span className="text-xs text-slate-400">University Reg. Number</span>
-                      <span className="text-white font-medium font-mono">{student.regNo}</span>
-                    </div>
-                  )}
                 </div>
               </div>
 
@@ -253,12 +251,10 @@ export default function StudentProfile() {
                     <span className="text-red-400 font-bold">{student.bloodGroup}</span>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-xs text-slate-400">CNIC / Form-B</span>
-                    <span className="text-white font-medium font-mono">{student.cnic}</span>
-                  </div>
-                  <div className="flex flex-col gap-1">
                     <span className="text-xs text-slate-400">Enrollment Type</span>
-                    <span className="text-white font-medium">{student.enrollmentType}</span>
+                    <span className="text-white font-medium">
+                      {student.enrollmentType === 'BS Level' ? 'BS' : student.enrollmentType}
+                    </span>
                   </div>
                 </div>
               </div>

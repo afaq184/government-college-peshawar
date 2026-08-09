@@ -163,6 +163,19 @@ function removeLocalDeletedRecord(slug: string) {
   }
 }
 
+/** Drop browser-only soft-delete leftovers (one-time after removing test cohort). */
+export function purgeLocalDeletedCachesOnce(): void {
+  try {
+    const flag = 'gcp_deleted_purged_v1';
+    if (localStorage.getItem(flag)) return;
+    localStorage.removeItem(LOCAL_DELETED_KEY);
+    localStorage.removeItem(LOCAL_DELETED_RECORDS_KEY);
+    localStorage.setItem(flag, '1');
+  } catch {
+    /* ignore */
+  }
+}
+
 /** Soft-delete: archive full profile, hide everywhere; URL shows deleted message. */
 export async function markStudentDeleted(student: StudentRecord): Promise<void> {
   const key = student.slug.toLowerCase();
@@ -242,6 +255,32 @@ export async function restoreStudent(student: StudentRecord): Promise<void> {
   } catch {
     /* local lists already cleared */
   }
+}
+
+/** Permanently remove a soft-deleted archive (cannot be restored). */
+export async function permanentlyDeleteStudent(student: StudentRecord): Promise<void> {
+  const key = student.slug.toLowerCase();
+  writeLocalDeleted(readLocalDeleted().filter((s) => s.toLowerCase() !== key));
+  removeLocalDeletedRecord(key);
+
+  const ids = new Set<string>([key]);
+  if (student.id) ids.add(student.id);
+  for (const id of ids) {
+    try {
+      await deleteDoc(doc(db, DELETED, id));
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
+/** Permanently purge every soft-deleted archive for one enrollment type. */
+export async function purgeDeletedStudentsByEnrollment(enrollmentType: string): Promise<number> {
+  const archived = await fetchDeletedStudentsByEnrollment(enrollmentType);
+  for (const student of archived) {
+    await permanentlyDeleteStudent(student);
+  }
+  return archived.length;
 }
 
 export async function deleteStudent(id: string): Promise<void> {

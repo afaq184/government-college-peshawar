@@ -1,7 +1,6 @@
 import { decryptStudentToken } from '../utils/studentToken';
 import { fetchStudentBySlug, isStudentDeleted } from '../lib/studentService';
 import type { StudentRecord } from '../types/student';
-import { SELF_FINANCE_STUDENTS } from './selfFinanceStudents';
 
 export type Student = StudentRecord;
 
@@ -33,7 +32,7 @@ const DEMO_STUDENTS: Student[] = [
     slug: 'muhammad-raza-2182',
     name: 'Muhammad Raza',
     fatherName: 'Abdul Rauf',
-    class: 'BS Computer Science',
+    class: 'Computer Science',
     rollNo: '2182',
     enrollmentType: 'Morning Shift',
     session: '2026–2028',
@@ -50,7 +49,7 @@ const DEMO_STUDENTS: Student[] = [
     slug: 'usman-khan-2183',
     name: 'Usman Khan',
     fatherName: 'Gul Rahman',
-    class: 'BS Computer Science',
+    class: 'Computer Science',
     rollNo: '2183',
     enrollmentType: 'Evening Shift',
     session: '2026–2028',
@@ -67,7 +66,7 @@ const DEMO_STUDENTS: Student[] = [
     slug: 'bilal-ahmad-2184',
     name: 'Bilal Ahmad',
     fatherName: 'Muhammad Sadiq',
-    class: 'BS Computer Science',
+    class: 'Computer Science',
     rollNo: '2184',
     enrollmentType: 'Self Finance',
     session: '2026–2028',
@@ -82,8 +81,8 @@ const DEMO_STUDENTS: Student[] = [
   },
 ];
 
-/** Demo samples + imported Self Finance cohort */
-export const STUDENTS: Student[] = [...DEMO_STUDENTS, ...SELF_FINANCE_STUDENTS];
+/** Local demo samples only (real cohorts come from Admin / Firestore). */
+export const STUDENTS: Student[] = DEMO_STUDENTS;
 
 export function getStudentBySlug(slug: string | undefined): Student | undefined {
   if (!slug) return undefined;

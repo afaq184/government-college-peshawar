@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Loader2, RotateCcw, Search } from 'lucide-react';
+import { Loader2, RotateCcw, Search, Trash2 } from 'lucide-react';
 import { ENROLLMENT_TYPES, type EnrollmentType, type StudentRecord } from '../../types/student';
 import {
   fetchDeletedStudentsByEnrollment,
   fetchDeletedSlugs,
+  permanentlyDeleteStudent,
+  purgeDeletedStudentsByEnrollment,
+  purgeLocalDeletedCachesOnce,
   restoreStudent,
   type DeletedStudentRecord,
 } from '../../lib/studentService';
@@ -16,11 +19,14 @@ export default function AdminDeletedStudents() {
   const [error, setError] = useState('');
   const [search, setSearch] = useState('');
   const [restoringSlug, setRestoringSlug] = useState<string | null>(null);
+  const [removingSlug, setRemovingSlug] = useState<string | null>(null);
+  const [purging, setPurging] = useState(false);
 
   const load = async (type: EnrollmentType = activeType) => {
     setLoading(true);
     setError('');
     try {
+      purgeLocalDeletedCachesOnce();
       const deletedSlugs = await fetchDeletedSlugs();
       let archived: DeletedStudentRecord[] = [];
       try {
@@ -112,12 +118,52 @@ export default function AdminDeletedStudents() {
     }
   };
 
+  const handlePermanentDelete = async (student: StudentRecord) => {
+    if (
+      !confirm(
+        `Permanently delete ${student.name} (Roll ${student.rollNo})?\n\nThis cannot be undone. They will disappear from Deleted Students and cannot be restored.`,
+      )
+    ) {
+      return;
+    }
+    setRemovingSlug(student.slug);
+    setError('');
+    try {
+      await permanentlyDeleteStudent(student);
+      setStudents((prev) => prev.filter((s) => s.slug !== student.slug));
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Could not permanently delete student');
+    } finally {
+      setRemovingSlug(null);
+    }
+  };
+
+  const handleEmptyTrash = async () => {
+    if (
+      !confirm(
+        `Permanently delete all Deleted ${activeType} students?\n\nThis cannot be undone.`,
+      )
+    ) {
+      return;
+    }
+    setPurging(true);
+    setError('');
+    try {
+      await purgeDeletedStudentsByEnrollment(activeType);
+      setStudents([]);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Could not empty trash');
+    } finally {
+      setPurging(false);
+    }
+  };
+
   return (
     <div>
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-academy-green mb-1">Deleted Students</h1>
         <p className="text-slate-500 text-sm">
-          Profiles removed from the public site. Review by category, or restore to make a profile link work again.
+          Profiles removed from the public site. Restore to bring them back, or permanently delete to clear them.
         </p>
       </div>
 
@@ -152,11 +198,24 @@ export default function AdminDeletedStudents() {
       {error && <p className="mb-4 text-sm text-red-600 bg-red-50 px-4 py-3 rounded-xl">{error}</p>}
 
       <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
-        <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between gap-3">
+        <div className="px-6 py-4 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3">
           <h2 className="font-bold text-slate-800">Deleted {activeType} students</h2>
-          <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-            {filtered.length} shown
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+              {filtered.length} shown
+            </span>
+            {filtered.length > 0 && (
+              <button
+                type="button"
+                disabled={purging}
+                onClick={() => void handleEmptyTrash()}
+                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-red-50 text-red-600 text-xs font-bold hover:bg-red-100 disabled:opacity-60"
+              >
+                {purging ? <Loader2 size={14} className="animate-spin" /> : <Trash2 size={14} />}
+                Empty trash
+              </button>
+            )}
+          </div>
         </div>
 
         {loading ? (
@@ -193,7 +252,7 @@ export default function AdminDeletedStudents() {
                 <div className="flex flex-wrap gap-2 shrink-0">
                   <button
                     type="button"
-                    disabled={restoringSlug === s.slug}
+                    disabled={restoringSlug === s.slug || removingSlug === s.slug}
                     onClick={() => void handleRestore(s)}
                     className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-academy-green/10 text-academy-green text-xs font-bold hover:bg-academy-green/15 disabled:opacity-60"
                   >
@@ -203,6 +262,19 @@ export default function AdminDeletedStudents() {
                       <RotateCcw size={14} />
                     )}
                     Restore
+                  </button>
+                  <button
+                    type="button"
+                    disabled={restoringSlug === s.slug || removingSlug === s.slug}
+                    onClick={() => void handlePermanentDelete(s)}
+                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-red-50 text-red-600 text-xs font-bold hover:bg-red-100 disabled:opacity-60"
+                  >
+                    {removingSlug === s.slug ? (
+                      <Loader2 size={14} className="animate-spin" />
+                    ) : (
+                      <Trash2 size={14} />
+                    )}
+                    Delete permanently
                   </button>
                 </div>
               </div>

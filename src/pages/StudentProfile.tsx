@@ -222,12 +222,12 @@ export default function StudentProfile() {
                     </span>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-xs text-slate-400">Academic Session</span>
-                    <span className="text-white font-medium">{student.session}</span>
+                    <span className="text-xs text-slate-400">Roll No</span>
+                    <span className="text-white font-medium font-mono">{student.rollNo}</span>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-xs text-slate-400">Admission Number</span>
-                    <span className="text-white font-medium font-mono">{student.admissionNo}</span>
+                    <span className="text-xs text-slate-400">Academic Session</span>
+                    <span className="text-white font-medium">{student.session}</span>
                   </div>
                 </div>
               </div>

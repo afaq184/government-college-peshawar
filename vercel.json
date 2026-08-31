@@ -3,6 +3,9 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
-    { "source": "/((?!assets/).*)", "destination": "/index.html" }
+    {
+      "source": "/((?!assets/|favicon\\.ico|favicon.*\\.png|apple-touch-icon\\.png|.*\\.(png|jpg|jpeg|gif|svg|ico|webp|mp4|csv|html)).*)",
+      "destination": "/index.html"
+    }
   ]
 }

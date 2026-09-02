@@ -136,11 +136,17 @@ export function parseStudentsExcel(file: ArrayBuffer, enrollmentType: Enrollment
     if (!name || !rollNo) continue;
 
     const photoFile = cell(row, 'Photo File Name', 'Photo', 'Photo File');
+    const discipline = cell(row, 'Discipline', 'Degree Program');
+    const classYear = cell(row, 'Class/Degree Program', 'Class');
+    const program =
+      classYear && discipline && !classYear.toLowerCase().includes(discipline.toLowerCase())
+        ? `${discipline} — ${classYear}`
+        : classYear || discipline;
     students.push({
       slug: makeStudentSlug(name, rollNo),
       name,
-      fatherName: cell(row, 'Father Name', 'Father', 'S/O'),
-      class: cell(row, 'Class/Degree Program', 'Class', 'Degree Program'),
+      fatherName: cell(row, 'Father Name', "Father's Name", 'Father', 'S/O'),
+      class: program,
       rollNo,
       enrollmentType,
       session: cell(row, 'Academic Session', 'Session'),

@@ -254,6 +254,7 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     cnic: '',
     phone: '0334-5272679',
     address: 'Pabbi, Nowshera',
-    status: 'Active'
+    status: 'Active',
+    photoFile: 'morning-students/computer-science-pic/2017.png'
   }
 ];

@@ -2,6 +2,7 @@ import { decryptStudentToken } from '../utils/studentToken';
 import { fetchStudentBySlug, isStudentDeleted } from '../lib/studentService';
 import { MORNING_ARTS_STUDENTS } from './morningArtsStudents';
 import { MORNING_CS_STUDENTS } from './morningComputerScienceStudents';
+import { MORNING_PRE_ENGINEERING_STUDENTS } from './morningPreEngineeringStudents';
 import type { StudentRecord } from '../types/student';
 
 export type Student = StudentRecord;
@@ -88,6 +89,7 @@ export const STUDENTS: Student[] = [
   ...DEMO_STUDENTS,
   ...MORNING_CS_STUDENTS,
   ...MORNING_ARTS_STUDENTS,
+  ...MORNING_PRE_ENGINEERING_STUDENTS,
 ];
 
 export function getStudentBySlug(slug: string | undefined): Student | undefined {

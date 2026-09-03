@@ -43,6 +43,15 @@ const COHORTS = [
     exportName: 'MORNING_ARTS_STUDENTS',
     comment: 'Morning Shift — Arts 1st Year (2026-27).',
   },
+  {
+    excel: 'public/student/morning-students/pre-engineering.xlsx',
+    photoDir: 'public/student/morning-students/pre-engineering-pic',
+    photoPrefix: 'morning-students/pre-engineering-pic',
+    className: 'Pre-Engineering',
+    outFile: 'src/data/morningPreEngineeringStudents.ts',
+    exportName: 'MORNING_PRE_ENGINEERING_STUDENTS',
+    comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27).',
+  },
 ];
 
 function generateCohort(config) {

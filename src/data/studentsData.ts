@@ -1,5 +1,6 @@
 import { decryptStudentToken } from '../utils/studentToken';
 import { fetchStudentBySlug, isStudentDeleted } from '../lib/studentService';
+import { MORNING_ARTS_STUDENTS } from './morningArtsStudents';
 import { MORNING_CS_STUDENTS } from './morningComputerScienceStudents';
 import type { StudentRecord } from '../types/student';
 
@@ -83,7 +84,11 @@ const DEMO_STUDENTS: Student[] = [
 ];
 
 /** Local demo samples + imported cohorts (Admin also merges Firestore). */
-export const STUDENTS: Student[] = [...DEMO_STUDENTS, ...MORNING_CS_STUDENTS];
+export const STUDENTS: Student[] = [
+  ...DEMO_STUDENTS,
+  ...MORNING_CS_STUDENTS,
+  ...MORNING_ARTS_STUDENTS,
+];
 
 export function getStudentBySlug(slug: string | undefined): Student | undefined {
   if (!slug) return undefined;

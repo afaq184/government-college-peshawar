@@ -24,6 +24,24 @@ function cell(row, ...keys) {
   return '';
 }
 
+/** Match Excel photo name to disk (handles 01.png vs 1.png, roll-only names, etc.). */
+function findPhotoFile(photos, photoName, rollNo) {
+  const ext = path.extname(photoName || '.png') || '.png';
+  const base = (photoName || '').replace(/\.[^.]+$/, '');
+  const roll = String(rollNo).trim();
+  const candidates = new Set([
+    photoName,
+    `${roll}${ext}`,
+    `${String(parseInt(roll, 10))}${ext}`,
+    `${base.replace(/^0+/, '')}${ext}`,
+    `${roll.replace(/^0+/, '')}${ext}`,
+  ]);
+  for (const candidate of candidates) {
+    if (candidate && photos.has(candidate)) return candidate;
+  }
+  return null;
+}
+
 const COHORTS = [
   {
     excel: 'public/student/morning-students/computer-science-data.xlsx',
@@ -52,6 +70,15 @@ const COHORTS = [
     exportName: 'MORNING_PRE_ENGINEERING_STUDENTS',
     comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27).',
   },
+  {
+    excel: 'public/student/morning-students/pre-medical.xlsx',
+    photoDir: 'public/student/morning-students/Pre-medical-pic',
+    photoPrefix: 'morning-students/Pre-medical-pic',
+    className: 'Pre-Medical',
+    outFile: 'src/data/morningPreMedicalStudents.ts',
+    exportName: 'MORNING_PRE_MEDICAL_STUDENTS',
+    comment: 'Morning Shift — Pre-Medical 1st Year (2026-27).',
+  },
 ];
 
 function generateCohort(config) {
@@ -69,8 +96,8 @@ function generateCohort(config) {
 
       const photo = cell(r, 'Photo File Name', 'Photo', 'Photo File');
       const discipline = cell(r, 'Discipline', 'Degree Program') || config.className;
-      const photoPath =
-        photo && photos.has(photo) ? `${config.photoPrefix}/${photo}` : undefined;
+      const matchedPhoto = findPhotoFile(photos, photo, roll);
+      const photoPath = matchedPhoto ? `${config.photoPrefix}/${matchedPhoto}` : undefined;
 
       return {
         slug: makeStudentSlug(name, roll),

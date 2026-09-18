@@ -1,0 +1,88 @@
+import type { StudentRecord } from '../types/student';
+
+/** Evening Shift - Computer Science 1st Year (2026-27). */
+export const EVENING_CS_STUDENTS: StudentRecord[] = [
+  {
+    slug: 'shameber-2276',
+    name: 'Shameber',
+    fatherName: 'Sultan Iqbal',
+    class: 'Computer Science',
+    rollNo: '2276',
+    enrollmentType: 'Evening Shift',
+    session: '2026-27',
+    admissionNo: '2276',
+    dob: '31/03/2008',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0346-9075062',
+    address: 'Zargarabad New Chirstan Colony Street Shahadbaad, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/computer-science-pic/2276 M.png'
+  },
+  {
+    slug: 'jaswinder-singh-2277',
+    name: 'Jaswinder Singh',
+    fatherName: 'Ameer Singh',
+    class: 'Computer Science',
+    rollNo: '2277',
+    enrollmentType: 'Evening Shift',
+    session: '2026-27',
+    admissionNo: '2277',
+    dob: '20/04/2008',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0315-9439044',
+    address: 'Asia Gate, Peshawar',
+    status: 'Active'
+  },
+  {
+    slug: 'adnan-ahmad-2101',
+    name: 'Adnan Ahmad',
+    fatherName: 'Abdul Sattar',
+    class: 'Computer Science',
+    rollNo: '2101',
+    enrollmentType: 'Evening Shift',
+    session: '2026-27',
+    admissionNo: '2101',
+    dob: '15/02/2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0302-5508000',
+    address: 'Mohmand',
+    status: 'Active'
+  },
+  {
+    slug: 'pir-muhammad-adil-shah-2181',
+    name: 'Pir Muhammad Adil Shah',
+    fatherName: 'Syed Muhammad Arif Shah',
+    class: 'Computer Science',
+    rollNo: '2181',
+    enrollmentType: 'Evening Shift',
+    session: '2026-27',
+    admissionNo: '2181',
+    dob: '07/09/2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0314-9016161',
+    address: 'Din Bahar Colony, Charsadda Road, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/computer-science-pic/2181.png'
+  },
+  {
+    slug: 'muhammad-owais-khan-2102',
+    name: 'Muhammad Owais Khan',
+    fatherName: 'Hamza Ali Khan',
+    class: 'Computer Science',
+    rollNo: '2102',
+    enrollmentType: 'Evening Shift',
+    session: '2026-27',
+    admissionNo: '2102',
+    dob: '09/01/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0317-9888934',
+    address: 'Pabbi, Nowshera',
+    status: 'Active',
+    photoFile: 'evening-students/computer-science-pic/2102.png'
+  }
+];

@@ -79,6 +79,8 @@ const COHORTS = [
         excel: 'public/student/morning-students/second_phase/computer_science_student_data.xlsx',
         photoDir: 'public/student/morning-students/second_phase/computer_second_phase_pic',
         photoPrefix: 'morning-students/second_phase/computer_second_phase_pic',
+        // These students belong to Evening Shift (see computer eveing.xlsx)
+        excludeRolls: ['2276', '2277', '2101', '2181', '2102'],
       },
     ],
     className: 'Computer Science',
@@ -167,12 +169,14 @@ function parseSourceRows(source, className) {
       : []
   );
   let missingPhotos = 0;
+  const excludeRolls = new Set((source.excludeRolls || []).map(String));
 
   const students = rows
     .map((r) => {
       const name = cell(r, 'Name');
       const roll = cell(r, 'Roll No', 'RollNo', 'Roll Number');
       if (!name || !roll) return null;
+      if (excludeRolls.has(roll)) return null;
 
       const photo = cell(r, 'Photo File Name', 'Photo', 'Photo File');
       const discipline = normalizeDiscipline(

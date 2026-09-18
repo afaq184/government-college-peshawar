@@ -8,3 +8,6 @@ coverage/
 !.env.example
 video.mp4
 public/video.mp4
+
+.vercel
+.env*

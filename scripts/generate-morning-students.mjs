@@ -82,11 +82,16 @@ const COHORTS = [
         // These students belong to Evening Shift (see computer eveing.xlsx)
         excludeRolls: ['2276', '2277', '2101', '2181', '2102'],
       },
+      {
+        excel: 'public/student/morning-students/cs_morning_remains/cs morning data.xlsx',
+        photoDir: 'public/student/morning-students/cs_morning_remains/cs_morning_remaning_pic',
+        photoPrefix: 'morning-students/cs_morning_remains/cs_morning_remaning_pic',
+      },
     ],
     className: 'Computer Science',
     outFile: 'src/data/morningComputerScienceStudents.ts',
     exportName: 'MORNING_CS_STUDENTS',
-    comment: 'Morning Shift — Computer Science 1st Year (2026-27), phase 1 + phase 2.',
+    comment: 'Morning Shift — Computer Science 1st Year (2026-27), phase 1 + phase 2 + remains.',
   },
   {
     // Phase 1 + phase 2 Arts merged into one export
@@ -175,7 +180,7 @@ function parseSourceRows(source, className) {
 
   const students = rows
     .map((r) => {
-      const name = cell(r, 'Name');
+      const name = cell(r, 'Name', 'Student Name');
       const roll = cell(r, 'Roll No', 'RollNo', 'Roll Number');
       if (!name || !roll) return null;
       if (excludeRolls.has(roll)) return null;
@@ -201,9 +206,16 @@ function parseSourceRows(source, className) {
         dob: cell(r, 'Date of Birth', 'DOB'),
         bloodGroup: normalizeBloodGroup(cell(r, 'Blood Group')),
         cnic: cell(r, 'CNIC / Form-B', 'CNIC', 'Form-B'),
-        phone: cell(r, 'Guardian Contact Number', 'Contact Number', 'Phone', 'Contact'),
+        phone: cell(
+          r,
+          'Guardian Contact Number',
+          'Enrollment Guardian Contact Number',
+          'Contact Number',
+          'Phone',
+          'Contact'
+        ),
         address: cell(r, 'Permanent Address', 'Address'),
-        status: cell(r, 'Status') || 'Active',
+        status: cell(r, 'Status', 'Student Status') || 'Active',
         ...(photoPath ? { photoFile: photoPath } : {}),
       };
     })

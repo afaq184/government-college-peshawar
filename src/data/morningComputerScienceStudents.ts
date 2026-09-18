@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Computer Science 1st Year (2026-27), phase 1 + phase 2. */
+/** Morning Shift — Computer Science 1st Year (2026-27), phase 1 + phase 2 + remains. */
 export const MORNING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'hashir-khan-2001',
@@ -680,5 +680,90 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     address: 'Tehsil Gor Ghatri, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/second_phase/computer_second_phase_pic/2079.png'
+  },
+  {
+    slug: 'muhammad-abdullah-2040',
+    name: 'Muhammad Abdullah',
+    fatherName: 'Maqsood Jan',
+    class: 'Computer Science',
+    rollNo: '2040',
+    enrollmentType: 'Morning Shift',
+    session: '2026-27',
+    admissionNo: '2040',
+    dob: '11/08/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0300-9037908',
+    address: 'Saeed Abad No. 1, Dalazak Road, Peshawar',
+    status: 'Active',
+    photoFile: 'morning-students/cs_morning_remains/cs_morning_remaning_pic/2040.png'
+  },
+  {
+    slug: 'muhammad-mubeen-2082',
+    name: 'Muhammad Mubeen',
+    fatherName: 'Muhammad Nawaz',
+    class: 'Computer Science',
+    rollNo: '2082',
+    enrollmentType: 'Morning Shift',
+    session: '2026-27',
+    admissionNo: '2082',
+    dob: '11/03/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0334-3311334',
+    address: 'Hassan Garhi, Peshawar',
+    status: 'Active',
+    photoFile: 'morning-students/cs_morning_remains/cs_morning_remaning_pic/2082.png'
+  },
+  {
+    slug: 'muhammad-saad-2080',
+    name: 'Muhammad Saad',
+    fatherName: 'Muhammad Irshad Khan',
+    class: 'Computer Science',
+    rollNo: '2080',
+    enrollmentType: 'Morning Shift',
+    session: '2026-27',
+    admissionNo: '2080',
+    dob: '27/02/2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0334-9579668',
+    address: 'Subizai Payan, Peshawar',
+    status: 'Active',
+    photoFile: 'morning-students/cs_morning_remains/cs_morning_remaning_pic/2080.png'
+  },
+  {
+    slug: 'noor-ullah-2022',
+    name: 'Noor Ullah',
+    fatherName: 'Ajab Noor',
+    class: 'Computer Science',
+    rollNo: '2022',
+    enrollmentType: 'Morning Shift',
+    session: '2026-27',
+    admissionNo: '2022',
+    dob: '05/03/2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0332-4898188',
+    address: 'Baka Khel, Takhti Khel Wazir, Bannu',
+    status: 'Active',
+    photoFile: 'morning-students/cs_morning_remains/cs_morning_remaning_pic/2022.png'
+  },
+  {
+    slug: 'umer-malik-2081',
+    name: 'Umer Malik',
+    fatherName: 'Ihtesham Nasir Malik',
+    class: 'Computer Science',
+    rollNo: '2081',
+    enrollmentType: 'Morning Shift',
+    session: '2026-27',
+    admissionNo: '2081',
+    dob: '20/01/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0333-9043200',
+    address: 'Zaryab Colony, Peshawar',
+    status: 'Active',
+    photoFile: 'morning-students/cs_morning_remains/cs_morning_remaning_pic/2081.png'
   }
 ];

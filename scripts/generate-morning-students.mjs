@@ -24,7 +24,7 @@ function cell(row, ...keys) {
   return '';
 }
 
-/** Match Excel photo name to disk (handles 01.png vs 1.png, roll_b.png, etc.). */
+/** Match Excel photo name to disk (handles 01.png vs 1.png, roll_b.png, "2276 M.png", etc.). */
 function findPhotoFile(photos, photoName, rollNo) {
   const ext = path.extname(photoName || '.png') || '.png';
   const base = (photoName || '').replace(/\.[^.]+$/, '');
@@ -39,22 +39,42 @@ function findPhotoFile(photos, photoName, rollNo) {
     `${roll}_b${ext}`,
     `${rollNum}_b${ext}`,
     `${base}_b${ext}`,
+    `${roll} M${ext}`,
+    `${rollNum} M${ext}`,
+    `${base} M${ext}`,
   ]);
   for (const candidate of candidates) {
     if (candidate && photos.has(candidate)) return candidate;
+  }
+  // Fallback: any file that starts with the roll number (e.g. "2276 M.png")
+  for (const file of photos) {
+    if (file === photoName) return file;
+    const fileBase = file.replace(/\.[^.]+$/, '');
+    if (fileBase === roll || fileBase === rollNum || fileBase.startsWith(`${roll} `) || fileBase.startsWith(`${rollNum} `)) {
+      return file;
+    }
   }
   return null;
 }
 
 const COHORTS = [
   {
-    excel: 'public/student/morning-students/computer-science-data.xlsx',
-    photoDir: 'public/student/morning-students/computer-science-pic',
-    photoPrefix: 'morning-students/computer-science-pic',
+    sources: [
+      {
+        excel: 'public/student/morning-students/computer-science-data.xlsx',
+        photoDir: 'public/student/morning-students/computer-science-pic',
+        photoPrefix: 'morning-students/computer-science-pic',
+      },
+      {
+        excel: 'public/student/morning-students/second_phase/computer_science_student_data.xlsx',
+        photoDir: 'public/student/morning-students/second_phase/computer_second_phase_pic',
+        photoPrefix: 'morning-students/second_phase/computer_second_phase_pic',
+      },
+    ],
     className: 'Computer Science',
     outFile: 'src/data/morningComputerScienceStudents.ts',
     exportName: 'MORNING_CS_STUDENTS',
-    comment: 'Morning Shift — Computer Science 1st Year (2026-27).',
+    comment: 'Morning Shift — Computer Science 1st Year (2026-27), phase 1 + phase 2.',
   },
   {
     // Phase 1 + phase 2 Arts merged into one export
@@ -116,7 +136,8 @@ function parseSourceRows(source, className) {
       if (!name || !roll) return null;
 
       const photo = cell(r, 'Photo File Name', 'Photo', 'Photo File');
-      const discipline = cell(r, 'Discipline', 'Degree Program') || className;
+      const discipline =
+        cell(r, 'Discipline', 'Discipline/Subject', 'Degree Program') || className;
       const matchedPhoto = findPhotoFile(photos, photo, roll);
       if (!matchedPhoto) missingPhotos += 1;
       const photoPath = matchedPhoto ? `${source.photoPrefix}/${matchedPhoto}` : undefined;
@@ -128,7 +149,7 @@ function parseSourceRows(source, className) {
         class: discipline,
         rollNo: roll,
         enrollmentType: 'Morning Shift',
-        session: cell(r, 'Academic Session', 'Session'),
+        session: cell(r, 'Academic Session', 'Session') || '2026-27',
         admissionNo: cell(r, 'Admission Number', 'Admission No') || roll,
         dob: cell(r, 'Date of Birth', 'DOB'),
         bloodGroup: normalizeBloodGroup(cell(r, 'Blood Group')),

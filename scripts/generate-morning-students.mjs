@@ -136,6 +136,8 @@ const COHORTS = [
         excel: 'public/student/morning-students/second_phase/Pre-Medical.xlsx',
         photoDir: 'public/student/morning-students/second_phase/pre-medical',
         photoPrefix: 'morning-students/second_phase/pre-medical',
+        // These students belong to Evening Shift (see pre-medical-eveing.xlsx)
+        excludeRolls: ['501', '502', '503', '504', '505', '506', '210', '507', '508'],
       },
     ],
     className: 'Pre-Medical',

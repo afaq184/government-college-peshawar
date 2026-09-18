@@ -96,13 +96,22 @@ const COHORTS = [
     comment: 'Morning Shift — Arts 1st Year (2026-27), phase 1 + phase 2.',
   },
   {
-    excel: 'public/student/morning-students/pre-engineering.xlsx',
-    photoDir: 'public/student/morning-students/pre-engineering-pic',
-    photoPrefix: 'morning-students/pre-engineering-pic',
+    sources: [
+      {
+        excel: 'public/student/morning-students/pre-engineering.xlsx',
+        photoDir: 'public/student/morning-students/pre-engineering-pic',
+        photoPrefix: 'morning-students/pre-engineering-pic',
+      },
+      {
+        excel: 'public/student/morning-students/second_phase/Pre-Engineering_Students_student_data.xlsx',
+        photoDir: 'public/student/morning-students/second_phase/pre-enginering-pic',
+        photoPrefix: 'morning-students/second_phase/pre-enginering-pic',
+      },
+    ],
     className: 'Pre-Engineering',
     outFile: 'src/data/morningPreEngineeringStudents.ts',
     exportName: 'MORNING_PRE_ENGINEERING_STUDENTS',
-    comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27).',
+    comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27), phase 1 + phase 2.',
   },
   {
     excel: 'public/student/morning-students/pre-medical.xlsx',
@@ -154,7 +163,7 @@ function parseSourceRows(source, className) {
         dob: cell(r, 'Date of Birth', 'DOB'),
         bloodGroup: normalizeBloodGroup(cell(r, 'Blood Group')),
         cnic: cell(r, 'CNIC / Form-B', 'CNIC', 'Form-B'),
-        phone: cell(r, 'Guardian Contact Number', 'Phone', 'Contact'),
+        phone: cell(r, 'Guardian Contact Number', 'Contact Number', 'Phone', 'Contact'),
         address: cell(r, 'Permanent Address', 'Address'),
         status: cell(r, 'Status') || 'Active',
         ...(photoPath ? { photoFile: photoPath } : {}),

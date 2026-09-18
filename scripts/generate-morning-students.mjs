@@ -94,7 +94,7 @@ const COHORTS = [
     comment: 'Morning Shift — Computer Science 1st Year (2026-27), phase 1 + phase 2 + remains.',
   },
   {
-    // Phase 1 + phase 2 Arts merged into one export
+    // Phase 1 + phase 2 + phase 3 Arts merged into one export
     sources: [
       {
         excel: 'public/student/morning-students/Arts.xlsx',
@@ -106,11 +106,16 @@ const COHORTS = [
         photoDir: 'public/student/morning-students/second_phase/arts second phase student',
         photoPrefix: 'morning-students/second_phase/arts second phase student',
       },
+      {
+        excel: 'public/student/morning-students/phase_3_arts_Pre_engineeing/arts/Arts data.xlsx',
+        photoDir: 'public/student/morning-students/phase_3_arts_Pre_engineeing/arts/arts pic',
+        photoPrefix: 'morning-students/phase_3_arts_Pre_engineeing/arts/arts pic',
+      },
     ],
     className: 'Arts',
     outFile: 'src/data/morningArtsStudents.ts',
     exportName: 'MORNING_ARTS_STUDENTS',
-    comment: 'Morning Shift — Arts 1st Year (2026-27), phase 1 + phase 2.',
+    comment: 'Morning Shift — Arts 1st Year (2026-27), phase 1 + phase 2 + phase 3.',
   },
   {
     sources: [
@@ -261,7 +266,7 @@ function parseSourceRows(source, className) {
             'Contact'
           )
         ),
-        address: cell(r, 'Permanent Address', 'Address'),
+        address: normalizeOptional(cell(r, 'Permanent Address', 'Address')),
         status: normalizeOptional(cell(r, 'Status', 'Student Status')) || 'Active',
         ...(photoPath ? { photoFile: photoPath } : {}),
       };

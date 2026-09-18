@@ -124,11 +124,19 @@ const COHORTS = [
         photoDir: 'public/student/morning-students/second_phase/pre-enginering-pic',
         photoPrefix: 'morning-students/second_phase/pre-enginering-pic',
       },
+      {
+        excel:
+          'public/student/morning-students/phase_3_arts_Pre_engineeing/pre-engineering/Pre-Engineering data.xlsx',
+        photoDir:
+          'public/student/morning-students/phase_3_arts_Pre_engineeing/pre-engineering/pre-engineering pic',
+        photoPrefix:
+          'morning-students/phase_3_arts_Pre_engineeing/pre-engineering/pre-engineering pic',
+      },
     ],
     className: 'Pre-Engineering',
     outFile: 'src/data/morningPreEngineeringStudents.ts',
     exportName: 'MORNING_PRE_ENGINEERING_STUDENTS',
-    comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27), phase 1 + phase 2.',
+    comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27), phase 1 + phase 2 + phase 3.',
   },
   {
     sources: [
@@ -158,6 +166,12 @@ function normalizeBloodGroup(value) {
   return v;
 }
 
+function normalizeOptional(value) {
+  const v = String(value || '').trim();
+  if (!v || v === '--' || v === '-' || /^not\s*specified$/i.test(v)) return '';
+  return v;
+}
+
 function normalizeDiscipline(value, className) {
   const v = String(value || '').trim();
   if (!v) return className;
@@ -165,10 +179,39 @@ function normalizeDiscipline(value, className) {
   return v;
 }
 
+/** Find the header row index when sheets have title/summary rows above the table. */
+function findHeaderRowIndex(matrix) {
+  for (let i = 0; i < matrix.length; i++) {
+    const cells = (matrix[i] || []).map((c) => String(c || '').trim().toLowerCase());
+    const hasRoll = cells.some((c) => c === 'roll no' || c === 'rollno' || c === 'roll number');
+    const hasName = cells.some((c) => c === 'name' || c === 'student name');
+    if (hasRoll && hasName) return i;
+  }
+  return 0;
+}
+
+function readSheetRows(sheet) {
+  const matrix = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: '' });
+  const headerIdx = findHeaderRowIndex(matrix);
+  const headers = (matrix[headerIdx] || []).map((h) => String(h || '').trim());
+  const rows = [];
+  for (let i = headerIdx + 1; i < matrix.length; i++) {
+    const line = matrix[i] || [];
+    if (!line.some((c) => String(c || '').trim())) continue;
+    const obj = {};
+    headers.forEach((h, col) => {
+      if (!h) return;
+      obj[h] = line[col];
+    });
+    rows.push(obj);
+  }
+  return rows;
+}
+
 function parseSourceRows(source, className) {
   const wb = XLSX.readFile(path.join(root, source.excel));
   const sheetName = wb.SheetNames.find((n) => n.toLowerCase() !== 'instructions') || wb.SheetNames[0];
-  const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName]);
+  const rows = readSheetRows(wb.Sheets[sheetName]);
   const photoDir = path.join(root, source.photoDir);
   const photos = new Set(
     fs.existsSync(photoDir)
@@ -184,6 +227,8 @@ function parseSourceRows(source, className) {
       const roll = cell(r, 'Roll No', 'RollNo', 'Roll Number');
       if (!name || !roll) return null;
       if (excludeRolls.has(roll)) return null;
+      // Skip summary / non-data rows mistakenly parsed as students
+      if (!/^\d+[a-z]?$/i.test(roll)) return null;
 
       const photo = cell(r, 'Photo File Name', 'Photo', 'Photo File');
       const discipline = normalizeDiscipline(
@@ -203,19 +248,21 @@ function parseSourceRows(source, className) {
         enrollmentType: 'Morning Shift',
         session: cell(r, 'Academic Session', 'Session') || '2026-27',
         admissionNo: cell(r, 'Admission Number', 'Admission No') || roll,
-        dob: cell(r, 'Date of Birth', 'DOB'),
+        dob: normalizeOptional(cell(r, 'Date of Birth', 'DOB')),
         bloodGroup: normalizeBloodGroup(cell(r, 'Blood Group')),
-        cnic: cell(r, 'CNIC / Form-B', 'CNIC', 'Form-B'),
-        phone: cell(
-          r,
-          'Guardian Contact Number',
-          'Enrollment Guardian Contact Number',
-          'Contact Number',
-          'Phone',
-          'Contact'
+        cnic: normalizeOptional(cell(r, 'CNIC / Form-B', 'CNIC', 'Form-B')),
+        phone: normalizeOptional(
+          cell(
+            r,
+            'Guardian Contact Number',
+            'Enrollment Guardian Contact Number',
+            'Contact Number',
+            'Phone',
+            'Contact'
+          )
         ),
         address: cell(r, 'Permanent Address', 'Address'),
-        status: cell(r, 'Status', 'Student Status') || 'Active',
+        status: normalizeOptional(cell(r, 'Status', 'Student Status')) || 'Active',
         ...(photoPath ? { photoFile: photoPath } : {}),
       };
     })

@@ -1716,21 +1716,21 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     status: 'Active'
   },
   {
-    slug: 'saad-bin-munir-1103',
+    slug: 'saad-bin-munir-1130',
     name: 'Saad bin Munir',
     fatherName: 'M. Munir',
     class: 'Pre-Engineering',
-    rollNo: '1103',
+    rollNo: '1130',
     enrollmentType: 'Morning Shift',
     session: '2026-27',
-    admissionNo: '1103',
+    admissionNo: '1130',
     dob: '24-01-2010',
     bloodGroup: '',
     cnic: '',
     phone: '03005948611',
     address: 'Faqir Abad, Peshawar Garden',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-enginering-pic/1103.png'
+    photoFile: 'morning-students/second_phase/pre-enginering-pic/1130.png'
   },
   {
     slug: 'maaz-ur-rahman-1125',

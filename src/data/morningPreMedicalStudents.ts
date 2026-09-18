@@ -1834,7 +1834,7 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     bloodGroup: '',
     cnic: '',
     phone: '03039004488',
-    address: 'F-133b, Dean's Trade Centre, Opposite State Bank',
+    address: 'F-133b, Dean\'s Trade Centre, Opposite State Bank',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/121.jpeg'
   },

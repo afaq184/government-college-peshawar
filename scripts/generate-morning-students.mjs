@@ -236,12 +236,16 @@ function generateCohort(config) {
     );
   }
 
+  // Keep valid TS string literals: escape apostrophes before switching JSON "..." to '...'
+  const body = JSON.stringify(students, null, 2)
+    .replace(/'/g, "\\'")
+    .replace(/"([^"]+)":/g, '$1:')
+    .replace(/"/g, "'");
+
   const out = `import type { StudentRecord } from '../types/student';
 
 /** ${config.comment} */
-export const ${config.exportName}: StudentRecord[] = ${JSON.stringify(students, null, 2)
-    .replace(/"([^"]+)":/g, '$1:')
-    .replace(/"/g, "'")};
+export const ${config.exportName}: StudentRecord[] = ${body};
 `;
 
   fs.writeFileSync(path.join(root, config.outFile), out);

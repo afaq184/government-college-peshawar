@@ -24,25 +24,30 @@ function cell(row, ...keys) {
   return '';
 }
 
-/** Match Excel photo name to disk (handles 01.png vs 1.png, roll_b.png, "2276 M.png", etc.). */
+/** Match Excel photo name to disk (handles 01.png vs 1.png, roll_b.png, "2276 M.png", .jpeg, etc.). */
 function findPhotoFile(photos, photoName, rollNo) {
   const ext = path.extname(photoName || '.png') || '.png';
   const base = (photoName || '').replace(/\.[^.]+$/, '');
   const roll = String(rollNo).trim();
-  const rollNum = String(parseInt(roll, 10));
-  const candidates = new Set([
-    photoName,
-    `${roll}${ext}`,
-    `${rollNum}${ext}`,
-    `${base.replace(/^0+/, '')}${ext}`,
-    `${roll.replace(/^0+/, '')}${ext}`,
-    `${roll}_b${ext}`,
-    `${rollNum}_b${ext}`,
-    `${base}_b${ext}`,
-    `${roll} M${ext}`,
-    `${rollNum} M${ext}`,
-    `${base} M${ext}`,
-  ]);
+  const rollNum = Number.isFinite(parseInt(roll, 10)) ? String(parseInt(roll, 10)) : roll;
+  const alts = [ext, '.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG'];
+  const candidates = new Set();
+  for (const e of alts) {
+    candidates.add(photoName);
+    candidates.add(`${roll}${e}`);
+    candidates.add(`${rollNum}${e}`);
+    if (base) {
+      candidates.add(`${base}${e}`);
+      candidates.add(`${base.replace(/^0+/, '')}${e}`);
+      candidates.add(`${base}_b${e}`);
+      candidates.add(`${base} M${e}`);
+    }
+    candidates.add(`${roll.replace(/^0+/, '')}${e}`);
+    candidates.add(`${roll}_b${e}`);
+    candidates.add(`${rollNum}_b${e}`);
+    candidates.add(`${roll} M${e}`);
+    candidates.add(`${rollNum} M${e}`);
+  }
   for (const candidate of candidates) {
     if (candidate && photos.has(candidate)) return candidate;
   }
@@ -50,7 +55,12 @@ function findPhotoFile(photos, photoName, rollNo) {
   for (const file of photos) {
     if (file === photoName) return file;
     const fileBase = file.replace(/\.[^.]+$/, '');
-    if (fileBase === roll || fileBase === rollNum || fileBase.startsWith(`${roll} `) || fileBase.startsWith(`${rollNum} `)) {
+    if (
+      fileBase === roll ||
+      fileBase === rollNum ||
+      fileBase.startsWith(`${roll} `) ||
+      fileBase.startsWith(`${rollNum} `)
+    ) {
       return file;
     }
   }
@@ -114,19 +124,35 @@ const COHORTS = [
     comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27), phase 1 + phase 2.',
   },
   {
-    excel: 'public/student/morning-students/pre-medical.xlsx',
-    photoDir: 'public/student/morning-students/Pre-medical-pic',
-    photoPrefix: 'morning-students/Pre-medical-pic',
+    sources: [
+      {
+        excel: 'public/student/morning-students/pre-medical.xlsx',
+        photoDir: 'public/student/morning-students/Pre-medical-pic',
+        photoPrefix: 'morning-students/Pre-medical-pic',
+      },
+      {
+        excel: 'public/student/morning-students/second_phase/Pre-Medical.xlsx',
+        photoDir: 'public/student/morning-students/second_phase/pre-medical',
+        photoPrefix: 'morning-students/second_phase/pre-medical',
+      },
+    ],
     className: 'Pre-Medical',
     outFile: 'src/data/morningPreMedicalStudents.ts',
     exportName: 'MORNING_PRE_MEDICAL_STUDENTS',
-    comment: 'Morning Shift — Pre-Medical 1st Year (2026-27).',
+    comment: 'Morning Shift — Pre-Medical 1st Year (2026-27), phase 1 + phase 2.',
   },
 ];
 
 function normalizeBloodGroup(value) {
   const v = String(value || '').trim();
-  if (!v || v === '--' || v === '-') return '';
+  if (!v || v === '--' || v === '-' || /^not\s*specified$/i.test(v)) return '';
+  return v;
+}
+
+function normalizeDiscipline(value, className) {
+  const v = String(value || '').trim();
+  if (!v) return className;
+  if (/^medical$/i.test(v)) return 'Pre-Medical';
   return v;
 }
 
@@ -135,7 +161,11 @@ function parseSourceRows(source, className) {
   const sheetName = wb.SheetNames.find((n) => n.toLowerCase() !== 'instructions') || wb.SheetNames[0];
   const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName]);
   const photoDir = path.join(root, source.photoDir);
-  const photos = new Set(fs.existsSync(photoDir) ? fs.readdirSync(photoDir) : []);
+  const photos = new Set(
+    fs.existsSync(photoDir)
+      ? fs.readdirSync(photoDir).filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
+      : []
+  );
   let missingPhotos = 0;
 
   const students = rows
@@ -145,8 +175,10 @@ function parseSourceRows(source, className) {
       if (!name || !roll) return null;
 
       const photo = cell(r, 'Photo File Name', 'Photo', 'Photo File');
-      const discipline =
-        cell(r, 'Discipline', 'Discipline/Subject', 'Degree Program') || className;
+      const discipline = normalizeDiscipline(
+        cell(r, 'Discipline', 'Discipline/Subject', 'Degree Program'),
+        className
+      );
       const matchedPhoto = findPhotoFile(photos, photo, roll);
       if (!matchedPhoto) missingPhotos += 1;
       const photoPath = matchedPhoto ? `${source.photoPrefix}/${matchedPhoto}` : undefined;

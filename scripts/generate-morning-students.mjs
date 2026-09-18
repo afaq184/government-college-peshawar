@@ -24,17 +24,21 @@ function cell(row, ...keys) {
   return '';
 }
 
-/** Match Excel photo name to disk (handles 01.png vs 1.png, roll-only names, etc.). */
+/** Match Excel photo name to disk (handles 01.png vs 1.png, roll_b.png, etc.). */
 function findPhotoFile(photos, photoName, rollNo) {
   const ext = path.extname(photoName || '.png') || '.png';
   const base = (photoName || '').replace(/\.[^.]+$/, '');
   const roll = String(rollNo).trim();
+  const rollNum = String(parseInt(roll, 10));
   const candidates = new Set([
     photoName,
     `${roll}${ext}`,
-    `${String(parseInt(roll, 10))}${ext}`,
+    `${rollNum}${ext}`,
     `${base.replace(/^0+/, '')}${ext}`,
     `${roll.replace(/^0+/, '')}${ext}`,
+    `${roll}_b${ext}`,
+    `${rollNum}_b${ext}`,
+    `${base}_b${ext}`,
   ]);
   for (const candidate of candidates) {
     if (candidate && photos.has(candidate)) return candidate;
@@ -53,13 +57,23 @@ const COHORTS = [
     comment: 'Morning Shift — Computer Science 1st Year (2026-27).',
   },
   {
-    excel: 'public/student/morning-students/Arts.xlsx',
-    photoDir: 'public/student/morning-students/arts-pic',
-    photoPrefix: 'morning-students/arts-pic',
+    // Phase 1 + phase 2 Arts merged into one export
+    sources: [
+      {
+        excel: 'public/student/morning-students/Arts.xlsx',
+        photoDir: 'public/student/morning-students/arts-pic',
+        photoPrefix: 'morning-students/arts-pic',
+      },
+      {
+        excel: 'public/student/morning-students/second_phase/Arts.xlsx',
+        photoDir: 'public/student/morning-students/second_phase/arts second phase student',
+        photoPrefix: 'morning-students/second_phase/arts second phase student',
+      },
+    ],
     className: 'Arts',
     outFile: 'src/data/morningArtsStudents.ts',
     exportName: 'MORNING_ARTS_STUDENTS',
-    comment: 'Morning Shift — Arts 1st Year (2026-27).',
+    comment: 'Morning Shift — Arts 1st Year (2026-27), phase 1 + phase 2.',
   },
   {
     excel: 'public/student/morning-students/pre-engineering.xlsx',
@@ -81,12 +95,19 @@ const COHORTS = [
   },
 ];
 
-function generateCohort(config) {
-  const wb = XLSX.readFile(path.join(root, config.excel));
+function normalizeBloodGroup(value) {
+  const v = String(value || '').trim();
+  if (!v || v === '--' || v === '-') return '';
+  return v;
+}
+
+function parseSourceRows(source, className) {
+  const wb = XLSX.readFile(path.join(root, source.excel));
   const sheetName = wb.SheetNames.find((n) => n.toLowerCase() !== 'instructions') || wb.SheetNames[0];
   const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName]);
-  const photoDir = path.join(root, config.photoDir);
-  const photos = new Set(fs.readdirSync(photoDir));
+  const photoDir = path.join(root, source.photoDir);
+  const photos = new Set(fs.existsSync(photoDir) ? fs.readdirSync(photoDir) : []);
+  let missingPhotos = 0;
 
   const students = rows
     .map((r) => {
@@ -95,9 +116,10 @@ function generateCohort(config) {
       if (!name || !roll) return null;
 
       const photo = cell(r, 'Photo File Name', 'Photo', 'Photo File');
-      const discipline = cell(r, 'Discipline', 'Degree Program') || config.className;
+      const discipline = cell(r, 'Discipline', 'Degree Program') || className;
       const matchedPhoto = findPhotoFile(photos, photo, roll);
-      const photoPath = matchedPhoto ? `${config.photoPrefix}/${matchedPhoto}` : undefined;
+      if (!matchedPhoto) missingPhotos += 1;
+      const photoPath = matchedPhoto ? `${source.photoPrefix}/${matchedPhoto}` : undefined;
 
       return {
         slug: makeStudentSlug(name, roll),
@@ -109,7 +131,7 @@ function generateCohort(config) {
         session: cell(r, 'Academic Session', 'Session'),
         admissionNo: cell(r, 'Admission Number', 'Admission No') || roll,
         dob: cell(r, 'Date of Birth', 'DOB'),
-        bloodGroup: cell(r, 'Blood Group'),
+        bloodGroup: normalizeBloodGroup(cell(r, 'Blood Group')),
         cnic: cell(r, 'CNIC / Form-B', 'CNIC', 'Form-B'),
         phone: cell(r, 'Guardian Contact Number', 'Phone', 'Contact'),
         address: cell(r, 'Permanent Address', 'Address'),
@@ -118,6 +140,39 @@ function generateCohort(config) {
       };
     })
     .filter(Boolean);
+
+  return { students, missingPhotos, excel: source.excel };
+}
+
+function generateCohort(config) {
+  const sources = config.sources || [
+    {
+      excel: config.excel,
+      photoDir: config.photoDir,
+      photoPrefix: config.photoPrefix,
+    },
+  ];
+
+  const students = [];
+  const seenSlugs = new Set();
+
+  for (const source of sources) {
+    const { students: batch, missingPhotos, excel } = parseSourceRows(source, config.className);
+    let added = 0;
+    for (const student of batch) {
+      if (seenSlugs.has(student.slug)) {
+        console.warn(`  skip duplicate slug ${student.slug} from ${excel}`);
+        continue;
+      }
+      seenSlugs.add(student.slug);
+      students.push(student);
+      added += 1;
+    }
+    console.log(
+      `  ${excel}: ${added} students` +
+        (missingPhotos ? ` (${missingPhotos} without matched photo)` : '')
+    );
+  }
 
   const out = `import type { StudentRecord } from '../types/student';
 

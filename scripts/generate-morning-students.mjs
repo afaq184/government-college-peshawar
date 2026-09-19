@@ -24,13 +24,13 @@ function cell(row, ...keys) {
   return '';
 }
 
-/** Match Excel photo name to disk (handles 01.png vs 1.png, roll_b.png, "2276 M.png", .jpeg, etc.). */
+/** Match Excel photo name to disk (handles 01.png vs 1.png, roll_b.png, "2276 M.png", .jpeg, .jfif, etc.). */
 function findPhotoFile(photos, photoName, rollNo) {
   const ext = path.extname(photoName || '.png') || '.png';
   const base = (photoName || '').replace(/\.[^.]+$/, '');
   const roll = String(rollNo).trim();
   const rollNum = Number.isFinite(parseInt(roll, 10)) ? String(parseInt(roll, 10)) : roll;
-  const alts = [ext, '.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG'];
+  const alts = [ext, '.png', '.jpg', '.jpeg', '.jfif', '.JFIF', '.PNG', '.JPG', '.JPEG'];
   const candidates = new Set();
   for (const e of alts) {
     candidates.add(photoName);
@@ -163,6 +163,20 @@ const COHORTS = [
     exportName: 'MORNING_PRE_MEDICAL_STUDENTS',
     comment: 'Morning Shift — Pre-Medical 1st Year (2026-27), phase 1 + phase 2.',
   },
+  {
+    sources: [
+      {
+        excel: 'public/student/morning-students/sports/sports_data.xlsx',
+        photoDir: 'public/student/morning-students/sports/Sports_pic',
+        photoPrefix: 'morning-students/sports/Sports_pic',
+      },
+    ],
+    className: 'Sports',
+    outFile: 'src/data/morningSportsStudents.ts',
+    exportName: 'MORNING_SPORTS_STUDENTS',
+    comment:
+      'Morning Shift — Sports quota 1st Year (2026-27). Discipline field keeps each student academic track.',
+  },
 ];
 
 function normalizeBloodGroup(value) {
@@ -179,8 +193,10 @@ function normalizeOptional(value) {
 
 function normalizeDiscipline(value, className) {
   const v = String(value || '').trim();
-  if (!v) return className;
+  if (!v || /^not\s*specified$/i.test(v)) return className;
   if (/^medical$/i.test(v)) return 'Pre-Medical';
+  if (/^engineering$/i.test(v)) return 'Pre-Engineering';
+  if (/^(c\.?\s*science|computer\s*science(\s*\(c\/s\))?)$/i.test(v)) return 'Computer Science';
   return v;
 }
 
@@ -220,7 +236,7 @@ function parseSourceRows(source, className) {
   const photoDir = path.join(root, source.photoDir);
   const photos = new Set(
     fs.existsSync(photoDir)
-      ? fs.readdirSync(photoDir).filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
+      ? fs.readdirSync(photoDir).filter((f) => /\.(png|jpe?g|jfif|webp|gif)$/i.test(f))
       : []
   );
   let missingPhotos = 0;
@@ -229,7 +245,7 @@ function parseSourceRows(source, className) {
   const students = rows
     .map((r) => {
       const name = cell(r, 'Name', 'Student Name');
-      const roll = cell(r, 'Roll No', 'RollNo', 'Roll Number');
+      const roll = cell(r, 'Roll No', 'RollNo', 'Roll Number', 'Enrollment');
       if (!name || !roll) return null;
       if (excludeRolls.has(roll)) return null;
       // Skip summary / non-data rows mistakenly parsed as students

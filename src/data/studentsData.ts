@@ -4,6 +4,7 @@ import { MORNING_ARTS_STUDENTS } from './morningArtsStudents';
 import { MORNING_CS_STUDENTS } from './morningComputerScienceStudents';
 import { MORNING_PRE_MEDICAL_STUDENTS } from './morningPreMedicalStudents';
 import { MORNING_PRE_ENGINEERING_STUDENTS } from './morningPreEngineeringStudents';
+import { MORNING_SPORTS_STUDENTS } from './morningSportsStudents';
 import { EVENING_CS_STUDENTS } from './eveningComputerScienceStudents';
 import { EVENING_PRE_MEDICAL_STUDENTS } from './eveningPreMedicalStudents';
 import type { StudentRecord } from '../types/student';
@@ -90,6 +91,8 @@ const DEMO_STUDENTS: Student[] = [
 /** Local demo samples + imported cohorts (Admin also merges Firestore). */
 export const STUDENTS: Student[] = [
   ...DEMO_STUDENTS,
+  // Sports quota listed first so sports photos win when roll/slug already exists in another cohort.
+  ...MORNING_SPORTS_STUDENTS,
   ...MORNING_CS_STUDENTS,
   ...MORNING_ARTS_STUDENTS,
   ...MORNING_PRE_ENGINEERING_STUDENTS,

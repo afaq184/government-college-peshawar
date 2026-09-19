@@ -3275,7 +3275,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0312-9392029',
     address: 'Bahodar Kalay, District Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3076.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3076.png'
   },
   {
     slug: 'zarak-khan-3337',
@@ -3292,7 +3292,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0312-5912771',
     address: 'Chagharmatti-1, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3337.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3337.png'
   },
   {
     slug: 'abdul-latif-3336',
@@ -3309,7 +3309,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0346-9056738',
     address: 'Afghan Colony, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3336.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3336.png'
   },
   {
     slug: 'hasnain-ahmed-3327',
@@ -3359,7 +3359,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0346-5972717',
     address: 'Sha Alam Charsadda Road, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3328.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3328.png'
   },
   {
     slug: 'junaid-ur-rehman-3329',
@@ -3376,7 +3376,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0333-9165581',
     address: 'Sufaid Sung, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3329.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3329.png'
   },
   {
     slug: 'peer-atif-ur-rehman-3330',
@@ -3393,7 +3393,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0318-8886532',
     address: 'Afghan Colony, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3330.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3330.png'
   },
   {
     slug: 'abdullah-3072',
@@ -3410,7 +3410,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0330-934904',
     address: 'Phari Pura, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3072.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3072.png'
   },
   {
     slug: 'mohammad-uzair-3331',
@@ -3427,7 +3427,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0313-0912215',
     address: 'Sheikh Abad-1, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3331.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3331.png'
   },
   {
     slug: 'mohammad-afnan-khan-3332',
@@ -3444,7 +3444,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0346-9167268',
     address: 'Gul Bahar-2, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3332.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3332.png'
   },
   {
     slug: 'hasnain-khan-3073',
@@ -3461,7 +3461,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0306-5454521',
     address: 'Din Bahar Colony, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3073.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3073.png'
   },
   {
     slug: 'mohammad-usman-3114',
@@ -3478,7 +3478,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0321-9118194',
     address: 'Latif Abad, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3114.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3114.png'
   },
   {
     slug: 'shahid-khan-3334',
@@ -3495,7 +3495,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0345-7066124',
     address: 'Dargai, Malakand',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3334.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3334.png'
   },
   {
     slug: 'mohammad-shah-3333',
@@ -3512,7 +3512,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0329-9347920',
     address: 'Sheikh Abad 2, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3333.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3333.png'
   },
   {
     slug: 'tasal-khan-3075',
@@ -3529,7 +3529,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0340-1380666',
     address: 'Ghallani, Distt. Mohmand',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3075.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3075.png'
   },
   {
     slug: 'sami-ullah-sohrab-3335',
@@ -3546,7 +3546,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0335-6519270',
     address: 'Faisal Colony, Dalazak Road, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3335.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3335.png'
   },
   {
     slug: 'talha-khan-3074',
@@ -3563,7 +3563,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0311-5477010',
     address: 'Pajaggi, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3074.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3074.png'
   },
   {
     slug: 'awais-ahmad-3324',
@@ -3580,7 +3580,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0345-5062081',
     address: 'Mandani, Tehsil Tangi, Distt. Charsadda',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3324.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3324.png'
   },
   {
     slug: 'tufail-khan-3325',
@@ -3597,7 +3597,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0334-8585638',
     address: 'Afghan Colony, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3325.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3325.png'
   },
   {
     slug: 'm-zikriya-fazal-3326',
@@ -3614,7 +3614,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0317-976729',
     address: 'Kakshal, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3326.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3326.png'
   },
   {
     slug: 'm-abdul-haseeb-3078',
@@ -3631,7 +3631,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0312-9595360',
     address: 'Khazana Payan, Distt. Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3078.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3078.png'
   },
   {
     slug: 'safi-ullah-3116',
@@ -3648,7 +3648,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0314-9710118',
     address: 'Feroz Pura, Distt. Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3116.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3116.png'
   },
   {
     slug: 'mohammad-mustafa-3077',
@@ -3665,7 +3665,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     phone: '0315-9502653',
     address: 'Afghan Colony, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3077.jpeg'
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3077.png'
   },
   {
     slug: 'mohammad-rehan-3115',

@@ -239,7 +239,11 @@ function readSheetRows(sheet) {
 
 function parseSourceRows(source, className) {
   const wb = XLSX.readFile(path.join(root, source.excel));
-  const sheetName = wb.SheetNames.find((n) => n.toLowerCase() !== 'instructions') || wb.SheetNames[0];
+  const sheetName =
+    wb.SheetNames.find((n) => {
+      const lower = n.toLowerCase();
+      return lower !== 'instructions' && lower !== 'verification';
+    }) || wb.SheetNames[0];
   const rows = readSheetRows(wb.Sheets[sheetName]);
   const photoDir = path.join(root, source.photoDir);
   const photos = new Set(

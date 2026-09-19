@@ -137,11 +137,19 @@ const COHORTS = [
         photoPrefix:
           'morning-students/phase_3_arts_Pre_engineeing/pre-engineering/pre-engineering pic',
       },
+      {
+        excel: 'public/student/morning-students/Pre_engineering_morning_1/pre-engineering moring.xlsx',
+        photoDir:
+          'public/student/morning-students/Pre_engineering_morning_1/pre-enginerring_morning_pic',
+        photoPrefix:
+          'morning-students/Pre_engineering_morning_1/pre-enginerring_morning_pic',
+      },
     ],
     className: 'Pre-Engineering',
     outFile: 'src/data/morningPreEngineeringStudents.ts',
     exportName: 'MORNING_PRE_ENGINEERING_STUDENTS',
-    comment: 'Morning Shift — Pre-Engineering 1st Year (2026-27), phase 1 + phase 2 + phase 3.',
+    comment:
+      'Morning Shift — Pre-Engineering 1st Year (2026-27), phase 1 + phase 2 + phase 3 + morning_1.',
   },
   {
     sources: [

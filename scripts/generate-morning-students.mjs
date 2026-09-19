@@ -111,11 +111,16 @@ const COHORTS = [
         photoDir: 'public/student/morning-students/phase_3_arts_Pre_engineeing/arts/arts pic',
         photoPrefix: 'morning-students/phase_3_arts_Pre_engineeing/arts/arts pic',
       },
+      {
+        excel: 'public/student/morning-students/phase_fifith_arts/arts.xlsx',
+        photoDir: 'public/student/morning-students/phase_fifith_arts/arts_pics',
+        photoPrefix: 'morning-students/phase_fifith_arts/arts_pics',
+      },
     ],
     className: 'Arts',
     outFile: 'src/data/morningArtsStudents.ts',
     exportName: 'MORNING_ARTS_STUDENTS',
-    comment: 'Morning Shift — Arts 1st Year (2026-27), phase 1 + phase 2 + phase 3.',
+    comment: 'Morning Shift — Arts 1st Year (2026-27), phase 1 + phase 2 + phase 3 + phase 5.',
   },
   {
     sources: [
@@ -189,13 +194,13 @@ const COHORTS = [
 
 function normalizeBloodGroup(value) {
   const v = String(value || '').trim();
-  if (!v || v === '--' || v === '-' || /^not\s*specified$/i.test(v)) return '';
+  if (!v || v === '--' || v === '-' || /^not\s*(specified|provided)$/i.test(v)) return '';
   return v;
 }
 
 function normalizeOptional(value) {
   const v = String(value || '').trim();
-  if (!v || v === '--' || v === '-' || /^not\s*specified$/i.test(v)) return '';
+  if (!v || v === '--' || v === '-' || /^not\s*(specified|provided)$/i.test(v)) return '';
   return v;
 }
 

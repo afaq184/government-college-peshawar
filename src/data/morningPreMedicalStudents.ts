@@ -3126,7 +3126,7 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     bloodGroup: '',
     cnic: '',
     phone: '03109528511',
-    address: 'Not specified',
+    address: '',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/261.jpeg'
   },
@@ -3244,7 +3244,7 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     dob: '14/1/2011',
     bloodGroup: '',
     cnic: '',
-    phone: 'Not specified',
+    phone: '',
     address: 'Shah Alam, Pajjagi, Pesh',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/265.png'

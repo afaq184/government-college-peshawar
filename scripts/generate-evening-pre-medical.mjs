@@ -135,7 +135,7 @@ const excelRows = [
     'Evening Shift',
     s.status,
     s.photoName,
-    '2026-27',
+    '2026-2028',
   ]),
 ];
 const outWb = XLSX.utils.book_new();
@@ -157,7 +157,7 @@ const students = studentsRaw.map((s) => {
     class: 'Pre-Medical',
     rollNo: s.rollNo,
     enrollmentType: 'Evening Shift',
-    session: '2026-27',
+    session: '2026-2028',
     admissionNo: s.rollNo,
     dob: s.dob,
     bloodGroup: s.bloodGroup,
@@ -176,7 +176,7 @@ const body = JSON.stringify(students, null, 2)
 
 const outTs = `import type { StudentRecord } from '../types/student';
 
-/** Evening Shift - Pre-Medical 1st Year (2026-27). */
+/** Evening Shift - Pre-Medical 1st Year (2026-2028). */
 export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = ${body};
 `;
 const outFile = path.join(root, 'src/data/eveningPreMedicalStudents.ts');

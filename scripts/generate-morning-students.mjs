@@ -91,7 +91,7 @@ const COHORTS = [
     className: 'Computer Science',
     outFile: 'src/data/morningComputerScienceStudents.ts',
     exportName: 'MORNING_CS_STUDENTS',
-    comment: 'Morning Shift — Computer Science 1st Year (2026-27), phase 1 + phase 2 + remains.',
+    comment: 'Morning Shift — Computer Science 1st Year (2026-2028), phase 1 + phase 2 + remains.',
   },
   {
     // Phase 1 + phase 2 + phase 3 Arts merged into one export
@@ -120,7 +120,7 @@ const COHORTS = [
     className: 'Arts',
     outFile: 'src/data/morningArtsStudents.ts',
     exportName: 'MORNING_ARTS_STUDENTS',
-    comment: 'Morning Shift — Arts 1st Year (2026-27), phase 1 + phase 2 + phase 3 + phase 5.',
+    comment: 'Morning Shift — Arts 1st Year (2026-2028), phase 1 + phase 2 + phase 3 + phase 5.',
   },
   {
     sources: [
@@ -154,7 +154,7 @@ const COHORTS = [
     outFile: 'src/data/morningPreEngineeringStudents.ts',
     exportName: 'MORNING_PRE_ENGINEERING_STUDENTS',
     comment:
-      'Morning Shift — Pre-Engineering 1st Year (2026-27), phase 1 + phase 2 + phase 3 + morning_1.',
+      'Morning Shift — Pre-Engineering 1st Year (2026-2028), phase 1 + phase 2 + phase 3 + morning_1.',
   },
   {
     sources: [
@@ -174,7 +174,7 @@ const COHORTS = [
     className: 'Pre-Medical',
     outFile: 'src/data/morningPreMedicalStudents.ts',
     exportName: 'MORNING_PRE_MEDICAL_STUDENTS',
-    comment: 'Morning Shift — Pre-Medical 1st Year (2026-27), phase 1 + phase 2.',
+    comment: 'Morning Shift — Pre-Medical 1st Year (2026-2028), phase 1 + phase 2.',
   },
   {
     sources: [
@@ -188,7 +188,7 @@ const COHORTS = [
     outFile: 'src/data/morningSportsStudents.ts',
     exportName: 'MORNING_SPORTS_STUDENTS',
     comment:
-      'Morning Shift — Sports quota 1st Year (2026-27). Discipline field keeps each student academic track.',
+      'Morning Shift — Sports quota 1st Year (2026-2028). Discipline field keeps each student academic track.',
   },
 ];
 
@@ -284,7 +284,7 @@ function parseSourceRows(source, className) {
         class: discipline,
         rollNo: roll,
         enrollmentType: 'Morning Shift',
-        session: cell(r, 'Academic Session', 'Session') || '2026-27',
+        session: '2026-2028',
         admissionNo: cell(r, 'Admission Number', 'Admission No') || roll,
         dob: normalizeOptional(cell(r, 'Date of Birth', 'DOB')),
         bloodGroup: normalizeBloodGroup(cell(r, 'Blood Group')),

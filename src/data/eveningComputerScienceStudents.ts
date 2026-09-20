@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift - Computer Science 1st Year (2026-27). */
+/** Evening Shift - Computer Science 1st Year (2026-2028). */
 export const EVENING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'shameber-2276',
@@ -9,7 +9,7 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     class: 'Computer Science',
     rollNo: '2276',
     enrollmentType: 'Evening Shift',
-    session: '2026-27',
+    session: '2026-2028',
     admissionNo: '2276',
     dob: '31/03/2008',
     bloodGroup: '',
@@ -26,7 +26,7 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     class: 'Computer Science',
     rollNo: '2277',
     enrollmentType: 'Evening Shift',
-    session: '2026-27',
+    session: '2026-2028',
     admissionNo: '2277',
     dob: '20/04/2008',
     bloodGroup: '',
@@ -42,7 +42,7 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     class: 'Computer Science',
     rollNo: '2101',
     enrollmentType: 'Evening Shift',
-    session: '2026-27',
+    session: '2026-2028',
     admissionNo: '2101',
     dob: '15/02/2011',
     bloodGroup: '',
@@ -58,7 +58,7 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     class: 'Computer Science',
     rollNo: '2181',
     enrollmentType: 'Evening Shift',
-    session: '2026-27',
+    session: '2026-2028',
     admissionNo: '2181',
     dob: '07/09/2011',
     bloodGroup: '',
@@ -75,7 +75,7 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     class: 'Computer Science',
     rollNo: '2102',
     enrollmentType: 'Evening Shift',
-    session: '2026-27',
+    session: '2026-2028',
     admissionNo: '2102',
     dob: '09/01/2010',
     bloodGroup: '',

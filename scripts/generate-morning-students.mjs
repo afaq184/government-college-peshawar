@@ -284,7 +284,7 @@ function parseSourceRows(source, className) {
         class: discipline,
         rollNo: roll,
         enrollmentType: 'Morning Shift',
-        session: '2026-2028',
+        session: cell(r, 'Academic Session', 'Session') || '2026-2028',
         admissionNo: cell(r, 'Admission Number', 'Admission No') || roll,
         dob: normalizeOptional(cell(r, 'Date of Birth', 'DOB')),
         bloodGroup: normalizeBloodGroup(cell(r, 'Blood Group')),

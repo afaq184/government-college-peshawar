@@ -7,10 +7,19 @@ import CryptoJS from 'crypto-js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 
-const EVENING_ROLLS = new Set(['2276', '2277', '2101', '2181', '2102']);
-
 const STUDENT_URL_SECRET =
   process.env.VITE_STUDENT_URL_SECRET || 'GCP-STUDENT-PORTAL-AES-2026-KP';
+
+const SRC_EXCEL = path.join(
+  root,
+  'public/student/evening-students/computer_science_eveing_1/cs eveing data.xlsx'
+);
+const PHOTO_DIR = path.join(
+  root,
+  'public/student/evening-students/computer_science_eveing_1/computer science eveing pic_R'
+);
+const PHOTO_PREFIX =
+  'evening-students/computer_science_eveing_1/computer science eveing pic_R';
 
 function makeStudentSlug(name, rollNo) {
   return `${name}-${rollNo}`
@@ -20,31 +29,37 @@ function makeStudentSlug(name, rollNo) {
     .replace(/^-+|-+$/g, '');
 }
 
-function deriveKeyAndIv() {
-  const key = CryptoJS.SHA256(STUDENT_URL_SECRET);
-  const ivHash = CryptoJS.SHA256(`${STUDENT_URL_SECRET}:iv`);
-  const iv = CryptoJS.lib.WordArray.create(ivHash.words.slice(0, 4), 16);
-  return { key, iv };
+function cell(row, ...keys) {
+  for (const key of keys) {
+    const found = Object.keys(row).find((k) => k.trim().toLowerCase() === key.toLowerCase());
+    if (found != null && row[found] != null && String(row[found]).trim() !== '') {
+      return row[found];
+    }
+  }
+  return '';
 }
 
-function toUrlSafe(base64) {
-  return base64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
-}
-
-function encryptStudentSlug(slug) {
-  const { key, iv } = deriveKeyAndIv();
-  const encrypted = CryptoJS.AES.encrypt(slug, key, {
-    iv,
-    mode: CryptoJS.mode.CBC,
-    padding: CryptoJS.pad.Pkcs7,
-  });
-  return toUrlSafe(encrypted.ciphertext.toString(CryptoJS.enc.Base64));
+function formatDob(value) {
+  if (value == null || value === '') return '';
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    const parsed = XLSX.SSF.parse_date_code(value);
+    if (parsed) {
+      const dd = String(parsed.d).padStart(2, '0');
+      const mm = String(parsed.m).padStart(2, '0');
+      return `${dd}/${mm}/${parsed.y}`;
+    }
+  }
+  return String(value).trim();
 }
 
 function findPhotoFile(photos, photoName, rollNo) {
   const roll = String(rollNo).trim();
-  const alts = ['.png', '.jpg', '.jpeg', '.PNG'];
-  const candidates = new Set([photoName, ...alts.flatMap((e) => [`${roll}${e}`, `${roll} M${e}`, `${roll}_b${e}`])]);
+  const alts = ['.png', '.jpg', '.jpeg', '.jfif', '.PNG', '.JPG', '.JPEG'];
+  const candidates = new Set();
+  for (const e of alts) {
+    candidates.add(photoName);
+    candidates.add(`${roll}${e}`);
+  }
   for (const c of candidates) if (c && photos.has(c)) return c;
   for (const file of photos) {
     const base = file.replace(/\.[^.]+$/, '');
@@ -53,100 +68,76 @@ function findPhotoFile(photos, photoName, rollNo) {
   return null;
 }
 
-// Source evening excel (first row is data, no proper header)
-const srcExcel = path.join(
-  'D:\\',
-  '`Gcp student data',
-  '2 phase',
-  'second_phase',
-  'computer',
-  'computer eveing.xlsx'
+function encryptStudentSlug(slug) {
+  const key = CryptoJS.SHA256(STUDENT_URL_SECRET);
+  const iv = CryptoJS.lib.WordArray.create(
+    CryptoJS.SHA256(`${STUDENT_URL_SECRET}:iv`).words.slice(0, 4),
+    16
+  );
+  const encrypted = CryptoJS.AES.encrypt(slug, key, {
+    iv,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7,
+  });
+  return encrypted.ciphertext
+    .toString(CryptoJS.enc.Base64)
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=+$/g, '');
+}
+
+const PREVIOUS_EVENING_ROLLS = new Set(['2276', '2277', '2101', '2181', '2102']);
+
+const wb = XLSX.readFile(SRC_EXCEL);
+const sheet =
+  wb.Sheets[
+    wb.SheetNames.find((n) => !/instructions|verification/i.test(n)) || wb.SheetNames[0]
+  ];
+const rows = XLSX.utils.sheet_to_json(sheet, { defval: '' });
+const photos = new Set(
+  fs.existsSync(PHOTO_DIR)
+    ? fs.readdirSync(PHOTO_DIR).filter((f) => /\.(png|jpe?g|jfif|webp|gif)$/i.test(f))
+    : []
 );
-const wb = XLSX.readFile(srcExcel);
-const raw = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { header: 1, defval: '' });
 
-const studentsRaw = raw
-  .map((r) => {
-    const name = String(r[0] || '').trim();
-    const fatherName = String(r[1] || '').trim();
-    const rollNo = String(r[2] || '').trim();
-    const dob = String(r[6] || '').trim();
-    const phone = String(r[7] || '').trim();
-    const address = String(r[8] || '').trim();
-    const status = String(r[10] || '').trim() || 'Active';
-    const photoName = String(r[11] || '').trim() || `${rollNo}.png`;
-    if (!name || !rollNo) return null;
-    return { name, fatherName, rollNo, dob, phone, address, status, photoName };
-  })
-  .filter(Boolean);
+const seen = new Set();
+let missingPhotos = 0;
+const students = [];
 
-// Write a clean Excel with Evening Shift for the website assets
-const outExcelDir = path.join(root, 'public/student/evening-students');
-fs.mkdirSync(outExcelDir, { recursive: true });
-const excelRows = [
-  [
-    'Name',
-    "Father's Name",
-    'Roll No',
-    'Class',
-    'Discipline',
-    'Blood Group',
-    'Date of Birth',
-    'Guardian Contact Number',
-    'Permanent Address',
-    'Enrollment Type',
-    'Status',
-    'Photo File Name',
-    'Academic Session',
-  ],
-  ...studentsRaw.map((s) => [
-    s.name,
-    s.fatherName,
-    s.rollNo,
-    '1st Year',
-    'Computer Science',
-    '',
-    s.dob,
-    s.phone,
-    s.address,
-    'Evening Shift',
-    s.status,
-    s.photoName,
-    '2026-2028',
-  ]),
-];
-const outWb = XLSX.utils.book_new();
-XLSX.utils.book_append_sheet(outWb, XLSX.utils.aoa_to_sheet(excelRows), 'Students');
-const outExcel = path.join(outExcelDir, 'computer-science-evening.xlsx');
-XLSX.writeFile(outWb, outExcel);
-console.log('Wrote', outExcel, 'rows', studentsRaw.length);
+for (const r of rows) {
+  const name = String(cell(r, 'Student Name', 'Name') || '').trim();
+  const rollNo = String(cell(r, 'Roll No', 'Roll Number', 'RollNo') || '').trim();
+  if (!name || !rollNo || !/^\d+[a-z]?$/i.test(rollNo)) continue;
+  if (seen.has(rollNo)) {
+    console.warn(`skip duplicate roll ${rollNo}`);
+    continue;
+  }
+  seen.add(rollNo);
 
-const photoDir = path.join(root, 'public/student/evening-students/computer-science-pic');
-fs.mkdirSync(photoDir, { recursive: true });
-const photos = new Set(fs.readdirSync(photoDir).filter((f) => /\.(png|jpe?g)$/i.test(f)));
+  const photoName = String(cell(r, 'Photo File Name', 'Photo') || '').trim() || `${rollNo}.png`;
+  const matched = findPhotoFile(photos, photoName, rollNo);
+  if (!matched) missingPhotos += 1;
 
-const students = studentsRaw.map((s) => {
-  const matched = findPhotoFile(photos, s.photoName, s.rollNo);
-  return {
-    slug: makeStudentSlug(s.name, s.rollNo),
-    name: s.name,
-    fatherName: s.fatherName,
+  students.push({
+    slug: makeStudentSlug(name, rollNo),
+    name,
+    fatherName: String(cell(r, "Father's Name", 'Father Name', 'Father') || '').trim(),
     class: 'Computer Science',
-    rollNo: s.rollNo,
+    rollNo,
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
-    admissionNo: s.rollNo,
-    dob: s.dob,
+    admissionNo: rollNo,
+    dob: formatDob(cell(r, 'Date of Birth', 'DOB')),
     bloodGroup: '',
     cnic: '',
-    phone: s.phone,
-    address: s.address,
-    status: s.status,
-    ...(matched
-      ? { photoFile: `evening-students/computer-science-pic/${matched}` }
-      : {}),
-  };
-});
+    phone: String(cell(r, 'Contact Number', 'Guardian Contact Number', 'Phone') || '').trim(),
+    address: String(cell(r, 'Permanent Address', 'Address') || '').trim(),
+    status: String(cell(r, 'Student Status', 'Status') || '').trim() || 'Active',
+    ...(matched ? { photoFile: `${PHOTO_PREFIX}/${matched}` } : {}),
+  });
+}
+
+students.sort((a, b) => Number(a.rollNo) - Number(b.rollNo));
 
 const body = JSON.stringify(students, null, 2)
   .replace(/'/g, "\\'")
@@ -155,19 +146,24 @@ const body = JSON.stringify(students, null, 2)
 
 const outTs = `import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Computer Science 1st Year (2026-2028). */
+/** Evening Shift — Computer Science 1st Year (2026-2028), including computer_science_eveing_1. */
 export const EVENING_CS_STUDENTS: StudentRecord[] = ${body};
 `;
+
 const outFile = path.join(root, 'src/data/eveningComputerScienceStudents.ts');
 fs.writeFileSync(outFile, outTs);
-console.log('Wrote', students.length, 'students ->', outFile);
+console.log(
+  `Wrote ${students.length} students -> ${outFile}` +
+    (missingPhotos ? ` (${missingPhotos} without matched photo)` : '')
+);
 
-console.log('\nURLs:');
-for (const s of students) {
-  const url = `https://gcpeshawar.com/student/${encryptStudentSlug(s.slug)}`;
-  console.log(`${s.rollNo} | ${s.name}`);
-  console.log(`  ${url}`);
-  console.log(`  photo: ${s.photoFile || 'MISSING'}`);
+const newlyAdded = students.filter((s) => !PREVIOUS_EVENING_ROLLS.has(s.rollNo));
+console.log(`\nNEWLY_ADDED=${newlyAdded.length}`);
+for (const s of newlyAdded) {
+  console.log(
+    `${s.rollNo}\t${s.name}\thttps://gcpeshawar.com/student/${encryptStudentSlug(s.slug)}` +
+      (s.photoFile ? '' : '\tNO_PHOTO')
+  );
 }
 
-console.log('\nEvening rolls to exclude from morning:', [...EVENING_ROLLS].join(', '));
+console.log('\nALL_EVENING_ROLLS=' + students.map((s) => s.rollNo).join(','));

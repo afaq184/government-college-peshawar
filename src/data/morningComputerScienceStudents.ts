@@ -631,23 +631,6 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/second_phase/computer_second_phase_pic/2077.png'
   },
   {
-    slug: 'baljeet-singh-2272',
-    name: 'Baljeet Singh',
-    fatherName: 'Hardyal Singh',
-    class: 'Computer Science',
-    rollNo: '2272',
-    enrollmentType: 'Morning Shift',
-    session: '2026-2028',
-    admissionNo: '2272',
-    dob: '02/10/2009',
-    bloodGroup: '',
-    cnic: '',
-    phone: '0316-5034040',
-    address: 'Asia Gate, Peshawar',
-    status: 'Active',
-    photoFile: 'morning-students/second_phase/computer_second_phase_pic/2272 M.png'
-  },
-  {
     slug: 'abubakar-hussain-2078',
     name: 'Abubakar Hussain',
     fatherName: 'Bakhti Gul',

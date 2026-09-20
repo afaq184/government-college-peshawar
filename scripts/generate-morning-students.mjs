@@ -80,7 +80,7 @@ const COHORTS = [
         photoDir: 'public/student/morning-students/second_phase/computer_second_phase_pic',
         photoPrefix: 'morning-students/second_phase/computer_second_phase_pic',
         // These students belong to Evening Shift (see computer eveing.xlsx)
-        excludeRolls: ['2276', '2277', '2101', '2181', '2102'],
+        excludeRolls: ['2101', '2102', '2103', '2104', '2105', '2106', '2107', '2108', '2109', '2110', '2111', '2112', '2113', '2114', '2181', '2182', '2183', '2184', '2185', '2186', '2187', '2188', '2189', '2190', '2191', '2192', '2193', '2194', '2195', '2196', '2197', '2198', '2199', '2200', '2201', '2202', '2203', '2204', '2205', '2206', '2207', '2208', '2209', '2210', '2211', '2272', '2276', '2277'],
       },
       {
         excel: 'public/student/morning-students/cs_morning_remains/cs morning data.xlsx',

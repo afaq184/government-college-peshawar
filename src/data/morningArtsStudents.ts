@@ -3342,7 +3342,8 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     cnic: '',
     phone: '0313-8912215',
     address: 'Sheikh Abad, Peshawar',
-    status: 'Active'
+    status: 'Active',
+    photoFile: 'morning-students/phase_fifith_arts/arts_pics/3071.png'
   },
   {
     slug: 'mohd-irfan-3328',

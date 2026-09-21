@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Engineering 1st Year (2026-2028), phase 1–3 + morning_1 + phase 4. */
+/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4 + phase 5. */
 export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-moiz-1001',
@@ -664,6 +664,23 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Dobian Shabaz Garhi Swabi',
     status: 'Active',
     photoFile: 'morning-students/pre-engineering-pic/1040.png'
+  },
+  {
+    slug: 'abdullah-javed-1044',
+    name: 'Abdullah Javed',
+    fatherName: 'Javed Akhtar',
+    class: 'Pre-Engineering',
+    rollNo: '1044',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1044',
+    dob: '16-07-2010',
+    bloodGroup: 'AB+',
+    cnic: '',
+    phone: '',
+    address: 'Dik Ismail Khel, Nowshera',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/max pic/1044.png'
   },
   {
     slug: 'muhammad-khan-1051',
@@ -1426,6 +1443,40 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '',
     address: 'OPF Colony, Doran Pur, Peshawar',
     status: 'Active'
+  },
+  {
+    slug: 'm-mustafa-1097',
+    name: 'M. Mustafa',
+    fatherName: 'Haji Ullah',
+    class: 'Pre-Engineering',
+    rollNo: '1097',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1097',
+    dob: '20-03-2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0347-9341896',
+    address: 'Koper, Tehsil Dargai, Malakand',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/engineering/1097.png'
+  },
+  {
+    slug: 'm-sudais-waseem-1098',
+    name: 'M. Sudais Waseem',
+    fatherName: 'Tahir Waseem',
+    class: 'Pre-Engineering',
+    rollNo: '1098',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1098',
+    dob: '28-03-2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0312-0103636',
+    address: 'Fatima Khel, Karam Khan Durrani College, Bannu',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/engineering/1098.png'
   },
   {
     slug: 'abdur-rahman-bin-masood-1101',
@@ -3107,6 +3158,74 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Muslim Town, Dalazak Road, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/phase 4 eveing/Pre-engineering evening 1_R/pre-engineering-pic eveing/1221.jfif'
+  },
+  {
+    slug: 'hamza-hussain-1222',
+    name: 'Hamza Hussain',
+    fatherName: 'Ghulam Hussain',
+    class: 'Pre-Engineering',
+    rollNo: '1222',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1222',
+    dob: '03-03-2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0333-49259609',
+    address: 'Garhi Hamza, Shalampul Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/engineering/12222.png'
+  },
+  {
+    slug: 'm-rohan-1223',
+    name: 'M. Rohan',
+    fatherName: 'Faheem Jan',
+    class: 'Pre-Engineering',
+    rollNo: '1223',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1223',
+    dob: '12-11-2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0300-5889556',
+    address: 'Andrano Lahori, Gate P.O.',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/engineering/1223.png'
+  },
+  {
+    slug: 'ahmad-muneer-1224',
+    name: 'Ahmad Muneer',
+    fatherName: 'Muneer Khan',
+    class: 'Pre-Engineering',
+    rollNo: '1224',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1224',
+    dob: '28-08-2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0316-9271212',
+    address: 'Sardar Colony, Charsadda Road, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/engineering/1224.png'
+  },
+  {
+    slug: 'malik-muhammad-azhar-jawad-1225',
+    name: 'Malik Muhammad Azhar Jawad',
+    fatherName: 'Muhammad Jawad',
+    class: 'Pre-Engineering',
+    rollNo: '1225',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1225',
+    dob: '13-03-2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0333-9168645',
+    address: 'Fato Abdul Rahim II',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/engineering/1225.png'
   },
   {
     slug: 'hifzar-ahmad-1281',

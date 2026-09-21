@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Computer Science 1st Year (2026-2028), phase 1 + phase 2 + remains + phase 4. */
+/** Morning Shift — Computer Science 1st Year (2026-2028), including phase 4 + phase 5. */
 export const MORNING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'hashir-khan-2001',
@@ -511,6 +511,23 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     address: 'Hassan Garhi, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/second_phase/computer_second_phase_pic/2045.png'
+  },
+  {
+    slug: 'm-babar-wakeeh-2062',
+    name: 'M. Babar Wakeeh',
+    fatherName: 'Irshad Muhammad',
+    class: 'Computer Science',
+    rollNo: '2062',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '2062',
+    dob: '09-05-2009',
+    bloodGroup: 'B+',
+    cnic: '',
+    phone: '',
+    address: 'Sheikhabad No. 2, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/max pic/2062.png'
   },
   {
     slug: 'abu-bakar-siddique-2066',

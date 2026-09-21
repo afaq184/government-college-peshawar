@@ -1,0 +1,14 @@
+# Phase 5 — Morning students
+# Generated 2026-09-21T12:30:20.803Z
+# Count: 10
+
+71	M. Junaid	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/guxcAvTp84PzGHzK0jklHQ
+266	Ikram Ullah	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/FDyHlQtm8kBEz72Odqf0KA
+1222	Hamza Hussain	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/0prIbuf7wEX9FpsnHzaDVXGMQLH6XbTnSdK_ONYLGa8
+1097	M. Mustafa	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/reYEwyyr6A4RcsK2Gz41SA
+1223	M. Rohan	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/oJIxi0cHZ9RqbOBaWBig-w
+1225	Malik Muhammad Azhar Jawad	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/lSOEdEOVnAn2TY6T5kEFnnHWs42ipB_RL76NzrdiNvs
+1224	Ahmad Muneer	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/3098vpRb3tMn1Sl54PVdrS5mG5rDaF1lUM3tiiAbUWU
+1098	M. Sudais Waseem	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/XmYLY5lkjQ_RM_he12ufYWpf94XK3A5jiQ8nP3tg67Q
+2062	M. Babar Wakeeh	Computer Science	Morning Shift	https://gcpeshawar.com/student/dM-4Z9wYjwLT-0zVKCKAh1zFF91wXr4HKKq_ih2WQIo
+1044	Abdullah Javed	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/Wz18z9CEAZd5invtzxAQlwPTRHx6rd9Ojb7Dvxoi1w8

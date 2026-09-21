@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Medical 1st Year (2026-2028), phase 1 + phase 2 + phase 4. */
+/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4 + phase 5. */
 export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'mir-khudair-01',
@@ -1191,6 +1191,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Malik Din Khel Nala, P/O Bara, District Khyber',
     status: 'Active',
     photoFile: 'morning-students/Pre-medical-pic/70.png'
+  },
+  {
+    slug: 'm-junaid-71',
+    name: 'M. Junaid',
+    fatherName: 'Syed Amin',
+    class: 'Pre-Medical',
+    rollNo: '71',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '71',
+    dob: '3/26/2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: 'Bettani',
+    address: 'Lakki Marwat',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/Medical pic/71.png'
   },
   {
     slug: 'muhammad-junaid-71',
@@ -3503,6 +3520,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Shah Alam, Pajjagi, Pesh',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/265.png'
+  },
+  {
+    slug: 'ikram-ullah-266',
+    name: 'Ikram Ullah',
+    fatherName: 'Kashmir Muhammad',
+    class: 'Pre-Medical',
+    rollNo: '266',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '266',
+    dob: '22/9/2009',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03299309101',
+    address: 'Haji Camp Sethi Town Hussain Chowk, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/fifth_phase_eveing/Medical pic/266.png'
   },
   {
     slug: 'sanan-khan-266',

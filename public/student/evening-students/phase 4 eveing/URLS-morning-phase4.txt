@@ -1,0 +1,24 @@
+# Phase 4 — Morning students
+# Generated 2026-09-21T11:29:34.112Z
+# Count: 20
+
+2041	Syed Soban Ahmed	Computer Science	Morning Shift	https://gcpeshawar.com/student/XgVkzMiLSuqsDCMHuZTS0D_NWofHY-C5jRAaZ7Jj6ek
+2042	Subhan Ullah	Computer Science	Morning Shift	https://gcpeshawar.com/student/65PiZa4DWg6mZ0PN8MXmDJzvyeiqkV-1fEzWMvvndmM
+2044	Syed Abdullah Shah	Computer Science	Morning Shift	https://gcpeshawar.com/student/6jO70l1L9qAC8FvDExf_sBvKxwVwc74zF8KatMwXzv8
+1095	Irfan Ullah	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/4zn3Y-U6ZIBJh8xUY8mOaBEIeYIaEKtBz_xf1tCuM-Y	NO_PHOTO
+1096	Alyan Khan	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/wJkRGd6LSSYgrHR6rHSP9g	NO_PHOTO
+1220	Junaid Jamshed	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/ebroqP4HzvGcwbOYtm4xOQZXIDFx1PAHrMfAobIjf9E
+1221	M. Usman	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/2rYCryu48jP61JX1swSnrA
+106	M. Nadir Zakaria Nadir	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/WxthbHQ0pKDt-oHILMjSE-bHfcDoYzZHHWcJKqpeWE4
+118	Noor U Din	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/9_syW0DT-4oG00__ldPfEw
+118	Muhammad Izhar	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/bDTPGKpXSxL9Fxs41mNaU2sedXumSTBbCECE1ESfUcg
+211	Muhammad Aqil Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/FKzgfVXY0ERmphZfB4q9VTGSVAhYoH_fhofd2E5C4lw
+212	Muhammad Maaz	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/0WsM1gKdqIfdGUYRZYIlUv6q_pol4b7_G9dt-k8rNqE
+213	Mohsin Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/cnwT5-fwW91j4vqJ-8gNFg
+214	M. Hilal Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/oakllvom8Ljm6KJmLtDOXeQ3gl0pXWQhX1kGrA9oiSA
+215	M. Saim Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/TsRXAksZtjeGZNDNlp2fiw
+230	Aman	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/FlyzucAUnfrIKiZaVU2-OA
+322	M. Azad Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/uh1EK_x7Iz6Gw7O_3LhHgA
+323	Chiragh Ud Din	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/Y9RUWwG9GlICfC5zb01CR9ZMW2RkRwyGmx60CwoMnl4
+325	Abdul Nasir Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/C8U_xDv8_KbbI0uiIBwR-9HCME49tO1nnTaXa9G_hcQ
+325	Ibrahim Jan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/m-c3jYnTIj1YOZav1tOXhQ

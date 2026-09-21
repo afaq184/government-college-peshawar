@@ -7,6 +7,7 @@ import { MORNING_PRE_ENGINEERING_STUDENTS } from './morningPreEngineeringStudent
 import { MORNING_SPORTS_STUDENTS } from './morningSportsStudents';
 import { EVENING_CS_STUDENTS } from './eveningComputerScienceStudents';
 import { EVENING_PRE_MEDICAL_STUDENTS } from './eveningPreMedicalStudents';
+import { EVENING_PRE_ENGINEERING_STUDENTS } from './eveningPreEngineeringStudents';
 import type { StudentRecord } from '../types/student';
 
 export type Student = StudentRecord;
@@ -99,6 +100,7 @@ export const STUDENTS: Student[] = [
   ...MORNING_PRE_MEDICAL_STUDENTS,
   ...EVENING_CS_STUDENTS,
   ...EVENING_PRE_MEDICAL_STUDENTS,
+  ...EVENING_PRE_ENGINEERING_STUDENTS,
 ];
 
 export function getStudentBySlug(slug: string | undefined): Student | undefined {

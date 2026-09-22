@@ -1,0 +1,7 @@
+# Phase 6 — Morning students
+# Generated 2026-09-22T11:20:03.918Z
+# Count: 3
+
+2063	M. Aleem Siddiqui	Computer Science	Morning Shift	https://gcpeshawar.com/student/pow-5JhSmRcrt7LPBZEaGul07draKccaqQZ9pKd58gg
+1227	Syed Muhammad Asif	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/EoMVxFKPFnRQ99ZhXW7idur7SsoWzhw29eRVISri8So
+1043	Aftab Ahmad	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/5fYdPLylIMZpt7Qe9Qz79zMHLicq2R7xpCHbGtPAyAE	NO_PHOTO

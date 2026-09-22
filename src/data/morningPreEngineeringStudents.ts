@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4 + phase 5. */
+/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–6. */
 export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-moiz-1001',
@@ -664,6 +664,22 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Dobian Shabaz Garhi Swabi',
     status: 'Active',
     photoFile: 'morning-students/pre-engineering-pic/1040.png'
+  },
+  {
+    slug: 'aftab-ahmad-1043',
+    name: 'Aftab Ahmad',
+    fatherName: 'Abdul Basit',
+    class: 'Pre-Engineering',
+    rollNo: '1043',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1043',
+    dob: '01-03-2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03115737661',
+    address: 'Garhi Sadho, Mathra Peshawar',
+    status: 'Active'
   },
   {
     slug: 'abdullah-javed-1044',
@@ -3226,6 +3242,23 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Fato Abdul Rahim II',
     status: 'Active',
     photoFile: 'evening-students/fifth_phase_eveing/engineering/1225.png'
+  },
+  {
+    slug: 'syed-muhammad-asif-1227',
+    name: 'Syed Muhammad Asif',
+    fatherName: 'Ali Haider',
+    class: 'Pre-Engineering',
+    rollNo: '1227',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1227',
+    dob: '20/07/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0345-9145630',
+    address: 'Shaheed Abad, Phandu Road, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1227.png'
   },
   {
     slug: 'hifzar-ahmad-1281',

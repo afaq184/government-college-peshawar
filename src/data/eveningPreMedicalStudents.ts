@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4 + phase 5. */
+/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–6. */
 export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'hasnain-jan-210',
@@ -2852,6 +2852,23 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/669.png'
   },
   {
+    slug: 'waqas-ahmed-safi-669',
+    name: 'Waqas Ahmed Safi',
+    fatherName: 'M. Iqbal',
+    class: 'Pre-Medical',
+    rollNo: '669',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '669',
+    dob: 'March 16, 2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0300-58423328',
+    address: 'Tehsil, District Charsadda',
+    status: 'Active',
+    photoFile: 'evening-students/sixth_phase/medical and computer science/669.png'
+  },
+  {
     slug: 'm-zain-ul-abidin-670',
     name: 'M. Zain ul Abidin',
     fatherName: 'Fida Muhammad',
@@ -4141,6 +4158,23 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/fifth_phase_eveing/Medical pic/750.png'
   },
   {
+    slug: 'm-hussain-759',
+    name: 'M. Hussain',
+    fatherName: 'Ihsan Ullah',
+    class: 'Pre-Medical',
+    rollNo: '759',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '759',
+    dob: 'March 3, 2026',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0300-9552245',
+    address: 'Charsadda Khyber peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/sixth_phase/medical and computer science/759.png'
+  },
+  {
     slug: 'hamza-khan-767',
     name: 'Hamza Khan',
     fatherName: 'Muzamil Khan',
@@ -4173,5 +4207,56 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Tembar Pura, P/O Masma, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/fifth_phase_eveing/Medical pic/768.png'
+  },
+  {
+    slug: 'hassan-aurangzeb-771',
+    name: 'Hassan Aurangzeb',
+    fatherName: 'Aurangzeb',
+    class: 'Pre-Medical',
+    rollNo: '771',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '771',
+    dob: 'August 27, 2009',
+    bloodGroup: 'O+',
+    cnic: '',
+    phone: '0333-7707035',
+    address: 'Ashrafia Colony Eidgah Road Near Faqirabad Police Station Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/sixth_phase/medical and computer science/771.png'
+  },
+  {
+    slug: 'saif-ullah-772',
+    name: 'Saif Ullah',
+    fatherName: 'Ayaz Mehmood',
+    class: 'Pre-Medical',
+    rollNo: '772',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '772',
+    dob: 'March 20, 2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0315-8515010',
+    address: 'Moh. Islamabad No. 1 Nowshehra Road Charsadda',
+    status: 'Active',
+    photoFile: 'evening-students/sixth_phase/medical and computer science/772.png'
+  },
+  {
+    slug: 'hasnain-ali-773',
+    name: 'Hasnain Ali',
+    fatherName: 'Munawar Ali',
+    class: 'Pre-Medical',
+    rollNo: '773',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '773',
+    dob: 'July 19, 2009',
+    bloodGroup: 'A+ (Positive)',
+    cnic: '',
+    phone: '0333-9935068',
+    address: 'House No. 6363, Street No. 3, Faqirabad No. 1, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/sixth_phase/medical and computer science/773.png'
   }
 ];

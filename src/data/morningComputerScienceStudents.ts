@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Computer Science 1st Year (2026-2028), including phase 4 + phase 5. */
+/** Morning Shift — Computer Science 1st Year (2026-2028), including phase 4–6. */
 export const MORNING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'hashir-khan-2001',
@@ -528,6 +528,23 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     address: 'Sheikhabad No. 2, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/fifth_phase_eveing/max pic/2062.png'
+  },
+  {
+    slug: 'm-aleem-siddiqui-2063',
+    name: 'M. Aleem Siddiqui',
+    fatherName: 'M. Naeem Siddiqui',
+    class: 'Computer Science',
+    rollNo: '2063',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '2063',
+    dob: 'Not specified',
+    bloodGroup: 'Nil',
+    cnic: '',
+    phone: '0300-5909367',
+    address: 'Meherban Street, Lucky Dheri Road, Gulbahar No. 03',
+    status: 'Active',
+    photoFile: 'evening-students/sixth_phase/medical and computer science/2063.png'
   },
   {
     slug: 'abu-bakar-siddique-2066',

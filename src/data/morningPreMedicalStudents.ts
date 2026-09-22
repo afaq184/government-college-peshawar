@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4 + phase 5. */
+/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4–6. */
 export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'mir-khudair-01',

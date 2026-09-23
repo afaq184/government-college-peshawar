@@ -2328,8 +2328,8 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/638.png'
   },
   {
-    slug: 'm-639',
-    name: 'M.',
+    slug: 'm-awais-639',
+    name: 'M. Awais',
     fatherName: 'M. Bilal Khan',
     class: 'Pre-Medical',
     rollNo: '639',

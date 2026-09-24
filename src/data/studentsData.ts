@@ -105,7 +105,18 @@ export const STUDENTS: Student[] = [
 
 export function getStudentBySlug(slug: string | undefined): Student | undefined {
   if (!slug) return undefined;
-  return STUDENTS.find((s) => s.slug === slug.toLowerCase());
+  const key = resolveStudentSlug(slug);
+  return STUDENTS.find((s) => s.slug === key);
+}
+
+/** Old published slugs that must keep working after a roll-number correction. */
+const STUDENT_SLUG_ALIASES: Record<string, string> = {
+  'm-yas-barki-zai-1671': 'm-yas-barki-zai-1674',
+};
+
+function resolveStudentSlug(slug: string): string {
+  const key = slug.toLowerCase();
+  return STUDENT_SLUG_ALIASES[key] || key;
 }
 
 export function studentPhotoUrl(student: Pick<Student, 'photoUrl' | 'photoFile'>): string {
@@ -130,11 +141,12 @@ export function getStudentByToken(token: string | undefined): Student | undefine
 
 /** Local first, then remote. Honours admin deletions. */
 export async function resolveStudentByToken(token: string | undefined): Promise<StudentResolveResult> {
-  const slug = decryptStudentToken(token);
-  if (!slug) return { status: 'not_found' };
+  const rawSlug = decryptStudentToken(token);
+  if (!rawSlug) return { status: 'not_found' };
+  const slug = resolveStudentSlug(rawSlug);
 
   try {
-    if (await isStudentDeleted(slug)) return { status: 'deleted' };
+    if (await isStudentDeleted(slug) || await isStudentDeleted(rawSlug)) return { status: 'deleted' };
   } catch {
     /* continue lookup */
   }

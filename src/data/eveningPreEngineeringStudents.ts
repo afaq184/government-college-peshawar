@@ -2899,7 +2899,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03009804432',
     address: 'Faizullah Town, Gulbarg #4, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1674.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1671.jpeg'
   },
   {
     slug: 'muhammad-imran-1675',

@@ -16,6 +16,8 @@
 1663	Hamad Ur Rehman	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/tR7IJpJk-yFt3OTFbqrp4Ar9sMQwZSJ72GPKAyWdgaA
 1665	M. Maaz Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/fwN_OpNTCsI1J2QdIDuVmsudfV_y5Ssawdjm5rWBKsY
 1674	M. Umar Ali	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/LCfnuXrwg3cM4T2XCBjqpA
+1670	M. Umar Ali	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/ayxKjJbvcruGkCjlxGNnIcrT5qIrJ2HcE0U6tmTL9_o
+1674	Sadiq Akbar Masood	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/3ukNa42Ewh-B2afhpcjSflv9WdmtzvyAop8-aXF7Cxg
 1673	M. Usman	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/NlI6jDAMbgP6yCm_-kKCbQ
 1675	Muhammad Imran	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/672imAvFLfrpjJMXfx4dB42muBj98gPeTA1tLwVqk48
 1678	Muhammad Hasnain	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/bRX6jHUMuYGtEcREBssR9SQBuj8gb_rJ0rkam83WPSo

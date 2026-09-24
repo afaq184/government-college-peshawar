@@ -2835,6 +2835,23 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/7_phase/Government clg _pic/1669.png'
   },
   {
+    slug: 'muhammad-umar-ali-1670',
+    name: 'M. Umar Ali',
+    fatherName: 'Shah Faisal',
+    class: 'Pre-Engineering',
+    rollNo: '1670',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1670',
+    dob: '10-12-09',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03007478545',
+    address: 'Batagram Shabqadar, Charsadda',
+    status: 'Active',
+    photoFile: 'evening-students/7_phase/Government clg _pic/1670.png'
+  },
+  {
     slug: 'm-yas-barki-zai-1671',
     name: 'M. Yas Barki Zai',
     fatherName: 'Saeed ur Rehman',
@@ -2884,6 +2901,23 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Chargay Pagaray Bara, Khyber Agency',
     status: 'Active',
     photoFile: 'evening-students/7_phase/Government clg _pic/1673.png'
+  },
+  {
+    slug: 'sadiq-akbar-masood-1674',
+    name: 'Sadiq Akbar Masood',
+    fatherName: 'Ajmal Khan',
+    class: 'Pre-Engineering',
+    rollNo: '1674',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1674',
+    dob: '10-10-2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '033335143038',
+    address: 'Wassak Rd, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/7_phase/Government clg _pic/1674.png'
   },
   {
     slug: 'm-umar-ali-1674',

@@ -26,7 +26,7 @@
 1670	M. Umar Ali	https://gcpeshawar.com/student/4Bg0N8rBTDh59yt4AM7m_Q
 1672	Muhammad Saad	https://gcpeshawar.com/student/EBsywwRu39aEx5brikh9pzPn3SK4csfLGSzw-ur6Ko8
 1673	M. Usman	https://gcpeshawar.com/student/NlI6jDAMbgP6yCm_-kKCbQ
-1674	M. Yas Barki Zai	https://gcpeshawar.com/student/NPsGhu8upTbWMoPKciD9YLcTUQ9g1rpxJu7kSUfb9hw
+1671	M. Yas Barki Zai	https://gcpeshawar.com/student/NPsGhu8upTbWMoPKciD9YHm0GV6Jdb6SxpGZ9gTRC-Y
 1675	Muhammad Imran	https://gcpeshawar.com/student/672imAvFLfrpjJMXfx4dB42muBj98gPeTA1tLwVqk48
 1676	M. Rehan	https://gcpeshawar.com/student/7VUANK3_xG_vKa44-ghFdQ
 1677	Mohammad Sultan Jalal	https://gcpeshawar.com/student/52cD3j4iQ51xvIB2LdeQLyOGR4GFNs697z-yN5eM9_k

@@ -2851,23 +2851,6 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     status: 'Active'
   },
   {
-    slug: 'm-yas-barki-zai-1671',
-    name: 'M. Yas Barki Zai',
-    fatherName: 'Saeed ur Rehman',
-    class: 'Pre-Engineering',
-    rollNo: '1671',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '1671',
-    dob: '09-3-2011',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03009804432',
-    address: 'Faizullah Town, Gulbarg #4, Peshawar',
-    status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1671.jpeg'
-  },
-  {
     slug: 'muhammad-saad-1672',
     name: 'Muhammad Saad',
     fatherName: 'Hameed ur Rehman',
@@ -2900,6 +2883,23 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Chargay Pagaray Bara, Khyber Agency',
     status: 'Active',
     photoFile: 'evening-students/7_phase/Government clg _pic/1673.jpeg'
+  },
+  {
+    slug: 'm-yas-barki-zai-1674',
+    name: 'M. Yas Barki Zai',
+    fatherName: 'Saeed ur Rehman',
+    class: 'Pre-Engineering',
+    rollNo: '1674',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1674',
+    dob: '09-3-2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03009804432',
+    address: 'Faizullah Town, Gulbarg #4, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/7_phase/Government clg _pic/1674.jpeg'
   },
   {
     slug: 'muhammad-imran-1675',

@@ -3006,8 +3006,8 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   },
   {
     slug: 'sadiq-akbar-masood-1679',
-    name: 'Sadiq Akbar Masood',
-    fatherName: 'Ajmal Khan',
+    name: 'Touseef Ullah',
+    fatherName: 'Ghazi Khan',
     class: 'Pre-Engineering',
     rollNo: '1679',
     enrollmentType: 'Evening Shift',
@@ -3016,8 +3016,8 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     dob: '10-10-2010',
     bloodGroup: '',
     cnic: '',
-    phone: '033335143038',
-    address: 'Wassak Rd, Peshawar',
+    phone: '03149082238',
+    address: 'Haryana Bala Shelam, P/Saiban',
     status: 'Active',
     photoFile: 'evening-students/7_phase/Government clg _pic/1679.png'
   },

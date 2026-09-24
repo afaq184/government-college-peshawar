@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Computer Science 1st Year (2026-2028), including phase 4–6. */
+/** Morning Shift — Computer Science 1st Year (2026-2028), including phase 4–7. */
 export const MORNING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'hashir-khan-2001',

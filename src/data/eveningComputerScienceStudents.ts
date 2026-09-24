@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–6. */
+/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–7. */
 export const EVENING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'adnan-ahmad-2101',
@@ -1037,6 +1037,23 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     address: 'Akbar Pura, Chamkani, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/sixth_phase/medical and computer science/2161.png'
+  },
+  {
+    slug: 'ubaid-ullah-2162',
+    name: 'Ubaid Ullah',
+    fatherName: 'Jan Muhammad',
+    class: 'Computer Science',
+    rollNo: '2162',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '2162',
+    dob: '08/05/2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0300-5855930',
+    address: 'Shabqadar, Charsadda',
+    status: 'Active',
+    photoFile: 'evening-students/7_phase/Government clg _pic/2162.jpeg'
   },
   {
     slug: 'pir-muhammad-adil-shah-2181',
@@ -2191,6 +2208,23 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     address: 'Hassan Khel, Deh Bahadar, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/phase 4 eveing/computer_science_eveing_R/Computer science evening 3_pic_R/2248.jfif'
+  },
+  {
+    slug: 'adnan-ahmad-2249',
+    name: 'Adnan Ahmad',
+    fatherName: 'Muhammad Raza',
+    class: 'Computer Science',
+    rollNo: '2249',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '2249',
+    dob: '10/03/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0312-9963671',
+    address: 'Sarband, Pishtakhara Mall Khel, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/7_phase/Government clg _pic/2249.jpeg'
   },
   {
     slug: 'ihtesham-ul-haq-2258',

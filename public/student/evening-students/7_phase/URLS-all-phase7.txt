@@ -1,0 +1,29 @@
+# Phase 7 — All students (M+E)
+# Generated 2026-09-24T10:28:38.420Z
+# Count: 25
+
+775	Faizullah	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/meOUixoMDIJLz_IKFf7jNQ
+778	Hamdan Kain Jamil	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/8XP9r0EnryPi8UbfW-gRqQDjMgv6ZqHJKIrN1cx9pqA
+1662	Muhammad Umair	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/du_JaxMyA5KbaltXmW3uKgtCJXe7Nf7x76Mxzw5IRwo
+1663	Hamad Ur Rehman	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/tR7IJpJk-yFt3OTFbqrp4Ar9sMQwZSJ72GPKAyWdgaA
+1664	Shayan Ahmad	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/-_Fb-jT5bndrHy2rZCQlgfDqoPVqbE3_AgG2BYEE5UM
+1665	M. Maaz Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/fwN_OpNTCsI1J2QdIDuVmsudfV_y5Ssawdjm5rWBKsY
+1666	M. Fayyaz	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/jYWSp2Cp6tYn7LTZl6bRrw
+1667	Hassnain Ullah	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/5hxBnxfXtGSFCjVuYT5ec1fFKdb00B8YEDiRWO2ccI0
+1668	Ibrahim Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/K10W4dbR-HLyayUEipzaG0UvOgZJzngZTfMQn0d2L1I
+1669	M. Maiz	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/IFojYOHPhTcbqVenCeZ1-Q
+1670	M. Umar Ali	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/4Bg0N8rBTDh59yt4AM7m_Q	NO_PHOTO
+1671	M. Yas Barki Zai	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/NPsGhu8upTbWMoPKciD9YHm0GV6Jdb6SxpGZ9gTRC-Y
+1672	Muhammad Saad	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/EBsywwRu39aEx5brikh9pzPn3SK4csfLGSzw-ur6Ko8
+1673	M. Usman	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/NlI6jDAMbgP6yCm_-kKCbQ
+1675	Muhammad Imran	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/672imAvFLfrpjJMXfx4dB42muBj98gPeTA1tLwVqk48
+1676	M. Rehan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/7VUANK3_xG_vKa44-ghFdQ
+1677	Mohammad Sultan Jalal	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/52cD3j4iQ51xvIB2LdeQLyOGR4GFNs697z-yN5eM9_k
+1678	Muhammad Hasnain	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/bRX6jHUMuYGtEcREBssR9SQBuj8gb_rJ0rkam83WPSo
+1679	Sadiq Akbar Masood	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/3ukNa42Ewh-B2afhpcjSfuc50fyb2Fw4vAnpqzieXzY
+1679	Touseef Ullah	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/mpniMjhCaQIP8MH_f_0K7qFVkVSwBYfsnOb7h_wG1N8	NO_PHOTO
+1680	Muzzakir Ahmad	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/x2RRNHu8zZa_EgO92FdYIuOAga5M4ZU5B11rNsnMewo
+1681	M. Anas	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/pdPvcKBw09d0CPhu9-dVAg
+1682	Amin Abid	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/cww9DFdijemUELSJ_4MvNg
+2162	Ubaid Ullah	Computer Science	Evening Shift	https://gcpeshawar.com/student/CeJ3TSQNmgWnk5FuFRSq56PxDrgyh2QxvrfuwISimCQ
+2249	Adnan Ahmad	Computer Science	Evening Shift	https://gcpeshawar.com/student/elB-EEFqXjL90SGYNdyK4JAVQtvCbxohVshmZV1uLnc

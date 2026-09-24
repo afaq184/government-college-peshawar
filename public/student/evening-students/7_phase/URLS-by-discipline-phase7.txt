@@ -1,0 +1,47 @@
+# Phase 7 Student URLs — by Discipline (Morning / Evening)
+# Domain: https://gcpeshawar.com
+# Count: 25
+
+## Pre-Medical
+
+### Morning (0)
+
+### Evening (2)
+775	Faizullah	https://gcpeshawar.com/student/meOUixoMDIJLz_IKFf7jNQ
+778	Hamdan Kain Jamil	https://gcpeshawar.com/student/8XP9r0EnryPi8UbfW-gRqQDjMgv6ZqHJKIrN1cx9pqA
+
+## Pre-Engineering
+
+### Morning (0)
+
+### Evening (21)
+1662	Muhammad Umair	https://gcpeshawar.com/student/du_JaxMyA5KbaltXmW3uKgtCJXe7Nf7x76Mxzw5IRwo
+1663	Hamad Ur Rehman	https://gcpeshawar.com/student/tR7IJpJk-yFt3OTFbqrp4Ar9sMQwZSJ72GPKAyWdgaA
+1664	Shayan Ahmad	https://gcpeshawar.com/student/-_Fb-jT5bndrHy2rZCQlgfDqoPVqbE3_AgG2BYEE5UM
+1665	M. Maaz Khan	https://gcpeshawar.com/student/fwN_OpNTCsI1J2QdIDuVmsudfV_y5Ssawdjm5rWBKsY
+1666	M. Fayyaz	https://gcpeshawar.com/student/jYWSp2Cp6tYn7LTZl6bRrw
+1667	Hassnain Ullah	https://gcpeshawar.com/student/5hxBnxfXtGSFCjVuYT5ec1fFKdb00B8YEDiRWO2ccI0
+1668	Ibrahim Khan	https://gcpeshawar.com/student/K10W4dbR-HLyayUEipzaG0UvOgZJzngZTfMQn0d2L1I
+1669	M. Maiz	https://gcpeshawar.com/student/IFojYOHPhTcbqVenCeZ1-Q
+1670	M. Umar Ali	https://gcpeshawar.com/student/4Bg0N8rBTDh59yt4AM7m_Q
+1671	M. Yas Barki Zai	https://gcpeshawar.com/student/NPsGhu8upTbWMoPKciD9YHm0GV6Jdb6SxpGZ9gTRC-Y
+1672	Muhammad Saad	https://gcpeshawar.com/student/EBsywwRu39aEx5brikh9pzPn3SK4csfLGSzw-ur6Ko8
+1673	M. Usman	https://gcpeshawar.com/student/NlI6jDAMbgP6yCm_-kKCbQ
+1675	Muhammad Imran	https://gcpeshawar.com/student/672imAvFLfrpjJMXfx4dB42muBj98gPeTA1tLwVqk48
+1676	M. Rehan	https://gcpeshawar.com/student/7VUANK3_xG_vKa44-ghFdQ
+1677	Mohammad Sultan Jalal	https://gcpeshawar.com/student/52cD3j4iQ51xvIB2LdeQLyOGR4GFNs697z-yN5eM9_k
+1678	Muhammad Hasnain	https://gcpeshawar.com/student/bRX6jHUMuYGtEcREBssR9SQBuj8gb_rJ0rkam83WPSo
+1679	Sadiq Akbar Masood	https://gcpeshawar.com/student/3ukNa42Ewh-B2afhpcjSfuc50fyb2Fw4vAnpqzieXzY
+1679	Touseef Ullah	https://gcpeshawar.com/student/mpniMjhCaQIP8MH_f_0K7qFVkVSwBYfsnOb7h_wG1N8
+1680	Muzzakir Ahmad	https://gcpeshawar.com/student/x2RRNHu8zZa_EgO92FdYIuOAga5M4ZU5B11rNsnMewo
+1681	M. Anas	https://gcpeshawar.com/student/pdPvcKBw09d0CPhu9-dVAg
+1682	Amin Abid	https://gcpeshawar.com/student/cww9DFdijemUELSJ_4MvNg
+
+## Computer Science
+
+### Morning (0)
+
+### Evening (2)
+2162	Ubaid Ullah	https://gcpeshawar.com/student/CeJ3TSQNmgWnk5FuFRSq56PxDrgyh2QxvrfuwISimCQ
+2249	Adnan Ahmad	https://gcpeshawar.com/student/elB-EEFqXjL90SGYNdyK4JAVQtvCbxohVshmZV1uLnc
+

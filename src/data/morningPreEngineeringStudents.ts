@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–6. */
+/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–7. */
 export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-moiz-1001',

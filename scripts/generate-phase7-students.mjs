@@ -264,8 +264,12 @@ function parseSource(source) {
     }
     seenInBatch.add(batchKey);
 
-    const photoName = String(cell(r, 'Photo File Name', 'Photo') || '').trim() || `${rollNo}.png`;
-    const matched = findPhotoFile(photos, photoName, rollNo, usedPhotos);
+    // Prefer photo named after roll (user stores pics as roll.jpeg); Excel photo col may lag.
+    const excelPhoto = String(cell(r, 'Photo File Name', 'Photo') || '').trim();
+    const matched =
+      findPhotoFile(photos, `${rollNo}.jpeg`, rollNo, usedPhotos) ||
+      findPhotoFile(photos, `${rollNo}.png`, rollNo, usedPhotos) ||
+      findPhotoFile(photos, excelPhoto || `${rollNo}.png`, rollNo, usedPhotos);
     if (matched) usedPhotos.add(matched);
     else missingPhotos += 1;
 
@@ -311,6 +315,21 @@ function mergeStudents(existingStudents, newcomers) {
     (a, b) => rollNum(a.rollNo) - rollNum(b.rollNo) || a.slug.localeCompare(b.slug)
   );
   return { merged, added, updated };
+}
+
+/** Drop prior phase-7 rows so Excel re-imports replace roll/photo/slug corrections. */
+function stripPhase7Cohort(existingStudents, newcomers) {
+  return existingStudents.filter((s) => {
+    if ((s.photoFile || '').includes('evening-students/7_phase/')) return false;
+    const samePerson = newcomers.some(
+      (n) =>
+        n.class === s.class &&
+        n.name.toLowerCase() === String(s.name || '').toLowerCase() &&
+        n.fatherName === s.fatherName
+    );
+    if (samePerson) return false;
+    return true;
+  });
 }
 
 function parseTsStudents(tsPath) {
@@ -432,15 +451,17 @@ const targets = [
 ];
 
 for (const cfg of targets) {
-  const existing = parseTsStudents(cfg.path);
-  if (!existing.length && fs.existsSync(path.join(root, cfg.path))) {
+  const existingRaw = parseTsStudents(cfg.path);
+  if (!existingRaw.length && fs.existsSync(path.join(root, cfg.path))) {
     console.error(`Abort: parsed 0 students from ${cfg.path}`);
     process.exit(1);
   }
+  const existing = stripPhase7Cohort(existingRaw, cfg.students);
+  const removed = existingRaw.length - existing.length;
   const { merged, added, updated } = mergeStudents(existing, cfg.students);
   fs.writeFileSync(path.join(root, cfg.path), toTsArray(cfg.exportName, cfg.comment, merged));
   console.log(
-    `\n${cfg.key}: existing=${existing.length} +new=${added.length} updated=${updated.length} -> ${merged.length}`
+    `\n${cfg.key}: existing=${existingRaw.length} stripped=${removed} +new=${added.length} updated=${updated.length} -> ${merged.length}`
   );
 }
 

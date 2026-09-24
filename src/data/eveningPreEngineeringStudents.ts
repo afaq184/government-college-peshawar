@@ -2713,7 +2713,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03480911035',
     address: 'Arbab Jehangir Khan, Mera Mushtarik Warsak Colony, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1662.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1662.png'
   },
   {
     slug: 'hamad-ur-rehman-1663',
@@ -2730,7 +2730,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03189193094',
     address: 'Daman Afghani Nahqi, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1663.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1663.png'
   },
   {
     slug: 'shayan-ahmad-1664',
@@ -2747,7 +2747,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03180095036',
     address: 'New Mohmand Abad, Peshawar Kohat Road, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1664.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1664.png'
   },
   {
     slug: 'm-maaz-khan-1665',
@@ -2764,7 +2764,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03009397664',
     address: 'Nouthia Jadeed, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1665.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1665.png'
   },
   {
     slug: 'm-fayyaz-1666',
@@ -2781,7 +2781,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03189750407',
     address: 'Fatu Abdur Rahima, Dalazak Rd, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1666.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1666.png'
   },
   {
     slug: 'hassnain-ullah-1667',
@@ -2798,7 +2798,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03322197410',
     address: 'Ittehad Colony, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1667.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1667.png'
   },
   {
     slug: 'ibrahim-khan-1668',
@@ -2815,7 +2815,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03163518610',
     address: 'Charpariza Haryana Bala, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1668.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1668.png'
   },
   {
     slug: 'm-maiz-1669',
@@ -2832,23 +2832,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '033339117295',
     address: 'Ghanta Ghar Qazi Khelan, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1669.jpeg'
-  },
-  {
-    slug: 'm-umar-ali-1670',
-    name: 'M. Umar Ali',
-    fatherName: 'Shah Faisal',
-    class: 'Pre-Engineering',
-    rollNo: '1670',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '1670',
-    dob: '10-12-09',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03007478545',
-    address: 'Batagram Shabqadar, Charsadda',
-    status: 'Active'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1669.png'
   },
   {
     slug: 'm-yas-barki-zai-1671',
@@ -2865,7 +2849,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03009804432',
     address: 'Faizullah Town, Gulbarg #4, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1671.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1671.png'
   },
   {
     slug: 'muhammad-saad-1672',
@@ -2882,7 +2866,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03218405551',
     address: 'Shalam Pull, Pesh',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1672.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1672.png'
   },
   {
     slug: 'm-usman-1673',
@@ -2899,7 +2883,24 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03334545183',
     address: 'Chargay Pagaray Bara, Khyber Agency',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1673.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1673.png'
+  },
+  {
+    slug: 'm-umar-ali-1674',
+    name: 'M. Umar Ali',
+    fatherName: 'Shah Faisal',
+    class: 'Pre-Engineering',
+    rollNo: '1674',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1674',
+    dob: '10-12-09',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03007478545',
+    address: 'Batagram Shabqadar, Charsadda',
+    status: 'Active',
+    photoFile: 'evening-students/7_phase/Government clg _pic/1674.png'
   },
   {
     slug: 'muhammad-imran-1675',
@@ -2916,7 +2917,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03136161741',
     address: 'Village Turki Sheghali Bala, Cheghal Matti Per',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1675.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1675.png'
   },
   {
     slug: 'm-rehan-1676',
@@ -2933,7 +2934,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '0302-5510322',
     address: 'Momin Town, Dalazak Rd, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1676.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1676.png'
   },
   {
     slug: 'mohammad-sultan-jalal-1677',
@@ -2950,7 +2951,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '0312-9215424',
     address: 'Madina Market Hostel-01, UO Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1677.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1677.png'
   },
   {
     slug: 'muhammad-hasnain-1678',
@@ -2967,7 +2968,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '0333-9326391',
     address: 'Mulazai Chowk Umar Abad, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1678.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1678.png'
   },
   {
     slug: 'sadiq-akbar-masood-1679',
@@ -2984,7 +2985,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '033335143038',
     address: 'Wassak Rd, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1679.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1679.png'
   },
   {
     slug: 'touseef-ullah-1679',
@@ -3017,7 +3018,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03711527391',
     address: 'Tarnab Farm GT Road, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1680.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1680.png'
   },
   {
     slug: 'm-anas-1681',
@@ -3034,7 +3035,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03348828884',
     address: 'Saeed Abad Faqeer Abad, Moh Sadeeq Abad Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1681.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1681.png'
   },
   {
     slug: 'amin-abid-1682',
@@ -3051,6 +3052,6 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03705166931',
     address: 'Amin Khel Chokara, Takhte Nusrati Karak',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/1682.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/1682.png'
   }
 ];

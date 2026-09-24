@@ -111,7 +111,10 @@ export function getStudentBySlug(slug: string | undefined): Student | undefined 
 
 /** Old published slugs that must keep working after a roll-number correction. */
 const STUDENT_SLUG_ALIASES: Record<string, string> = {
+  // Yas Barki briefly published under 1674; correct roll is 1671
   'm-yas-barki-zai-1674': 'm-yas-barki-zai-1671',
+  // Umar Ali was imported as 1670; correct roll/photo is 1674
+  'm-umar-ali-1670': 'm-umar-ali-1674',
 };
 
 function resolveStudentSlug(slug: string): string {

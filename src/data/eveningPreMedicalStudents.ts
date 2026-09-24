@@ -4274,7 +4274,7 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     phone: '0345-1512835',
     address: 'Thall, Tehsil Kalkot, District Dir Upper',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/775.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/775.png'
   },
   {
     slug: 'hamdan-kain-jamil-778',
@@ -4291,6 +4291,6 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     phone: '0333-9018135',
     address: 'Mohallah Islamabad, Mian Gujjar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/778.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/778.png'
   }
 ];

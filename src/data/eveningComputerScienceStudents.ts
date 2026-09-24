@@ -1053,7 +1053,7 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     phone: '0300-5855930',
     address: 'Shabqadar, Charsadda',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/2162.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/2162.png'
   },
   {
     slug: 'pir-muhammad-adil-shah-2181',
@@ -2224,7 +2224,7 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     phone: '0312-9963671',
     address: 'Sarband, Pishtakhara Mall Khel, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/7_phase/Government clg _pic/2249.jpeg'
+    photoFile: 'evening-students/7_phase/Government clg _pic/2249.png'
   },
   {
     slug: 'ihtesham-ul-haq-2258',

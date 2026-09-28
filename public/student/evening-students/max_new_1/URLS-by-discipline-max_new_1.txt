@@ -30,7 +30,7 @@
 1714	Shahzeb	https://gcpeshawar.com/student/mFTTDed5y6yEK38oz_9Kaw
 1715	Bilal Khan	https://gcpeshawar.com/student/a4yrL_HYT_lTFAUxZl2P1g
 1716	Muhammad Bilal	https://gcpeshawar.com/student/nzdITzIp2uk4cgS_6kdftf1say9Y2F7Q_gshK7Vd-qU
-1718	Kashif Ahmad	https://gcpeshawar.com/student/6UOSWE47DIvu54VsNFrlGkPOv-k8-z1nMMRSHAshYt8
+1717	Kashif Ahmad	https://gcpeshawar.com/student/6UOSWE47DIvu54VsNFrlGkPOv-k8-z1nMMRSHAshYt8
 1719	Shah Fahad	https://gcpeshawar.com/student/yMuK27ybdHam9I7r3UGEMw
 1720	Muhammad Hasnain	https://gcpeshawar.com/student/bRX6jHUMuYGtEcREBssR9aKiiJ9mSNomQkNH2-HGSg8
 1721	Muhammad Awais	https://gcpeshawar.com/student/_-ijw7FegeHW6f_0Hik-PcoYF2OhA1us76C28LzpHvo

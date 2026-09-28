@@ -183,12 +183,17 @@ const COHORTS = [
         photoDir: 'public/student/morning-students/sports/Sports_pic',
         photoPrefix: 'morning-students/sports/Sports_pic',
       },
+      {
+        excel: 'public/student/morning-students/sports_2/sports.xlsx',
+        photoDir: 'public/student/morning-students/sports_2/sports_students_pic',
+        photoPrefix: 'morning-students/sports_2/sports_students_pic',
+      },
     ],
     className: 'Sports',
     outFile: 'src/data/morningSportsStudents.ts',
     exportName: 'MORNING_SPORTS_STUDENTS',
     comment:
-      'Morning Shift — Sports quota 1st Year (2026-2028). Discipline field keeps each student academic track.',
+      'Morning Shift — Sports quota 1st Year (2026-2028), phase 1 + sports_2. Discipline field keeps each student academic track.',
   },
 ];
 
@@ -262,7 +267,14 @@ function parseSourceRows(source, className) {
   const students = rows
     .map((r) => {
       const name = cell(r, 'Name', 'Student Name');
-      const roll = cell(r, 'Roll No', 'RollNo', 'Roll Number', 'Enrollment');
+      const roll = cell(
+        r,
+        'Roll No',
+        'RollNo',
+        'Roll Number',
+        'Enrollment No / Roll No',
+        'Enrollment'
+      );
       if (!name || !roll) return null;
       if (excludeRolls.has(roll)) return null;
       // Skip summary / non-data rows mistakenly parsed as students
@@ -280,7 +292,14 @@ function parseSourceRows(source, className) {
       return {
         slug: makeStudentSlug(name, roll),
         name,
-        fatherName: cell(r, 'Father Name', "Father's Name", 'Father', 'S/O'),
+        fatherName: cell(
+          r,
+          'Father Name',
+          "Father's Name",
+          "Father's/Guardian Name",
+          'Father',
+          'S/O'
+        ),
         class: discipline,
         rollNo: roll,
         enrollmentType: 'Morning Shift',

@@ -1,0 +1,18 @@
+# Morning Sports 2 — Student URLs
+# Domain: https://gcpeshawar.com
+# Shift: Morning
+# Count: 13
+
+2064	Rizwan Khan	Computer Science	https://gcpeshawar.com/student/bUAC-hwAGrHCwJnqJC4JSBNbpbWfjsqp0veDuBOILVU
+2273	Rehan Shah	Computer Science	https://gcpeshawar.com/student/vq42sfKwPEmeXxsFO7stow
+2065	Muhammad Mashal	Computer Science	https://gcpeshawar.com/student/0Df1tqR6o6Md9DwAsUTrGYpW6y-3rMIrCOLpL1hwQQg
+7488	Muhammad Asim	Pre-Medical	https://gcpeshawar.com/student/42KwyySxGtcbkx3eYHH3XQezDsP7mGiYJa1Hxl82abo
+7487	Afaq	Pre-Medical	https://gcpeshawar.com/student/-vNq1VmNg8nOciSdmU-Hxg
+606	M. Talha	Pre-Medical	https://gcpeshawar.com/student/fg71fgfwm5LOqkuucj6u0g
+607	M. Hamza	Pre-Medical	https://gcpeshawar.com/student/hm1GkJBFdQrdDvyit420ng
+8193	Anas Mujeeb	Computer Science	https://gcpeshawar.com/student/lDD6wjYa9CL78eOrd2zSrAMEgQ6MMiYomXfI7VHjDXQ
+604	M. Layyan	Pre-Medical	https://gcpeshawar.com/student/DgwU8rYWn1g6Wb0fiPB2Uw
+8191	M. Ibrahim	Computer Science	https://gcpeshawar.com/student/noRdy5f8f_LkkXdXi8SHXg
+1096	Muhammad Talha	Pre-Engineering	https://gcpeshawar.com/student/bFtPm_HHN_O89BKACvkoXp2QZFX6angrS_wkYcM6uwo
+2274	Adnan Ahmad	Computer Science	https://gcpeshawar.com/student/BsUA2faIscQphDI5JOB3encAsRXMTKAaHd8p1Gp6Cy4
+2275	M. Kashif Khan	Computer Science	https://gcpeshawar.com/student/sdPJ08mvqYTsMpwdjO6IYC--QHoZ_XodHBQmDRLmZLw

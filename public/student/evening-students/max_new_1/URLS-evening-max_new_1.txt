@@ -21,7 +21,7 @@
 1707	Rehan Khair Ullah	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/iOkuz3c5bkF60aOLZVcJEZlEFz4hpGDklzXVICUKhPE
 1703	Arsalan Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/2vFoUw8FY6vPeAvlbruImoFcsDzsCrDslko9E_HgOHY
 1700	Sawan Saeed	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/eo06WBErqn8YlbR7LbjFh-o6Rjq7HeZ3U_0kHJGwjRE
-3354	Hamid Ali	Computer Science	Evening Shift	https://gcpeshawar.com/student/LM6hQH1XRRwtL0H6N1B6Ww
+335436	Hamid Ali	Computer Science	Evening Shift	https://gcpeshawar.com/student/LM6hQH1XRRwtL0H6N1B6Ww
 1701	Muhammad Majid	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/WjSX0CzQoyIZWoTdQ7U6DHPlOTsvTBrj0cgTDE3RMfQ
 783	Alyan Naveed	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/C-ixymRxk8wWftH_NnyRuDhSWsJHNUlW9x0m87ROcQE
 1719	Shah Fahad	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/yMuK27ybdHam9I7r3UGEMw

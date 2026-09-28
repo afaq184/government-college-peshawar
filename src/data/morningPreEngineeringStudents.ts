@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–7. */
+/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–7 + max_2. */
 export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-moiz-1001',
@@ -2783,6 +2783,22 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Badaber, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/phase_3_arts_Pre_engineeing/pre-engineering/pre-engineering pic/1197.jpeg'
+  },
+  {
+    slug: 'noor-alam-khan-1197',
+    name: 'Noor Alam Khan',
+    fatherName: 'Sohrab Gul',
+    class: 'Pre-Engineering',
+    rollNo: '1197',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1197',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0334-8446163',
+    address: 'Bakhshu Pul, Northern Bypass, Peshawar',
+    status: 'Active'
   },
   {
     slug: 'hafiz-attaur-rehman-1198',

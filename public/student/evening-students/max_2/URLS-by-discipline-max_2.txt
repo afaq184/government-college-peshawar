@@ -1,0 +1,36 @@
+# max_2 Student URLs — by Discipline (Morning / Evening)
+# Domain: https://gcpeshawar.com
+# Count: 14
+
+## Pre-Medical
+
+### Morning (4)
+8	Muhammad Hadi	https://gcpeshawar.com/student/n6OG_bfg8Tp5mmjfNd3Mxg
+204	Muhammad Faizan	https://gcpeshawar.com/student/punSklYpsTq6ajt-iMgQyJxRcLzpSpeVNBNUmZ-1wzc
+225	Yermia Azhar	https://gcpeshawar.com/student/6spZO-Wl7waGpxcsS37XXTsHFvfkuuolUMAxtahZv-8
+264	Shaheer Iqbal	https://gcpeshawar.com/student/8DxtLhUFK1_cBcGsUEC11MBldHL34tswUNQgPCebtrc
+
+### Evening (1)
+770	Asim Khan	https://gcpeshawar.com/student/zmyXjwyd5BDwo8QEAgnmyw
+
+## Pre-Engineering
+
+### Morning (1)
+1197	Noor Alam Khan	https://gcpeshawar.com/student/iJb_ilyYj_Kay1t9MBRTJjor9MdskQY-Ut0HXrnLACE
+
+### Evening (8)
+1718	Mashhood Khan	https://gcpeshawar.com/student/G8V88PFVCK7_OtqO5wClTDmunXnzqL3fk1G2ZowzYrY
+1722	Arshad Kamal	https://gcpeshawar.com/student/9yAZArK_ZKmYbtjx6jckOFCj2j67OuxY81ewO_pUc3U
+1723	Ali Mohammad	https://gcpeshawar.com/student/x9m5ZjKPc7otxiZx-eDqQ6VM-WS0LJykX6by6BUDf7I
+1724	Adnan Khan	https://gcpeshawar.com/student/MFnwSyf8ev5VRZmDfuhqDg
+1726	M. Mustafa	https://gcpeshawar.com/student/FSvrn2ByXk1yUBH_36JO4g
+1728	M. Suleman	https://gcpeshawar.com/student/-yQkcUil86DZixyZLFDuKA
+1729	Alyam Akhtar	https://gcpeshawar.com/student/g_JfezzUHTXemgcweQl4aX_hLD1F46rldMf7UA0xqsg
+1730	M. Salim	https://gcpeshawar.com/student/-ssAyr6o4oef8SbjV2nKiA
+
+## Computer Science
+
+### Morning (0)
+
+### Evening (0)
+

@@ -1,0 +1,9 @@
+# max_2 — Morning students
+# Generated 2026-09-28T19:25:49.744Z
+# Count: 5
+
+264	Shaheer Iqbal	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/8DxtLhUFK1_cBcGsUEC11MBldHL34tswUNQgPCebtrc
+1197	Noor Alam Khan	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/iJb_ilyYj_Kay1t9MBRTJjor9MdskQY-Ut0HXrnLACE	NO_PHOTO
+204	Muhammad Faizan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/punSklYpsTq6ajt-iMgQyJxRcLzpSpeVNBNUmZ-1wzc
+8	Muhammad Hadi	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/n6OG_bfg8Tp5mmjfNd3Mxg
+225	Yermia Azhar	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/6spZO-Wl7waGpxcsS37XXTsHFvfkuuolUMAxtahZv-8

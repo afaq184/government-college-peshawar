@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1. */
+/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2. */
 export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'hasnain-jan-210',
@@ -4207,6 +4207,23 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Tembar Pura, P/O Masma, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/fifth_phase_eveing/Medical pic/768.png'
+  },
+  {
+    slug: 'asim-khan-770',
+    name: 'Asim Khan',
+    fatherName: 'Peer Muhammad',
+    class: 'Pre-Medical',
+    rollNo: '770',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '770',
+    dob: '10/03/2010',
+    bloodGroup: 'O+',
+    cnic: '',
+    phone: '0348-9594526',
+    address: 'District Malakand, Tehsil Batkheli',
+    status: 'Active',
+    photoFile: 'evening-students/max_2/max_2/770.jpeg'
   },
   {
     slug: 'hassan-aurangzeb-771',

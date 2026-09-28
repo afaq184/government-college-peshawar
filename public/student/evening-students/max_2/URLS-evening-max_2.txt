@@ -1,0 +1,13 @@
+# max_2 — Evening students
+# Generated 2026-09-28T19:25:49.753Z
+# Count: 9
+
+1724	Adnan Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/MFnwSyf8ev5VRZmDfuhqDg
+1723	Ali Mohammad	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/x9m5ZjKPc7otxiZx-eDqQ6VM-WS0LJykX6by6BUDf7I
+1718	Mashhood Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/G8V88PFVCK7_OtqO5wClTDmunXnzqL3fk1G2ZowzYrY
+1722	Arshad Kamal	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/9yAZArK_ZKmYbtjx6jckOFCj2j67OuxY81ewO_pUc3U
+1730	M. Salim	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/-ssAyr6o4oef8SbjV2nKiA
+770	Asim Khan	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/zmyXjwyd5BDwo8QEAgnmyw
+1729	Alyam Akhtar	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/g_JfezzUHTXemgcweQl4aX_hLD1F46rldMf7UA0xqsg
+1728	M. Suleman	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/-yQkcUil86DZixyZLFDuKA
+1726	M. Mustafa	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/FSvrn2ByXk1yUBH_36JO4g

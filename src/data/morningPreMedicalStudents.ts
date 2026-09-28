@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1. */
+/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2. */
 export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'mir-khudair-01',
@@ -120,6 +120,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Harichand, Tehsil Tangi, Charsadda',
     status: 'Active',
     photoFile: 'morning-students/Pre-medical-pic/7.png'
+  },
+  {
+    slug: 'muhammad-hadi-8',
+    name: 'Muhammad Hadi',
+    fatherName: 'Khalid Mansoor',
+    class: 'Pre-Medical',
+    rollNo: '8',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '8',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0314-9981986',
+    address: 'Gunj Gate',
+    status: 'Active',
+    photoFile: 'evening-students/max_2/max_2/08.jpeg'
   },
   {
     slug: 'muhammad-umair-yousaf-08',
@@ -3114,6 +3131,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/second_phase/pre-medical/200.png'
   },
   {
+    slug: 'muhammad-faizan-204',
+    name: 'Muhammad Faizan',
+    fatherName: 'Amir Muhammad',
+    class: 'Pre-Medical',
+    rollNo: '204',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '204',
+    dob: '30-09-2009',
+    bloodGroup: 'O-+',
+    cnic: '',
+    phone: '0301-8898752',
+    address: 'Mutihala Farooq Abad, Laki Marwat',
+    status: 'Active',
+    photoFile: 'evening-students/max_2/max_2/204.jpeg'
+  },
+  {
     slug: 'umar-208',
     name: 'Umar',
     fatherName: 'Roohullah',
@@ -3265,6 +3299,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Warsak Road, Abshar Colony, St 3',
     status: 'Active',
     photoFile: 'evening-students/max_new_1/max_pic/222.jpeg'
+  },
+  {
+    slug: 'yermia-azhar-225',
+    name: 'Yermia Azhar',
+    fatherName: 'Azhar Masih',
+    class: 'Pre-Medical',
+    rollNo: '225',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '225',
+    dob: 'July 08, 2010',
+    bloodGroup: 'B+',
+    cnic: '',
+    phone: '0314-8612078',
+    address: 'PAF Camp Badaber, H/No 12/03',
+    status: 'Active',
+    photoFile: 'evening-students/max_2/max_2/225.jpeg'
   },
   {
     slug: 'aman-230',
@@ -3513,13 +3564,13 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '264',
-    dob: '23/03/2010',
+    dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '03100907321',
-    address: 'Flat # 4, Near Albaka Wedding Hall, Beshir Abad, Pesh',
+    phone: '0335-7476760',
+    address: 'Dost Muhammad Colony, Bashirabad, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-medical/264.jpeg'
+    photoFile: 'evening-students/max_2/max_2/264.jpeg'
   },
   {
     slug: 'm-azlan-shoaib-265',

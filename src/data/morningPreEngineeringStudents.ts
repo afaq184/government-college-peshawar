@@ -2798,7 +2798,8 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     cnic: '',
     phone: '0334-8446163',
     address: 'Bakhshu Pul, Northern Bypass, Peshawar',
-    status: 'Active'
+    status: 'Active',
+    photoFile: 'evening-students/max_2/max_2/1697.jpeg'
   },
   {
     slug: 'hafiz-attaur-rehman-1198',

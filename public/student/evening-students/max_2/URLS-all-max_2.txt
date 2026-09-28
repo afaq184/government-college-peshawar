@@ -7,7 +7,7 @@
 225	Yermia Azhar	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/6spZO-Wl7waGpxcsS37XXTsHFvfkuuolUMAxtahZv-8
 264	Shaheer Iqbal	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/8DxtLhUFK1_cBcGsUEC11MBldHL34tswUNQgPCebtrc
 770	Asim Khan	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/zmyXjwyd5BDwo8QEAgnmyw
-1197	Noor Alam Khan	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/iJb_ilyYj_Kay1t9MBRTJjor9MdskQY-Ut0HXrnLACE	NO_PHOTO
+1197	Noor Alam Khan	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/iJb_ilyYj_Kay1t9MBRTJjor9MdskQY-Ut0HXrnLACE
 1718	Mashhood Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/G8V88PFVCK7_OtqO5wClTDmunXnzqL3fk1G2ZowzYrY
 1722	Arshad Kamal	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/9yAZArK_ZKmYbtjx6jckOFCj2j67OuxY81ewO_pUc3U
 1723	Ali Mohammad	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/x9m5ZjKPc7otxiZx-eDqQ6VM-WS0LJykX6by6BUDf7I

@@ -1,0 +1,46 @@
+# max_new_1 Student URLs — by Discipline (Morning / Evening)
+# Domain: https://gcpeshawar.com
+# Count: 24
+
+## Pre-Medical
+
+### Morning (1)
+222	Muhammad Tariq	https://gcpeshawar.com/student/okCV-ZsOXuiQhgAOY-hBOW2at1n0F2wifIWs-3t38hA
+
+### Evening (1)
+783	Alyan Naveed	https://gcpeshawar.com/student/C-ixymRxk8wWftH_NnyRuDhSWsJHNUlW9x0m87ROcQE
+
+## Pre-Engineering
+
+### Morning (0)
+
+### Evening (19)
+1700	Sawan Saeed	https://gcpeshawar.com/student/eo06WBErqn8YlbR7LbjFh-o6Rjq7HeZ3U_0kHJGwjRE
+1701	Muhammad Majid	https://gcpeshawar.com/student/WjSX0CzQoyIZWoTdQ7U6DHPlOTsvTBrj0cgTDE3RMfQ
+1703	Arsalan Khan	https://gcpeshawar.com/student/2vFoUw8FY6vPeAvlbruImoFcsDzsCrDslko9E_HgOHY
+1704	Mahad Khan	https://gcpeshawar.com/student/QKWR6TW1Ja4GwqdGXgn_aA
+1705	M. Usman	https://gcpeshawar.com/student/5_kLCTm6_ipngX9Z25RBjQ
+1706	M. Yaseen	https://gcpeshawar.com/student/x0FWrbe3UiLnt5mTXH_Q8g
+1707	Rehan Khair Ullah	https://gcpeshawar.com/student/iOkuz3c5bkF60aOLZVcJEZlEFz4hpGDklzXVICUKhPE
+1708	Hamad	https://gcpeshawar.com/student/FZHCP2qQbNUEKw2E0rOSxA
+1709	Khalid	https://gcpeshawar.com/student/ads7NORRYiqGEyX9-U0-fQ
+1710	Amad Khan	https://gcpeshawar.com/student/eDPS9RmdjHmb96wmNkX9zw
+1711	Shahzad Khan	https://gcpeshawar.com/student/TJcFUQ3q-1Fq8sn214_aoZ2GAoQnv0Cv8rj71Z-6UCc
+1712	Afzal Hussain	https://gcpeshawar.com/student/fERhR504rw5EwFGTnB7_jtPJbJr0BI59FBdpokljyI0
+1714	Shahzeb	https://gcpeshawar.com/student/mFTTDed5y6yEK38oz_9Kaw
+1715	Bilal Khan	https://gcpeshawar.com/student/a4yrL_HYT_lTFAUxZl2P1g
+1716	Muhammad Bilal	https://gcpeshawar.com/student/nzdITzIp2uk4cgS_6kdftf1say9Y2F7Q_gshK7Vd-qU
+1718	Kashif Ahmad	https://gcpeshawar.com/student/6UOSWE47DIvu54VsNFrlGkPOv-k8-z1nMMRSHAshYt8
+1719	Shah Fahad	https://gcpeshawar.com/student/yMuK27ybdHam9I7r3UGEMw
+1720	Muhammad Hasnain	https://gcpeshawar.com/student/bRX6jHUMuYGtEcREBssR9aKiiJ9mSNomQkNH2-HGSg8
+1721	Muhammad Awais	https://gcpeshawar.com/student/_-ijw7FegeHW6f_0Hik-PcoYF2OhA1us76C28LzpHvo
+
+## Computer Science
+
+### Morning (0)
+
+### Evening (3)
+2267	Muhammad Ali	https://gcpeshawar.com/student/5ZVAkJqhgWUivGxz3pH-fS0VZcm0b8PsOAcxsGCuDYs
+3092	Rasheed Rahman	https://gcpeshawar.com/student/mx5IWRJjcqyAGPAZB-4qpHpmLmVvmY7U58pLL3UmoSk
+3354	Hamid Ali	https://gcpeshawar.com/student/LM6hQH1XRRwtL0H6N1B6Ww
+

@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7. */
+/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1. */
 export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'hasnain-jan-210',
@@ -4292,5 +4292,22 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Mohallah Islamabad, Mian Gujjar',
     status: 'Active',
     photoFile: 'evening-students/7_phase/Government clg _pic/778.png'
+  },
+  {
+    slug: 'alyan-naveed-783',
+    name: 'Alyan Naveed',
+    fatherName: 'Naveed Alam',
+    class: 'Pre-Medical',
+    rollNo: '783',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '783',
+    dob: '13 April 2010',
+    bloodGroup: 'B++',
+    cnic: '',
+    phone: '0335-0971626',
+    address: 'Muskeen Abad, Nothia Saddar, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/max_new_1/max_pic/783.jpeg'
   }
 ];

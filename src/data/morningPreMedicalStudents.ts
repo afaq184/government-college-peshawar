@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7. */
+/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1. */
 export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'mir-khudair-01',
@@ -3248,6 +3248,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Village Wanki Siraj Khel, Tehsil P.O. Nasrat, District Karak',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/219.png'
+  },
+  {
+    slug: 'muhammad-tariq-222',
+    name: 'Muhammad Tariq',
+    fatherName: 'Muhammad Shafiq',
+    class: 'Pre-Medical',
+    rollNo: '222',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '222',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0309-5041092',
+    address: 'Warsak Road, Abshar Colony, St 3',
+    status: 'Active',
+    photoFile: 'evening-students/max_new_1/max_pic/222.jpeg'
   },
   {
     slug: 'aman-230',

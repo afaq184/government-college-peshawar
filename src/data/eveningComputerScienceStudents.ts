@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–7. */
+/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–7 + max_new_1. */
 export const EVENING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'adnan-ahmad-2101',
@@ -2269,13 +2269,13 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '2267',
-    dob: '31/03/2010',
+    dob: '31-03-2010',
     bloodGroup: '',
     cnic: '',
-    phone: '0333-9584674',
-    address: 'Canal Road, Umar Gul, Peshawar',
+    phone: '0333-958467',
+    address: 'Near Canal Road, Garhi Sikandar Khan, M.P.O., Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/fifth_phase_eveing/3 engineering and 8 computer science/2267.png'
+    photoFile: 'evening-students/max_new_1/max_pic/2267.jpeg'
   },
   {
     slug: 'abubakar-saddiq-2268',
@@ -2361,5 +2361,39 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     address: 'Asia Gate, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/computer_science_eveing_1/computer science eveing pic_R/2277.png'
+  },
+  {
+    slug: 'rasheed-rahman-3092',
+    name: 'Rasheed Rahman',
+    fatherName: 'Gula Khan',
+    class: 'Computer Science',
+    rollNo: '3092',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '3092',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0336-9419547',
+    address: 'District Orakzai',
+    status: 'Active',
+    photoFile: 'evening-students/max_new_1/max_pic/3092.jpeg'
+  },
+  {
+    slug: 'hamid-ali-3354',
+    name: 'Hamid Ali',
+    fatherName: 'Amjad Ali',
+    class: 'Computer Science',
+    rollNo: '3354',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '3354',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0312-3011850',
+    address: 'Tarnab Farm, Peshawar',
+    status: 'Active',
+    photoFile: 'evening-students/max_new_1/max_pic/3354.jpeg'
   }
 ];

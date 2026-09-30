@@ -1,0 +1,90 @@
+# Self Finance Cohort 3 — Student URLs by Discipline
+# Domain: https://gcpeshawar.com
+# Count: 80
+
+## Pre-Medical (53)
+7069	Abubakar Saddique	https://gcpeshawar.com/student/7y4eFsO07JR_YXvS__59RuYUfNW3lz7Mqgr3Mp5dz0k
+7070	M. Rahman Khan	https://gcpeshawar.com/student/RR_pHeo1TqUyLy2KLvsLeWwJdVkJsizOoV-LP8ZFn8o
+7071	Amir Riaz	https://gcpeshawar.com/student/WIHj6vWEfSSxQAHIImXEcA
+7072	Faheem	https://gcpeshawar.com/student/5yYQfwqIcMKBD_frzxTjIQ
+7073	Sudais Ali Shah	https://gcpeshawar.com/student/99img5eQidF2VdiiJ6nGSJCnOKlhP-n4Rh4qtqPwjwc
+7074	Hasnain Saeed	https://gcpeshawar.com/student/iJtO4ZEo4pzRB_KFGzqh3F2Ewmb-rGJhLsVu4gLX9AA
+7075	Rohail Ahmed	https://gcpeshawar.com/student/PQ5tFxxSznR_BObecd_ej5mMYHLD051bPj2VEFLuamE
+7076	M. Shehriyar	https://gcpeshawar.com/student/8lK9Ujrq4A_3J_p2lFhBQoxGRzTAmvM-FMzAbT1Lckg
+7077	Mehran Khan	https://gcpeshawar.com/student/VNJdSF8_Hny096v60UpzQnqQd51cGG-QppUXjglWpfk
+7078	M. Habab	https://gcpeshawar.com/student/2oG-N7SgNjoSSdEL6Cg3Jw
+7079	Abdullah Shah	https://gcpeshawar.com/student/MveNrUYPY0kaXrPPG7ltJRrX3PG53-Bfh3mhgjOXLO4
+7081	M. Basharat Ullah	https://gcpeshawar.com/student/o_fnSsQdE-FeEOwhViLvucLyZrfqISNmbL2fF-_gCYs
+7082	Masam Khan	https://gcpeshawar.com/student/2FxwR-76y1IAepqhPMa2Pg
+7083	Ali Zaib	https://gcpeshawar.com/student/CLLW6NaxvfeCFq0YmxK29A
+7084	Abdul Hanan	https://gcpeshawar.com/student/3Optd43yHoqRyIMzZaFZufUYd1v9Bfb0qmldYJ0gcB4
+7085	Faizan Ahmad	https://gcpeshawar.com/student/D_WW9H4FQPbhHqjHD88dPXynhQo72Pprz-F1JC1gdyc
+7086	Habib Ullah	https://gcpeshawar.com/student/NyI1h6dhOfdLKBZdIT62fMq4uEV4uZH_MRoxUYcf8nA
+7087	M. Essa	https://gcpeshawar.com/student/i_Y6ZfOl3p_fipvj78upsg
+7088	Rahmat Ullah	https://gcpeshawar.com/student/SL0L-31Thn_UtrJ4b3gVaZIvZ_a8JnmtPi6k277EKPM
+7088	Sudais Ahmad	https://gcpeshawar.com/student/RJty6dw5QSO7l2lCBS2yvJbB8-ewNFpfA3YQasnODeU
+7089	M. Saad	https://gcpeshawar.com/student/v1XbpdDYwgLDzW7Eg-PllA
+7090	Zohaib Kabir	https://gcpeshawar.com/student/0WgbWLDzbuHdwcRweuEgBTgu0HYb2kK2lnqdY3KgaZo
+7091	Zahid Ullah	https://gcpeshawar.com/student/6lvsQj6X7CEBMyucinlWgFCSfpA1Znb-bJpnqsCcEk0
+7092	M. Saad	https://gcpeshawar.com/student/yXMfIlf1AIUMFyAR6_4UAw
+7093	Sheroz	https://gcpeshawar.com/student/lOqdvn_1ED4IN1e2NQlM_w
+7094	Haris Khan	https://gcpeshawar.com/student/BPLpKlBDRjBWECG3Bqfi-g
+7095	M. Hasain	https://gcpeshawar.com/student/jsZj6tq7y8Z8jY7wFILyFw
+7096	Ahmad M. Naeem	https://gcpeshawar.com/student/R15sLCCHLjPxrcmJvYRvAr1SjOkj5Fy5UO2FAJzeqkY
+7097	Shaheer Khan	https://gcpeshawar.com/student/s7w7ZDIeiyZo0Z8ydjTrpTKB2NgAslkzFm0ibsAbfAE
+7099	M. Salman	https://gcpeshawar.com/student/JXDZmuW3vp-cPq_bdhpV1Q
+7099	Sudais Khan	https://gcpeshawar.com/student/soIfARMhiAF3Th3aNGnTXjv7BsEQE25Qs7Mdr8V2fRs
+7100	M. Sohail Abbas	https://gcpeshawar.com/student/o5HxUV5J9lDD54SC2mAhJQ8HYakB9OVXXG5M_sKb2Bg
+7101	Hasnat Khan	https://gcpeshawar.com/student/57pSdgp3-Ulzp-HHxov3X0rnudrcgjC3KKD0M5O4Sf8
+7102	Muhammad Shah	https://gcpeshawar.com/student/KJ9naOkV9l62Kqrlby5lRM1sXoY7rPSjwKNOCILW4oQ
+7103	Kaleem Ullah	https://gcpeshawar.com/student/eigHU9gnqSOt2AELnlSksfv1b0LgU3ZX3pcDDec0vdM
+7104	M. Adil	https://gcpeshawar.com/student/XQILTiKi-NNVu_mlmuU6Hw
+7105	M. Abdur Rehman	https://gcpeshawar.com/student/Y2MHOUaHaCGHml0M9VDPHkn74KbQlmrXAcyXIIORl9o
+7106	M. Hasan	https://gcpeshawar.com/student/EeRV3CDNMu7s9wN-6NkhOQ
+7107	Usman Shah	https://gcpeshawar.com/student/_02dwwkAER7bOak11yVOHQ
+7108	Faisal Khan	https://gcpeshawar.com/student/pOrNc8Y3Bedpsw_ApvAYm-J9evjQocZ45eQPx9t4B9w
+7109	M. Yamaan Afridi	https://gcpeshawar.com/student/s2c_b80BKX-I347dz7d6kx_HIEYHpLWyR7LUfNrQb24
+7110	Sajawal Rehman	https://gcpeshawar.com/student/CFwdkBLPRWYiI9wZAQSVCcwORQjq70XHudUH3IMqC-Y
+7111	Abdul Moaiz	https://gcpeshawar.com/student/xU9fKSiVqhmQ546gNXQfCw3g7C_-TIffeMZJjehj0u4
+7112	M. Saad	https://gcpeshawar.com/student/p6I7n4zWNBkRljGcHCafig
+7113	Shakir Ahmad	https://gcpeshawar.com/student/1PvP7PQVShbMvHysvtiYqFq81tqIIAWPShAH2-B8Ubk
+7114	M. Uzair	https://gcpeshawar.com/student/Szt87FyHIqZdOzFgj4eIjQ
+7115	Mubashir Khan	https://gcpeshawar.com/student/yxepDTsOglBziuH65JXviN5BFGkE36k5ZSle0NiY6Bw
+7116	Altaf Rehman	https://gcpeshawar.com/student/REglH7WjgeIann_ZoxMyBoX_B2jh2fcPwk4M9gvTRlM
+7117	Muhammad Zaid	https://gcpeshawar.com/student/RiDt5_lXVPoDntIsh1lv0bvJQtQYHbVf8Fen_Djzj_E
+7118	M. Aizaz	https://gcpeshawar.com/student/sYMvaoMst-YyLjRwHjBk5Q
+8026	M. Kashif Imran	https://gcpeshawar.com/student/N6JoxKyv8BtM-6IXrMkMUYN-pxpAy_cGEgNs2RVOkOY
+8031	M. Hanan Khan	https://gcpeshawar.com/student/igwVha5jNSeIGloolIWPMzny3YnG6LloaYY3KKCQ82w
+8034	Yaseen Khan	https://gcpeshawar.com/student/kXRsSLtysXKu_UKG4LjQeUeqUGp2LR_jI6DY03iKrD0
+
+## Pre-Engineering (0)
+
+## Computer Science (27)
+8015	Abubakar	https://gcpeshawar.com/student/E2VBYSX4awLy-EOn34DTXg
+8016	M. Hassan Khan	https://gcpeshawar.com/student/gdcJrHHLYNKLOmEM44ezuRTUSsqLglDn9jd6HlYhSVI
+8017	Abdullah Shinwari	https://gcpeshawar.com/student/lTivKYUlf6elAu5uEByYIfvG6hj5J-Yy_BaUETXp8DM
+8018	Kaleem Ullah	https://gcpeshawar.com/student/WaOSLIO02JL4CH0-QFkDGtKDvyJaHFR5lAQx2UsW1p0
+8019	Haseen Ullah	https://gcpeshawar.com/student/TuPuin3eb2hE_QpWhPL1hTPVHnl9SXtxh_aFK4yy6EE
+8020	M. Anoosh	https://gcpeshawar.com/student/Z9zJ2YnYNucnlLA3MNkBDw
+8021	Hasnain Ali	https://gcpeshawar.com/student/9idIpTiAi9ew49nugHrSMDd3o6RRO3Y9e5mR9H6yqw8
+8022	Hamad Aziz	https://gcpeshawar.com/student/c8FRvDLg0Peh8xECqhVgcQ
+8023	Hamid Salam	https://gcpeshawar.com/student/_Wmbk0L4wPkmDBr0zH1LkEjeSIc3C2c71Rb9kis-0to
+8024	Asadullah Jehan	https://gcpeshawar.com/student/uds2bJxclDMsiDQvI9yWpaGzlOvONCNnWc6QKpPnrsE
+8025	Mazhar Ahmad	https://gcpeshawar.com/student/OnGoWiYPTo5gHTQ_BSKtoDHtji9LBCGEdqXCWyY_xwA
+8027	Sohail Ahmad	https://gcpeshawar.com/student/NfWKvPWJTOU6Jx8Bf6fAnKOKJCutCpuPt_Zn6TEdxhM
+8028	M. Wahaj	https://gcpeshawar.com/student/Su6-twirNTz90NM_fVjdgQ
+8029	Mudassir Ihsan	https://gcpeshawar.com/student/ve5WdXeEqZIOB6CMtvMkHGZOniSgynZ3azhcvvxRg2Y
+8030	Inayatullah	https://gcpeshawar.com/student/9AU7Uda6-HCIRVNw0RO3DfS1br1cjRyT69j924lgxUA
+8032	Zivyal Waheed	https://gcpeshawar.com/student/AAf6WGlxEnxaCWoQ7xw-4JvbQSAsOBc98Srng49og4A
+8033	Tanveer Khan	https://gcpeshawar.com/student/YHiJu3kWLRnyGUchjpMiwc0j4LoOD6symqtRaWZaCZA
+8035	M. Jabir	https://gcpeshawar.com/student/cKcbbvhKIRm6lGY4qwftVg
+8036	M. Younas	https://gcpeshawar.com/student/2s7RX1aUZMc9uBWdDBXq5w
+8037	Mahad Iftikhar	https://gcpeshawar.com/student/jTgV7paXMyBqCyZW-rTAQqi1iX_YANRWrS4lcKHlh0o
+8039	Noor Hussain	https://gcpeshawar.com/student/s8CQeSJXTm2V2jb5cECeX5dWb3bp05t788vUBvXN4tk
+8042	M. Asharib	https://gcpeshawar.com/student/SwZValQMqXdwwrUbs1Erfg
+8043	M. Zubair	https://gcpeshawar.com/student/p8St69TZvO0ngQlGIXVXIQ
+8044	M. Haris	https://gcpeshawar.com/student/RY0NJ2jH9RVbdYJUAsaBCA
+8045	Saqib Ullah	https://gcpeshawar.com/student/WG8e0zFxHSAbdNbuX5ocb-BXgPk6Tukpmh3pQOvCEEg
+8046	Rehmat Ullah	https://gcpeshawar.com/student/uAYsBgSeyOMgB0uPXtPSjDTP35ms_Bp8j7upFYLaYXA
+8083	Gulab Sher	https://gcpeshawar.com/student/V59BIbOhj_WbMLe1_V6WZQ
+

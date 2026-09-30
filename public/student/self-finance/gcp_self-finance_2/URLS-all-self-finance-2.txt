@@ -1,0 +1,84 @@
+# Self Finance Cohort 2 — All students
+# Generated 2026-09-30T06:25:44.898Z
+# Count: 80
+
+7119	M. Zakria	Pre-Medical	Self Finance	https://gcpeshawar.com/student/wjudb-_6LvjdT_e-7Qobog
+7120	Mehmood ul Hassan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/ReaGDssvkUDUFY5uiXFNQImz3UQX3vXCGfgN7pfBkRw
+7121	Sajeel Ahmad	Pre-Medical	Self Finance	https://gcpeshawar.com/student/seYsXjMJMC7EermqStG7I1Tz75O_6T6dX66TVESLvvw
+7122	Ahmad Aman	Pre-Medical	Self Finance	https://gcpeshawar.com/student/f5uj2jnVwZBhSORXmL1d3w
+7123	Aayan Ahmad	Pre-Medical	Self Finance	https://gcpeshawar.com/student/uYSeXV_n73Bq4o82cIr_3m9RvrLpEmRg6dlo-8R8hDY
+7124	Musanif Hussain	Pre-Medical	Self Finance	https://gcpeshawar.com/student/vOYoxKkG6qZhOVIRt4vTmpZ7jLZwVF0H6z50bu2ZYVc
+7125	Haseeb Ullah	Pre-Medical	Self Finance	https://gcpeshawar.com/student/VhcxKhkyBsB-W8R7_PYhbJTRqoRLOXMELAoX1Gd8lS8
+7126	M. Sohail	Pre-Medical	Self Finance	https://gcpeshawar.com/student/KEwdQNtGANYa_8zkVrfXtg
+7127	Rafi Ullah	Pre-Medical	Self Finance	https://gcpeshawar.com/student/2-xGY_rZf2X-gONCRDHBWQ
+7128	Sahibzada Shayan Ahmad Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/J-VEREhu66AGUjKiaEq4Q3zltfgO__FYDNUgxMq3qbAk2K_ovGnUvMQEVuT17hwl
+7129	Ali Aurangzeb	Pre-Medical	Self Finance	https://gcpeshawar.com/student/JgJJ9hCculUGnRuSBIKaeK1apmq2fdnIBM__aDwDiro
+7130	Mian M. Huzaifa	Pre-Medical	Self Finance	https://gcpeshawar.com/student/EHIxl6qxz_nb3DVcgQyt_g_7YrPP4Xu0uNeqJkw_QL0
+7131	Hanzala	Pre-Medical	Self Finance	https://gcpeshawar.com/student/9BVcAO9avAz7lAwOiecpVg
+7132	Abdul Jalil	Pre-Medical	Self Finance	https://gcpeshawar.com/student/7NhNsTyQ3LqUdDVXzwxNlFt6AI21VDwnMgCIP1AIT2I
+7133	Faiz ur Rehman	Pre-Medical	Self Finance	https://gcpeshawar.com/student/4GQK3adcB-1IPo4TFCCHtKlJDsYXs2DPCKKL8tZz5Qo
+7134	M. Hamza	Pre-Medical	Self Finance	https://gcpeshawar.com/student/5i5wz_j3KVB28XFAfCqgVg
+7135	Hashim Fazal	Pre-Medical	Self Finance	https://gcpeshawar.com/student/GCRCAOYWtPX3vWneMPvII9DLZvn0zvwU9jrwpAmCR84
+7136	Salman Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/fcC0jn4FS-9oKdZA8xuoJOBfBc84zDVooFIiPb_dDis
+7138	Hisham Barki	Pre-Medical	Self Finance	https://gcpeshawar.com/student/dZHEVMVP6pDk6bUBIiDnSkBgIGxX2apYBVHcFaDwHGg
+7139	Muhammed Bin Wahid	Pre-Medical	Self Finance	https://gcpeshawar.com/student/ZMv0q-ljctdo3Nv_Xwa3OAmDv--aTWhv7YCSEll2V1I
+7140	Ashir	Pre-Medical	Self Finance	https://gcpeshawar.com/student/b8PYXjLKR9jM-LqXnQg9qg
+7141	Mansoor Ali Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/v4sPSKa-pTAnhSJOln7TsbqiBv-Qf2DdpbOppD1XiQ8
+7142	Ubaid	Pre-Medical	Self Finance	https://gcpeshawar.com/student/9Oem7uoc_7PZ2ra1a7rTlg
+7143	Amaar Hamza	Pre-Medical	Self Finance	https://gcpeshawar.com/student/gjOCM1ilmriR_lWGVdyBY8kVrYRep8egAQ2SAkLVIZQ
+7144	M. Yousaf Jan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/s4sC9jdEJl9LcmEdvieobeWteJ5DctXs0ajJLSfo7s8
+7145	Saad Rafi	Pre-Medical	Self Finance	https://gcpeshawar.com/student/dNSV53kiUQL62hr8EXSQog
+7146	Taimoor Ali	Pre-Medical	Self Finance	https://gcpeshawar.com/student/jzmVAFxmscMo-vmnalArOCR8xz5TAgIqG-20_LLSVh0
+7147	Hasan Fayaz	Pre-Medical	Self Finance	https://gcpeshawar.com/student/qrXpJSASIdkVe41PQsfda85mLnVF61aC1khiGz03Pm8
+7148	M. Haroon	Pre-Medical	Self Finance	https://gcpeshawar.com/student/kFUf4w7Y98mywXr41VnslQ
+7149	M. Farhan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/EIvZjSzY6jCWDbkSOsQJxA
+7150	Musa Yamar	Pre-Medical	Self Finance	https://gcpeshawar.com/student/a_--E_BSblO16Fk7b62m2w
+7151	Taimoor Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/TOGBi-qlXG0CUmROeiSMyg6IGvX0zELAJTdab2JmZrk
+7152	Shahabuddin	Pre-Medical	Self Finance	https://gcpeshawar.com/student/5qU8XIy-zIkHsd_hdO1A8-YhyDqrgqwYQ4S8zQm_WJ0
+7153	Abdul Rashid	Pre-Medical	Self Finance	https://gcpeshawar.com/student/AMmkFJWg6uRATCERGZCtaAhy6RR2IZ4lY4_I1vMrBgQ
+7153	M. Ashhad	Pre-Medical	Self Finance	https://gcpeshawar.com/student/T319xcZOzzBOPpBUwMaD3g
+7154	M. Wali	Pre-Medical	Self Finance	https://gcpeshawar.com/student/rdAwHc2_LT_TeKg5zWrxMQ
+7155	Hamza Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/oCKAGS0Is0EHCEB5HoBckQ
+7157	Arbab Asad Abdul Latif	Pre-Medical	Self Finance	https://gcpeshawar.com/student/ag1zG7W3tuSuwldRoVajwNRnurQfSB4ZFkkR-w2dhTQ
+7159	Adil Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/g4znGH1NVzvPdAlDT7iEow
+7160	Mansoor Ali	Pre-Medical	Self Finance	https://gcpeshawar.com/student/1-1CpUoKeQA0VU_of8Po3WkVBnjzPxiBLI-kITFJIYI
+7161	M. Asim	Pre-Medical	Self Finance	https://gcpeshawar.com/student/8tWRwMsLqZMdwyAMcXbC1A
+7162	M. Usman Ghani	Pre-Medical	Self Finance	https://gcpeshawar.com/student/gcXzYlIiQvAV0_9rHArxOQfhi13Vo1HEnzie_FQ2rFs
+7163	M. Noor Ahmad	Pre-Medical	Self Finance	https://gcpeshawar.com/student/COxDfE1pY7TG8twgH8N0FriusW1cAaWCkm0ZxCDtlMc
+7164	M. Kashif Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/FGWQvmskVOgyGIEav6QA1wOXSJ2jbY5HTS6-hOk1SKw
+7165	Mustafa Noor	Pre-Medical	Self Finance	https://gcpeshawar.com/student/OW9ptxGij_CThjREbfXPQnTxdv7KJGAI5H145OOCtGQ
+7166	M. Zuhaib Khan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/CIPpxHRdfbq8k8HOyebD-eCR8X9lLfb4GPx4ouJ4N9M
+7167	Hamza Malik	Pre-Medical	Self Finance	https://gcpeshawar.com/student/jSwx54zYDbYsmBXad6Eh9SvbDmCtHgRnuP4VC6lXvzI
+7168	Talha	Pre-Medical	Self Finance	https://gcpeshawar.com/student/pvghaICUELTO0oRB0VT0gQ
+7170	S. M. Huzaifa	Pre-Medical	Self Finance	https://gcpeshawar.com/student/mIfRT6k6LasTCGXRpUw9XhpZlp7JDxsurF4UQyvh9OY
+7171	M. Hamza	Pre-Medical	Self Finance	https://gcpeshawar.com/student/Z0ZAHUimNJK6qa3EIcK59A
+7172	Sanan Rahim	Pre-Medical	Self Finance	https://gcpeshawar.com/student/npt2yFXoLVtaQA9La0Bb7xx_CcVl0MWV5QoU_CRThoE
+7173	Abdul Haq	Pre-Medical	Self Finance	https://gcpeshawar.com/student/PzCyAgboqzOky5c1fa9Esw
+7174	Saad Ullah	Pre-Medical	Self Finance	https://gcpeshawar.com/student/VN9E3MlUwgHgoKqoF1D_YA
+7175	Mudassir Zaman	Pre-Medical	Self Finance	https://gcpeshawar.com/student/cdwsacxdyj9FTV1lf5ut90jtzZgqNhH-HXHNgeDjxjU
+7176	Adnan Ahmad	Pre-Medical	Self Finance	https://gcpeshawar.com/student/cYDQkSDxTejAsHVtyw3JP0pocYowY-JTnkcbOU2WP8Q
+7212	M. Ayan	Pre-Medical	Self Finance	https://gcpeshawar.com/student/IObhy4TS7knzxl4L5_Merg
+7213	Ibad Ullah	Pre-Medical	Self Finance	https://gcpeshawar.com/student/Cu_JejYi4PcYKFLVTf0UWA
+8047	M. Abdur Rehman	Computer Science	Self Finance	https://gcpeshawar.com/student/rHZKKVvELTGecI_sp7D4DH_n70GuUbSNA6O8cvLwZeg
+8048	S. Hasnain Hashmi	Computer Science	Self Finance	https://gcpeshawar.com/student/kZCypnZ71i4e660iz1ze88yT-9JgwqNY_gA1PqCRF5U
+8049	Abdullah Khalid	Computer Science	Self Finance	https://gcpeshawar.com/student/QBRHVA6920v7zEIo4MFEe4XnQZ473yyTG2Sn_cy-EDY
+8050	M. Ali	Computer Science	Self Finance	https://gcpeshawar.com/student/KeXgpq2wLjaDS4W1eVy8Nw
+8051	M. Huzaifa	Computer Science	Self Finance	https://gcpeshawar.com/student/5WHp2xqFjOdYt8hKWN4NRA
+8052	M. Shahmeer	Computer Science	Self Finance	https://gcpeshawar.com/student/BxFOr-5-QF-BVfpVsslsiA
+8053	Jamal Akbar	Computer Science	Self Finance	https://gcpeshawar.com/student/QDlBhVORmeqMy0X27GBFxY7vVxPw_KfElRN-E7aPS_A
+8054	M. Balach	Computer Science	Self Finance	https://gcpeshawar.com/student/lTjijnoYtDicOCI5-YU_LA
+8055	Abid Ullah	Computer Science	Self Finance	https://gcpeshawar.com/student/Qf66zUWSHjvbhIpwmCQqlQ
+8056	Nabil Ahmad	Computer Science	Self Finance	https://gcpeshawar.com/student/A3sdAY4dzRsxqp7U8KcRVfnqIhY1Dp8uddpGLFw9RSk
+8057	Mazhar Ali Khan	Computer Science	Self Finance	https://gcpeshawar.com/student/HLDM9ykjWyNxi3rglzEk63Ds5rUdvczzXAjpHotQM30
+8058	M. Farooq	Computer Science	Self Finance	https://gcpeshawar.com/student/jHVn2OTdPiIADaA9nG095w
+8059	Faisal	Computer Science	Self Finance	https://gcpeshawar.com/student/V2wi0cTH_FRT1vJQ072-gg
+8060	M. Ishaq	Computer Science	Self Finance	https://gcpeshawar.com/student/O0-lp-5W54fvUo1DaOzbsg
+8061	Tanvir Ahmad	Computer Science	Self Finance	https://gcpeshawar.com/student/pQNAPBcp9v1E78ZNdVu-DnURdVLdu1VhPNGoO63-ID4
+8062	M. Zubair	Computer Science	Self Finance	https://gcpeshawar.com/student/Df9Z9MQuK3c3-EGL-4Legw
+8064	M. Salman	Computer Science	Self Finance	https://gcpeshawar.com/student/gZAQIOPx-AVwjAy-olkibA
+8065	Hammad Khan	Computer Science	Self Finance	https://gcpeshawar.com/student/4vhPtlyj5kq_3_RiIiJ6e29XJNdLmwJz3p2Tdz1CaN8
+8066	M. Zohaib	Computer Science	Self Finance	https://gcpeshawar.com/student/zev_MZyMhhZF5C8b-o0dSw
+8067	M. Salman	Computer Science	Self Finance	https://gcpeshawar.com/student/Lgfjw-WkPm7fHBgMyJDuYw
+8068	Qazi Waleed Ur Rehman	Computer Science	Self Finance	https://gcpeshawar.com/student/tIDr6a5KDY4LIm9ypnZeRzaRGaEM6RsUZyRN7zGpRaE
+8069	M. Salim	Computer Science	Self Finance	https://gcpeshawar.com/student/dDLqPcG42WGsoJUqXDzyPw
+8070	Jawad Ahmad	Computer Science	Self Finance	https://gcpeshawar.com/student/MY8dVCK-jyBS_cYy7TI7WufhnCNABZJfJy7RGfCHYCQ

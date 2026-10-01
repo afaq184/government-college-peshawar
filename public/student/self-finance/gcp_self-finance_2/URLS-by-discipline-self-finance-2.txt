@@ -76,8 +76,8 @@
 8056	Nabil Ahmad	https://gcpeshawar.com/student/A3sdAY4dzRsxqp7U8KcRVfnqIhY1Dp8uddpGLFw9RSk
 8057	Mazhar Ali Khan	https://gcpeshawar.com/student/HLDM9ykjWyNxi3rglzEk63Ds5rUdvczzXAjpHotQM30
 8058	M. Farooq	https://gcpeshawar.com/student/jHVn2OTdPiIADaA9nG095w
-8059	Faisal	https://gcpeshawar.com/student/V2wi0cTH_FRT1vJQ072-gg
-8060	M. Ishaq	https://gcpeshawar.com/student/O0-lp-5W54fvUo1DaOzbsg
+8059	M. Ishaq	https://gcpeshawar.com/student/HdqQaD5G7mWABuXxayN_8A
+8060	Faisal	https://gcpeshawar.com/student/L8UBdYzFoPydt0wimPdSPA
 8061	Tanvir Ahmad	https://gcpeshawar.com/student/pQNAPBcp9v1E78ZNdVu-DnURdVLdu1VhPNGoO63-ID4
 8062	M. Zubair	https://gcpeshawar.com/student/Df9Z9MQuK3c3-EGL-4Legw
 8064	M. Salman	https://gcpeshawar.com/student/gZAQIOPx-AVwjAy-olkibA

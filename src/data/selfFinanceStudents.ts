@@ -4440,6 +4440,24 @@ export const SELF_FINANCE_STUDENTS: StudentRecord[] = [
     photoFile: 'self-finance/gcp_self-finance_2/renamed_pics_2/8060.png'
   },
   {
+    slug: 'faisal-8060',
+    name: 'Faisal',
+    fatherName: 'M. Qaiser',
+    class: 'Computer Science',
+    classYear: '1st year',
+    rollNo: '8060',
+    enrollmentType: 'Self Finance',
+    session: '2026-2028',
+    admissionNo: '8060',
+    dob: '10-2-2008',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0349-4959654',
+    address: 'Shaheen Muslim Town, Peshawar',
+    status: 'Active',
+    photoFile: 'self-finance/gcp_self-finance_2/renamed_pics_2/faisal-8060.png'
+  },
+  {
     slug: 'tanvir-ahmad-8061',
     name: 'Tanvir Ahmad',
     fatherName: 'M. Mamoor',

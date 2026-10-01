@@ -73,6 +73,7 @@
 8058	M. Farooq	Computer Science	Self Finance	https://gcpeshawar.com/student/jHVn2OTdPiIADaA9nG095w
 8059	Faisal	Computer Science	Self Finance	https://gcpeshawar.com/student/V2wi0cTH_FRT1vJQ072-gg
 8060	M. Ishaq	Computer Science	Self Finance	https://gcpeshawar.com/student/O0-lp-5W54fvUo1DaOzbsg
+8060	Faisal	Computer Science	Self Finance	https://gcpeshawar.com/student/L8UBdYzFoPydt0wimPdSPA
 8061	Tanvir Ahmad	Computer Science	Self Finance	https://gcpeshawar.com/student/pQNAPBcp9v1E78ZNdVu-DnURdVLdu1VhPNGoO63-ID4
 8062	M. Zubair	Computer Science	Self Finance	https://gcpeshawar.com/student/Df9Z9MQuK3c3-EGL-4Legw
 8064	M. Salman	Computer Science	Self Finance	https://gcpeshawar.com/student/gZAQIOPx-AVwjAy-olkibA

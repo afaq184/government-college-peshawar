@@ -217,8 +217,22 @@ export default function StudentProfile() {
                   <div className="flex flex-col gap-1">
                     <span className="text-xs text-slate-400">Class</span>
                     <span className="text-white font-medium">
-                      1<sup className="text-[0.65em]">st</sup>{' '}
-                      {student.enrollmentType === 'BS Level' ? 'semester' : 'year'}
+                      {student.classYear === '1st year' ? (
+                        <>
+                          1<sup className="text-[0.65em]">st</sup> year
+                        </>
+                      ) : student.classYear === '2nd year' ? (
+                        <>
+                          2<sup className="text-[0.65em]">nd</sup> year
+                        </>
+                      ) : student.classYear === 'BS' ? (
+                        'BS'
+                      ) : (
+                        <>
+                          1<sup className="text-[0.65em]">st</sup>{' '}
+                          {student.enrollmentType === 'BS Level' ? 'semester' : 'year'}
+                        </>
+                      )}
                     </span>
                   </div>
                   <div className="flex flex-col gap-1">

@@ -7,13 +7,22 @@ export const ENROLLMENT_TYPES = [
 
 export type EnrollmentType = (typeof ENROLLMENT_TYPES)[number];
 
+export const CLASS_YEARS = ['1st year', '2nd year', 'BS'] as const;
+export type ClassYear = (typeof CLASS_YEARS)[number];
+
+/** Fixed academic session for 1st year / 2nd year profiles. */
+export const FIXED_INTER_SESSION = '2026-2028';
+
 export type StudentRecord = {
   id?: string;
   /** Internal id: name-roll (never used in public URLs) */
   slug: string;
   name: string;
   fatherName: string;
+  /** Discipline / degree program (shown as Discipline on profile) */
   class: string;
+  /** Year level: 1st year | 2nd year | BS (shown as Class on profile) */
+  classYear?: string;
   rollNo: string;
   enrollmentType: string;
   session: string;

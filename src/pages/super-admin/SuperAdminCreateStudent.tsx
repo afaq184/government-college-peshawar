@@ -1,7 +1,14 @@
 import type { FormEvent, ChangeEvent } from 'react';
 import { useState } from 'react';
 import { Loader2, Upload, Copy, Check, ExternalLink, Plus } from 'lucide-react';
-import { ENROLLMENT_TYPES, type EnrollmentType, type StudentRecord } from '../../types/student';
+import {
+  ENROLLMENT_TYPES,
+  CLASS_YEARS,
+  FIXED_INTER_SESSION,
+  type EnrollmentType,
+  type ClassYear,
+  type StudentRecord,
+} from '../../types/student';
 import { makeStudentSlug, upsertStudent } from '../../lib/studentService';
 import { uploadToImgBB } from '../../lib/imgbb';
 import { encryptStudentSlug } from '../../utils/studentToken';
@@ -10,36 +17,30 @@ import { waitForImage } from '../../components/StableImage';
 type FormState = {
   name: string;
   fatherName: string;
-  class: string;
+  discipline: string;
+  classYear: ClassYear;
   rollNo: string;
-  enrollmentType: EnrollmentType;
   session: string;
-  admissionNo: string;
-  regNo: string;
   dob: string;
   bloodGroup: string;
-  cnic: string;
+  enrollmentType: EnrollmentType;
   phone: string;
   address: string;
-  status: string;
   photoUrl: string;
 };
 
 const emptyForm: FormState = {
   name: '',
   fatherName: '',
-  class: '',
+  discipline: '',
+  classYear: '1st year',
   rollNo: '',
-  enrollmentType: 'Morning Shift',
-  session: '',
-  admissionNo: '',
-  regNo: '',
+  session: FIXED_INTER_SESSION,
   dob: '',
   bloodGroup: '',
-  cnic: '',
+  enrollmentType: 'Morning Shift',
   phone: '',
   address: '',
-  status: 'Active',
   photoUrl: '',
 };
 
@@ -47,6 +48,10 @@ type CreatedResult = {
   student: StudentRecord;
   profileUrl: string;
 };
+
+function isInterYear(year: ClassYear): boolean {
+  return year === '1st year' || year === '2nd year';
+}
 
 export default function SuperAdminCreateStudent() {
   const [form, setForm] = useState<FormState>(emptyForm);
@@ -56,8 +61,19 @@ export default function SuperAdminCreateStudent() {
   const [created, setCreated] = useState<CreatedResult | null>(null);
   const [copied, setCopied] = useState(false);
 
+  const sessionLocked = isInterYear(form.classYear);
+
   const setField = <K extends keyof FormState>(key: K, value: FormState[K]) => {
     setForm((f) => ({ ...f, [key]: value }));
+    setCreated(null);
+  };
+
+  const handleClassYearChange = (year: ClassYear) => {
+    setForm((f) => ({
+      ...f,
+      classYear: year,
+      session: isInterYear(year) ? FIXED_INTER_SESSION : f.session === FIXED_INTER_SESSION ? '' : f.session,
+    }));
     setCreated(null);
   };
 
@@ -98,24 +114,30 @@ export default function SuperAdminCreateStudent() {
       return;
     }
 
+    const session = sessionLocked ? FIXED_INTER_SESSION : form.session.trim();
+    if (!session) {
+      setError('Academic Session is required for BS');
+      return;
+    }
+
     const slug = makeStudentSlug(name, rollNo);
     const student: StudentRecord = {
       id: slug,
       slug,
       name,
       fatherName: form.fatherName.trim(),
-      class: form.class.trim(),
+      class: form.discipline.trim(),
+      classYear: form.classYear,
       rollNo,
       enrollmentType: form.enrollmentType,
-      session: form.session.trim(),
-      admissionNo: form.admissionNo.trim(),
-      regNo: form.regNo.trim() || undefined,
+      session,
+      admissionNo: '',
       dob: form.dob.trim(),
       bloodGroup: form.bloodGroup.trim(),
-      cnic: form.cnic.trim(),
+      cnic: '',
       phone: form.phone.trim(),
       address: form.address.trim(),
-      status: form.status.trim() || 'Active',
+      status: 'Active',
       photoUrl: form.photoUrl.startsWith('blob:') ? undefined : form.photoUrl || undefined,
       createdAt: Date.now(),
     };
@@ -147,6 +169,8 @@ export default function SuperAdminCreateStudent() {
 
   const inputClass =
     'w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-academy-green/30 focus:border-academy-green';
+  const inputLockedClass =
+    'w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-sm text-slate-600 cursor-not-allowed';
   const labelClass = 'block text-xs font-bold uppercase tracking-widest text-slate-400 mb-2';
 
   return (
@@ -265,6 +289,33 @@ export default function SuperAdminCreateStudent() {
               className={inputClass}
             />
           </div>
+
+          {/* Academic Profile sequence */}
+          <div>
+            <label className={labelClass}>Discipline</label>
+            <input
+              type="text"
+              value={form.discipline}
+              onChange={(e) => setField('discipline', e.target.value)}
+              className={inputClass}
+              placeholder="e.g. Computer Science"
+            />
+          </div>
+          <div>
+            <label className={labelClass}>Class *</label>
+            <select
+              value={form.classYear}
+              onChange={(e) => handleClassYearChange(e.target.value as ClassYear)}
+              className={inputClass}
+              required
+            >
+              {CLASS_YEARS.map((y) => (
+                <option key={y} value={y}>
+                  {y}
+                </option>
+              ))}
+            </select>
+          </div>
           <div>
             <label className={labelClass}>Roll No *</label>
             <input
@@ -276,13 +327,43 @@ export default function SuperAdminCreateStudent() {
             />
           </div>
           <div>
-            <label className={labelClass}>Class / Degree Program</label>
+            <label className={labelClass}>
+              Academic Session{sessionLocked ? '' : ' *'}
+            </label>
             <input
               type="text"
-              value={form.class}
-              onChange={(e) => setField('class', e.target.value)}
+              required={!sessionLocked}
+              readOnly={sessionLocked}
+              value={form.session}
+              onChange={(e) => setField('session', e.target.value)}
+              className={sessionLocked ? inputLockedClass : inputClass}
+              placeholder={sessionLocked ? FIXED_INTER_SESSION : 'e.g. 2024-2028'}
+            />
+            {sessionLocked && (
+              <p className="mt-1.5 text-[11px] text-slate-400">
+                Fixed for 1st year and 2nd year
+              </p>
+            )}
+          </div>
+
+          {/* Personal Information */}
+          <div>
+            <label className={labelClass}>Date of Birth</label>
+            <input
+              type="text"
+              value={form.dob}
+              onChange={(e) => setField('dob', e.target.value)}
               className={inputClass}
-              placeholder="e.g. FSc Pre-Medical"
+              placeholder="DD-MM-YYYY"
+            />
+          </div>
+          <div>
+            <label className={labelClass}>Blood Group</label>
+            <input
+              type="text"
+              value={form.bloodGroup}
+              onChange={(e) => setField('bloodGroup', e.target.value)}
+              className={inputClass}
             />
           </div>
           <div>
@@ -301,63 +382,14 @@ export default function SuperAdminCreateStudent() {
             </select>
           </div>
           <div>
-            <label className={labelClass}>Academic Session</label>
-            <input
-              type="text"
-              value={form.session}
-              onChange={(e) => setField('session', e.target.value)}
-              className={inputClass}
-              placeholder="e.g. 2025-2026"
-            />
+            <label className={labelClass}>Status</label>
+            <input type="text" readOnly value="Active" className={inputLockedClass} />
+            <p className="mt-1.5 text-[11px] text-slate-400">Fixed for all students</p>
           </div>
+
+          {/* Contact Credentials */}
           <div>
-            <label className={labelClass}>Admission Number</label>
-            <input
-              type="text"
-              value={form.admissionNo}
-              onChange={(e) => setField('admissionNo', e.target.value)}
-              className={inputClass}
-            />
-          </div>
-          <div>
-            <label className={labelClass}>University Reg. Number</label>
-            <input
-              type="text"
-              value={form.regNo}
-              onChange={(e) => setField('regNo', e.target.value)}
-              className={inputClass}
-            />
-          </div>
-          <div>
-            <label className={labelClass}>Date of Birth</label>
-            <input
-              type="text"
-              value={form.dob}
-              onChange={(e) => setField('dob', e.target.value)}
-              className={inputClass}
-              placeholder="DD/MM/YYYY"
-            />
-          </div>
-          <div>
-            <label className={labelClass}>Blood Group</label>
-            <input
-              type="text"
-              value={form.bloodGroup}
-              onChange={(e) => setField('bloodGroup', e.target.value)}
-              className={inputClass}
-            />
-          </div>
-          <div>
-            <label className={labelClass}>CNIC / Form-B</label>
-            <input
-              type="text"
-              value={form.cnic}
-              onChange={(e) => setField('cnic', e.target.value)}
-              className={inputClass}
-            />
-          </div>
-          <div>
-            <label className={labelClass}>Guardian Contact</label>
+            <label className={labelClass}>Guardian Contact Number</label>
             <input
               type="text"
               value={form.phone}
@@ -372,15 +404,6 @@ export default function SuperAdminCreateStudent() {
               onChange={(e) => setField('address', e.target.value)}
               className={`${inputClass} min-h-[88px] resize-y`}
               rows={3}
-            />
-          </div>
-          <div>
-            <label className={labelClass}>Status</label>
-            <input
-              type="text"
-              value={form.status}
-              onChange={(e) => setField('status', e.target.value)}
-              className={inputClass}
             />
           </div>
         </div>

@@ -18,6 +18,7 @@ import FacultyList from './pages/FacultyList';
 import FacultyProfile from './pages/FacultyProfile';
 import StudentProfile from './pages/StudentProfile';
 import { AdminAuthProvider } from './context/AdminAuthContext';
+import { SuperAdminAuthProvider } from './context/SuperAdminAuthContext';
 import AdminLogin from './pages/admin/AdminLogin';
 import AdminLayout from './pages/admin/AdminLayout';
 import AdminDashboard from './pages/admin/AdminDashboard';
@@ -26,13 +27,25 @@ import AdminNews from './pages/admin/AdminNews';
 import AdminSite from './pages/admin/AdminSite';
 import AdminStudents from './pages/admin/AdminStudents';
 import AdminDeletedStudents from './pages/admin/AdminDeletedStudents';
+import SuperAdminLogin from './pages/super-admin/SuperAdminLogin';
+import SuperAdminLayout from './pages/super-admin/SuperAdminLayout';
+import SuperAdminCreateStudent from './pages/super-admin/SuperAdminCreateStudent';
 import { ADMIN_BASE_PATH } from './lib/adminGate';
+import { SUPER_ADMIN_BASE_PATH } from './lib/superAdminGate';
 
 function AdminRoot() {
   return (
     <AdminAuthProvider>
       <Outlet />
     </AdminAuthProvider>
+  );
+}
+
+function SuperAdminRoot() {
+  return (
+    <SuperAdminAuthProvider>
+      <Outlet />
+    </SuperAdminAuthProvider>
   );
 }
 
@@ -77,6 +90,20 @@ const router = createBrowserRouter([
           { path: 'deleted-students', element: <AdminDeletedStudents /> },
           { path: 'site', element: <AdminSite /> },
         ],
+      },
+    ],
+  },
+  // Super Admin — create student profiles only (separate URL + credentials)
+  { path: '/super-admin', element: <Navigate to="/" replace /> },
+  { path: '/super-admin/*', element: <Navigate to="/" replace /> },
+  {
+    path: `/${SUPER_ADMIN_BASE_PATH}`,
+    element: <SuperAdminRoot />,
+    children: [
+      { path: 'enter', element: <SuperAdminLogin /> },
+      {
+        element: <SuperAdminLayout />,
+        children: [{ index: true, element: <SuperAdminCreateStudent /> }],
       },
     ],
   },

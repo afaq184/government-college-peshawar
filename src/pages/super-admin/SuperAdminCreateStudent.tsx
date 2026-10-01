@@ -4,9 +4,11 @@ import { Loader2, Upload, Copy, Check, ExternalLink, Plus } from 'lucide-react';
 import {
   ENROLLMENT_TYPES,
   CLASS_YEARS,
+  DISCIPLINES,
   FIXED_INTER_SESSION,
   type EnrollmentType,
   type ClassYear,
+  type Discipline,
   type StudentRecord,
 } from '../../types/student';
 import { makeStudentSlug, upsertStudent } from '../../lib/studentService';
@@ -17,7 +19,7 @@ import { waitForImage } from '../../components/StableImage';
 type FormState = {
   name: string;
   fatherName: string;
-  discipline: string;
+  discipline: Discipline;
   classYear: ClassYear;
   rollNo: string;
   session: string;
@@ -32,7 +34,7 @@ type FormState = {
 const emptyForm: FormState = {
   name: '',
   fatherName: '',
-  discipline: '',
+  discipline: 'Computer Science',
   classYear: '1st year',
   rollNo: '',
   session: FIXED_INTER_SESSION,
@@ -292,14 +294,19 @@ export default function SuperAdminCreateStudent() {
 
           {/* Academic Profile sequence */}
           <div>
-            <label className={labelClass}>Discipline</label>
-            <input
-              type="text"
+            <label className={labelClass}>Discipline *</label>
+            <select
               value={form.discipline}
-              onChange={(e) => setField('discipline', e.target.value)}
+              onChange={(e) => setField('discipline', e.target.value as Discipline)}
               className={inputClass}
-              placeholder="e.g. Computer Science"
-            />
+              required
+            >
+              {DISCIPLINES.map((d) => (
+                <option key={d} value={d}>
+                  {d}
+                </option>
+              ))}
+            </select>
           </div>
           <div>
             <label className={labelClass}>Class *</label>

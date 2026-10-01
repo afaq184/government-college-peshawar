@@ -10,6 +10,9 @@ export type EnrollmentType = (typeof ENROLLMENT_TYPES)[number];
 export const CLASS_YEARS = ['1st year', '2nd year', 'BS'] as const;
 export type ClassYear = (typeof CLASS_YEARS)[number];
 
+export const DISCIPLINES = ['Computer Science', 'Pre-Medical', 'Pre-Engineering'] as const;
+export type Discipline = (typeof DISCIPLINES)[number];
+
 /** Fixed academic session for 1st year / 2nd year profiles. */
 export const FIXED_INTER_SESSION = '2026-2028';
 

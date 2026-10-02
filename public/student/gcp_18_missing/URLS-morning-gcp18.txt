@@ -1,0 +1,11 @@
+# gcp_18_missing — Morning students
+# Generated 2026-10-02T18:16:36.237Z
+# Count: 7
+
+1226	Sifat Ullah Khan	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/h9WMlAjbreeDt6yD1yoqlRyxyieuAZSTkTHNV-poOas
+228	Rayyan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/gYVGcoud7geiJ2S-Cr7lbA
+269	M. Sanan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/i9tNcG4_X4LEagNrYdQJKg
+2053	Muhammad Awais	Computer Science	Morning Shift	https://gcpeshawar.com/student/8V0q8JInRDaxALxZfvrnzOV2e2XL_WLCcUeS1ei2odI
+2043	Ali Wasim	Computer Science	Morning Shift	https://gcpeshawar.com/student/F_r2YORD5Uamzs8dS-4ToQ
+1047	Afnan Ullah	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/RC0Jo9-6X4JDYIFp3I4RuCPnIkhIo85vM2PWOBdu-Kk
+32	Zakir Ullah Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/b8V-15TOx2n9hQITye9D-M21HLfuJvuXrHT5MxynyIg

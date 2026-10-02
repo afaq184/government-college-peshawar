@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Arts 1st Year (2026-2028), phase 1 + phase 2 + phase 3 + phase 5. */
+/** Morning Shift — Arts 1st Year (2026-2028), phase 1 + phase 2 + phase 3 + phase 5 + gcp_18_missing. */
 export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
   {
     slug: 'ahsan-naeem-3001',
@@ -1733,23 +1733,6 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     address: 'Pabbi, Distt: Nowshera',
     status: 'Active',
     photoFile: 'morning-students/second_phase/arts second phase student/3046.png'
-  },
-  {
-    slug: 'abdul-hadi-3045',
-    name: 'Abdul Hadi',
-    fatherName: 'Khalid Waqar',
-    class: 'Arts',
-    rollNo: '3045',
-    enrollmentType: 'Morning Shift',
-    session: '2026-2028',
-    admissionNo: '3045',
-    dob: '25-10- 2010',
-    bloodGroup: '',
-    cnic: '',
-    phone: '0312-5850501',
-    address: 'Chamkani, Distt: Peshawar',
-    status: 'Active',
-    photoFile: 'morning-students/second_phase/arts second phase student/3045.png'
   },
   {
     slug: 'abdullah-3287',

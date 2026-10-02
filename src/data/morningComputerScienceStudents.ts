@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Computer Science 1st Year (2026-2028), including phase 4–7. */
+/** Morning Shift — Computer Science 1st Year (2026-2028), including phase 4–7 + gcp_18_missing. */
 export const MORNING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'hashir-khan-2001',
@@ -479,6 +479,23 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/computer_science_eveing_R/Computer science evening 3_pic_R/2042.jfif'
   },
   {
+    slug: 'ali-wasim-2043',
+    name: 'Ali Wasim',
+    fatherName: 'Wasim Bhatti',
+    class: 'Computer Science',
+    rollNo: '2043',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '2043',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0321-9124517',
+    address: 'O/S Lahori Gate, Mohalla New Islamabad',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/2043.jpeg'
+  },
+  {
     slug: 'syed-abdullah-shah-2044',
     name: 'Syed Abdullah Shah',
     fatherName: 'Waqif Shah',
@@ -511,6 +528,23 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     address: 'Hassan Garhi, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/second_phase/computer_second_phase_pic/2045.png'
+  },
+  {
+    slug: 'muhammad-awais-2053',
+    name: 'Muhammad Awais',
+    fatherName: 'Asif',
+    class: 'Computer Science',
+    rollNo: '2053',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '2053',
+    dob: '18-12-2009',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03301646443',
+    address: 'Shabqadar, Charsadda',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/2053.jpeg'
   },
   {
     slug: 'm-babar-wakeeh-2062',

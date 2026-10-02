@@ -1,0 +1,22 @@
+# gcp_18_missing — All students (M+E)
+# Generated 2026-10-02T18:16:36.251Z
+# Count: 18
+
+32	Zakir Ullah Khan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/b8V-15TOx2n9hQITye9D-M21HLfuJvuXrHT5MxynyIg
+228	Rayyan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/gYVGcoud7geiJ2S-Cr7lbA
+269	M. Sanan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/i9tNcG4_X4LEagNrYdQJKg
+774	Sana Ullah Khan	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/uIfAEfNHCtXNyMrFMkuR92wwqKtSJDmO7qL5hwgpw9A
+1047	Afnan Ullah	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/RC0Jo9-6X4JDYIFp3I4RuCPnIkhIo85vM2PWOBdu-Kk
+1226	Sifat Ullah Khan	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/h9WMlAjbreeDt6yD1yoqlRyxyieuAZSTkTHNV-poOas
+1731	M. Mudassir Islam	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/UzNH_NZU09cyZrx9MDuSPf0Yxjz6p15YH2Mc5Flq_js
+1732	M. Ismail	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/I7xz5MyKp9T9BkDk-Gvf-w
+1733	M. Sahil Nawaz Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/TPyRoI1sZHsNpeVVcLlp9_Lm92ZT11fOkphPwW-3Hxw
+1734	Afzaal Khan	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/dLFxPwb_8sB5FOuVmYO_Ikgvaugwy_74-imOdG3V-Y4
+1735	Muhammad Waqas	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/rhGT7TIu02D7_y0MkqgX66USMMSsDOrgwjJ7g20ClCY
+1736	Abdul Hadi	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/iJInC0td-Vm3VjgjmAjp2w
+1737	M. Abdul Haseeb	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/X8-4BERithHViuvYYFzoe1EQuQNIo-__QedA8wXhp54
+1738	Wadood Ahmad	Pre-Engineering	Evening Shift	https://gcpeshawar.com/student/uiTe8iuDI-eMtOscET1RYgb5AarB8Qc4tWYt29tT_58
+2043	Ali Wasim	Computer Science	Morning Shift	https://gcpeshawar.com/student/F_r2YORD5Uamzs8dS-4ToQ
+2053	Muhammad Awais	Computer Science	Morning Shift	https://gcpeshawar.com/student/8V0q8JInRDaxALxZfvrnzOV2e2XL_WLCcUeS1ei2odI
+2270	Shameber	Computer Science	Evening Shift	https://gcpeshawar.com/student/1OM98xRtlfo5JWFsCxS1Jw
+2276	Saad Riaz	Computer Science	Evening Shift	https://gcpeshawar.com/student/6C4RE7xdnS3Sr7LHz_gsUQ

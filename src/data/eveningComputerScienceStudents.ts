@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–7 + max_new_1. */
+/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–7 + max_new_1 + gcp_18_missing. */
 export const EVENING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'adnan-ahmad-2101',
@@ -2312,6 +2312,23 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/sixth_phase/engineering and computer science/2269.png'
   },
   {
+    slug: 'shameber-2270',
+    name: 'Shameber',
+    fatherName: 'Sultan Iqbal',
+    class: 'Computer Science',
+    rollNo: '2270',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '2270',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0310-9507204',
+    address: 'New Christian Colony, Shad Bagh, Zargrabad, Peshawar',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/2270.jpeg'
+  },
+  {
     slug: 'baljeet-singh-2272',
     name: 'Baljeet Singh',
     fatherName: 'Hardyal Singh',
@@ -2329,21 +2346,21 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/computer_science_eveing_1/computer science eveing pic_R/2272.png'
   },
   {
-    slug: 'shameber-2276',
-    name: 'Shameber',
-    fatherName: 'Sultan Iqbal',
+    slug: 'saad-riaz-2276',
+    name: 'Saad Riaz',
+    fatherName: 'Muhammad Riaz',
     class: 'Computer Science',
     rollNo: '2276',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '2276',
-    dob: '31/03/2008',
+    dob: 'November 09, 2010',
     bloodGroup: '',
     cnic: '',
-    phone: '0346-9075062',
-    address: 'Zargarabad New Chirstan Colony Street Shahadbaad, Peshawar',
+    phone: '0300-2806227',
+    address: 'Phase-5 Hayatabad, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/computer_science_eveing_1/computer science eveing pic_R/2276.png'
+    photoFile: 'gcp_18_missing/gcp_pic/2276.jpeg'
   },
   {
     slug: 'jaswinder-singh-2277',

@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–7 + max_2. */
+/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–7 + max_2 + gcp_18_missing. */
 export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-moiz-1001',
@@ -697,6 +697,23 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Dik Ismail Khel, Nowshera',
     status: 'Active',
     photoFile: 'evening-students/fifth_phase_eveing/max pic/1044.png'
+  },
+  {
+    slug: 'afnan-ullah-1047',
+    name: 'Afnan Ullah',
+    fatherName: 'Sher Saddique',
+    class: 'Pre-Engineering',
+    rollNo: '1047',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1047',
+    dob: '08-08-2011',
+    bloodGroup: 'AB+',
+    cnic: '',
+    phone: '0300-5010647',
+    address: 'Warsak Road, Peshawar',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/1047.jpeg'
   },
   {
     slug: 'muhammad-khan-1051',
@@ -3259,6 +3276,23 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Fato Abdul Rahim II',
     status: 'Active',
     photoFile: 'evening-students/fifth_phase_eveing/engineering/1225.png'
+  },
+  {
+    slug: 'sifat-ullah-khan-1226',
+    name: 'Sifat Ullah Khan',
+    fatherName: 'Hameed Ullah',
+    class: 'Pre-Engineering',
+    rollNo: '1226',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1226',
+    dob: '18-01-2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0315-0964983',
+    address: 'Pajjagi Road, Teari Payan, Peshawar',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/1226.jpeg'
   },
   {
     slug: 'syed-muhammad-asif-1227',

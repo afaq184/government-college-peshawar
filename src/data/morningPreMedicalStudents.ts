@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2. */
+/** Morning Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2 + gcp_18_missing. */
 export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'mir-khudair-01',
@@ -562,6 +562,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Behram Abad Near Railway Phatak, Tablighi Markaz, Pindi Road, Kohat',
     status: 'Active',
     photoFile: 'morning-students/Pre-medical-pic/32.png'
+  },
+  {
+    slug: 'zakir-ullah-khan-32',
+    name: 'Zakir Ullah Khan',
+    fatherName: 'Muhammad Imran',
+    class: 'Pre-Medical',
+    rollNo: '32',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '32',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0345-9174313',
+    address: 'Ghari Abdur Rashid, Maryamzai, Peshawar',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/32.jpeg'
   },
   {
     slug: 'muhammad-okasha-shamuel-33',
@@ -3318,6 +3335,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/max_2/max_2/225.jpeg'
   },
   {
+    slug: 'rayyan-228',
+    name: 'Rayyan',
+    fatherName: 'Shahzad John',
+    class: 'Pre-Medical',
+    rollNo: '228',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '228',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0311-927595',
+    address: 'Swati Phatak, Ummedabad No. 1',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/228.jpeg'
+  },
+  {
     slug: 'aman-230',
     name: 'Aman',
     fatherName: 'Abid Iqbal',
@@ -3656,6 +3690,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'P/o Zarif Korona, Bade Korona, Mohmand',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/268.png'
+  },
+  {
+    slug: 'm-sanan-269',
+    name: 'M. Sanan',
+    fatherName: 'Irfan Waheed',
+    class: 'Pre-Medical',
+    rollNo: '269',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '269',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0321-9192591',
+    address: 'Gulshan-Mehmood Colony, Chamkanie, Peshawar (Str # 4, H # 2)',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/269.jpeg'
   },
   {
     slug: 'syed-hamza-hassan-269',

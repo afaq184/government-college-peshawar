@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2. */
+/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2 + gcp_18_missing. */
 export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'hasnain-jan-210',
@@ -4275,6 +4275,23 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'House No. 6363, Street No. 3, Faqirabad No. 1, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/sixth_phase/medical and computer science/773.png'
+  },
+  {
+    slug: 'sana-ullah-khan-774',
+    name: 'Sana Ullah Khan',
+    fatherName: 'Muhammad Hassan',
+    class: 'Pre-Medical',
+    rollNo: '774',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '774',
+    dob: '25-04-2011',
+    bloodGroup: 'B+',
+    cnic: '',
+    phone: '0325-8364380',
+    address: 'Khat Kalli, Behlola, Charsadda',
+    status: 'Active',
+    photoFile: 'gcp_18_missing/gcp_pic/774.jpeg'
   },
   {
     slug: 'faizullah-775',

@@ -107,25 +107,51 @@ function resolveClassYear(classCell) {
   return '1st year';
 }
 
-function findPhotoFile(photos, rollNo, usedPhotos) {
+function normalizeNameKey(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '');
+}
+
+function findPhotoFile(photos, rollNo, usedPhotos, studentName = '') {
   const roll = String(rollNo).trim();
   const rollN = String(parseInt(roll, 10));
   const alts = ['.png', '.jpg', '.jpeg', '.jfif', '.PNG', '.JPG', '.JPEG', '.JFIF'];
+
+  const matches = [...photos].filter((file) => {
+    if (usedPhotos.has(file)) return false;
+    const base = file.replace(/\.[^.]+$/, '');
+    return (
+      base === roll ||
+      base === rollN ||
+      base.startsWith(`${roll}_`) ||
+      base.startsWith(`${rollN}_`) ||
+      base.startsWith(`${roll} `) ||
+      base.startsWith(`${rollN} `)
+    );
+  });
+
+  const nameKey = normalizeNameKey(studentName);
+  if (nameKey) {
+    const named = matches.filter((file) => {
+      const base = file.replace(/\.[^.]+$/, '');
+      const suffix = base.replace(new RegExp(`^${rollN}[_\\s]*`), '');
+      const suffixKey = normalizeNameKey(suffix);
+      return suffixKey.includes(nameKey) || nameKey.includes(suffixKey);
+    });
+    named.sort((a, b) => a.length - b.length);
+    if (named[0]) return named[0];
+  }
+
   for (const base of [roll, rollN]) {
     for (const e of alts) {
       const c = `${base}${e}`;
       if (photos.has(c) && !usedPhotos.has(c)) return c;
     }
   }
-  const matches = [...photos].filter((file) => {
-    const base = file.replace(/\.[^.]+$/, '');
-    return base === roll || base === rollN || base.startsWith(`${roll}_`) || base.startsWith(`${rollN}_`);
-  });
+
   matches.sort((a, b) => a.length - b.length);
-  for (const file of matches) {
-    if (!usedPhotos.has(file)) return file;
-  }
-  return null;
+  return matches[0] || null;
 }
 
 function encryptStudentSlug(slug) {
@@ -262,7 +288,7 @@ for (const r of rows) {
   }
   seenInBatch.add(batchKey);
 
-  const matched = findPhotoFile(photos, rollNo, usedPhotos);
+  const matched = findPhotoFile(photos, rollNo, usedPhotos, name);
   if (matched) usedPhotos.add(matched);
   else missingPhotos += 1;
 

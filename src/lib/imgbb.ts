@@ -7,6 +7,9 @@ export type ImgBBUploadResult = {
   deleteUrl?: string;
 };
 
+const IMGBB_API_KEY =
+  import.meta.env.VITE_IMGBB_API_KEY || '0bacc9c8168f64f79577d06336f14714';
+
 function fileExt(file: File): string {
   const fromName = file.name.split('.').pop()?.toLowerCase();
   if (fromName && /^[a-z0-9]{2,5}$/.test(fromName)) return fromName;
@@ -14,6 +17,24 @@ function fileExt(file: File): string {
   if (file.type === 'image/png') return 'png';
   if (file.type === 'image/webp') return 'webp';
   return 'jpg';
+}
+
+function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise<T> {
+  return new Promise<T>((resolve, reject) => {
+    const timer = window.setTimeout(() => {
+      reject(new Error(`${label} timed out after ${Math.round(ms / 1000)}s`));
+    }, ms);
+    promise.then(
+      (value) => {
+        window.clearTimeout(timer);
+        resolve(value);
+      },
+      (err) => {
+        window.clearTimeout(timer);
+        reject(err);
+      },
+    );
+  });
 }
 
 /** Shrink large photos before upload (faster + under serverless body limits). */
@@ -59,6 +80,29 @@ function fileToBase64(file: File): Promise<string> {
   });
 }
 
+/** Direct ImgBB upload from the browser (fast path). */
+async function uploadDirectToImgBB(file: File): Promise<ImgBBUploadResult> {
+  const image = await fileToBase64(file);
+  const form = new FormData();
+  form.append('key', IMGBB_API_KEY);
+  form.append('image', image);
+  form.append('name', file.name.replace(/\.[^.]+$/, '') || 'upload');
+
+  const res = await fetch('https://api.imgbb.com/1/upload', {
+    method: 'POST',
+    body: form,
+  });
+  const json = await res.json();
+  if (!res.ok || !json?.success || !json?.data?.url) {
+    throw new Error(json?.error?.message || `ImgBB ${res.status}`);
+  }
+  return {
+    url: json.data.url as string,
+    displayUrl: (json.data.display_url as string) || (json.data.url as string),
+    deleteUrl: json.data.delete_url as string | undefined,
+  };
+}
+
 async function uploadToFirebaseStorage(file: File): Promise<ImgBBUploadResult> {
   const path = `student-photos/${Date.now()}-${Math.random().toString(36).slice(2, 10)}.${fileExt(file)}`;
   const storageRef = ref(storage, path);
@@ -70,7 +114,7 @@ async function uploadToFirebaseStorage(file: File): Promise<ImgBBUploadResult> {
   return { url, displayUrl: url };
 }
 
-/** Server-side proxy (Catbox / ImgBB) — works while ImgBB is in maintenance. */
+/** Server-side proxy → ImgBB / Catbox. */
 async function uploadViaApiProxy(file: File): Promise<ImgBBUploadResult> {
   const image = await fileToBase64(file);
   const res = await fetch('/api/upload', {
@@ -94,23 +138,31 @@ async function uploadViaApiProxy(file: File): Promise<ImgBBUploadResult> {
 
 /**
  * Upload an image with automatic fallbacks:
- * 1) Firebase Storage
- * 2) Server proxy → Catbox / ImgBB
+ * 1) Direct ImgBB (new API key)
+ * 2) Server proxy → ImgBB / Catbox
+ * 3) Firebase Storage
+ * Each step has a timeout so the UI never spins forever.
  */
 export async function uploadToImgBB(file: File): Promise<ImgBBUploadResult> {
   const prepared = await prepareImageFile(file);
   const errors: string[] = [];
 
   try {
-    return await uploadToFirebaseStorage(prepared);
+    return await withTimeout(uploadDirectToImgBB(prepared), 25_000, 'ImgBB');
   } catch (e) {
-    errors.push(`Firebase: ${e instanceof Error ? e.message : String(e)}`);
+    errors.push(`ImgBB: ${e instanceof Error ? e.message : String(e)}`);
   }
 
   try {
-    return await uploadViaApiProxy(prepared);
+    return await withTimeout(uploadViaApiProxy(prepared), 30_000, 'Proxy');
   } catch (e) {
     errors.push(`Proxy: ${e instanceof Error ? e.message : String(e)}`);
+  }
+
+  try {
+    return await withTimeout(uploadToFirebaseStorage(prepared), 20_000, 'Firebase');
+  } catch (e) {
+    errors.push(`Firebase: ${e instanceof Error ? e.message : String(e)}`);
   }
 
   throw new Error(

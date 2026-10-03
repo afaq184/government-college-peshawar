@@ -92,7 +92,10 @@ export default function SuperAdminCreateStudent() {
     try {
       const result = await uploadToImgBB(file);
       const remote = result.displayUrl || result.url;
-      await waitForImage(remote);
+      await Promise.race([
+        waitForImage(remote),
+        new Promise<void>((resolve) => window.setTimeout(resolve, 8000)),
+      ]);
       setField('photoUrl', remote);
     } catch (err) {
       setField('photoUrl', previous);

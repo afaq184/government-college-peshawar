@@ -1,6 +1,6 @@
 /**
  * Vercel serverless upload proxy.
- * Browser → this API → Catbox / ImgBB (avoids CORS + ImgBB outages).
+ * Browser → this API → Catbox / ImgBB (ImgBB often blocks datacenter IPs).
  */
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -35,8 +35,10 @@ export default async function handler(req, res) {
     const name = (typeof filename === 'string' && filename) || 'photo.jpg';
     const type = (typeof contentType === 'string' && contentType) || 'image/jpeg';
     const errors = [];
+    const imgbbKey =
+      process.env.IMGBB_API_KEY || '0bacc9c8168f64f79577d06336f14714';
 
-    // 1) Catbox
+    // 1) Catbox first from server (ImgBB frequently forbids datacenter IPs)
     try {
       const form = new FormData();
       form.append('reqtype', 'fileupload');
@@ -47,22 +49,30 @@ export default async function handler(req, res) {
       });
       const text = (await catboxRes.text()).trim();
       if (catboxRes.ok && /^https?:\/\//i.test(text)) {
-        return res.status(200).json({ success: true, url: text, displayUrl: text, provider: 'catbox' });
+        return res.status(200).json({
+          success: true,
+          url: text,
+          displayUrl: text,
+          provider: 'catbox',
+        });
       }
       errors.push(`Catbox: ${text || catboxRes.status}`);
     } catch (e) {
       errors.push(`Catbox: ${e instanceof Error ? e.message : String(e)}`);
     }
 
-    // 2) ImgBB (may be in maintenance)
+    // 2) ImgBB (may work depending on egress IP)
     try {
       const form = new FormData();
-      form.append('key', 'c98e57ad2f31f407f08acbe5a87429b6');
       form.append('image', base64);
       form.append('name', name.replace(/\.[^.]+$/, '') || 'upload');
-      const imgbbRes = await fetch('https://api.imgbb.com/1/upload', {
+      const imgbbRes = await fetch(`https://api.imgbb.com/1/upload?key=${encodeURIComponent(imgbbKey)}`, {
         method: 'POST',
         body: form,
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        },
       });
       const json = await imgbbRes.json();
       if (imgbbRes.ok && json?.success && json?.data?.url) {

@@ -1613,23 +1613,6 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1597.png'
   },
   {
-    slug: 'abuzar-1598',
-    name: 'Abuzar',
-    fatherName: 'Muzammil Shah',
-    class: 'Pre-Engineering',
-    rollNo: '1598',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '1598',
-    dob: '11-03-2010',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03025574758',
-    address: 'Saeed Abad No. 2, Near Tablighi Markaz, Peshawar',
-    status: 'Active',
-    photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1598.png'
-  },
-  {
     slug: 'awais-khan-1599',
     name: 'Awais Khan',
     fatherName: 'Rahim Khan',

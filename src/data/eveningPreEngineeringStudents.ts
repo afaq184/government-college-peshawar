@@ -1711,7 +1711,7 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03139226711',
     address: 'Alif Abad Khan Kaly, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1603.png'
+    photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1603-updated.png'
   },
   {
     slug: 'mudassir-hashmi-1604',

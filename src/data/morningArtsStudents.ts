@@ -983,7 +983,7 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     dob: 'Jan-30-2009',
     bloodGroup: '',
     cnic: '',
-    phone: '',
+    phone: '0319-8395277',
     address: 'Lala Rukh Colony Peshawar',
     status: 'Active',
     photoFile: 'morning-students/arts-pic/3107.png'

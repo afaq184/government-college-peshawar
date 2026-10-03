@@ -80,18 +80,17 @@ function fileToBase64(file: File): Promise<string> {
   });
 }
 
-/** Direct ImgBB upload from the browser (fast path). */
+/** Direct ImgBB upload from the browser (fast path — works on residential IPs). */
 async function uploadDirectToImgBB(file: File): Promise<ImgBBUploadResult> {
   const image = await fileToBase64(file);
   const form = new FormData();
-  form.append('key', IMGBB_API_KEY);
   form.append('image', image);
   form.append('name', file.name.replace(/\.[^.]+$/, '') || 'upload');
 
-  const res = await fetch('https://api.imgbb.com/1/upload', {
-    method: 'POST',
-    body: form,
-  });
+  const res = await fetch(
+    `https://api.imgbb.com/1/upload?key=${encodeURIComponent(IMGBB_API_KEY)}`,
+    { method: 'POST', body: form },
+  );
   const json = await res.json();
   if (!res.ok || !json?.success || !json?.data?.url) {
     throw new Error(json?.error?.message || `ImgBB ${res.status}`);

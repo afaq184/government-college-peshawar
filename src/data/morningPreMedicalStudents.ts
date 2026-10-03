@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift â€” Pre-Medical 1st Year (2026-2028), including phase 4â€“7 + max_new_1 + max_2 + gcp_18_missing. */
+/** Morning Shift â?? Pre-Medical 1st Year (2026-2028), including phase 4â??7 + max_new_1 + max_2 + gcp_18_missing. */
 export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'mir-khudair-01',
@@ -2334,7 +2334,7 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-asim-148',
     name: 'Muhammad Asim',
-    fatherName: 'Muhammad Rehan',
+    fatherName: 'Muhammad Rehman',
     class: 'Pre-Medical',
     rollNo: '148',
     enrollmentType: 'Morning Shift',
@@ -2343,8 +2343,8 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     dob: '23-03-2011',
     bloodGroup: '',
     cnic: '',
-    phone: '0345-9854602',
-    address: 'GHSS No. 2 Peshawar City',
+    phone: '0343-8623308',
+    address: 'Tajori, Lakki Marwat',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/148.png'
   },

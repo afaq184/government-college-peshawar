@@ -1,6 +1,6 @@
 import type { FormEvent, ChangeEvent } from 'react';
-import { useState } from 'react';
-import { Loader2, Upload, Copy, Check, ExternalLink, Plus } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Loader2, Upload, Copy, Check, ExternalLink, Plus, Download, QrCode } from 'lucide-react';
 import {
   ENROLLMENT_TYPES,
   CLASS_YEARS,
@@ -15,6 +15,11 @@ import { makeStudentSlug, upsertStudent } from '../../lib/studentService';
 import { uploadToImgBB } from '../../lib/imgbb';
 import { encryptStudentSlug } from '../../utils/studentToken';
 import { waitForImage } from '../../components/StableImage';
+import {
+  downloadDataUrl,
+  generateTransparentQrDataUrl,
+  qrFilename,
+} from '../../lib/studentQr';
 
 type FormState = {
   name: string;
@@ -62,8 +67,44 @@ export default function SuperAdminCreateStudent() {
   const [error, setError] = useState('');
   const [created, setCreated] = useState<CreatedResult | null>(null);
   const [copied, setCopied] = useState(false);
+  const [qrDataUrl, setQrDataUrl] = useState('');
+  const [qrLoading, setQrLoading] = useState(false);
 
   const sessionLocked = isInterYear(form.classYear);
+
+  useEffect(() => {
+    if (!created?.profileUrl) {
+      setQrDataUrl('');
+      setQrLoading(false);
+      return;
+    }
+
+    let cancelled = false;
+    setQrLoading(true);
+    setQrDataUrl('');
+
+    void (async () => {
+      try {
+        const dataUrl = await generateTransparentQrDataUrl(created.profileUrl);
+        if (cancelled) return;
+        setQrDataUrl(dataUrl);
+        downloadDataUrl(
+          dataUrl,
+          qrFilename(created.student.name, created.student.rollNo),
+        );
+      } catch (err) {
+        if (!cancelled) {
+          setError(err instanceof Error ? err.message : 'QR code generation failed');
+        }
+      } finally {
+        if (!cancelled) setQrLoading(false);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [created]);
 
   const setField = <K extends keyof FormState>(key: K, value: FormState[K]) => {
     setForm((f) => ({ ...f, [key]: value }));
@@ -111,6 +152,7 @@ export default function SuperAdminCreateStudent() {
     setError('');
     setCreated(null);
     setCopied(false);
+    setQrDataUrl('');
 
     const name = form.name.trim();
     const rollNo = form.rollNo.trim();
@@ -172,6 +214,11 @@ export default function SuperAdminCreateStudent() {
     }
   };
 
+  const downloadQr = () => {
+    if (!created || !qrDataUrl) return;
+    downloadDataUrl(qrDataUrl, qrFilename(created.student.name, created.student.rollNo));
+  };
+
   const inputClass =
     'w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-academy-green/30 focus:border-academy-green';
   const inputLockedClass =
@@ -227,11 +274,61 @@ export default function SuperAdminCreateStudent() {
               </div>
             </div>
           </div>
+
+          <div>
+            <p className={labelClass}>Transparent QR code</p>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              <div
+                className="w-40 h-40 rounded-xl border border-slate-200 flex items-center justify-center overflow-hidden"
+                style={{
+                  backgroundImage:
+                    'linear-gradient(45deg,#e2e8f0 25%,transparent 25%),linear-gradient(-45deg,#e2e8f0 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e2e8f0 75%),linear-gradient(-45deg,transparent 75%,#e2e8f0 75%)',
+                  backgroundSize: '16px 16px',
+                  backgroundPosition: '0 0,0 8px,8px -8px,-8px 0',
+                  backgroundColor: '#fff',
+                }}
+                title="Transparent PNG (checkerboard is only for preview)"
+              >
+                {qrLoading ? (
+                  <Loader2 size={22} className="animate-spin text-academy-green" />
+                ) : qrDataUrl ? (
+                  <img
+                    src={qrDataUrl}
+                    alt="Student profile QR code"
+                    className="w-full h-full object-contain p-2"
+                  />
+                ) : (
+                  <QrCode size={28} className="text-slate-300" />
+                )}
+              </div>
+              <div className="space-y-2">
+                <p className="text-sm text-slate-600 max-w-sm">
+                  Transparent PNG QR (no background) for this student profile. It downloads
+                  automatically; you can download again anytime.
+                </p>
+                <button
+                  type="button"
+                  onClick={downloadQr}
+                  disabled={!qrDataUrl || qrLoading}
+                  className="inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl bg-academy-green text-white text-sm font-bold hover:opacity-90 disabled:opacity-50"
+                >
+                  {qrLoading ? (
+                    <Loader2 size={16} className="animate-spin" />
+                  ) : (
+                    <Download size={16} />
+                  )}
+                  {qrLoading ? 'Generating…' : 'Download QR'}
+                </button>
+              </div>
+            </div>
+          </div>
+
           <button
             type="button"
             onClick={() => {
               setCreated(null);
               setCopied(false);
+              setQrDataUrl('');
             }}
             className="inline-flex items-center gap-1.5 text-sm font-bold text-academy-green hover:underline"
           >
@@ -295,7 +392,6 @@ export default function SuperAdminCreateStudent() {
             />
           </div>
 
-          {/* Academic Profile sequence */}
           <div>
             <label className={labelClass}>Discipline *</label>
             <select
@@ -356,7 +452,6 @@ export default function SuperAdminCreateStudent() {
             )}
           </div>
 
-          {/* Personal Information */}
           <div>
             <label className={labelClass}>Date of Birth</label>
             <input
@@ -397,7 +492,6 @@ export default function SuperAdminCreateStudent() {
             <p className="mt-1.5 text-[11px] text-slate-400">Fixed for all students</p>
           </div>
 
-          {/* Contact Credentials */}
           <div>
             <label className={labelClass}>Guardian Contact Number</label>
             <input

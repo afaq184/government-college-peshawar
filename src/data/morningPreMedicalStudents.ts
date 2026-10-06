@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift â?? Pre-Medical 1st Year (2026-2028), including phase 4â??7 + max_new_1 + max_2 + gcp_18_missing. */
+/** Morning Shift ï¿½?? Pre-Medical 1st Year (2026-2028), including phase 4ï¿½??7 + max_new_1 + max_2 + gcp_18_missing + max_new_One. */
 export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'mir-khudair-01',
@@ -3146,6 +3146,23 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Latif Abad, Ring Road, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/second_phase/pre-medical/200.png'
+  },
+  {
+    slug: 'muhammad-ayaan-202',
+    name: 'Muhammad Ayaan',
+    fatherName: 'Muhammad Farooq',
+    class: 'Pre-Medical',
+    rollNo: '202',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '202',
+    dob: '9/6/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0331-5589079',
+    address: 'Khanzada Korona, Matta Road, Shabqadar',
+    status: 'Active',
+    photoFile: 'max_new_One/max_new_One_pic/202.jpeg'
   },
   {
     slug: 'muhammad-faizan-204',

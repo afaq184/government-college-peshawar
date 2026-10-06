@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2 + gcp_18_missing. */
+/** Evening Shift — Pre-Medical 1st Year (2026-2028), including phase 4–7 + max_new_1 + max_2 + gcp_18_missing + max_new_One. */
 export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'hasnain-jan-210',
@@ -1750,21 +1750,21 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/604.png'
   },
   {
-    slug: 'ahmad-khan-605',
-    name: 'Ahmad Khan',
-    fatherName: 'Khan Zaman',
+    slug: 'sohail-khan-605',
+    name: 'Sohail Khan',
+    fatherName: 'Bakhtawar Said',
     class: 'Pre-Medical',
     rollNo: '605',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '605',
-    dob: '',
-    bloodGroup: '',
+    dob: '1-2-2011',
+    bloodGroup: 'B+',
     cnic: '',
-    phone: '03439868451',
-    address: 'Warsak Road Akakhel P/O Mathra Peshawar',
+    phone: '03365893074',
+    address: 'Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/605.png'
+    photoFile: 'max_new_One/max_new_One_pic/605.jpeg'
   },
   {
     slug: 'mehran-hassan-606',
@@ -3627,10 +3627,10 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '03005981122',
-    address: 'Afghan Colony Ittehad Masjid Peshawar',
+    phone: '03169634373',
+    address: 'Ittehad Colony, Ittehad Mosque, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/718.png'
+    photoFile: 'max_new_One/max_new_One_pic/718.jpeg'
   },
   {
     slug: 'm-asim-719',

@@ -1,0 +1,9 @@
+# max_new_One — Morning students
+# Generated 2026-10-06T09:35:38.981Z
+# Count: 5
+
+1085	Wajid Ali	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/CzagNQU3Y3BWr5VRintYvw
+1060	M. Danyal Rehman Shah	Pre-Engineering	Morning Shift	https://gcpeshawar.com/student/W-ce-Q_p2HhfmnQPv4JULR10NP1p18PKPl4Mjaxc0nI
+3117	Qazi Faizan Rahim	Arts	Morning Shift	https://gcpeshawar.com/student/-CQYeon5-q8gCUaYDc3s3ZP5cURiJ9NtB_GvnVVVvKI
+3111	M. Abdullah	Arts	Morning Shift	https://gcpeshawar.com/student/tOSen-ToSH1bp4PewK3Nqg
+202	Muhammad Ayaan	Pre-Medical	Morning Shift	https://gcpeshawar.com/student/fs4Oeus_CG9c6Qj9dLjUwo-J9WBAwevYF43RXfDSD5w

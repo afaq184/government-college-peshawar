@@ -1,0 +1,7 @@
+# max_new_One — Evening students
+# Generated 2026-10-06T09:35:38.983Z
+# Count: 3
+
+718	Muhammad Ali Shah	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/AZydKXZnAjtxYEUWqktRLOctib_LwO4GAnFrZ1y_5ZU
+605	Sohail Khan	Pre-Medical	Evening Shift	https://gcpeshawar.com/student/htUyzY4p8nK7qTWjYA0VCA
+2276	Saad	Computer Science	Evening Shift	https://gcpeshawar.com/student/ad1hxm0-pHNM66RfkGFg1A

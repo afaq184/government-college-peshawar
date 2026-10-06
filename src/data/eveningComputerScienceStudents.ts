@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–7 + max_new_1 + gcp_18_missing. */
+/** Evening Shift — Computer Science 1st Year (2026-2028), including phase 4–7 + max_new_1 + gcp_18_missing + max_new_One. */
 export const EVENING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'adnan-ahmad-2101',
@@ -2357,10 +2357,10 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     dob: 'November 09, 2010',
     bloodGroup: '',
     cnic: '',
-    phone: '0300-2806227',
-    address: 'Phase-5 Hayatabad, Peshawar',
+    phone: '03709562266',
+    address: 'Saddar',
     status: 'Active',
-    photoFile: 'gcp_18_missing/gcp_pic/2276.jpeg'
+    photoFile: 'max_new_One/max_new_One_pic/2276.jpeg'
   },
   {
     slug: 'jaswinder-singh-2277',

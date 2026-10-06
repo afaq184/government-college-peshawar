@@ -1,6 +1,6 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–7 + max_2 + gcp_18_missing. */
+/** Morning Shift — Pre-Engineering 1st Year (2026-2028), including phase 4–7 + max_2 + gcp_18_missing + max_new_One. */
 export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-moiz-1001',
@@ -870,8 +870,8 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   },
   {
     slug: 'm-daniyal-rehman-shah-1060',
-    name: 'M. Daniyal Rehman Shah',
-    fatherName: 'Maqsood ur Rehman Shah',
+    name: 'M. Danyal Rehman Shah',
+    fatherName: 'Maqsood-ur-Rehman Shah',
     class: 'Pre-Engineering',
     rollNo: '1060',
     enrollmentType: 'Morning Shift',
@@ -880,10 +880,10 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     dob: '17-04-2011',
     bloodGroup: '',
     cnic: '',
-    phone: '03311040010',
-    address: 'Civil Quarters Kohat Road Peshawar',
+    phone: '0326-9101742',
+    address: 'Civil Quarters, Kohat Road, 36-A',
     status: 'Active',
-    photoFile: 'morning-students/pre-engineering-pic/1060.png'
+    photoFile: 'max_new_One/max_new_One_pic/1060.jpeg'
   },
   {
     slug: 'rayan-khan-1061',
@@ -1304,10 +1304,10 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     dob: '9-4-2010',
     bloodGroup: '',
     cnic: '',
-    phone: '03449699647',
-    address: 'Upper Dir',
+    phone: '03488660499',
+    address: 'Upper Dir, Sheringal',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-enginering-pic/1085.png'
+    photoFile: 'max_new_One/max_new_One_pic/1085.jpeg'
   },
   {
     slug: 'muhammad-shah-1086',

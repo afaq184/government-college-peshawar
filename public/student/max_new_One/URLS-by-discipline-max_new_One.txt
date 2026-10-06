@@ -1,0 +1,36 @@
+# max_new_One Student URLs — by Discipline (Morning / Evening)
+# Domain: https://gcpeshawar.com
+# Count: 8
+
+## Pre-Medical
+
+### Morning (1)
+202	Muhammad Ayaan	https://gcpeshawar.com/student/fs4Oeus_CG9c6Qj9dLjUwo-J9WBAwevYF43RXfDSD5w
+
+### Evening (2)
+605	Sohail Khan	https://gcpeshawar.com/student/htUyzY4p8nK7qTWjYA0VCA
+718	Muhammad Ali Shah	https://gcpeshawar.com/student/AZydKXZnAjtxYEUWqktRLOctib_LwO4GAnFrZ1y_5ZU
+
+## Pre-Engineering
+
+### Morning (2)
+1060	M. Danyal Rehman Shah	https://gcpeshawar.com/student/W-ce-Q_p2HhfmnQPv4JULR10NP1p18PKPl4Mjaxc0nI
+1085	Wajid Ali	https://gcpeshawar.com/student/CzagNQU3Y3BWr5VRintYvw
+
+### Evening (0)
+
+## Computer Science
+
+### Morning (0)
+
+### Evening (1)
+2276	Saad	https://gcpeshawar.com/student/ad1hxm0-pHNM66RfkGFg1A
+
+## Arts
+
+### Morning (2)
+3111	M. Abdullah	https://gcpeshawar.com/student/tOSen-ToSH1bp4PewK3Nqg
+3117	Qazi Faizan Rahim	https://gcpeshawar.com/student/-CQYeon5-q8gCUaYDc3s3ZP5cURiJ9NtB_GvnVVVvKI
+
+### Evening (0)
+

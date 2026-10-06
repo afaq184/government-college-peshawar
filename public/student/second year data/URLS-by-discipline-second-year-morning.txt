@@ -1,0 +1,26 @@
+# Second Year Morning — Student URLs by Discipline
+# Domain: https://gcpeshawar.com
+# Count: 14
+
+## Pre-Medical (8)
+157	Muzammil Khan	https://gcpeshawar.com/student/WfwqdQ5p60SMsPaINmVCJuLcfFk0sIYzrKcqXGGqMWg
+187	Sudais Ahmad	https://gcpeshawar.com/student/NMpBtLPzElNBFBfyOHlWE6QCVYtVwfHw9NQw6Mo5V3w
+287	Anas Farooq Khan	https://gcpeshawar.com/student/zXdSNe4EJlV6cbKGdzYASkHbFsXD7BaB748xPMjjPAA
+718	Muhammad Jamal	https://gcpeshawar.com/student/lze904M0HQFjpRE3yEPb0wAWb1tkICdngwXoJ3M-ZO4
+6305	Abubakar	https://gcpeshawar.com/student/uNAjhvNlvFODNNLiLhLV-A
+6515	Muhammad Talha	https://gcpeshawar.com/student/g-eeUvPTeq_gW6MMuUGGL4sT4QU9f5yD_OhEyzKJBOg
+6560	Muhammad Hassan	https://gcpeshawar.com/student/DV5nKJAsqaWGsZcU4R9CTaijOrnCTSTxHtlhcNPOnOs
+6579	Munsif Khan	https://gcpeshawar.com/student/zKV2KPUvEQqskaLKWV0nfoXwo1hjR9NzsZqVxAgB1vQ
+
+## Pre-Engineering (3)
+1168	Mahad Ahmad Khan	https://gcpeshawar.com/student/a8fqGRi5ZhTrf5h3CohubTyQv9SPb0sPFEJs2MVOGxE
+1234	M. Furqan	https://gcpeshawar.com/student/ffuAi5nyjxgF4cQz2Zsv6w
+1235	M. Sudais	https://gcpeshawar.com/student/NHZ6jG--mvkQnWIfytSWuQ
+
+## Computer Science (2)
+8096	Muhammad	https://gcpeshawar.com/student/DT320zVBpnY2kdNWMgVOSg
+8236	Ahmad Yar Khan	https://gcpeshawar.com/student/dC1Xw_hBPhrMwnzmLsugYtbPfX7k-ZRNf5jue7c0NiI
+
+## Arts (1)
+3209	Aman Ullah	https://gcpeshawar.com/student/v-UDJoigNILC8i6EVRBq2w
+

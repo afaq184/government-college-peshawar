@@ -1,0 +1,18 @@
+# Second Year — All Morning students
+# Generated 2026-10-06T12:18:29.488Z
+# Count: 14
+
+157	Muzammil Khan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/WfwqdQ5p60SMsPaINmVCJuLcfFk0sIYzrKcqXGGqMWg
+187	Sudais Ahmad	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/NMpBtLPzElNBFBfyOHlWE6QCVYtVwfHw9NQw6Mo5V3w
+287	Anas Farooq Khan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/zXdSNe4EJlV6cbKGdzYASkHbFsXD7BaB748xPMjjPAA
+718	Muhammad Jamal	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/lze904M0HQFjpRE3yEPb0wAWb1tkICdngwXoJ3M-ZO4
+1168	Mahad Ahmad Khan	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/a8fqGRi5ZhTrf5h3CohubTyQv9SPb0sPFEJs2MVOGxE
+1234	M. Furqan	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/ffuAi5nyjxgF4cQz2Zsv6w
+1235	M. Sudais	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/NHZ6jG--mvkQnWIfytSWuQ
+3209	Aman Ullah	Arts	2nd year	Morning Shift	https://gcpeshawar.com/student/v-UDJoigNILC8i6EVRBq2w
+6305	Abubakar	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/uNAjhvNlvFODNNLiLhLV-A
+6515	Muhammad Talha	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/g-eeUvPTeq_gW6MMuUGGL4sT4QU9f5yD_OhEyzKJBOg
+6560	Muhammad Hassan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/DV5nKJAsqaWGsZcU4R9CTaijOrnCTSTxHtlhcNPOnOs
+6579	Munsif Khan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/zKV2KPUvEQqskaLKWV0nfoXwo1hjR9NzsZqVxAgB1vQ
+8096	Muhammad	Computer Science	2nd year	Morning Shift	https://gcpeshawar.com/student/DT320zVBpnY2kdNWMgVOSg
+8236	Ahmad Yar Khan	Computer Science	2nd year	Morning Shift	https://gcpeshawar.com/student/dC1Xw_hBPhrMwnzmLsugYtbPfX7k-ZRNf5jue7c0NiI

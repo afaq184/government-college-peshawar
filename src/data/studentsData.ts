@@ -9,6 +9,7 @@ import { EVENING_CS_STUDENTS } from './eveningComputerScienceStudents';
 import { EVENING_PRE_MEDICAL_STUDENTS } from './eveningPreMedicalStudents';
 import { EVENING_PRE_ENGINEERING_STUDENTS } from './eveningPreEngineeringStudents';
 import { SELF_FINANCE_STUDENTS } from './selfFinanceStudents';
+import { MORNING_SECOND_YEAR_STUDENTS } from './morningSecondYearStudents';
 import type { StudentRecord } from '../types/student';
 
 export type Student = StudentRecord;
@@ -95,6 +96,7 @@ export const STUDENTS: Student[] = [
   ...DEMO_STUDENTS,
   // Sports quota listed first so sports photos win when roll/slug already exists in another cohort.
   ...MORNING_SPORTS_STUDENTS,
+  ...MORNING_SECOND_YEAR_STUDENTS,
   ...MORNING_CS_STUDENTS,
   ...MORNING_ARTS_STUDENTS,
   ...MORNING_PRE_ENGINEERING_STUDENTS,

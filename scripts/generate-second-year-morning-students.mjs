@@ -20,6 +20,17 @@ const DATA_TS = 'src/data/morningSecondYearStudents.ts';
 const EXPORT_NAME = 'MORNING_SECOND_YEAR_STUDENTS';
 const PHOTO_MARKER = 'second year data/';
 
+/** Manual enrollment corrections (roll → type). Keeps regen from wiping fixes. */
+const ENROLLMENT_OVERRIDES = {
+  718: 'Evening Shift',
+  6305: 'Self Finance',
+  6515: 'Self Finance',
+  6560: 'Self Finance',
+  6579: 'Self Finance',
+  8096: 'Self Finance',
+  8236: 'Self Finance',
+};
+
 const SOURCE = {
   excel: `${COHORT}/second year.xlsx`,
   photoDir: `${COHORT}/Second year`,
@@ -257,7 +268,7 @@ function parseSource() {
       class: discipline,
       classYear: '2nd year',
       rollNo,
-      enrollmentType: 'Morning Shift',
+      enrollmentType: ENROLLMENT_OVERRIDES[rollNo] || 'Morning Shift',
       session: '2026-2028',
       admissionNo: rollNo,
       dob: formatDob(cell(r, 'Date of Birth', 'DOB')),

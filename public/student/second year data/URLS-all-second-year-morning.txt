@@ -1,18 +1,28 @@
-# Second Year — All Morning students
-# Generated 2026-10-07T16:00:35.549Z
-# Count: 14
+# Second Year — All students
+# Generated 2026-10-07T19:49:16.932Z
+# Count: 24
 
+117	Asadullah	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/yeFpe5i9e0UBCkNROVrbig
 157	Muzammil Khan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/WfwqdQ5p60SMsPaINmVCJuLcfFk0sIYzrKcqXGGqMWg
 187	Sudais Ahmad	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/NMpBtLPzElNBFBfyOHlWE6QCVYtVwfHw9NQw6Mo5V3w
+286	Talha	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/QfnHS-8yoYlaa7a4vpOJLA
 287	Anas Farooq Khan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/zXdSNe4EJlV6cbKGdzYASkHbFsXD7BaB748xPMjjPAA
+299	M. Zeeshan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/p1RpcNQskjA_WLfnvSE59w
 718	Muhammad Jamal	Pre-Medical	2nd year	Evening Shift	https://gcpeshawar.com/student/lze904M0HQFjpRE3yEPb0wAWb1tkICdngwXoJ3M-ZO4
+789	M. Imran Khan	Pre-Medical	2nd year	Evening Shift	https://gcpeshawar.com/student/kGnrwECU3cmFILx2rS2Cn6UFCRGOtSm617lshwqTvdA
+1147	Faizan Khan	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/0EGyY63rrmE0fHs71naQJD0DbhTRaQciJKb_Z_Yh-qs
 1168	Mahad Ahmad Khan	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/a8fqGRi5ZhTrf5h3CohubTyQv9SPb0sPFEJs2MVOGxE
 1234	M. Furqan	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/ffuAi5nyjxgF4cQz2Zsv6w
 1235	M. Sudais	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/NHZ6jG--mvkQnWIfytSWuQ
+1581	Ahmed Waez	Pre-Engineering	2nd year	Evening Shift	https://gcpeshawar.com/student/KBOBxX8xIrsRCTaCV4b3nw
+2047	Muhammad Hamza	Computer Science	2nd year	Morning Shift	https://gcpeshawar.com/student/2ngdYMeyBQew3keFwkiVxFnJyD4wS6yUgv4S7O3gH7o
+3044	Huzaifa Afridi	Arts	2nd year	Morning Shift	https://gcpeshawar.com/student/3NqqYD5Hg6FdmC4JoI2Oji_beaY1LJ62ttNTcoPG4kQ
 3209	Aman Ullah	Arts	2nd year	Morning Shift	https://gcpeshawar.com/student/v-UDJoigNILC8i6EVRBq2w
+3606	M. Habib Shah	Computer Science	2nd year	Morning Shift	https://gcpeshawar.com/student/eXZdvDE1w_QGrP19jrEC4bbXph9sXesp0u92fq_jeZ0
 6305	Abubakar	Pre-Medical	2nd year	Self Finance	https://gcpeshawar.com/student/uNAjhvNlvFODNNLiLhLV-A
 6515	Muhammad Talha	Pre-Medical	2nd year	Self Finance	https://gcpeshawar.com/student/g-eeUvPTeq_gW6MMuUGGL4sT4QU9f5yD_OhEyzKJBOg
 6560	Muhammad Hassan	Pre-Medical	2nd year	Self Finance	https://gcpeshawar.com/student/DV5nKJAsqaWGsZcU4R9CTaijOrnCTSTxHtlhcNPOnOs
 6579	Munsif Khan	Pre-Medical	2nd year	Self Finance	https://gcpeshawar.com/student/zKV2KPUvEQqskaLKWV0nfoXwo1hjR9NzsZqVxAgB1vQ
 8096	Muhammad	Computer Science	2nd year	Self Finance	https://gcpeshawar.com/student/DT320zVBpnY2kdNWMgVOSg
 8236	Ahmad Yar Khan	Computer Science	2nd year	Self Finance	https://gcpeshawar.com/student/dC1Xw_hBPhrMwnzmLsugYtbPfX7k-ZRNf5jue7c0NiI
+8263	M. Zaid Khan	Computer Science	2nd year	Self Finance	https://gcpeshawar.com/student/KFdpCJ2fuxfGrDWnLTQreScC_4fCwwrfEx_KdMRfaLQ

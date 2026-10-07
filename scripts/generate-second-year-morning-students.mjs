@@ -1,6 +1,6 @@
 /**
- * Second-year morning cohort (all shifts forced to Morning).
- * Source: public/student/second year data/
+ * Second-year cohort (enrollment from Shift column / photo tag / overrides).
+ * Sources: public/student/second year data/
  * Writes: src/data/morningSecondYearStudents.ts + URL lists
  */
 import XLSX from 'xlsx';
@@ -31,11 +31,23 @@ const ENROLLMENT_OVERRIDES = {
   8236: 'Self Finance',
 };
 
-const SOURCE = {
-  excel: `${COHORT}/second year.xlsx`,
-  photoDir: `${COHORT}/Second year`,
-  photoPrefix: 'second year data/Second year',
+/** Excel roll typos corrected by photo filename (e.g. 263 → 8263). */
+const ROLL_CORRECTIONS = {
+  263: '8263',
 };
+
+const SOURCES = [
+  {
+    excel: `${COHORT}/second year.xlsx`,
+    photoDir: `${COHORT}/Second year`,
+    photoPrefix: 'second year data/Second year',
+  },
+  {
+    excel: `${COHORT}/second_year_batch2/Second_Year_Students_data.xlsx`,
+    photoDir: `${COHORT}/second_year_batch2/Second-year_pic`,
+    photoPrefix: 'second year data/second_year_batch2/Second-year_pic',
+  },
+];
 
 function makeStudentSlug(name, rollNo) {
   return `${name}-${rollNo}`
@@ -97,7 +109,7 @@ function rollNum(roll) {
 function resolveDiscipline(discipline, classCell, rollN) {
   const d = String(discipline || '').toLowerCase().trim();
   const c = String(classCell || '').toLowerCase().trim();
-  if (/arts|humanities|fa\b/.test(d) || /arts|humanities/.test(c)) return 'Arts';
+  if (/arts|humanities|fa\b|general\s*arts/.test(d) || /arts|humanities/.test(c)) return 'Arts';
   if (/cis|computer|comp\.?\s*sc|c\.?\s*s/.test(d) || /computer|comp\.?\s*sc|c\.?\s*s/.test(c)) {
     return 'Computer Science';
   }
@@ -110,6 +122,21 @@ function resolveDiscipline(discipline, classCell, rollN) {
   if (rollN >= 2001) return 'Computer Science';
   if (rollN >= 1001) return 'Pre-Engineering';
   return 'Pre-Medical';
+}
+
+function normalizeEnrollment(shiftCell, photoFile, rollNo) {
+  if (ENROLLMENT_OVERRIDES[rollNo]) return ENROLLMENT_OVERRIDES[rollNo];
+  const shift = String(shiftCell || '')
+    .trim()
+    .toLowerCase();
+  if (/evening|eveing/.test(shift)) return 'Evening Shift';
+  if (/self/.test(shift)) return 'Self Finance';
+  if (/morning|moning/.test(shift)) return 'Morning Shift';
+  const photo = String(photoFile || '').toLowerCase();
+  if (/eveing|evening/.test(photo)) return 'Evening Shift';
+  if (/self/.test(photo)) return 'Self Finance';
+  if (/morning|moning/.test(photo)) return 'Morning Shift';
+  return 'Morning Shift';
 }
 
 function findPhotoFile(photos, photoName, rollNo, usedPhotos) {
@@ -132,15 +159,19 @@ function findPhotoFile(photos, photoName, rollNo, usedPhotos) {
   for (const c of candidates) {
     if (photos.has(c) && !usedPhotos.has(c)) return c;
   }
-  const matches = [...photos].filter((file) => {
+  // Match tagged photos: 286_morning.jpeg, 789_eveing.jpeg, 8263_self-Finance.jpeg
+  const tagged = [...photos].filter((file) => {
+    if (usedPhotos.has(file)) return false;
     const base = file.replace(/\.[^.]+$/, '');
-    return base === roll || base === rollN;
+    return (
+      base === roll ||
+      base === rollN ||
+      base.startsWith(`${roll}_`) ||
+      base.startsWith(`${rollN}_`)
+    );
   });
-  matches.sort((a, b) => a.length - b.length);
-  for (const file of matches) {
-    if (!usedPhotos.has(file)) return file;
-  }
-  return null;
+  tagged.sort((a, b) => a.length - b.length);
+  return tagged[0] || null;
 }
 
 function encryptStudentSlug(slug) {
@@ -213,12 +244,12 @@ export const ${exportName}: StudentRecord[] = ${body};
 `;
 }
 
-function parseSource() {
-  const wb = XLSX.readFile(path.join(root, SOURCE.excel));
+function parseSource(source) {
+  const wb = XLSX.readFile(path.join(root, source.excel));
   const sheetName =
     wb.SheetNames.find((n) => !/instructions|verification/i.test(n)) || wb.SheetNames[0];
   const rows = readSheetRows(wb.Sheets[sheetName]);
-  const photoDir = path.join(root, SOURCE.photoDir);
+  const photoDir = path.join(root, source.photoDir);
   const photos = new Set(
     fs.existsSync(photoDir)
       ? fs.readdirSync(photoDir).filter((f) => /\.(png|jpe?g|jfif|webp|gif)$/i.test(f))
@@ -240,9 +271,14 @@ function parseSource() {
       continue;
     }
     rollNo = String(parseInt(rollNo, 10));
+    if (ROLL_CORRECTIONS[rollNo]) rollNo = ROLL_CORRECTIONS[rollNo];
     const n = rollNum(rollNo);
     const classCell = cell(r, 'Class');
-    const discipline = resolveDiscipline(cell(r, 'Discipline', 'Subject'), classCell, n);
+    const discipline = resolveDiscipline(
+      cell(r, 'Discipline', 'Subject', 'Group / Discipline', 'Group'),
+      classCell,
+      n
+    );
 
     const slug = makeStudentSlug(name, rollNo);
     if (seenInBatch.has(slug)) {
@@ -259,6 +295,12 @@ function parseSource() {
     if (matched) usedPhotos.add(matched);
     else missingPhotos += 1;
 
+    const enrollmentType = normalizeEnrollment(
+      cell(r, 'Shift', 'Enrollment Type', 'Type'),
+      matched,
+      rollNo
+    );
+
     students.push({
       slug,
       name,
@@ -268,7 +310,7 @@ function parseSource() {
       class: discipline,
       classYear: '2nd year',
       rollNo,
-      enrollmentType: ENROLLMENT_OVERRIDES[rollNo] || 'Morning Shift',
+      enrollmentType,
       session: '2026-2028',
       admissionNo: rollNo,
       dob: formatDob(cell(r, 'Date of Birth', 'DOB')),
@@ -279,11 +321,11 @@ function parseSource() {
       ),
       address: normalizeOptional(cell(r, 'Permanent Address', 'Address')),
       status: normalizeOptional(cell(r, 'Status', 'Student Status')) || 'Active',
-      ...(matched ? { photoFile: `${SOURCE.photoPrefix}/${matched}` } : {}),
+      ...(matched ? { photoFile: `${source.photoPrefix}/${matched}` } : {}),
     });
   }
 
-  return { students, skipped, missingPhotos, photos: photos.size };
+  return { students, skipped, missingPhotos, photos: photos.size, excel: source.excel };
 }
 
 function writeUrls(filePath, students, title) {
@@ -318,13 +360,36 @@ function writeDisciplineUrls(filePath, students) {
 }
 
 // --- main ---
-console.log(`\n=== ${SOURCE.excel} ===`);
-const { students, skipped, missingPhotos, photos } = parseSource();
-console.log(
-  `photos=${photos} students=${students.length} skipped=${skipped.length}` +
-    (missingPhotos ? ` missingPhotos=${missingPhotos}` : '')
-);
-if (skipped.length) console.log('skipped:', skipped);
+const students = [];
+const seenSlugs = new Set();
+const allSkipped = [];
+
+for (const source of SOURCES) {
+  if (!fs.existsSync(path.join(root, source.excel))) {
+    console.log(`\n=== skip missing ${source.excel} ===`);
+    continue;
+  }
+  console.log(`\n=== ${source.excel} ===`);
+  const { students: batch, skipped, missingPhotos, photos, excel } = parseSource(source);
+  let added = 0;
+  for (const s of batch) {
+    if (seenSlugs.has(s.slug)) {
+      console.warn(`  skip duplicate slug ${s.slug} from ${excel}`);
+      continue;
+    }
+    seenSlugs.add(s.slug);
+    students.push(s);
+    added += 1;
+  }
+  console.log(
+    `photos=${photos} added=${added} skipped=${skipped.length}` +
+      (missingPhotos ? ` missingPhotos=${missingPhotos}` : '')
+  );
+  if (skipped.length) {
+    console.log('skipped:', skipped);
+    allSkipped.push(...skipped);
+  }
+}
 
 students.sort((a, b) => rollNum(a.rollNo) - rollNum(b.rollNo) || a.slug.localeCompare(b.slug));
 
@@ -337,20 +402,28 @@ for (const s of students) {
 }
 
 const comment =
-  'Morning Shift — 2nd Year (2026-2028), from second year data cohort.';
+  '2nd Year (2026-2028) — Morning / Evening / Self Finance from second year data cohorts.';
 fs.writeFileSync(path.join(root, DATA_TS), toTsArray(EXPORT_NAME, comment, students));
 console.log(`\nWrote ${students.length} students -> ${DATA_TS}`);
 
 const outDir = path.join(root, COHORT);
-writeUrls(path.join(outDir, 'URLS-all-second-year-morning.txt'), students, 'Second Year — All Morning students');
+writeUrls(path.join(outDir, 'URLS-all-second-year-morning.txt'), students, 'Second Year — All students');
 writeDisciplineUrls(path.join(outDir, 'URLS-by-discipline-second-year-morning.txt'), students);
+writeUrls(
+  path.join(outDir, 'second_year_batch2', 'URLS-second-year-batch2.txt'),
+  students.filter((s) => (s.photoFile || '').includes('second_year_batch2')),
+  'Second Year batch2 — Student URLs'
+);
 
 const byClass = {};
+const byEnroll = {};
 for (const s of students) {
   byClass[s.class] = (byClass[s.class] || 0) + 1;
+  byEnroll[s.enrollmentType] = (byEnroll[s.enrollmentType] || 0) + 1;
 }
 console.log('\n========== SUMMARY ==========');
 for (const [k, v] of Object.entries(byClass)) console.log(`${k}: ${v}`);
-console.log(`Total: ${students.length} (all Morning Shift, 2nd year)`);
+for (const [k, v] of Object.entries(byEnroll)) console.log(`${k}: ${v}`);
+console.log(`Total: ${students.length} (2nd year)`);
 console.log(`URL files under: ${outDir}`);
 console.log(`PHOTO_MARKER: ${PHOTO_MARKER}`);

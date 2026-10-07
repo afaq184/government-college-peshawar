@@ -1,7 +1,25 @@
 import type { StudentRecord } from '../types/student';
 
-/** Morning Shift — 2nd Year (2026-2028), from second year data cohort. */
+/** 2nd Year (2026-2028) — Morning / Evening / Self Finance from second year data cohorts. */
 export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
+  {
+    slug: 'asadullah-117',
+    name: 'Asadullah',
+    fatherName: 'Fazl-e-Subhan',
+    class: 'Pre-Medical',
+    classYear: '2nd year',
+    rollNo: '117',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '117',
+    dob: '10/1/2009',
+    bloodGroup: 'B+',
+    cnic: '',
+    phone: '0317-8073725',
+    address: 'Phando Chowk, Phando Baba',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/117_morning.jpeg'
+  },
   {
     slug: 'muzammil-khan-157',
     name: 'Muzammil Khan',
@@ -39,6 +57,24 @@ export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
     photoFile: 'second year data/Second year/187.jpeg'
   },
   {
+    slug: 'talha-286',
+    name: 'Talha',
+    fatherName: 'Javed Khan',
+    class: 'Pre-Medical',
+    classYear: '2nd year',
+    rollNo: '286',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '286',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03259520144',
+    address: 'Fidabad, near Darakshan Colony, Peshawar',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/286_morning.jpeg'
+  },
+  {
     slug: 'anas-farooq-khan-287',
     name: 'Anas Farooq Khan',
     fatherName: 'Mohammad Farooq Khan',
@@ -57,6 +93,24 @@ export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
     photoFile: 'second year data/Second year/287.jpeg'
   },
   {
+    slug: 'm-zeeshan-299',
+    name: 'M. Zeeshan',
+    fatherName: 'Muzaffar Khan',
+    class: 'Pre-Medical',
+    classYear: '2nd year',
+    rollNo: '299',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '299',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0304-5957971',
+    address: 'Pajaggi, Peshawar',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/299_morning.jpeg'
+  },
+  {
     slug: 'muhammad-jamal-718',
     name: 'Muhammad Jamal',
     fatherName: 'Bazz Muhammad',
@@ -73,6 +127,42 @@ export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
     address: 'Afghan Colony Tube Well Chowk Peshawar',
     status: 'Active',
     photoFile: 'second year data/Second year/718.jpeg'
+  },
+  {
+    slug: 'm-imran-khan-789',
+    name: 'M. Imran Khan',
+    fatherName: 'Zakir Ullah',
+    class: 'Pre-Medical',
+    classYear: '2nd year',
+    rollNo: '789',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '789',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03150499971',
+    address: 'Ring Road, Ammar Colony, Pakha Ghulam',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/789_eveing.jpeg'
+  },
+  {
+    slug: 'faizan-khan-1147',
+    name: 'Faizan Khan',
+    fatherName: 'Ghulam Muhammad',
+    class: 'Pre-Engineering',
+    classYear: '2nd year',
+    rollNo: '1147',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1147',
+    dob: '2-Feb-2009',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03126899383',
+    address: 'Saeedabad #2, Pajaggi Road, Peshawar',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/1147_morning.jpeg'
   },
   {
     slug: 'mahad-ahmad-khan-1168',
@@ -129,6 +219,60 @@ export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
     photoFile: 'second year data/Second year/1235.jpeg'
   },
   {
+    slug: 'ahmed-waez-1581',
+    name: 'Ahmed Waez',
+    fatherName: 'Inamullah Khan',
+    class: 'Pre-Engineering',
+    classYear: '2nd year',
+    rollNo: '1581',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1581',
+    dob: '8-March-2009',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0328-8675388',
+    address: 'Shergarh, Mardan',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/1581_eveing.jpeg'
+  },
+  {
+    slug: 'muhammad-hamza-2047',
+    name: 'Muhammad Hamza',
+    fatherName: 'Malang Khan',
+    class: 'Computer Science',
+    classYear: '2nd year',
+    rollNo: '2047',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '2047',
+    dob: '31/12/2006',
+    bloodGroup: 'A+',
+    cnic: '',
+    phone: '0315-0092992',
+    address: 'Sardar Ahmad Jan Colony, Peshawar',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/2047_morning.jpeg'
+  },
+  {
+    slug: 'huzaifa-afridi-3044',
+    name: 'Huzaifa Afridi',
+    fatherName: 'Ayub Afridi',
+    class: 'Arts',
+    classYear: '2nd year',
+    rollNo: '3044',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '3044',
+    dob: '2007',
+    bloodGroup: 'A+',
+    cnic: '',
+    phone: '03339142852',
+    address: 'Peshawar GT Road, New City Home',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/3044_moning.jpeg'
+  },
+  {
     slug: 'aman-ullah-3209',
     name: 'Aman Ullah',
     fatherName: 'Meer Zaman',
@@ -145,6 +289,24 @@ export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
     address: 'Garhi Qamar Din, Kohat Road Peshawar',
     status: 'Active',
     photoFile: 'second year data/Second year/3209.jpeg'
+  },
+  {
+    slug: 'm-habib-shah-3606',
+    name: 'M. Habib Shah',
+    fatherName: 'Zamin Shah',
+    class: 'Computer Science',
+    classYear: '2nd year',
+    rollNo: '3606',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '3606',
+    dob: '6-11-2008',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0332-9562621',
+    address: 'Kohat Road, Srakhawra, Mattani, Peshawar',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/3606_morning.jpeg'
   },
   {
     slug: 'abubakar-6305',
@@ -253,5 +415,23 @@ export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
     address: 'Tarnab Farm, Peshawar',
     status: 'Active',
     photoFile: 'second year data/Second year/8236.jpeg'
+  },
+  {
+    slug: 'm-zaid-khan-8263',
+    name: 'M. Zaid Khan',
+    fatherName: 'Shaheryar Khan',
+    class: 'Computer Science',
+    classYear: '2nd year',
+    rollNo: '8263',
+    enrollmentType: 'Self Finance',
+    session: '2026-2028',
+    admissionNo: '8263',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03025761376',
+    address: 'Street No. 1, House No. 02, Hayat Colony, Nuthia , Peshawar',
+    status: 'Active',
+    photoFile: 'second year data/second_year_batch2/Second-year_pic/8263_self-Finance.jpeg'
   }
 ];

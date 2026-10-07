@@ -342,40 +342,6 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/520.png'
   },
   {
-    slug: 'abubakar-siddique-521',
-    name: 'Abubakar Siddique',
-    fatherName: 'Wilayat Khan',
-    class: 'Pre-Medical',
-    rollNo: '521',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '521',
-    dob: '20-02-2009',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03170565359',
-    address: 'Ghali Payan, Mathra, Peshawar',
-    status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/521.png'
-  },
-  {
-    slug: 'muhammad-sudais-522',
-    name: 'Muhammad Sudais',
-    fatherName: 'Barkat Ali',
-    class: 'Pre-Medical',
-    rollNo: '522',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '522',
-    dob: '01-02-2010',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03018888549',
-    address: 'Charsadda Road, Nahaqi Kandar, Jandi Daudzai, Peshawar',
-    status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/522.png'
-  },
-  {
     slug: 'rehan-ullah-523',
     name: 'Rehan Ullah',
     fatherName: 'Muhammad Shah Noor',
@@ -577,23 +543,6 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Mama Khel, Badaber, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/534.png'
-  },
-  {
-    slug: 'muhammad-hamza-535',
-    name: 'Muhammad Hamza',
-    fatherName: 'Akbar Ali',
-    class: 'Pre-Medical',
-    rollNo: '535',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '535',
-    dob: '',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03219084184',
-    address: 'Yousaf Abad, Tube Well Chowk, Dalazak Road, Peshawar',
-    status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/535.png'
   },
   {
     slug: 'm-mubeen-khan-536',
@@ -2107,23 +2056,6 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/625.png'
   },
   {
-    slug: 'm-mashhood-ullah-626',
-    name: 'M. Mashhood Ullah',
-    fatherName: 'Nusrat Ali',
-    class: 'Pre-Medical',
-    rollNo: '626',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '626',
-    dob: '',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03367172140',
-    address: 'Garhi Sherdad, Warsak Road',
-    status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/626.png'
-  },
-  {
     slug: 'muhammad-rafiullah-627',
     name: 'Muhammad Rafiullah',
     fatherName: 'Riaz Ahmad Khan',
@@ -3037,23 +2969,6 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Bashir Abad, P/O WAPDA House, Pajagi Road',
     status: 'Active',
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/680.png'
-  },
-  {
-    slug: 'mehran-jalal-681',
-    name: 'Mehran Jalal',
-    fatherName: 'Dilawar Khan',
-    class: 'Pre-Medical',
-    rollNo: '681',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '681',
-    dob: '',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03025923644',
-    address: 'Ahmad Abad Charsadda Road Peshawar',
-    status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/681.png'
   },
   {
     slug: 'basit-ali-khan-682',

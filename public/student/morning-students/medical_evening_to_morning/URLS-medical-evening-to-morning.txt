@@ -1,0 +1,11 @@
+# Medical evening → morning — Student URLs
+# Domain: https://gcpeshawar.com
+# Shift: Morning
+# Count: 6
+
+152	Muhammad Jalal	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/ClhqFQ0ErxOf6P44xlQmYa1BQwKVlQ2hBQxtQPmve0o
+335	Muhammad Sudais	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/sR0PcsRWoP8WGOC7Y_E1gjz6kc09PBecA6_CDBvbBYU
+302	Muhammad Mashhood Ullah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/v_oDo6qCC1NE7tHQVK9QS9A4LDxU5kaAZ6Rln5AYP1U
+342	Abubakar Siddique	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/yCDgbNbG4D0wC30NOaSA9VO7a7VJ66BLyM8eOxUrJ1s
+260	Muhammad Saad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/7CtCQbgPIkwnyE_OMHwre04GmhlI1sHrWH8Tj3tI0EY
+348	Muhammad Hamza	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/k0zoxrCDbSy1venyzEmIIu2WevOHUt5a-zz0oV10qm8

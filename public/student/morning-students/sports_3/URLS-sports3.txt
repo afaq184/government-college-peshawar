@@ -1,0 +1,14 @@
+# Morning Sports 3 (new_sports_max_student) — Student URLs
+# Domain: https://gcpeshawar.com
+# Shift: Morning
+# Count: 9
+
+750	Sana Ullah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/rQplKrbWI5gp3e73x-Vm5A
+2277	Shehzad Ahmad	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/tgu3U_8WJ7wSFpUwCihxp8LQ0Ds5PQ_5KZ8Q5DlYaCA
+608	Shamir Malik	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/LTYRNBdqO9ED5seERnc2qj-QrJvHDm7XzrQcWY0zUTs
+2278	Masood Khan	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/ShguZ1V7iVLHTLCw86wrybcA_U4SWXZTuh672Bop5sY
+1047	Afnan Ullah	Pre-Engineering	2nd year	Morning Shift	https://gcpeshawar.com/student/RC0Jo9-6X4JDYIFp3I4RuCPnIkhIo85vM2PWOBdu-Kk
+8197	Muhammad Yousaf	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/8S4G_Jn8Anvv7BVFUZnDqvbUDaIe3x7V_nUVpRkz9ro
+609	Sufyan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/Hu6F7bYHZXfr-xgusGwWpw
+8196	Abdul Ahad Shamraiz	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/hml98ezBE4vqY69xYq1lG31sXp5BBEjRfv18_H8fAIE
+8195	Rehan Gul	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/gsOt4w5pFuqMS7qluLiGvQ

@@ -188,12 +188,17 @@ const COHORTS = [
         photoDir: 'public/student/morning-students/sports_2/sports_students_pic',
         photoPrefix: 'morning-students/sports_2/sports_students_pic',
       },
+      {
+        excel: 'public/student/morning-students/sports_3/Sports_data.xlsx',
+        photoDir: 'public/student/morning-students/sports_3/Sports_pic',
+        photoPrefix: 'morning-students/sports_3/Sports_pic',
+      },
     ],
     className: 'Sports',
     outFile: 'src/data/morningSportsStudents.ts',
     exportName: 'MORNING_SPORTS_STUDENTS',
     comment:
-      'Morning Shift — Sports quota 1st Year (2026-2028), phase 1 + sports_2. Discipline field keeps each student academic track.',
+      'Morning Shift — Sports quota 1st Year (2026-2028), phase 1 + sports_2 + sports_3. Discipline field keeps each student academic track.',
   },
 ];
 
@@ -222,11 +227,28 @@ function normalizeDiscipline(value, className) {
 function findHeaderRowIndex(matrix) {
   for (let i = 0; i < matrix.length; i++) {
     const cells = (matrix[i] || []).map((c) => String(c || '').trim().toLowerCase());
-    const hasRoll = cells.some((c) => c === 'roll no' || c === 'rollno' || c === 'roll number');
+    const hasRoll = cells.some(
+      (c) =>
+        c === 'roll no' ||
+        c === 'rollno' ||
+        c === 'roll number' ||
+        c === 'class roll no' ||
+        c.includes('roll no')
+    );
     const hasName = cells.some((c) => c === 'name' || c === 'student name');
     if (hasRoll && hasName) return i;
   }
   return 0;
+}
+
+function normalizeClassYear(value) {
+  const v = String(value || '')
+    .trim()
+    .toLowerCase();
+  if (/2nd|second/.test(v)) return '2nd year';
+  if (/\bbs\b/.test(v)) return 'BS';
+  if (/1st|first/.test(v)) return '1st year';
+  return '';
 }
 
 function readSheetRows(sheet) {
@@ -272,6 +294,7 @@ function parseSourceRows(source, className) {
         'Roll No',
         'RollNo',
         'Roll Number',
+        'Class Roll No',
         'Enrollment No / Roll No',
         'Enrollment'
       );
@@ -282,10 +305,15 @@ function parseSourceRows(source, className) {
 
       const photo = cell(r, 'Photo File Name', 'Photo', 'Photo File');
       const discipline = normalizeDiscipline(
-        cell(r, 'Discipline', 'Discipline/Subject', 'Degree Program'),
+        cell(r, 'Discipline', 'Discipline/Subject', 'Discipline / Subject', 'Degree Program', 'Subject'),
         className
       );
-      const matchedPhoto = findPhotoFile(photos, photo, roll);
+      const classYear = normalizeClassYear(cell(r, 'Class', 'Class Year', 'Year'));
+      const matchedPhoto =
+        findPhotoFile(photos, photo, roll) ||
+        findPhotoFile(photos, `${name}.jpeg`, roll) ||
+        findPhotoFile(photos, `${name}.jpg`, roll) ||
+        findPhotoFile(photos, `${name}.png`, roll);
       if (!matchedPhoto) missingPhotos += 1;
       const photoPath = matchedPhoto ? `${source.photoPrefix}/${matchedPhoto}` : undefined;
 
@@ -301,6 +329,7 @@ function parseSourceRows(source, className) {
           'S/O'
         ),
         class: discipline,
+        ...(classYear ? { classYear } : {}),
         rollNo: roll,
         enrollmentType: 'Morning Shift',
         session: cell(r, 'Academic Session', 'Session') || '2026-2028',

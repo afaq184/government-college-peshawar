@@ -115,6 +115,12 @@ export function getStudentBySlug(slug: string | undefined): Student | undefined 
 
 /** Old published slugs that must keep working after a roll-number correction. */
 const STUDENT_SLUG_ALIASES: Record<string, string> = {
+  // Medical evening → morning transfers (old evening cards keep working)
+  'abubakar-siddique-521': 'abubakar-siddique-342',
+  'muhammad-sudais-522': 'muhammad-sudais-335',
+  'muhammad-hamza-535': 'muhammad-hamza-348',
+  'm-mashhood-ullah-626': 'muhammad-mashhood-ullah-302',
+  'mehran-jalal-681': 'muhammad-jalal-152',
   // Yas Barki briefly published under 1674; correct roll is 1671
   'm-yas-barki-zai-1674': 'm-yas-barki-zai-1671',
   // Umar Ali was imported as 1670; correct roll/photo is 1674

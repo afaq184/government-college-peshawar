@@ -2937,8 +2937,8 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/677.png'
   },
   {
-    slug: 'muhaib-ukasha-679',
-    name: 'Muhaib Ukasha',
+    slug: 'm-ukashah-679',
+    name: 'M. Ukashah',
     fatherName: 'Majid Khan',
     class: 'Pre-Medical',
     rollNo: '679',
@@ -2948,10 +2948,11 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '03078003326',
-    address: 'P/O Shagai Bala, Ulan Pur Peshawar',
+    phone: '03105050165',
+    address: 'Inside Lahori Gate, Police Family Quarter',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/679.png'
+    photoFile: 'morning-students/first_year_batch/1st year_pic/679_eveing.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'm-zubair-680',
@@ -4258,5 +4259,59 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Muskeen Abad, Nothia Saddar, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/max_new_1/max_pic/783.jpeg'
+  },
+  {
+    slug: 'huzaifa-tariq-762',
+    name: 'Huzaifa Tariq',
+    fatherName: 'Muhammad Tariq',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '762',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '762',
+    dob: '03/02/2011',
+    bloodGroup: 'B+',
+    cnic: '',
+    phone: '03263161382',
+    address: 'Shabqadar Haleemzai',
+    status: 'Active',
+    photoFile: 'morning-students/first_year_batch/1st year_pic/762_eveing.jpeg'
+  },
+  {
+    slug: 'muhammad-sajjad-763',
+    name: 'Muhammad Sajjad',
+    fatherName: 'Muhammad Rafiq',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '763',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '763',
+    dob: '07/02/2010',
+    bloodGroup: 'B+',
+    cnic: '',
+    phone: '03275874088',
+    address: 'Bara',
+    status: 'Active',
+    photoFile: 'morning-students/first_year_batch/1st year_pic/763_eveing.jpeg'
+  },
+  {
+    slug: 'manzoor-ahmad-793',
+    name: 'Manzoor Ahmad',
+    fatherName: 'Sahar Gul',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '793',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '793',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0306-6410651',
+    address: 'Qandari Shahlam Khel, Zila Momand',
+    status: 'Active',
+    photoFile: 'morning-students/first_year_batch/1st year_pic/793_eveing.jpeg'
   }
 ];

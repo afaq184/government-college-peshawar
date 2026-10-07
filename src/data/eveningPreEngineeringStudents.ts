@@ -3665,5 +3665,23 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Mulla Ghouri Khyber',
     status: 'Active',
     photoFile: 'gcp_18_missing/gcp_pic/1738.jpeg'
+  },
+  {
+    slug: 'muhammad-shoaib-1528',
+    name: 'Muhammad Shoaib',
+    fatherName: 'Mubarak Zeb',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1528',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1528',
+    dob: '09/08/2009',
+    bloodGroup: 'AB+',
+    cnic: '',
+    phone: '03265788429',
+    address: 'Mahala Sarwani, Shabqadar, Dist: Charsadda',
+    status: 'Active',
+    photoFile: 'morning-students/first_year_batch/1st year_pic/1528_eveing.jpeg'
   }
 ];

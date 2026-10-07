@@ -1,0 +1,13 @@
+# 1st year batch — Student URLs
+# Domain: https://gcpeshawar.com
+# Count: 9
+
+229	Amir Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/Kk0FGDuPgLbqALsp93hThA
+679	M. Ukashah	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/5iLUdCFIP7ZWDIx36rs5vQ
+201	Abdur Rehman	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/UZXrGeWtdiDlC-QXLf4a7NIp5phZBz6e0AO7IBxaH4g
+1528	Muhammad Shoaib	Pre-Engineering	1st year	Evening Shift	https://gcpeshawar.com/student/AR5Qpx69RMvYgPb4rW5lXaQps61JuYH0qX6FYEzU95g
+286	Abdul Basit	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/fUeHa5Y88JhFcsrHy6IZWg
+762	Huzaifa Tariq	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/pOw_xlAnWDsN_qfLFEWG3nulWIOyYs9Bg_LF4zCq-Oc
+763	Muhammad Sajjad	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/aP7yxk-7bc3o0oqRnFYNvTJgwWNXZHoGLp2KnSIAjmw
+31	M. Abdur-Rahman	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/lYAtJWhxSJFrdd-6zAujDC6KB3QpDvMj9WWiQpeHV1o
+793	Manzoor Ahmad	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/_FDHJ_HwJW7gwN9XX_Hgazr6H-aJyqvTQhdu4kfnIms

@@ -547,6 +547,24 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/Pre-medical-pic/31.png'
   },
   {
+    slug: 'm-abdur-rahman-31',
+    name: 'M. Abdur-Rahman',
+    fatherName: 'Noor-ul-Ameen',
+    class: 'Pre-Medical',
+    rollNo: '31',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '31',
+    dob: '23 March 2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03129441546',
+    address: 'Tarnab, District Charsadda',
+    status: 'Active',
+    photoFile: 'morning-students/first_year_batch/1st year_pic/31_morning.jpeg',
+    classYear: '1st year'
+  },
+  {
     slug: 'muhammad-arham-32',
     name: 'Muhammad Arham',
     fatherName: 'Shams Ur Rehman',
@@ -4007,13 +4025,14 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '286',
-    dob: '4/4/2010',
+    dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '03003782464',
-    address: 'Gari Shah Muhammad, Haryana Payan, Pesh',
+    phone: '03130131315',
+    address: 'Garhi Shah Muhammad',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-medical/286.png'
+    photoFile: 'morning-students/first_year_batch/1st year_pic/286_morning.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'm-arsalan-afridi-287',
@@ -4715,5 +4734,41 @@ export const MORNING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Yousaf Abad Tube Well Chowk, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/medical_evening_to_morning/Medical_pic/348.jpeg'
+  },
+  {
+    slug: 'amir-khan-229',
+    name: 'Amir Khan',
+    fatherName: 'Noor-ul-Amin',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '229',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '229',
+    dob: '23-Oct-2009',
+    bloodGroup: 'A',
+    cnic: '',
+    phone: '03005824640',
+    address: 'Mohallah Malkan, Shaggi Hindkian, Peshawar',
+    status: 'Active',
+    photoFile: 'morning-students/first_year_batch/1st year_pic/229_morning.jpeg'
+  },
+  {
+    slug: 'abdur-rehman-201',
+    name: 'Abdur Rehman',
+    fatherName: 'Abdul Wali Khan',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '201',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '201',
+    dob: '05-02-2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0332-9897762',
+    address: 'Mohallah Barokhel, Mera Urmar Payan, Peshawar',
+    status: 'Active',
+    photoFile: 'morning-students/first_year_batch/1st year_pic/201_morning.jpeg'
   }
 ];

@@ -11014,5 +11014,23 @@ export const SELF_FINANCE_STUDENTS: StudentRecord[] = [
     address: 'Maddina colony Chamkani Peshawar',
     status: 'Active',
     photoFile: 'self-finance/self_finance_new_last/Self-finance_pic/7412.jpeg'
+  },
+  {
+    slug: 'muhammad-shoaib-8214',
+    name: 'Muhammad Shoaib',
+    fatherName: 'Fazal rahim',
+    class: 'Computer Science',
+    classYear: '2nd year',
+    rollNo: '8214',
+    enrollmentType: 'Self Finance',
+    session: '2026-2028',
+    admissionNo: '8214',
+    dob: '20/02/2009',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03344064164',
+    address: 'Shaheen muslim town bostanabad number. 4',
+    status: 'Active',
+    photoFile: 'max_new_data/pic/8214.jpeg'
   }
 ];

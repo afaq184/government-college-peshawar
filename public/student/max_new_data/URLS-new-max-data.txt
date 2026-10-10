@@ -1,0 +1,18 @@
+# New_MAX_DATA — Student URLs
+# Domain: https://gcpeshawar.com
+# Count: 14
+
+1643	Aftab Ahmad	Pre-Engineering	1st year	Evening Shift	https://gcpeshawar.com/student/g8W19X0SDAVIh5N08Lr6F65S1EH5y9yN-Myuv20Ztd8
+1740	ASAD HAYAT	Pre-Engineering	1st year	Evening Shift	https://gcpeshawar.com/student/6kuQtAEBDcz0tgWuLH2F0w
+579	Rahat Ullah	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/xKjrJACaNC421Cbw2H3YSQ
+134	Asad-Rehman	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/S12db7xKtswgvtdh3A8miQ
+779	M. Hamza	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/UHcLu97TpMybeoQgUvtcXQ
+2191	Aamir Mehmood Khan	Computer Science	1st year	Evening Shift	https://gcpeshawar.com/student/u8m5qsy4O1p6TfSlWSEm2wNbUuuph94YHzskt404xG4
+185	M. Yasir	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/AIFRYcNN42N188iT0ZVbCA
+188	Adnan Bahadar	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/j8LsPIQVZ5RFaBr1vRB8C2Mt8imvaSFL9QKOjH6jmGw
+2233	Shahzada Ahmad Zia	Computer Science	1st year	Evening Shift	https://gcpeshawar.com/student/Jvld1ncMUndjFmYp5pGnjzs3X5nKPjL1vh8tt-Btvsw
+1565	Muhammad Farhan Malik	Pre-Engineering	1st year	Evening Shift	https://gcpeshawar.com/student/sZcikdMBG4kDXRPmSnQgYmHlhEr0vYwRo9tw7b62U08
+3104	YAR HUSSAIN	Arts	2nd year	Morning Shift	https://gcpeshawar.com/student/6uSd6vD7vRc4iW90vxR8XAdnXErEP976XYPHa3MmiIc
+3338	JAMAL Shah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/WQUbM8iVgIs5UOD0bt_XfQ
+8214	Muhammad Shoaib	Computer Science	2nd year	Self Finance	https://gcpeshawar.com/student/AR5Qpx69RMvYgPb4rW5lXbRh8rhVREFaxM0LgrAFRJI
+188	Wisal Mehmood	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/9rd4jJLS2ZsyO_DJyjmJsXqucYueW58qFpQ_zyLBVaI

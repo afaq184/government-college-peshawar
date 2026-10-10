@@ -1053,21 +1053,22 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/fifth_phase_eveing/engineering/1564.png'
   },
   {
-    slug: 'malik-farhan-muhammad-1565',
-    name: 'Malik Farhan Muhammad',
+    slug: 'muhammad-farhan-malik-1565',
+    name: 'Muhammad Farhan Malik',
     fatherName: 'Pir Muhammad Khan',
     class: 'Pre-Engineering',
     rollNo: '1565',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '1565',
-    dob: '10-03-2011',
+    dob: '10/3/2011',
     bloodGroup: '',
     cnic: '',
-    phone: '0333-36767609',
+    phone: '0333-6767609',
     address: 'Malik Abad, Shabqadar, Charsadda',
     status: 'Active',
-    photoFile: 'evening-students/fifth_phase_eveing/engineering/1565.png'
+    photoFile: 'max_new_data/pic/1565.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'muhammad-talha-sultan-1566',
@@ -3683,5 +3684,41 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Mahala Sarwani, Shabqadar, Dist: Charsadda',
     status: 'Active',
     photoFile: 'morning-students/first_year_batch/1st year_pic/1528_eveing.jpeg'
+  },
+  {
+    slug: 'aftab-ahmad-1643',
+    name: 'Aftab Ahmad',
+    fatherName: 'Abdul Basit',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1643',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1643',
+    dob: '16-3-2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0314-9014954',
+    address: 'Warsak Road Garhi sado po mathra',
+    status: 'Active',
+    photoFile: 'max_new_data/pic/1643.jpeg'
+  },
+  {
+    slug: 'asad-hayat-1740',
+    name: 'ASAD HAYAT',
+    fatherName: 'MUHAMMAD HAYAT KHAN',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1740',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1740',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03345265239',
+    address: 'HOUSE # 09 HADI LANE OLD BARA ROAD University Town',
+    status: 'Active',
+    photoFile: 'max_new_data/pic/1740.jpeg'
   }
 ];

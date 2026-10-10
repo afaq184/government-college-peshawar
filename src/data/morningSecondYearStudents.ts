@@ -433,5 +433,41 @@ export const MORNING_SECOND_YEAR_STUDENTS: StudentRecord[] = [
     address: 'Street No. 1, House No. 02, Hayat Colony, Nuthia , Peshawar',
     status: 'Active',
     photoFile: 'second year data/second_year_batch2/Second-year_pic/8263_self-Finance.jpeg'
+  },
+  {
+    slug: 'yar-hussain-3104',
+    name: 'YAR HUSSAIN',
+    fatherName: 'ZAR HUSSAIN',
+    class: 'Arts',
+    classYear: '2nd year',
+    rollNo: '3104',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '3104',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0325 5949493',
+    address: 'Din bahar Colony Charsada Road',
+    status: 'Active',
+    photoFile: 'max_new_data/pic/3104.jpeg'
+  },
+  {
+    slug: 'wisal-mehmood-188',
+    name: 'Wisal Mehmood',
+    fatherName: 'Fazal Mehmood',
+    class: 'Pre-Medical',
+    classYear: '2nd year',
+    rollNo: '188',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '188',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0311-9271820',
+    address: 'House No 13 Street No 3 Defence Colony Peshawar',
+    status: 'Active',
+    photoFile: 'max_new_data/pic/188_Wisal Mehmood.jpeg'
   }
 ];

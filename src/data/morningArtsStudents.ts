@@ -3701,5 +3701,23 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     address: 'Chagharmatti-1, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/phase_fifith_arts/arts_pics/3337.png'
+  },
+  {
+    slug: 'jamal-shah-3338',
+    name: 'JAMAL Shah',
+    fatherName: 'Aman ullah',
+    class: 'Arts',
+    classYear: '1st year',
+    rollNo: '3338',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '3338',
+    dob: '15-10-2007',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03135549224',
+    address: 'Asia Gate, Quid abad - No. 2 - Peshawar',
+    status: 'Active',
+    photoFile: 'max_new_data/pic/3338.jpeg'
   }
 ];

@@ -1224,21 +1224,22 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/computer_science_eveing_1/computer science eveing pic_R/2190.png'
   },
   {
-    slug: 'amir-mehmood-khan-2191',
-    name: 'Amir Mehmood Khan',
+    slug: 'aamir-mehmood-khan-2191',
+    name: 'Aamir Mehmood Khan',
     fatherName: 'Abu Amir Khan',
     class: 'Computer Science',
     rollNo: '2191',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '2191',
-    dob: '25/03/2011',
-    bloodGroup: '',
+    dob: '11-10-2008 (2008 written over 2007)',
+    bloodGroup: 'O-',
     cnic: '',
-    phone: '0333-9308562',
-    address: 'Urmar, Peshawar',
+    phone: '03339308562',
+    address: 'Urmar Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/computer_science_eveing_1/computer science eveing pic_R/2191.png'
+    photoFile: 'max_new_data/pic/2191.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'muhammad-ali-rafay-2192',
@@ -1938,21 +1939,22 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/phase 4 eveing/computer_science_eveing_R/Computer science evening 3_pic_R/2232.jfif'
   },
   {
-    slug: 'sahibzada-ahmad-zia-2233',
-    name: 'Sahibzada Ahmad Zia',
-    fatherName: 'Sahibzada Kaleem Zia',
+    slug: 'shahzada-ahmad-zia-2233',
+    name: 'Shahzada Ahmad Zia',
+    fatherName: 'Shahzado Kaleem Zia',
     class: 'Computer Science',
     rollNo: '2233',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '2233',
-    dob: '18/05/2010',
+    dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '0300-8583182',
-    address: 'Sethi Town, Peshawar',
+    phone: '0300-5941882',
+    address: 'OLD HAJI CAMP Sethi Town, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/computer_science_eveing_R/Computer science evening 3_pic_R/2233.jfif'
+    photoFile: 'max_new_data/pic/2233.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'syed-muhammad-abrar-2234',

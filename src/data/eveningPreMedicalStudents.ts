@@ -1282,13 +1282,14 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '579',
-    dob: '',
+    dob: '15-05-2009',
     bloodGroup: '',
     cnic: '',
-    phone: '03015953981',
-    address: 'Shahgai Thana, Pesh',
+    phone: '0301-5953981',
+    address: 'Shahgai Thana Sufaid Sung Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/579.png'
+    photoFile: 'max_new_data/pic/579.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'muhammad-noor-ul-hasnain-noorani-580',
@@ -4313,5 +4314,23 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Qandari Shahlam Khel, Zila Momand',
     status: 'Active',
     photoFile: 'morning-students/first_year_batch/1st year_pic/793_eveing.jpeg'
+  },
+  {
+    slug: 'm-hamza-779',
+    name: 'M. Hamza',
+    fatherName: 'Sifat Ullah',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '779',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '779',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03333166557',
+    address: 'Surizai Bala Pes',
+    status: 'Active',
+    photoFile: 'max_new_data/pic/779.jpeg'
   }
 ];

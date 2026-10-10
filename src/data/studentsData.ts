@@ -115,6 +115,10 @@ export function getStudentBySlug(slug: string | undefined): Student | undefined 
 
 /** Old published slugs that must keep working after a roll-number correction. */
 const STUDENT_SLUG_ALIASES: Record<string, string> = {
+  // New_MAX_DATA renames (old printed cards keep working)
+  'sahibzada-ahmad-zia-2233': 'shahzada-ahmad-zia-2233',
+  'malik-farhan-muhammad-1565': 'muhammad-farhan-malik-1565',
+  'amir-mehmood-khan-2191': 'aamir-mehmood-khan-2191',
   // 1st-year evening rename (Muhaib Ukasha → M. Ukashah)
   'muhaib-ukasha-679': 'm-ukashah-679',
   // Medical evening → morning transfers (old evening cards keep working)

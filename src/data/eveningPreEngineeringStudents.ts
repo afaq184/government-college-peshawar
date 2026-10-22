@@ -1817,23 +1817,6 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1609.jpeg'
   },
   {
-    slug: 'muhammad-afnan-1610',
-    name: 'Muhammad Afnan',
-    fatherName: 'Wajid Ali',
-    class: 'Pre-Engineering',
-    rollNo: '1610',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '1610',
-    dob: '05-12-2010',
-    bloodGroup: '',
-    cnic: '',
-    phone: '033339366414',
-    address: 'Regi Yousafzai, Shahi Bala, Peshawar',
-    status: 'Active',
-    photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1610.jpeg'
-  },
-  {
     slug: 'maaz-zafar-1611',
     name: 'Maaz Zafar',
     fatherName: 'Zafar Altaf',

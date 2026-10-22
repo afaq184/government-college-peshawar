@@ -115,6 +115,8 @@ export function getStudentBySlug(slug: string | undefined): Student | undefined 
 
 /** Old published slugs that must keep working after a roll-number correction. */
 const STUDENT_SLUG_ALIASES: Record<string, string> = {
+  // Evening 1610 → Morning 1117 (Muhammad Afnan; Uzair Hayat cancelled)
+  'muhammad-afnan-1610': 'muhammad-afnan-1117',
   // MIX batch corrections (old printed cards keep working)
   'm-ijaz-khan-171': 'muhammad-ijaz-khan-171',
   'muhammad-ahmad-609': 'sufyan-609',

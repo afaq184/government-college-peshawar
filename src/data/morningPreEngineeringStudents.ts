@@ -1785,21 +1785,22 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/second_phase/pre-enginering-pic/1116.png'
   },
   {
-    slug: 'muhammad-uzair-hayat-1117',
-    name: 'Muhammad Uzair Hayat',
-    fatherName: 'Hayat Khan',
+    // Evening 1610 → Morning 1117 (Uzair Hayat admission cancelled)
+    slug: 'muhammad-afnan-1117',
+    name: 'Muhammad Afnan',
+    fatherName: 'Wajid Ali',
     class: 'Pre-Engineering',
     rollNo: '1117',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '1117',
-    dob: '3-3-11',
+    dob: '05-12-2010',
     bloodGroup: '',
     cnic: '',
-    phone: '03139792752',
-    address: 'Gulozai, Peshawar',
+    phone: '033339366414',
+    address: 'Regi Yousafzai, Shahi Bala, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-enginering-pic/1117.png'
+    photoFile: 'evening-students/sixth_phase/Pre engineering evening 1/1610.jpeg'
   },
   {
     slug: 'sher-shah-kaka-khel-1118',

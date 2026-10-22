@@ -1,0 +1,10 @@
+603	Tanveer Ahmed	Pre-Medical	https://gcpeshawar.com/student/rDjvKTE59MPDSDImQtwbJCZBKLpf3cFdxlp-2Fi9sB8
+609	Sufyan	Pre-Medical	https://gcpeshawar.com/student/Hu6F7bYHZXfr-xgusGwWpw
+610	M. Atif Afridi	Pre-Medical	https://gcpeshawar.com/student/v1qP_szlUT_QgiA-jMrFasWs_rPbGF0L_q5qFRit-JY
+663	Safi-Ullah Khan	Pre-Medical	https://gcpeshawar.com/student/zdD3MhyABS60xKLWMcipFDZA-Dw3pDj9-Wkb85RM6xc
+765	Subhan Ullah	Pre-Medical	https://gcpeshawar.com/student/g7fRqdSnSsPzPmDygEqq0748Pw7lGy8Jzkfxd08son4
+784	Abdul Moiz Khan	Pre-Medical	https://gcpeshawar.com/student/LsXMC8JQ8Se64DPeY5sYDFt14nsHDET6hmxvQWSOZQY
+1697	Noor Alam Khan	Pre-Engineering	https://gcpeshawar.com/student/iJb_ilyYj_Kay1t9MBRTJlEJePsi3s4YUOIqCTkykNM
+1702	Syed Fawad Shah	Pre-Engineering	https://gcpeshawar.com/student/fjB0zu-9HlzNYtUprKNZjHpLOh4Rq3xjhcDl2XFOFuQ
+2270	Shameber	Computer Science	https://gcpeshawar.com/student/1OM98xRtlfo5JWFsCxS1Jw
+2278	Hafiz Abdul Rehman Ahmad	Computer Science	https://gcpeshawar.com/student/0RYasZs9gha3Iscj3CT4EXzBpLdCrJO4IHwg19NQrus

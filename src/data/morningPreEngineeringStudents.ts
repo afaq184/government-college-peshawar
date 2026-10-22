@@ -1089,9 +1089,9 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/second_phase/pre-enginering-pic/1072.png'
   },
   {
-    slug: 'abdur-rehman-1073',
-    name: 'Abdur Rehman',
-    fatherName: 'Jamshed Khan',
+    slug: 'abdul-rehman-1073',
+    name: 'Abdul Rehman',
+    fatherName: 'Jamshid Khan',
     class: 'Pre-Engineering',
     rollNo: '1073',
     enrollmentType: 'Morning Shift',
@@ -1100,10 +1100,11 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     dob: '2-3-2010',
     bloodGroup: '',
     cnic: '',
-    phone: '03100056168',
-    address: 'Hasan Khel, Peshawar Dara',
+    phone: '0310 0056168',
+    address: 'Hassan Khel, Peshawar Dara',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-enginering-pic/1073.png'
+    photoFile: 'mix/pic/1073.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'abbas-khaliq-1074',
@@ -1378,21 +1379,22 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/second_phase/pre-enginering-pic/1090.png'
   },
   {
-    slug: 'mehtab-khan-1091',
-    name: 'Mehtab Khan',
-    fatherName: 'Muhammad Shahid Khan',
+    slug: 'mustaf-khan-1091',
+    name: 'Mustaf Khan',
+    fatherName: 'Abid Ali',
     class: 'Pre-Engineering',
     rollNo: '1091',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '1091',
-    dob: '20/04/2010',
+    dob: '03/06/2008',
     bloodGroup: '',
     cnic: '',
-    phone: '0300-9000389',
-    address: 'Dir Upper',
+    phone: '0310-612008',
+    address: 'Ring Road Near MMC Hospital, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-enginering-pic/1091.png'
+    photoFile: 'mix/pic/1091.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'asmat-ullah-1092',
@@ -3343,5 +3345,41 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     phone: '03369240548',
     address: 'Swati Gate, Umeedabad No. 2',
     status: 'Active'
+  },
+  {
+    slug: 'sarfaraz-zahid-khan-1088',
+    name: 'Sarfaraz Zahid Khan',
+    fatherName: 'Dr. Zahid Khan',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1088',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1088',
+    dob: '20/08/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0333-9116098',
+    address: 'Darmangi Garden, Warsak Road',
+    status: 'Active',
+    photoFile: 'mix/pic/1088.jpeg'
+  },
+  {
+    slug: 'hifzan-ahmad-1218',
+    name: 'Hifzan Ahmad',
+    fatherName: 'Ahmad Jan',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1218',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1218',
+    dob: '24/01/2008',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0370-1802853',
+    address: 'Sethi Town, Street No. 6, Peshawar',
+    status: 'Active',
+    photoFile: 'mix/pic/1218.jpeg'
   }
 ];

@@ -115,6 +115,29 @@ export function getStudentBySlug(slug: string | undefined): Student | undefined 
 
 /** Old published slugs that must keep working after a roll-number correction. */
 const STUDENT_SLUG_ALIASES: Record<string, string> = {
+  // MIX batch corrections (old printed cards keep working)
+  'm-ijaz-khan-171': 'muhammad-ijaz-khan-171',
+  'muhammad-ahmad-609': 'sufyan-609',
+  'muhammad-yousas-610': 'm-atif-afridi-610',
+  'mukhtair-aziz-603': 'tanveer-ahmed-603',
+  'm-hassan-8128': 'muhammad-hassan-8128',
+  'm-sanan-7052': 'muhammad-sanan-7052',
+  'm-sohaib-7058': 'muhammad-sohail-7058',
+  'hammad-khan-7246': 'hamad-khan-7246',
+  'munsif-khan-6579': 'muhammad-daniyal-6579',
+  'm-ahmad-7372': 'muhammad-ahmad-7372',
+  'm-akbar-7219': 'muhammad-akbar-7219',
+  'ahmad-bilal-116': 'syed-muhammad-idrees-116',
+  'abdur-rehman-1073': 'abdul-rehman-1073',
+  'musannif-ahmad-129': 'junaid-khan-129',
+  'ikram-ullah-266': 'abraham-cyril-kanwal-266',
+  'sanan-khan-266': 'abraham-cyril-kanwal-266',
+  'mehtab-khan-1091': 'mustaf-khan-1091',
+  'talha-atta-271': 'm-ahmad-271',
+  'abu-huraira-41': 'muhammad-umar-farooq-41',
+  'muhammad-shayan-42': 'shafiullah-42',
+  'm-aleem-siddiqui-2063': 'huzaif-khalil-2063',
+  'm-salal-1639': 'muhammad-oraish-khan-1639',
   // New_MAX_DATA renames (old printed cards keep working)
   'sahibzada-ahmad-zia-2233': 'shahzada-ahmad-zia-2233',
   'malik-farhan-muhammad-1565': 'muhammad-farhan-malik-1565',

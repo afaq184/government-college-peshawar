@@ -2322,13 +2322,14 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '2270',
-    dob: '',
+    dob: '31/03/2008',
     bloodGroup: '',
     cnic: '',
-    phone: '0310-9507204',
-    address: 'New Christian Colony, Shad Bagh, Zargrabad, Peshawar',
+    phone: '03109507204',
+    address: 'New Christian Colony, Shadbagh, Zargarabad, Peshawar',
     status: 'Active',
-    photoFile: 'gcp_18_missing/gcp_pic/2270.jpeg'
+    photoFile: 'mix/pic/2270.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'baljeet-singh-2272',

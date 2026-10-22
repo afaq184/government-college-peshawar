@@ -3719,5 +3719,41 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     address: 'Asia Gate, Quid abad - No. 2 - Peshawar',
     status: 'Active',
     photoFile: 'max_new_data/pic/3338.jpeg'
+  },
+  {
+    slug: 'shahab-ud-din-3087',
+    name: 'Shahab-Ud-Din',
+    fatherName: 'Mard Khan',
+    class: 'Arts',
+    classYear: '1st year',
+    rollNo: '3087',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '3087',
+    dob: '11/05/2009',
+    bloodGroup: 'A+ve',
+    cnic: '',
+    phone: '0332-4141429',
+    address: 'Ahmad Abad, Village Wahid Ghari',
+    status: 'Active',
+    photoFile: 'mix/pic/3087.jpeg'
+  },
+  {
+    slug: 'shakir-ullah-3090',
+    name: 'Shakir Ullah',
+    fatherName: 'Munawar Gul',
+    class: 'Arts',
+    classYear: '1st year',
+    rollNo: '3090',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '3090',
+    dob: '06/07/2010',
+    bloodGroup: 'AB-',
+    cnic: '',
+    phone: '0317-0638730',
+    address: 'Shaghi Hind Kiyan, Peshawar',
+    status: 'Active',
+    photoFile: 'mix/pic/3090.jpeg'
   }
 ];

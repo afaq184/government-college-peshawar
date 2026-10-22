@@ -1,0 +1,68 @@
+# MIX batch — Student URLs (Morning → Evening → Self Finance, by roll)
+# Domain: https://gcpeshawar.com
+# Count: 59
+
+## MORNING SHIFT (36)
+41	Muhammad Umar Farooq	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/CMPKMYK6Caw3LJnZR9OTi1dbYh8TJymeRcYvrq7aZ9w
+42	Shafiullah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/YFplkYxCuT3kx3bKxmzXZA
+116	Syed Muhammad Idrees	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/GW2pQDp7vQuIoWNi9JHVWw8zQN3ahv0S_goAefWGa60
+129	Junaid Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/4PRtL9-57K7bIIMN0fPIuA
+150	Tahir Hayat	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/Lzqn3OovD8PI6Gz4vLKhPw
+171	Muhammad Ijaz Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/IRk77V_rTFXNs1jQeL4he-e3DhpLAy4z7Xa6Ld4gHZM
+175	Muhammad Imran	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/672imAvFLfrpjJMXfx4dB3rHRkWY8YoERrt441jrAak
+207	Huzaifa Hassan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/_xh8K_YHY60im1PmJ0TziN8Gu8TJbsolaK7k_xURNk4
+220	Muhammad Shaheer Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/83QHzfjIMvAA1_4rCkFg7GV-59FtdS2jKLZz4J2J0Ag
+239	Zoraiz Ullah Khan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/THOC8FFeN1yT2pwLDR2pDzAzS0O4SyHjtS0jN3PX8tE
+266	Abraham Cyril Kanwal	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/GibDNhBUmLz-pzWGQRyI93Z1d5DMbVzFuRp5_vWLTKs
+271	M. Ahmad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/AQ6pfCWisS63AzJoAisqFg
+328	Muhammad Abbas Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/nWFsROhNq1YDZFejgetWkdOicMih2ySIkViy8Lq1A-4
+337	Muhammad Sohaib	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/RG4WyLNlkx1Zm_pzl7r9L1BMsuE_THenfs_Q2aPOlPw
+338	Muhammad Shaheer Zia	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/83QHzfjIMvAA1_4rCkFg7DnSh8ktyhTbPm-Gz8c0BIc
+339	Muhammad Saad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/SMFSuWAeUQ95kevBEQE_hqD0sIccpreBbLcMtPR5Cjs
+341	Muhammad Usman	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/y14x6Hl2ckOLe3Ahn7XTQoP4spxklVklKZmR1bK4sjE
+344	Khizar Hayat	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/VUvD5dWL-Igdyaq7HNK0PmHB2JzFHyinPO-ktnPjQns
+347	Sohail Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/zK9tahzSAAypmtzaFJxI8Q
+351	Syed Adil Shah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/XvXXJ8WZMm0dZjDsCpxkXM9QVKC3CKYfOSndLZR2MBM
+352	Bassam Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/rGrs32aqiRe7Z6RRruXlYA
+353	Noman Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/qzG7KSNY18xv6qqEx3KBBg
+356	Waqas Ahmad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/JaGd7aAaZrSFxEXidFtzmg
+357	Muhammad Saad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/slzWxP4yMuCh-_f1gf1NadQTIsgWUNedIP0WEhyTtRs
+358	Sayyed Sarim Alam	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/sVksPRznjafwcwVOZ5F9ZFo1iEt9q2HGeanN9NIhtfs
+359	Rehan Ullah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/Xm05SPSN3izMctrP1tD66g
+364	M. Noor ul Hasnain Noorani	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/pb6GqqhyPqgYkk8TZrGWMUw-5CojdfLbiNqMmBbzOss
+365	Muhammad Abdullah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/Y2x0K0QiYLGZn7axzbK8uh7lSf1ZjNtfkSyxxmdKgEo
+1073	Abdul Rehman	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/jCtFXcCk8BxHuGmvuUoXPbXYqZIyEzpJsDbvrGgoBTE
+1088	Sarfaraz Zahid Khan	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/0qtHmFxwrGO8KmFxKGx5IcL3ikfW5wxK-GbbxlRfTsk
+1091	Mustaf Khan	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/pu11AJvhu0-t1Jkk2Xl2MzPq-NgQiibPAUXRHmALpz0
+1218	Hifzan Ahmad	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/3y-yzNoyqNW4Cptb2Sz5Y9eFFYAPhkaoq7FEwCAfByY
+1639	Muhammad Oraish Khan	Pre-Medical	2nd year	Morning Shift	https://gcpeshawar.com/student/0EEh0kRUgTMrxVqAXpXgf_Ayi_S3oE9Kwp8NmXj-C9c
+2063	Huzaif Khalil	Computer Science	2nd year	Morning Shift	https://gcpeshawar.com/student/ow-hLu4Lqu6IdydHf1qjmEhgt1KUN3Lch6PzNUR5PCI
+3087	Shahab-Ud-Din	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/-1-zluiJa4LDuvdsmS5qMK8msZ5mn6OxxvdO-WmPh90
+3090	Shakir Ullah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/j-Xiez6i7ZUdpB-O0aX7zaJoKWLzYGMnOT-ghB9Ot2g
+
+## EVENING SHIFT (10)
+603	Tanveer Ahmed	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/rDjvKTE59MPDSDImQtwbJCZBKLpf3cFdxlp-2Fi9sB8
+609	Sufyan	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/Hu6F7bYHZXfr-xgusGwWpw
+610	M. Atif Afridi	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/v1qP_szlUT_QgiA-jMrFasWs_rPbGF0L_q5qFRit-JY
+663	Safi-Ullah Khan	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/zdD3MhyABS60xKLWMcipFDZA-Dw3pDj9-Wkb85RM6xc
+765	Subhan Ullah	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/g7fRqdSnSsPzPmDygEqq0748Pw7lGy8Jzkfxd08son4
+784	Abdul Moiz Khan	Pre-Medical	1st year	Evening Shift	https://gcpeshawar.com/student/LsXMC8JQ8Se64DPeY5sYDFt14nsHDET6hmxvQWSOZQY
+1697	Noor Alam Khan	Pre-Engineering	1st year	Evening Shift	https://gcpeshawar.com/student/iJb_ilyYj_Kay1t9MBRTJlEJePsi3s4YUOIqCTkykNM
+1702	Syed Fawad Shah	Pre-Engineering	1st year	Evening Shift	https://gcpeshawar.com/student/fjB0zu-9HlzNYtUprKNZjHpLOh4Rq3xjhcDl2XFOFuQ
+2270	Shameber	Computer Science	1st year	Evening Shift	https://gcpeshawar.com/student/1OM98xRtlfo5JWFsCxS1Jw
+2278	Hafiz Abdul Rehman Ahmad	Computer Science	2nd year	Evening Shift	https://gcpeshawar.com/student/0RYasZs9gha3Iscj3CT4EXzBpLdCrJO4IHwg19NQrus
+
+## SELF FINANCE (13)
+2024	Abdul Jabar Khan	Pre-Engineering	2nd year	Self Finance	https://gcpeshawar.com/student/AKMfiAIFr8lnKHNm1QbW-I_V4L0TglvNdCOMlmXAZNk
+6579	Muhammad Daniyal	Pre-Medical	2nd year	Self Finance	https://gcpeshawar.com/student/M3PsMk6gvchn52PPaqsWAUpPQ7y9v4-oBT4tmxvQZoU
+7052	Muhammad Sanan	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/S102phJK_atBxUsrUuMO3eJ6p7zdMi0AiU7AhBwI2As
+7058	Muhammad Sohail	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/Q3eEvKD-V_vxsECf8pK1NA-U48n-Lb0m9vUHE7UoEYM
+7137	Jawad Ali	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/padwiY3DlsEjv6-eluMD4w
+7169	Waseem Murad	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/VDM7Y9LeqHcHyVOgARZ_XF3MOAh-_XfhqOCBrRef_eM
+7211	Muhammad Khubaib	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/1p0wY6O2HJHTQsAxiaVuz1DLn8nslc-OFiE02x-QPbs
+7219	Muhammad Akbar	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/M1RGig1ci5okedHoUnReqJWpVYQ5EBgn_Hn5y2DRIoc
+7246	Hamad Khan	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/ZHB6DWySFIOXlYCfH0t7Uw
+7255	Muhammad Abdal Kamal	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/nAKVcVr3W38bmZ4-SjsCKRj8bIUkAwPbGyx5l7KR0Fc
+7372	Muhammad Ahmad	Pre-Medical	1st year	Self Finance	https://gcpeshawar.com/student/Jfb_sOkcgi7mTQHu3FvAEF7fVODbHLM-eLexlqxFJwg
+8128	Muhammad Hassan	Computer Science	1st year	Self Finance	https://gcpeshawar.com/student/DV5nKJAsqaWGsZcU4R9CTbX7jO-1qjgNVQlQBX2rSpQ
+8275	Arman Saleem	Computer Science	1st year	Self Finance	https://gcpeshawar.com/student/aFTzACDqAWuGVzAVa4tgr52t_9Em2m6TN3CosmJcUwQ

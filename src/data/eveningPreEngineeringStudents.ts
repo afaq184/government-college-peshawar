@@ -2310,22 +2310,6 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/sixth_phase/Pre engineering evening_2/1638.png'
   },
   {
-    slug: 'm-salal-1639',
-    name: 'M. Salal',
-    fatherName: 'Shah Faisal',
-    class: 'Pre-Engineering',
-    rollNo: '1639',
-    enrollmentType: 'Evening Shift',
-    session: '2026-2028',
-    admissionNo: '1639',
-    dob: '22/04/2010',
-    bloodGroup: '',
-    cnic: '',
-    phone: '0317-1452332',
-    address: 'Taru Jabba, Nowshera',
-    status: 'Active'
-  },
-  {
     slug: 'rashid-rehman-1640',
     name: 'Rashid Rehman',
     fatherName: 'Shahid Rahman',
@@ -3720,5 +3704,41 @@ export const EVENING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'HOUSE # 09 HADI LANE OLD BARA ROAD University Town',
     status: 'Active',
     photoFile: 'max_new_data/pic/1740.jpeg'
+  },
+  {
+    slug: 'noor-alam-khan-1697',
+    name: 'Noor Alam Khan',
+    fatherName: 'Sohrab Gul',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1697',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1697',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03348446163',
+    address: 'Bakhshi Pul, Northern Bypass',
+    status: 'Active',
+    photoFile: 'mix/pic/1697.jpeg'
+  },
+  {
+    slug: 'syed-fawad-shah-1702',
+    name: 'Syed Fawad Shah',
+    fatherName: 'Syed Raheem Shah',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1702',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '1702',
+    dob: '25/10/2010',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0323-9541395',
+    address: 'Akbar Pura, District Nowshera',
+    status: 'Active',
+    photoFile: 'mix/pic/1702.jpeg'
   }
 ];

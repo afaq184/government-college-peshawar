@@ -564,23 +564,6 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/fifth_phase_eveing/max pic/2062.png'
   },
   {
-    slug: 'm-aleem-siddiqui-2063',
-    name: 'M. Aleem Siddiqui',
-    fatherName: 'M. Naeem Siddiqui',
-    class: 'Computer Science',
-    rollNo: '2063',
-    enrollmentType: 'Morning Shift',
-    session: '2026-2028',
-    admissionNo: '2063',
-    dob: 'Not specified',
-    bloodGroup: 'Nil',
-    cnic: '',
-    phone: '0300-5909367',
-    address: 'Meherban Street, Lucky Dheri Road, Gulbahar No. 03',
-    status: 'Active',
-    photoFile: 'evening-students/sixth_phase/medical and computer science/2063.png'
-  },
-  {
     slug: 'abu-bakar-siddique-2066',
     name: 'Abu Bakar Siddique',
     fatherName: 'Sartaj Khan',

@@ -1,0 +1,36 @@
+41	Muhammad Umar Farooq	Pre-Medical	https://gcpeshawar.com/student/CMPKMYK6Caw3LJnZR9OTi1dbYh8TJymeRcYvrq7aZ9w
+42	Shafiullah	Pre-Medical	https://gcpeshawar.com/student/YFplkYxCuT3kx3bKxmzXZA
+116	Syed Muhammad Idrees	Pre-Medical	https://gcpeshawar.com/student/GW2pQDp7vQuIoWNi9JHVWw8zQN3ahv0S_goAefWGa60
+129	Junaid Khan	Pre-Medical	https://gcpeshawar.com/student/4PRtL9-57K7bIIMN0fPIuA
+150	Tahir Hayat	Pre-Medical	https://gcpeshawar.com/student/Lzqn3OovD8PI6Gz4vLKhPw
+171	Muhammad Ijaz Khan	Pre-Medical	https://gcpeshawar.com/student/IRk77V_rTFXNs1jQeL4he-e3DhpLAy4z7Xa6Ld4gHZM
+175	Muhammad Imran	Pre-Medical	https://gcpeshawar.com/student/672imAvFLfrpjJMXfx4dB3rHRkWY8YoERrt441jrAak
+207	Huzaifa Hassan	Pre-Medical	https://gcpeshawar.com/student/_xh8K_YHY60im1PmJ0TziN8Gu8TJbsolaK7k_xURNk4
+220	Muhammad Shaheer Khan	Pre-Medical	https://gcpeshawar.com/student/83QHzfjIMvAA1_4rCkFg7GV-59FtdS2jKLZz4J2J0Ag
+239	Zoraiz Ullah Khan	Pre-Medical	https://gcpeshawar.com/student/THOC8FFeN1yT2pwLDR2pDzAzS0O4SyHjtS0jN3PX8tE
+266	Abraham Cyril Kanwal	Pre-Medical	https://gcpeshawar.com/student/GibDNhBUmLz-pzWGQRyI93Z1d5DMbVzFuRp5_vWLTKs
+271	M. Ahmad	Pre-Medical	https://gcpeshawar.com/student/AQ6pfCWisS63AzJoAisqFg
+328	Muhammad Abbas Khan	Pre-Medical	https://gcpeshawar.com/student/nWFsROhNq1YDZFejgetWkdOicMih2ySIkViy8Lq1A-4
+337	Muhammad Sohaib	Pre-Medical	https://gcpeshawar.com/student/RG4WyLNlkx1Zm_pzl7r9L1BMsuE_THenfs_Q2aPOlPw
+338	Muhammad Shaheer Zia	Pre-Medical	https://gcpeshawar.com/student/83QHzfjIMvAA1_4rCkFg7DnSh8ktyhTbPm-Gz8c0BIc
+339	Muhammad Saad	Pre-Medical	https://gcpeshawar.com/student/SMFSuWAeUQ95kevBEQE_hqD0sIccpreBbLcMtPR5Cjs
+341	Muhammad Usman	Pre-Medical	https://gcpeshawar.com/student/y14x6Hl2ckOLe3Ahn7XTQoP4spxklVklKZmR1bK4sjE
+344	Khizar Hayat	Pre-Medical	https://gcpeshawar.com/student/VUvD5dWL-Igdyaq7HNK0PmHB2JzFHyinPO-ktnPjQns
+347	Sohail Khan	Pre-Medical	https://gcpeshawar.com/student/zK9tahzSAAypmtzaFJxI8Q
+351	Syed Adil Shah	Pre-Medical	https://gcpeshawar.com/student/XvXXJ8WZMm0dZjDsCpxkXM9QVKC3CKYfOSndLZR2MBM
+352	Bassam Khan	Pre-Medical	https://gcpeshawar.com/student/rGrs32aqiRe7Z6RRruXlYA
+353	Noman Khan	Pre-Medical	https://gcpeshawar.com/student/qzG7KSNY18xv6qqEx3KBBg
+356	Waqas Ahmad	Pre-Medical	https://gcpeshawar.com/student/JaGd7aAaZrSFxEXidFtzmg
+357	Muhammad Saad	Pre-Medical	https://gcpeshawar.com/student/slzWxP4yMuCh-_f1gf1NadQTIsgWUNedIP0WEhyTtRs
+358	Sayyed Sarim Alam	Pre-Medical	https://gcpeshawar.com/student/sVksPRznjafwcwVOZ5F9ZFo1iEt9q2HGeanN9NIhtfs
+359	Rehan Ullah	Pre-Medical	https://gcpeshawar.com/student/Xm05SPSN3izMctrP1tD66g
+364	M. Noor ul Hasnain Noorani	Pre-Medical	https://gcpeshawar.com/student/pb6GqqhyPqgYkk8TZrGWMUw-5CojdfLbiNqMmBbzOss
+365	Muhammad Abdullah	Pre-Medical	https://gcpeshawar.com/student/Y2x0K0QiYLGZn7axzbK8uh7lSf1ZjNtfkSyxxmdKgEo
+1073	Abdul Rehman	Pre-Engineering	https://gcpeshawar.com/student/jCtFXcCk8BxHuGmvuUoXPbXYqZIyEzpJsDbvrGgoBTE
+1088	Sarfaraz Zahid Khan	Pre-Engineering	https://gcpeshawar.com/student/0qtHmFxwrGO8KmFxKGx5IcL3ikfW5wxK-GbbxlRfTsk
+1091	Mustaf Khan	Pre-Engineering	https://gcpeshawar.com/student/pu11AJvhu0-t1Jkk2Xl2MzPq-NgQiibPAUXRHmALpz0
+1218	Hifzan Ahmad	Pre-Engineering	https://gcpeshawar.com/student/3y-yzNoyqNW4Cptb2Sz5Y9eFFYAPhkaoq7FEwCAfByY
+1639	Muhammad Oraish Khan	Pre-Medical	https://gcpeshawar.com/student/0EEh0kRUgTMrxVqAXpXgf_Ayi_S3oE9Kwp8NmXj-C9c
+2063	Huzaif Khalil	Computer Science	https://gcpeshawar.com/student/ow-hLu4Lqu6IdydHf1qjmEhgt1KUN3Lch6PzNUR5PCI
+3087	Shahab-Ud-Din	Arts	https://gcpeshawar.com/student/-1-zluiJa4LDuvdsmS5qMK8msZ5mn6OxxvdO-WmPh90
+3090	Shakir Ullah	Arts	https://gcpeshawar.com/student/j-Xiez6i7ZUdpB-O0aX7zaJoKWLzYGMnOT-ghB9Ot2g

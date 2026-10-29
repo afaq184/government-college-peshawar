@@ -219,7 +219,7 @@ export function getDefaultSiteSettings(): SiteSettings {
     mapQuery: SITE.mapQuery,
     vision: SITE.vision,
     heroImage: `${base}hero-campus.jpg`,
-    principalImage: `${base}principle.png`,
+    principalImage: `${base}principal-shafi-ullah.png`,
     aboutImage: `${base}about-campus.jpg`,
     chiefProctorImage: `${base}dr-usman-shah-katlang.png`,
   };
@@ -230,10 +230,15 @@ export function resolveSiteSettings(data: Partial<SiteSettings> | null | undefin
   const defaults = getDefaultSiteSettings();
   if (!data) return defaults;
   const merged = { ...defaults, ...data };
-  if (!data.principal || /shafi/i.test(data.principal)) {
+  if (!data.principal || /anwar/i.test(data.principal)) {
     merged.principal = defaults.principal;
   }
-  if (!data.principalImage || /principal\.jpe?g/i.test(data.principalImage)) {
+  if (
+    !data.principalImage ||
+    /principal\.jpe?g/i.test(data.principalImage) ||
+    /anwar/i.test(data.principalImage) ||
+    /principle\.png/i.test(data.principalImage)
+  ) {
     merged.principalImage = defaults.principalImage;
   }
   return merged;

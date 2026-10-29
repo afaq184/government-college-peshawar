@@ -8,7 +8,7 @@ import StableImage from '../components/StableImage';
 export default function Home() {
   const SITE = useSite();
   const heroImage = SITE.heroImage || `${import.meta.env.BASE_URL}hero-campus.jpg`;
-  const principalImage = SITE.principalImage || `${import.meta.env.BASE_URL}principle.png`;
+  const principalImage = SITE.principalImage || `${import.meta.env.BASE_URL}principal-shafi-ullah.png`;
 
   return (
     <div className="flex flex-col">

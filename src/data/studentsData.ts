@@ -139,6 +139,7 @@ const STUDENT_SLUG_ALIASES: Record<string, string> = {
   'm-adil-khan-8103': 'muhammad-kashif-8103',
   'abbas-ahmad-642': 'abbas-ahmad-134',
   'yasir-amin-3024': 'yasir-amin-756',
+  'm-awais-2162': 'm-awais-2163',
   'm-rohan-1223': 'muhammad-rohan-1223',
   'm-ali-7185': 'muhammad-ali-7185',
   'm-ismail-7268': 'm-ismail-7264',

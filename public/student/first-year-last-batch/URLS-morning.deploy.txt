@@ -23,7 +23,6 @@
 609	Sufyan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/Hu6F7bYHZXfr-xgusGwWpw
 610	Atif Afridi	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/WH-tSLWrPX8LYW8RItrxEg
 754	Sudais Khan	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/p1-bgR-nn8e1TX3zRXO0nw
-756	Yasir Amin	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/xafy1pMo_6voV9iFa0KqcA
 1043	Noor Muhammad	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/cMj6YVQbRwqpkaV9D_RQcQYtr20x0dNu8Cux4erAErc
 1123	Okasha Khilji	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/FUuJLE_dLTJ3L43SwVl5DKz20u2d6Lf5PWriDVmeZH4
 1158	M. Sudais	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/FhSBmZ-uL45TjDQpo2Jz2Q

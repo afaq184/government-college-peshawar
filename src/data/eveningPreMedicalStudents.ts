@@ -4328,5 +4328,23 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     address: 'Corporation Colony, Dalazak Road, Pesh',
     status: 'Active',
     photoFile: 'first-year-last-batch/pic/608.jpeg'
+  },
+  {
+    slug: 'yasir-amin-756',
+    name: 'Yasir Amin',
+    fatherName: 'Roohul- Amin',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '756',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '756',
+    dob: '9-4-2008',
+    bloodGroup: '',
+    cnic: '',
+    phone: '03111904039',
+    address: 'Pajjagi Road',
+    status: 'Active',
+    photoFile: 'first-year-last-batch/pic/756.jpeg'
   }
 ];

@@ -2418,20 +2418,21 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/max_new_1/max_pic/3354.jpeg'
   },
   {
-    slug: 'm-awais-2162',
+    slug: 'm-awais-2163',
     name: 'M. Awais',
     fatherName: 'Jamil Khan',
     class: 'Computer Science',
     classYear: '1st year',
-    rollNo: '2162',
+    rollNo: '2163',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
-    admissionNo: '2162',
+    admissionNo: '2163',
     dob: '20 March 2011',
     bloodGroup: '',
     cnic: '',
     phone: '0341-9628015',
     address: 'Village Behram Khell, District Lakki Marwat',
-    status: 'Active'
+    status: 'Active',
+    photoFile: 'first-year-last-batch/pic/2163.jpeg'
   }
 ];

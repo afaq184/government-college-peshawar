@@ -1,0 +1,13 @@
+220	Hamza Yousafzai	Pre-Medical	https://gcpeshawar.com/student/PBtHbmtC1GihnIi0_lP-tLQTpg9tOAub6bILEQXMus4
+226	Abubakar Hayat	Pre-Medical	https://gcpeshawar.com/student/sJ_Z1dC83GK_nDsrTKjP_WfiorFp8r6MV0pTcT_6X3U
+243	Asad Jehangir	Pre-Medical	https://gcpeshawar.com/student/2QGGBBFvjOG_qrATybyIm6u6Psj1aQoDmoRL-gjuLSo
+255	M. Abbas	Pre-Medical	https://gcpeshawar.com/student/A4zVnphAQmQEAfLkaw4NAg
+271	Muhammad Mansoor	Pre-Medical	https://gcpeshawar.com/student/Zg2OVNNDeduVppklaMjdq5m36KSIqYuAPvOre_wNor0
+1067	Abdullah Rahimi	Pre-Engineering	https://gcpeshawar.com/student/hevvmDlN6MGTuiL3KpZaX6AoQOk-8Yy4cxn2Z2peewA
+1088	Muhammad Qais	Pre-Engineering	https://gcpeshawar.com/student/KuSjNpitueHHlzl1vtWTwEXx3WrKsVsuuneDQOljJ44
+1154	Saad-ur-Rehman	Pre-Engineering	https://gcpeshawar.com/student/FLdJjcaHz7J0NHXq6A3EgvHia9Btroz3nc_aWiDq3YA
+2004	Syed Awais Ali Shah	Computer Science	https://gcpeshawar.com/student/7Ip1iDFYLrjpkNs87hIGAL9myWPGA_v09AazJn_mrXE
+2304	Mehran Alam	Computer Science	https://gcpeshawar.com/student/ZliVW3rrMHQOigWoboKEMs9jhtQ5zHPlF20JBcgTewQ
+3042	Nasrullah	Arts	https://gcpeshawar.com/student/TS4niPoDYxOFtgIcSvtSQg
+3284	Aman Awan	Arts	https://gcpeshawar.com/student/DsChR2u3qMeykB99hndZnQ
+3304	M. Bilal	Arts	https://gcpeshawar.com/student/oHQr4rGvjwryU4eL932PvA

@@ -1,0 +1,9 @@
+6013	Faizan Khan	Pre-Medical	https://gcpeshawar.com/student/n7JjA_pooSNrMCIh5__955xl8tpP1wLvQCT5xUZSNZ4
+6015	Sohaib Khan	Pre-Medical	https://gcpeshawar.com/student/qsnAz2hc-WZ1d00SQ5QnYS0lCEPR5vDhHaJgFDzeQAE
+6108	Wajid Aman	Pre-Medical	https://gcpeshawar.com/student/y_TlnfjaMj4b4lOaXw-tvQ
+6555	Muhammad Sudais	Pre-Medical	https://gcpeshawar.com/student/sR0PcsRWoP8WGOC7Y_E1gm5lSDFN5zdIj_YU5MsGqS8
+6556	Inam Ullah	Pre-Medical	https://gcpeshawar.com/student/Y7fvUi1fo__4mo-sp8qq9Q
+6557	Usman Khan	Pre-Medical	https://gcpeshawar.com/student/MtP-edDM3MSzmCkOxJt0CQ
+8295	ISHFAQ KHAN	Computer Science	https://gcpeshawar.com/student/ziqSfiZ74eqvQzz1IA8Rf-QymU9jWNk42fCf5wo5928
+8296	Mafaz Ahmad	Computer Science	https://gcpeshawar.com/student/nyY1RQ64SUbb2mYk2htendNOt0YeBE4TzScKYSHdOFw
+8304	Muhammad Alamgir Khan	Computer Science	https://gcpeshawar.com/student/GXwE-oo73gmkQ0RAqrLDM8fUsyUSSrVY7XWlrB67__s

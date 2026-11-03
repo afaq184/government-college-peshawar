@@ -1,0 +1,49 @@
+06	Amjid Ali	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/jsc5sCViD4sNVamJZ5sbUw
+19	Syed M. Sudais Ali Shah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/TOoHoTXHbMiq0KYAYfiNGuvOZJqjIdKutl7ClRSPy98
+55	Muhammad Saqib	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/DcTas79W758DPB_rjfHw4qJB8TdiekEVYxOOvVK0EHA
+71	Salman Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/MQKWJee7wP3IPD2IbGGtew
+78	Bilal Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/xy7UYn76JH9niMRFHb8CAg
+88	M. Usman	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/OhzXEvhH6rrshrzmkM4dqg
+122	Manzoor Ahmad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/BoTeMgSO_41_PNlbmMZa343yRVUSbFCv7ehZHYxZ4ig
+129	Syed Mahad Ali Shah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/4moo3ICU_4ij43pLCr0EoEYk1AftgURMQ3jwX2NXCFA
+134	Abbas Ahmad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/NB_As8hzC1NCT7e3B1_LVg
+140	Muhammad Tashfeen	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/DudyR3gtT6xhTqWvx709AcNDKyAcY-biLr9S5uQKLa0
+213	Aizaz Ali	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/TacGlkXXDtXYDhXuXHTz7Q
+220	Mushahid Hussain	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/bcvY-LScHXDHdlWChofgHacC8GGFYNJUSUS6mTjeYjQ
+270	Sudais Khan	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/Bukm-gSDBmuwVHLH7Onunw
+288	Faizan Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/-CWK_ePmQOyKnCG4Ez-AYw
+301	Sohail Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/kRuUmwQJufjqqOmJSq307Q
+329	Abdul Kabeer Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/okjN_A05Xpvz6uQkcSAPfV5HxYXv679CBqskxOifQmQ
+331	Salman Khan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/ggcoCtFJ64FlL6nEgs9yMA
+333	Rahman Akmal	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/o6aOcMSNOAKNoja098JxD9hGXiU_6kPvY7NQXSnywO0
+336	Bilal Ahmad	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/5BhvxUFIWgGisaVqYCB7rA
+349	Hameedullah Mahmood	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/1WvEHEYGQ_RqzKTyfKVkb6GSwj6Wzxrmkc9LZ9m6j6I
+355	Farman-Ullah	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/zjvFELnWKvJ6AA1MNs6cmrTziNbHrk-WEpzV01fEJo0
+579	Rahat Ullah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/xKjrJACaNC421Cbw2H3YSQ
+609	Sufyan	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/Hu6F7bYHZXfr-xgusGwWpw
+610	Atif Afridi	Pre-Medical	1st year	Morning Shift	https://gcpeshawar.com/student/WH-tSLWrPX8LYW8RItrxEg
+754	Sudais Khan	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/p1-bgR-nn8e1TX3zRXO0nw
+756	Yasir Amin	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/xafy1pMo_6voV9iFa0KqcA
+1043	Noor Muhammad	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/cMj6YVQbRwqpkaV9D_RQcQYtr20x0dNu8Cux4erAErc
+1123	Okasha Khilji	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/FUuJLE_dLTJ3L43SwVl5DKz20u2d6Lf5PWriDVmeZH4
+1158	M. Sudais	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/FhSBmZ-uL45TjDQpo2Jz2Q
+1223	Muhammad Rohan	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/rAW3UOga3oft0dCR4jNkVBfywqDj391uuoKYSxBZfyQ
+1453	Wisal Khan	Pre-Engineering	1st year	Morning Shift	https://gcpeshawar.com/student/xcxJyK8--8D_Pp4f3ecLTg
+2015	M. Suddais	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/19ToT09OuBfNxykAu3nECw
+2020	Abu Bakar Siddique	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/XeY2bpjJqZixxgFuXXWRNoTlQXV_KaawCf6YJpyY2HU
+2065	Muhammad Sahil Khan	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/4DD-U-QQ_-vdTcMivnjuV4IXN8ng9e-wEQGymys712c
+2074	Muhammad Hasnain	Computer Science	1st year	Morning Shift	https://gcpeshawar.com/student/bRX6jHUMuYGtEcREBssR9U9oeFzC7hYgrKBCKCsF7YM
+3040	Syed Ali Naqi Shah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/vU9CZLpEDzJ7MeASu6pcPa7p9_W-hoZzNMvCGm_vVg8
+3054	Abuzar Khan	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/dhEDrdbQUMFJHYxCL222OC-k1DJw6WwtlfSkN7KFz1Y
+3061	Mohammad Hamza	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/Vt2hJLvLO8iPr5cAAZ0EMubJcJJSlpeuMEiLH6HEyKw
+3062	Tehseen Ullah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/kPCgmfdl8dKDnAAuqVKFE0HSo9BkIA8K57abf9xDDYA
+3080	Talha Iqbal	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/k1Xc0Xl2XFvXeorOg2qutRC33NJcieOptDMvbHmzsKo
+3082	Asad Ullah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/q0kI6Qb7lWodEbD_XDRUjA
+3089	M. Umar	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/-ot7d9zQpJaYO8OoOjH1pw
+3265	Huzaifa	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/y-Ga5rP2JeOpUwEUtqiR_Q
+3278	Malik Adam Khan	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/GoawKrzQe5z7GuuKoA1Eq-pZkrIPf1TsgS-O8wlSMQ4
+3281	Usman Ghani	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/-qRpMUN5uch2SmenC5L9zzUuxEJOVUFMVWcx7HWePb0
+3309	Ibrahim Shah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/6Yymy_iVPrPXLM0PdXUC1-KgCdePVaF7293VPbGpf_M
+3339	M. Saif Ullah	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/F0NVlVnM5_8GYaeqZAi7n5bwhvyXU12w0AmKh8FQn44
+3340	Faheem Khan	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/PftGfqTV-lNTDr83IW_bo3TS3DusVldEkymgrHyhGrY
+3344	Kamil Khan	Arts	1st year	Morning Shift	https://gcpeshawar.com/student/KOFaJOeAVj5V5Q-aXbGqUw\t\t\t\n

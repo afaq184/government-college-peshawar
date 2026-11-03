@@ -429,19 +429,20 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'amjad-ahmad-2126',
     name: 'Amjad Ahmad',
-    fatherName: 'Jamshed Ahmad',
+    fatherName: 'Jamshaid Ahmad',
     class: 'Computer Science',
     rollNo: '2126',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '2126',
-    dob: '11/11/2011',
-    bloodGroup: '',
+    dob: '11-11-2011',
+    bloodGroup: 'O+',
     cnic: '',
-    phone: '0330-5152746',
-    address: 'Taank, D.I. Khan',
+    phone: '0334-1525594',
+    address: 'Kot Azam P/O Gomal, District Tank',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/computer_science_eveing_R/Computer science evening 3_pic_R/2126.jfif'
+    photoFile: 'first-year-last-batch/pic/2126.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'muhammad-rehan-2127',
@@ -2415,5 +2416,22 @@ export const EVENING_CS_STUDENTS: StudentRecord[] = [
     address: 'Tarnab Farm, Peshawar',
     status: 'Active',
     photoFile: 'evening-students/max_new_1/max_pic/3354.jpeg'
+  },
+  {
+    slug: 'm-awais-2162',
+    name: 'M. Awais',
+    fatherName: 'Jamil Khan',
+    class: 'Computer Science',
+    classYear: '1st year',
+    rollNo: '2162',
+    enrollmentType: 'Evening Shift',
+    session: '2026-2028',
+    admissionNo: '2162',
+    dob: '20 March 2011',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0341-9628015',
+    address: 'Village Behram Khell, District Lakki Marwat',
+    status: 'Active'
   }
 ];

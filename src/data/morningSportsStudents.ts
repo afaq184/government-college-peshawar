@@ -859,23 +859,6 @@ export const MORNING_SPORTS_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/sports_2/sports_students_pic/7487.jpeg'
   },
   {
-    slug: 'm-talha-606',
-    name: 'M. Talha',
-    fatherName: 'M. Ahmad',
-    class: 'Pre-Medical',
-    rollNo: '606',
-    enrollmentType: 'Morning Shift',
-    session: '2026-2028',
-    admissionNo: '606',
-    dob: '',
-    bloodGroup: '',
-    cnic: '',
-    phone: '0300-5693080',
-    address: 'Peshawar',
-    status: 'Active',
-    photoFile: 'morning-students/sports_2/sports_students_pic/606.jpeg'
-  },
-  {
     slug: 'm-hamza-607',
     name: 'M. Hamza',
     fatherName: 'M. Ahmad',
@@ -1031,24 +1014,6 @@ export const MORNING_SPORTS_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/sports_3/Sports_pic/2277.jpeg'
   },
   {
-    slug: 'shamir-malik-608',
-    name: 'Shamir Malik',
-    fatherName: 'Malik Tanvir',
-    class: 'Pre-Medical',
-    classYear: '1st year',
-    rollNo: '608',
-    enrollmentType: 'Morning Shift',
-    session: '2026-2028',
-    admissionNo: '608',
-    dob: '26-02-2010',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03137352896',
-    address: 'Corporation Colony, Peshawar',
-    status: 'Active',
-    photoFile: 'morning-students/sports_3/Sports_pic/608.jpeg'
-  },
-  {
     slug: 'masood-khan-2278',
     name: 'Masood Khan',
     fatherName: 'Rehman Gull',
@@ -1087,20 +1052,20 @@ export const MORNING_SPORTS_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-yousaf-8197',
     name: 'Muhammad Yousaf',
-    fatherName: 'Haroon ur Rasheed',
+    fatherName: 'Haroon-ur-Rasheed',
     class: 'Computer Science',
     classYear: '1st year',
     rollNo: '8197',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '8197',
-    dob: '21-08-2009',
-    bloodGroup: '',
+    dob: '8/21/2008',
+    bloodGroup: 'AB+',
     cnic: '',
     phone: '03209396952',
-    address: 'University Road, Peshawar',
+    address: 'Arbab Road, SS Club Street, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/sports_3/Sports_pic/8197.jpeg'
+    photoFile: 'first-year-last-batch/pic/8197.jpeg'
   },
   {
     slug: 'sufyan-609',
@@ -1112,13 +1077,13 @@ export const MORNING_SPORTS_STUDENTS: StudentRecord[] = [
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '609',
-    dob: '12-09-2009',
+    dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '',
-    address: 'Defence Officer Colony, Peshawar Cantt.',
+    phone: '0316-9021411',
+    address: 'Defence Officers Colony, Peshawar Cantt.',
     status: 'Active',
-    photoFile: 'morning-students/sports_3/Sports_pic/609.jpeg'
+    photoFile: 'first-year-last-batch/pic/609.jpeg'
   },
   {
     slug: 'abdul-ahad-shamraiz-8196',
@@ -1155,5 +1120,41 @@ export const MORNING_SPORTS_STUDENTS: StudentRecord[] = [
     address: 'Shah Alam Nahaqi, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/sports_3/Sports_pic/8195.jpeg'
+  },
+  {
+    slug: 'm-usman-88',
+    name: 'M. Usman',
+    fatherName: 'Zeenat Ullah',
+    class: 'Arts',
+    classYear: '1st year',
+    rollNo: '88',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '88',
+    dob: '10-01-2012',
+    bloodGroup: 'A+',
+    cnic: '',
+    phone: '0302-8330973',
+    address: 'Phandu Road, Baraf Khana Staff, Peshawar',
+    status: 'Active',
+    photoFile: 'first-year-last-batch/pic/88.jpeg'
+  },
+  {
+    slug: 'atif-afridi-610',
+    name: 'Atif Afridi',
+    fatherName: 'Masal Khan',
+    class: 'Pre-Medical',
+    classYear: '1st year',
+    rollNo: '610',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '610',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0335-3134539',
+    address: 'Kohat Road, Kaga Wala, Afridi Abad',
+    status: 'Active',
+    photoFile: 'first-year-last-batch/pic/610.jpeg'
   }
 ];

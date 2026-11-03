@@ -300,13 +300,14 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '2020',
-    dob: '15/01/2010',
+    dob: '15-01-2010',
     bloodGroup: '',
     cnic: '',
     phone: '0315-9302802',
     address: 'Charsadda Road, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/computer_second_phase_pic/2020.png'
+    photoFile: 'first-year-last-batch/pic/2020.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'muhammad-armaghan-2021',
@@ -702,19 +703,20 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-hasnain-2074',
     name: 'Muhammad Hasnain',
-    fatherName: 'Abdul Raziq',
+    fatherName: 'Abdul-Raziq',
     class: 'Computer Science',
     rollNo: '2074',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '2074',
-    dob: '27/03/2011',
-    bloodGroup: '',
+    dob: '27-03-2011',
+    bloodGroup: 'A+ve',
     cnic: '',
     phone: '0300-5875385',
-    address: 'Hassan Garhi, Shami Road, Peshawar',
+    address: 'Hasson Garhi, Shami Road Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/computer_second_phase_pic/2074.png'
+    photoFile: 'first-year-last-batch/pic/2074.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'muhammad-owais-2075',
@@ -850,5 +852,41 @@ export const MORNING_CS_STUDENTS: StudentRecord[] = [
     address: 'Hassan Garhi, Peshawar',
     status: 'Active',
     photoFile: 'morning-students/cs_morning_remains/cs_morning_remaning_pic/2082.png'
+  },
+  {
+    slug: 'muhammad-sahil-khan-2065',
+    name: 'Muhammad Sahil Khan',
+    fatherName: 'Muhammad Arif',
+    class: 'Computer Science',
+    classYear: '1st year',
+    rollNo: '2065',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '2065',
+    dob: '',
+    bloodGroup: '',
+    cnic: '',
+    phone: '0317-7859170',
+    address: 'Babu Ghari, Warsak Road, Peshawar',
+    status: 'Active',
+    photoFile: 'first-year-last-batch/pic/2065.jpeg'
+  },
+  {
+    slug: 'm-suddais-2015',
+    name: 'M. Suddais',
+    fatherName: 'Laiqu Khan',
+    class: 'Computer Science',
+    classYear: '1st year',
+    rollNo: '2015',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '2015',
+    dob: '29 May 2011',
+    bloodGroup: 'A+(A+)',
+    cnic: '',
+    phone: '0321-9062016',
+    address: 'Warsak Road, APS School, Behary Colony, Peshawar',
+    status: 'Active',
+    photoFile: 'first-year-last-batch/pic/2015.jpeg'
   }
 ];

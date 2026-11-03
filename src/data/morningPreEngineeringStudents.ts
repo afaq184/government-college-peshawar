@@ -666,20 +666,22 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/pre-engineering-pic/1040.png'
   },
   {
-    slug: 'aftab-ahmad-1043',
-    name: 'Aftab Ahmad',
-    fatherName: 'Abdul Basit',
+    slug: 'noor-muhammad-1043',
+    name: 'Noor Muhammad',
+    fatherName: 'Mir Ajab Khan',
     class: 'Pre-Engineering',
     rollNo: '1043',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '1043',
-    dob: '01-03-2010',
-    bloodGroup: '',
+    dob: '02-03-2010',
+    bloodGroup: 'O-',
     cnic: '',
-    phone: '03115737661',
-    address: 'Garhi Sadho, Mathra Peshawar',
-    status: 'Active'
+    phone: '0304-9216723',
+    address: 'Dara Adam Khel',
+    status: 'Active',
+    classYear: '1st year',
+    photoFile: 'first-year-last-batch/pic/1043.jpeg'
   },
   {
     slug: 'abdullah-javed-1044',
@@ -1785,7 +1787,6 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/second_phase/pre-enginering-pic/1116.png'
   },
   {
-    // Evening 1610 → Morning 1117 (Uzair Hayat admission cancelled)
     slug: 'muhammad-afnan-1117',
     name: 'Muhammad Afnan',
     fatherName: 'Wajid Ali',
@@ -1888,21 +1889,22 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/second_phase/pre-enginering-pic/1122.png'
   },
   {
-    slug: 'muhammad-okasha-1123',
-    name: 'Muhammad Okasha',
-    fatherName: 'Walayat Shah',
+    slug: 'okasha-khilji-1123',
+    name: 'Okasha Khilji',
+    fatherName: 'Walayat Shah Khilji',
     class: 'Pre-Engineering',
     rollNo: '1123',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '1123',
-    dob: '15/06/2010',
-    bloodGroup: '',
+    dob: '15-06-2010',
+    bloodGroup: 'B+',
     cnic: '',
-    phone: '0333-9218946',
-    address: 'Ghareeb Abad 02, Dalazak, Peshawar',
+    phone: '0349-5143309',
+    address: 'Ghareeb Abad No. 2, Near Army Supply Depot, Peshawar',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-enginering-pic/1123.png'
+    photoFile: 'first-year-last-batch/pic/1123.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'maaz-ur-rahman-1125',
@@ -2128,19 +2130,20 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
   {
     slug: 'm-sudais-1158',
     name: 'M. Sudais',
-    fatherName: 'Nihar Gul',
+    fatherName: 'Nihad Gull',
     class: 'Pre-Engineering',
     rollNo: '1158',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '1158',
-    dob: '1-4-10',
+    dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '03131911919',
-    address: 'Pajagi Road, Village Dag Lala',
+    phone: '0315-0936953',
+    address: 'Pajagi Road, Village Dagg Kala',
     status: 'Active',
-    photoFile: 'morning-students/second_phase/pre-enginering-pic/1158.png'
+    photoFile: 'first-year-last-batch/pic/1158.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'm-huzaifa-1159',
@@ -3230,21 +3233,22 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     photoFile: 'evening-students/fifth_phase_eveing/engineering/12222.png'
   },
   {
-    slug: 'm-rohan-1223',
-    name: 'M. Rohan',
+    slug: 'muhammad-rohan-1223',
+    name: 'Muhammad Rohan',
     fatherName: 'Faheem Jan',
     class: 'Pre-Engineering',
     rollNo: '1223',
     enrollmentType: 'Morning Shift',
     session: '2026-2028',
     admissionNo: '1223',
-    dob: '12-11-2010',
+    dob: '12-Sep-2010',
     bloodGroup: '',
     cnic: '',
-    phone: '0300-5889556',
-    address: 'Andrano Lahori, Gate P.O.',
+    phone: '03005889556',
+    address: 'Lahori Gate, Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/fifth_phase_eveing/engineering/1223.png'
+    photoFile: 'first-year-last-batch/pic/1223.jpeg',
+    classYear: '1st year'
   },
   {
     slug: 'ahmad-muneer-1224',
@@ -3382,5 +3386,23 @@ export const MORNING_PRE_ENGINEERING_STUDENTS: StudentRecord[] = [
     address: 'Sethi Town, Street No. 6, Peshawar',
     status: 'Active',
     photoFile: 'mix/pic/1218.jpeg'
+  },
+  {
+    slug: 'wisal-khan-1453',
+    name: 'Wisal Khan',
+    fatherName: 'Dost Muhammad',
+    class: 'Pre-Engineering',
+    classYear: '1st year',
+    rollNo: '1453',
+    enrollmentType: 'Morning Shift',
+    session: '2026-2028',
+    admissionNo: '1453',
+    dob: '05-10-2009',
+    bloodGroup: 'A+',
+    cnic: '',
+    phone: '0334-9457919',
+    address: 'Dalazak Road, Gul Abad No. 2',
+    status: 'Active',
+    photoFile: 'first-year-last-batch/pic/1453.jpeg'
   }
 ];

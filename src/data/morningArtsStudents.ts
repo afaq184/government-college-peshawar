@@ -343,24 +343,6 @@ export const MORNING_ARTS_STUDENTS: StudentRecord[] = [
     photoFile: 'morning-students/arts-pic/3020.png'
   },
   {
-    slug: 'yasir-amin-756',
-    name: 'Yasir Amin',
-    fatherName: 'Roohul- Amin',
-    class: 'Arts',
-    rollNo: '756',
-    enrollmentType: 'Morning Shift',
-    session: '2026-2028',
-    admissionNo: '756',
-    dob: '9-4-2008',
-    bloodGroup: '',
-    cnic: '',
-    phone: '03111904039',
-    address: 'Pajjagi Road',
-    status: 'Active',
-    photoFile: 'first-year-last-batch/pic/756.jpeg',
-    classYear: '1st year'
-  },
-  {
     slug: 'abdullah-3025',
     name: 'Abdullah',
     fatherName: 'Jangraiz Khan',

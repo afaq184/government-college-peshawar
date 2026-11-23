@@ -227,6 +227,8 @@ export default function StudentProfile() {
                         </>
                       ) : student.classYear === 'BS' ? (
                         'BS'
+                      ) : student.classYear ? (
+                        student.classYear
                       ) : (
                         <>
                           1<sup className="text-[0.65em]">st</sup>{' '}

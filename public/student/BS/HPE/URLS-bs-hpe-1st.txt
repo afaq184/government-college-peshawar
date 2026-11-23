@@ -1,0 +1,46 @@
+# BS HPE 1st Semester
+# Count: 43
+
+HPE-2026-01	Mian Muhammad Saad Bacha	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/9bVC4HVIAPMxRUzWi-A_uZXU5Ip-MZy0jKtnfviAJjWd3xc81fVkikvTj5YUmUGe
+HPE-2026-02	Muhammad Mubashir	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/vYUy29j1k15pOzki8D8Sj_ePiTqUaZ1idLNIKCxBRtU
+HPE-2026-03	Muhammad Mehran	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/JsADXTOjHanjcT0rRdqktgb4Wr7hPqABgVQhBpYy8JU
+HPE-2026-04	Abuzar Ghaffari	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/axlyd-n0YpqVAK3gjFfQhRorfILs6ThwhOjP07N84O0
+HPE-2026-05	Afaq Ahmad	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/OT-M0M7UudGPmG2VytG5cawjFYu82vv0NtLW7R3fLQk
+HPE-2026-06	Muhammad Awais	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/cslJxZN0eTEuM2NjSwnhtq5MAsfaSpTDp84-61caio4
+HPE-2026-07	Reyan Aziz	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/unsoVx9LcEErmIY_dooxERK3aEF1fVQcd-TgqpspmRs
+H-P-E-2026-08	M. Ameer Shah	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/rZH36eKfQBHh7HaPxS-dl4zHHKXQAzM51fwmxqZN3E4
+HPE-2026-09	Muhammad Salman	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/d7FmcytSo2d4m9V9lqaUkgfHbQ3xuB6vthPj2LtGKwY
+HPE-2026-10	Altaf Hussain	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/zFlhsgwHSXuItmeZiMii7RyLUugTyXJV3wJn23JO5wA
+HPE-2026-11	Naeem Mahmood	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/RJlDAqMgM9PL0AqvxTZrlB9xMWWIEQjNw2S_RLxTYS8
+HPE-2026-13	Abdullah Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/p_xyQeZS8PUWZZz4AzjKQk1pSjx7bVA4iV1DXA0wTG0
+HPE-2026-14	Fahad Raza	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/jr40G5j7t4WPVhiMVVjM4bwLqbuRqtGvDb__ZjKAfoo
+HPE-2026-15	Hammad Ali	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/LfrEYmXPQPJaybptg-fS2ryw6xg6WdnWVTXw-v_8zvM
+HPE-2026-16	Zubair Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/epN_I_HMiXphT0hmBvGvaUfgSCMnF-YFhSQYViR4SJA
+HPE-2026-17	Haroon ur Rasheed	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/JVvI9iRzYLla-iHKKE-PuPV25gggtFCUmddEGzVPguY
+HPE-2026-18	Muhammad Haris Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/glhny4EAjteoYY0D48FAtEYoFxZ9MIFCY7AA0gPnf_c
+HPE-2026-19	Abdullah	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/XrYnvKw2HUQf-BuzorBJ0M-OoAXO5oyBuqVWoWC7ovI
+HPE-2026-20	Talha Durrani	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/kaVInX3_L4fkapxKgYVoIL40XHZC1CHIbq9hNiju6lY
+HPE-2026-21	Moosa Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/0dWXRIQzBIS9LXKjW5oN0Et1Ll-PSK6O8cc-7Azaie8
+HPE-2026-22	Hafaz Ullah	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/PfSHaMMJ4gznmk2eX5s5WcF_eHrFABtnJGotFmK2ZL0
+HPE-2026-23	Muhammad Hassan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/DV5nKJAsqaWGsZcU4R9CTcqR88AZMB5h_Z1ET8xYRuU
+HPE-2026-24	Muhammad Zaid	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/A_vpaFh8pW-8JQIQrrxanq8lCI-DE2-WTbwS8w5EcT8
+HPE-2026-25	Mehran Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/NOBv9iMimG44Re1ShwzTJg2rhr9hQE7JhBi6_xqum_Y
+HPE-2026-27	Malik Muhammad Rustam	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/xfgKpacT0Xk1rzECjWSIEt5NBMTlBmpP-1EJwNrsB9vOtjRTWJFJGev2NceNxU9D
+HPE-2026-028	Zeeshan Ahmad	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/PTVOQAJcBXvLErFadEo3eXoilkd_6n-SdHgX7ln8n-s
+HPE-2026-29	Hassan Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/OMB4Lq-R9Sje1Xnddv0BrOhBYk49N50mHW4UcUFH6Bk
+HPE-2026-26	Subhan Shah	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/nZ3ZrlXHRT1ZOuREmRqZI1NV_mYONCLZaARxQnXVyvA
+HPE-2026-30	Ateeq ur Rehman	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/fR158k3fGhR53sfycO9Jil8jXEMOo1YNI_ZTDmFafYQ
+HPE-2026-31	Hashim Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/z_FyDiO52-3pBXnThOgw7dJk3lZPbEiqj4QBJQyO8n0
+HPE-2026-32	Faraz Ahmad	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/oTQG92jxXnPESqS54bjANOQ976801Q-635v864NV2Qg
+HPE-2026-33	Muhammad Saad	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/kywKRP3PrugzVSfqi9XCbwrfJDKk2AX0ss73FUGhVY4
+HPE-2026-36	Mohsin Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/w2kIUL3jC1c2maUowfYpImJdHFK-mGGprEjb58rVFs8
+HPE-2026-37	Ahmad Anwar	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/lLV7OKbgZMASbHGuCHV5zuV1CDt9Qu1mhA2cwmZOmUo
+HPE-2026-34	M. Hassan Ali	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/TodWHx8IrZ6_G9jJjW11eNm5y4u4gYh9P_hclw4zSDc
+HPE-2026-38	Mehr Ali	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/p1X2eSXdFshJu0YpRFyv1nNXPqQCxZo0QPQPs3MqBzg
+HPE-2026-35	Abuhuraira	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/jkRNuo7C6gO-5e_glW48X0Ln-f8UeKvqNEPFrLjeECg
+HPE-2026-39	Muhammad Sheharyar	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/CwZB3R_IJ28lpocxCVRoOQ15RM4x3v_sdz3R_76Zat0
+HPE-2026-44	Muhammad Uzair	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/2Jzw5W6N2mZrfwSOIFUiIcsr0JlYyuH6uUgwmiaDgtU
+HPE-2026-41	Salman Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/Y0TPDGGan4ZhgwLpk7s1sU-AqvC8covmAAxcfKaIg7U
+HPE-2026-43	Hassan Imran	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/vJ9NAQ0C6PsJFjrIklN28NcskRlemg7OcmH-bRGNkBw
+HPE-2026-40	Muhammad Talha Khan	BS Health & Physical Education	BS Level	https://gcpeshawar.com/student/mF830_vO2fUJzEWR0y51_0I7z2mGnT0xr3x28ZXb8ds
+Economics-37	Faiz Ullah Khan	BS Economics	BS Level	https://gcpeshawar.com/student/xqkalBhGoHf2IMeuhb7CupZ0sRVKHihGOsxuX2wPpe4

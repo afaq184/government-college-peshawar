@@ -1,0 +1,14 @@
+# BS Urdu 3rd Semester
+# Count: 11
+
+251271	SAKHAWAT KHAN	BS Urdu	BS Level	https://gcpeshawar.com/student/JxaKnQ9Ab6q3HeNELJbAZAZZGhJ6rFfQ87FGeLshNJQ
+251274	Ahmad Ali	BS Urdu	BS Level	https://gcpeshawar.com/student/zKvDNCDfvBTTb0OAT41v6hUiFZtPNhISAHCSNiqLwkM
+251277	Sulaiman Khan	BS Urdu	BS Level	https://gcpeshawar.com/student/uE0uktBTuHjDVB_ePYPJn4hawvwpkLwRU2BQmkU6W94
+251263	Shehzad Ali Shah	BS Urdu	BS Level	https://gcpeshawar.com/student/bZOw-Nh41-OxgQAe0ziXsZL5vTHw4WM2wJTcT1eg0i0
+251258	M. Junaid	BS Urdu	BS Level	https://gcpeshawar.com/student/AVce-HBetIMRXFZrYyD4eQ
+251270	Hidayat Ullah	BS Urdu	BS Level	https://gcpeshawar.com/student/8_Q7RxeO5_CwyRHOb5DCo2Wo3tO76qOPrXKgC3lJNkA
+251252	Syed Wajahat Ali shah	BS Urdu	BS Level	https://gcpeshawar.com/student/Bx0DIeE80IexwWS2_OYRuFl-5sqB3uDxBngAB0KKHVw
+251273	Farman Ullah	BS Urdu	BS Level	https://gcpeshawar.com/student/dESp-wvGfY6c1O3YYh-TfNPo9bYUiFbSxoBPylDJsNY
+251250	Awais Khan	BS Urdu	BS Level	https://gcpeshawar.com/student/6B56XNMaex72crsYVC6C5_Pux1GGI0hVauFk4fAQ3bM
+251259	M. Ismail	BS Urdu	BS Level	https://gcpeshawar.com/student/AmxsdY9shrwdHP6oApWyKA
+251278	Shahwais	BS Urdu	BS Level	https://gcpeshawar.com/student/_I68YHop2WIO62S-x9DXEw

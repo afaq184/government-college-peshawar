@@ -1,0 +1,7 @@
+# BS Sports quota — 1st Semester
+# Count: 4
+
+Zoo.39	Hafiz Asad Ullah	BS Zoology	BS Level	https://gcpeshawar.com/student/Bj_3vfgDRYGU3WXvMGFcG62muPiPOBgSGnjXKKstlHw
+Botany-2026-05	Abdur Rehman	BS Botany	BS Level	https://gcpeshawar.com/student/NiPMDsOflLxzTW7KMynBz-q00PuZFeSvUNCJIs_Mrl0
+Zoo-40	Mahad Ullah	BS Zoology	BS Level	https://gcpeshawar.com/student/mj53ix0wN-ATDi_vlVtxA2bsTgeqBhhRo74W4uPA51I
+CS-49	Irfan Ali	BS Computer Science	BS Level	https://gcpeshawar.com/student/xYUuPWSu64iBhib6bsMokg

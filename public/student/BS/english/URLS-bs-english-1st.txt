@@ -1,0 +1,55 @@
+# BS English 1st Semester
+# Count: 52
+
+Eng.26-1	Abbas Khan	BS English	BS Level	https://gcpeshawar.com/student/EOPXF4P5Eg2S_UhrSOaUZ-HKPqgltvSmCQUTgIRa9bU
+Eng.26-2	Muhammad Akbar	BS English	BS Level	https://gcpeshawar.com/student/4JOpbQViWfDYdzUdYFOATPbs80F9cMo5OqKP50KNdZM
+Eng.26-3	Sana Ullah	BS English	BS Level	https://gcpeshawar.com/student/J85C8Rl5l4FZ2oY-2r1GHyA7oudhBrnZpBZ6jfmuNQY
+Eng-26-4	M. Imaduddin	BS English	BS Level	https://gcpeshawar.com/student/LOLicNzmKoHsAHBVk0inL0tGYwIWgJPmcu9PXEdXg_A
+Eng.26-6	M. Mehran	BS English	BS Level	https://gcpeshawar.com/student/YMmnw76StZyMq0kMSh1gyr_T2XyBJ02oSY31DdOm8N4
+Eng.26-5	Naveed-ul-Haq	BS English	BS Level	https://gcpeshawar.com/student/CkLcNZF5q3YVwfxDTOPVqOyc3_U7u5lt8hstTBcq_gc
+Eng.26-7	Farhad Ali	BS English	BS Level	https://gcpeshawar.com/student/_Mk_E8zAyp3XMpi1UT4rWshT58Jk3QYQqS8aF4V6x10
+Eng.26-8	Muhammad Hamad	BS English	BS Level	https://gcpeshawar.com/student/mqpYWfr4T9h7XXDNf_fjBcVh4NtsiZQ3OfRtRzbclIE
+Eng.26-10	Wali Ullah	BS English	BS Level	https://gcpeshawar.com/student/z6T1J1OlbiKHgXj6VuHX6Xqg2JD90qf_jqMkERg0MI8
+Eng.26-18	Habib Nawaz Khan	BS English	BS Level	https://gcpeshawar.com/student/1GPC9e17XFQhY2AHEAolR8r_OZZpcKEXs1vlI4Df9lM
+Eng-26-9	Ibad Ullah	BS English	BS Level	https://gcpeshawar.com/student/V43OHNDbZ5fb2Huzz0h2rss619CRv_I4A_b0W3Nojeo
+Eng.26-11	Muhammad Abbas	BS English	BS Level	https://gcpeshawar.com/student/jSFUMVCn7bg3a5pIX1kgGpb1hJA0PXNL1nVtCBI-v3Y
+Eng.26-12	Hidayat Ullah	BS English	BS Level	https://gcpeshawar.com/student/5HE4vOrzaSBAf4iepRcwLbdcl_sP3gVb8JiGO30ObPA
+Eng.26-13	Muhammad Faizan	BS English	BS Level	https://gcpeshawar.com/student/punSklYpsTq6ajt-iMgQyO__u21yW9MSFZmf0eyXnnw
+Eng.26-14	Maaz Khan Durrani	BS English	BS Level	https://gcpeshawar.com/student/dv9LV_Q5YGbx88Wjn9kukNxXMbJfK51YC_OcCfndwvY
+Eng.26-15	Muhammad Huzaifa Nangyal	BS English	BS Level	https://gcpeshawar.com/student/PxYEhs9_Tajwjq3I0MPhkXDzRfbyqneszImGFwoCq6LkUoiy_Bf_U8atUhubs7ZB
+Eng.26-16	Muhammad Sajiad Khan	BS English	BS Level	https://gcpeshawar.com/student/K1AD9PR7-3ynY3dHQe9o2RAchephzyXobR1QC22b100
+Eng. 26-17	Afaq Khan	BS English	BS Level	https://gcpeshawar.com/student/x5s38-04IwS-d_Ist42OOrpji63RhKGlpJf6v154B4I
+Eng.26-19	Muhammad Waqas Khan	BS English	BS Level	https://gcpeshawar.com/student/F_J_4m3VDBIrijqV7zAGNRLoSbjM7Vrz3ae3xLmscmU
+Eng.26-22	Zubair	BS English	BS Level	https://gcpeshawar.com/student/AkxoYxGy1hIURUtOVXnp1u8wo-3Qc178O6lJgdLAUgE
+Eng.26-20	Syed Noor Shah	BS English	BS Level	https://gcpeshawar.com/student/TQ7tzdDURe37oXFyN6mgMl1Ztw22feS0YDZVnghn4nY
+Eng.26-21	Hasan Minhas	BS English	BS Level	https://gcpeshawar.com/student/UGlXkhx0l7d-DoHZCRccOS9QSSrDEbc6PdlxBzKISAM
+Eng. 26-23	Abdul Salam	BS English	BS Level	https://gcpeshawar.com/student/FK1w9whUgk8ur_UIbp6c-BqY3TZjE38MtylzDzKQaBo
+Eng. 26-25	Abubakar Ahmad	BS English	BS Level	https://gcpeshawar.com/student/9-jVKmAr4vbJPvTSXDrlJ1BwRISihmEXvOrkfDyWv_g
+Eng.26-24	Muhammad Ihtisham Kashif	BS English	BS Level	https://gcpeshawar.com/student/rNc4I6GRjHcU3S7YpgCRZ6nW1IVl-BiYwgIWF6tAJm9WAuvKXPMvCMhtYKhcTyzV
+Eng.26-26	Muhammad Arsalan	BS English	BS Level	https://gcpeshawar.com/student/6pkSXTWn--0svMP7DdojD7oeI1W3GGbYbJgrXnCmR18
+Eng.26-27	Muhammad Ilyas	BS English	BS Level	https://gcpeshawar.com/student/okiwnjpCbJHTwSkHRPo7IMvb2B-CSd_eFQt4K0Al8-U
+Eng.26-28	Zeyad Hussain	BS English	BS Level	https://gcpeshawar.com/student/_pHtfwJ3guCS0ltL8DNxpmj9g0GbodKMmMk9fXjcGT8
+Eng. 26-29	Muhammad Hamza	BS English	BS Level	https://gcpeshawar.com/student/eCwl16dOPrthI8G17S0d8f-xgf0hsPPXGM3cMXmw-Bk
+Eng.26-30	Ibrar Hussain	BS English	BS Level	https://gcpeshawar.com/student/qqm6iyQtdUWa0e-1BhchRryJENs4qyt62RE9OQK2x1I
+Eng.26-32	Ahmad Haider	BS English	BS Level	https://gcpeshawar.com/student/u-v6COGOaoBq6qWX11svbzfwmh4DnOCdNeM29uql-vw
+Eng.26-31	Asad Khan	BS English	BS Level	https://gcpeshawar.com/student/yBulEABn8BKnLm1ATsFLB52UYzlNEfiBDUI4NznoeFw
+Eng.26-33	Umar Khan	BS English	BS Level	https://gcpeshawar.com/student/FDz0U9cYVpsWFepfLRzK9XiWQVYC64jbDIZb2eoxVL8
+Eng.26-34	Hazrat Umar	BS English	BS Level	https://gcpeshawar.com/student/OB7pS7KSTGHfdkJaRhqnALwrDvcMWRWhgKK50OTK2i8
+Eng.26-35	Shehram Junaid	BS English	BS Level	https://gcpeshawar.com/student/xtXlrkDLCQsUYy2K04JoZs6ISENw-GAS5HHczVETmwA
+Eng.26-36	Hamid Ullah Khan	BS English	BS Level	https://gcpeshawar.com/student/HeDty1sUlSH4xSRbNR9gnF0u4cHVgz15Mac52M5yQHU
+Eng.26-37	Muhammad Zaid	BS English	BS Level	https://gcpeshawar.com/student/g0PSrAMTS8TL6lCRjDGVvYnokJaYxj-cv4wYaLPWniw
+Eng. 26-38	Ibrahim	BS English	BS Level	https://gcpeshawar.com/student/EqA98PQ9DeLEDkLHsR4hTWw_hZNuOYO5awu8ujXs-os
+Eng.26-39	Muhammad Mustafa	BS English	BS Level	https://gcpeshawar.com/student/4k3wTqIlymu5XRCfBG-EaXzgyiVfuLRjVO1aRk8nKJ0
+Eng. 26-40	Mansoor Khan	BS English	BS Level	https://gcpeshawar.com/student/1GFKwnFRoefaRevQ1QbQgjA2pV-JBIuhy0DTu8f1bvE
+Eng. 26-41	Amar Ullah Jan	BS English	BS Level	https://gcpeshawar.com/student/kIM3hL8gWuK9h5oJUea5M8Rma2pM6e4pp8qOJJTndNs
+Eng.26-42	Kaleem Ullah	BS English	BS Level	https://gcpeshawar.com/student/Fdp09RySca2ifPvvAudXfL-9wNL3Fy1QSKn9FolUuDw
+Eng.26-43	Hamza	BS English	BS Level	https://gcpeshawar.com/student/HgT84cDqW1fdqGIB9VCV0w
+Eng.26-44	Saqib Zada	BS English	BS Level	https://gcpeshawar.com/student/XQKBre0wDbsqIPG9cQW3EdaM5BsW0Su3kZz3Useffjc
+Eng.26-45	Hamza	BS English	BS Level	https://gcpeshawar.com/student/lTTblkMgcqbopN9njBCRSg
+Eng.26-46	Muhammad Senar	BS English	BS Level	https://gcpeshawar.com/student/SChetQN-YUOuTizoavr_t0P7ner2AGUSMz__WcWp5wI
+Eng.26-47	Asim Ullah	BS English	BS Level	https://gcpeshawar.com/student/83IckeFBhyhpWpQUuX6A5ozo4Xnnshx8tWUt2Zh4lQY
+Eng.26-48	Abdul Basit Khan	BS English	BS Level	https://gcpeshawar.com/student/o7rMg3EO6cgkhON7ISSgs8CrR9dO7cNVvV2vDgOxHmc
+Eng.26-49	Bashir Khan	BS English	BS Level	https://gcpeshawar.com/student/HJAk1WOumaXJoZhMe72StbjQOqdoWaVklAWfGhVvKuk
+Eng.26-50	Syed Safiullah	BS English	BS Level	https://gcpeshawar.com/student/HfsNGiqK4HiZ8dmafaOeYc7GGqjzMk4PI7WLZpLTqGc
+Eng.26-51	Shah Fahad	BS English	BS Level	https://gcpeshawar.com/student/eYwX-O3xKd1ElrY3aWnqZP3HzCdz_ALO7OSKmzU9lFw
+Eng-26-52	Muhsin Khan	BS English	BS Level	https://gcpeshawar.com/student/xjaZ8h9ob0PP7tW8NLQyC_ev7bMxJp9fodNAvR7ewO0

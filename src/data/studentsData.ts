@@ -16,6 +16,7 @@ import { BS_HPE_STUDENTS } from './bsHpeStudents';
 import { BS_URDU_STUDENTS } from './bsUrduStudents';
 import { BS_SPORTS_STUDENTS } from './bsSportsStudents';
 import { BS_ECONOMICS_STUDENTS } from './bsEconomicsStudents';
+import { BS_CS_STUDENTS } from './bsCsStudents';
 import type { StudentRecord } from '../types/student';
 
 export type Student = StudentRecord;
@@ -117,6 +118,7 @@ export const STUDENTS: Student[] = [
   ...BS_URDU_STUDENTS,
   ...BS_SPORTS_STUDENTS,
   ...BS_ECONOMICS_STUDENTS,
+  ...BS_CS_STUDENTS,
 ];
 
 export function getStudentBySlug(slug: string | undefined): Student | undefined {

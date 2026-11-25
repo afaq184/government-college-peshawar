@@ -205,6 +205,8 @@ const STUDENT_SLUG_ALIASES: Record<string, string> = {
   'm-umar-ali-1670': 'm-umar-ali-1674',
   // M. Yaseen BS Economics roll was entered as 251354; correct roll is 231354
   'm-yaseen-251354': 'm-yaseen-231354',
+  // Muhammad Haris BS CS roll was blank; correct roll is CS-47-26
+  'muhammad-haris-bs-cs-1st': 'muhammad-haris-cs-47-26',
 };
 
 function resolveStudentSlug(slug: string): string {

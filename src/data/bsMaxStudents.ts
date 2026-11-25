@@ -74,6 +74,6 @@ export const BS_MAX_STUDENTS: StudentRecord[] = [
     phone: '03330917710',
     address: 'Mian Kally, Shabqadar',
     status: 'Active',
-    photoFile: 'BS/max/extra_cards_cropped/06.jpg',
+    photoFile: 'BS/max/extra_cards_cropped/04.jpg',
   },
 ];

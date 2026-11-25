@@ -374,7 +374,7 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     phone: '03185702237',
     address: 'Charsadda Peshawar',
     status: 'Active',
-    photoFile: 'BS/max/extra_cards_cropped/04.jpg'
+    photoFile: 'BS/max/extra_cards_cropped/06.jpg'
   },
   {
     slug: 'afaq-ahmad-528',

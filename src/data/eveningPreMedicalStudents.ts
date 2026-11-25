@@ -361,19 +361,20 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'muhammad-naveed-527',
     name: 'Muhammad Naveed',
-    fatherName: 'Ibne Amin',
+    fatherName: 'Ibni-Ameen',
     class: 'Pre-Medical',
+    classYear: '1st year',
     rollNo: '527',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
     admissionNo: '527',
-    dob: '',
+    dob: '9/6/2010',
     bloodGroup: '',
     cnic: '',
-    phone: '03166383159',
-    address: 'Ali Khel Nisatta, Charsadda',
+    phone: '03185702237',
+    address: 'Charsadda Peshawar',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/527.png'
+    photoFile: 'BS/max/extra_cards_cropped/02.jpg'
   },
   {
     slug: 'afaq-ahmad-528',
@@ -1531,8 +1532,9 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
   {
     slug: 'khuzaifa-raj-598',
     name: 'Khuzaifa Raj',
-    fatherName: 'Raj ul Haq',
+    fatherName: 'Rai ul Haq',
     class: 'Pre-Medical',
+    classYear: '1st year',
     rollNo: '598',
     enrollmentType: 'Evening Shift',
     session: '2026-2028',
@@ -1540,10 +1542,10 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     dob: '',
     bloodGroup: '',
     cnic: '',
-    phone: '03354825651',
-    address: 'Moh: Bahar Khel Muhib Banda, Pabbi Nowshera',
+    phone: '0335-9825651',
+    address: 'Mohib Banda Nowshera',
     status: 'Active',
-    photoFile: 'evening-students/phase 4 eveing/pre_medical_R/medical_stuedent_pic/598.png'
+    photoFile: 'BS/max/extra_cards_cropped/04.jpg'
   },
   {
     slug: 'abdullah-600',

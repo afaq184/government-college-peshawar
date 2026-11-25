@@ -20,7 +20,7 @@ export const BS_MAX_STUDENTS: StudentRecord[] = [
     phone: '0318-5007614',
     address: 'Bakhshi Pool, Nahaqi Payan',
     status: 'Active',
-    photoFile: 'BS/max/extra_cards_cropped/01.jpg',
+    photoFile: 'BS/max/extra_cards_cropped/05.jpg',
   },
   {
     slug: 'hamza-rasheed-129',
@@ -56,7 +56,7 @@ export const BS_MAX_STUDENTS: StudentRecord[] = [
     phone: '03375107316',
     address: 'Bara, District Khyber, KP',
     status: 'Active',
-    photoFile: 'BS/max/extra_cards_cropped/05.jpg',
+    photoFile: 'BS/max/extra_cards_cropped/01.jpg',
   },
   {
     slug: 'hamid-sultan-8232',

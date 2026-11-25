@@ -374,7 +374,7 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     phone: '03185702237',
     address: 'Charsadda Peshawar',
     status: 'Active',
-    photoFile: 'BS/max/extra_cards_cropped/02.jpg'
+    photoFile: 'BS/max/extra_cards_cropped/04.jpg'
   },
   {
     slug: 'afaq-ahmad-528',
@@ -1545,7 +1545,7 @@ export const EVENING_PRE_MEDICAL_STUDENTS: StudentRecord[] = [
     phone: '0335-9825651',
     address: 'Mohib Banda Nowshera',
     status: 'Active',
-    photoFile: 'BS/max/extra_cards_cropped/04.jpg'
+    photoFile: 'BS/max/extra_cards_cropped/02.jpg'
   },
   {
     slug: 'abdullah-600',

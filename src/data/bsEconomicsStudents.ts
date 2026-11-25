@@ -742,6 +742,7 @@ export const BS_ECONOMICS_3RD_STUDENTS: StudentRecord[] = [
     phone: '0347-8549739',
     address: 'Sethi Town Number 2, Haji Camp, Peshawar',
     status: 'Active',
+    photoFile: 'BS/economics/BS_economics_3rd_pic/bs economics 3rd 11 cropped/251298.jpg',
   },
 ];
 
